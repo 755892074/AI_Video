@@ -8,8 +8,9 @@
 # --- 运行日志 ---
 *.log
 
-# --- 由 make_shot_table.py 生成的镜头档案表（可重新生成）---
-shots/**/shot_table.html
+# --- 镜头档案表 HTML（已纳入版本控制，GitHub 可直接预览）---
+# 保留：shots/**/shot_table.html
+# （md 版本仍排除，html 为主）
 shots/**/shot_table.md
 
 # --- 项目运行数据（按规则不纳入版本控制）---
