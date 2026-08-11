@@ -6,8 +6,10 @@
   同套镜头用 ffmpeg 拼接成 30-50s 成片。
 支持断点续跑：已存在的输出 mp4 会跳过；prompt 状态存于 batch_state.json。
 """
-import json, os, sys, time, uuid, urllib.request, urllib.error, subprocess, shutil
+import json, os, sys, time, uuid, urllib.request, urllib.error, subprocess, shutil, threading
 import imageio_ffmpeg
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import comfy_monitor as cm
 
 COMFY = "http://100.67.139.74:8188"
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -150,14 +152,8 @@ def build_prompt(wf, sb_name, ch_name, sc_name, prompt_text, ref2va=None, ref_vi
     return p
 
 def submit(prompt_graph):
-    payload = json.dumps({"prompt": prompt_graph, "client_id": CLIENT}).encode()
-    try:
-        resp = http_post(f"{COMFY}/prompt", payload,
-                         {"Content-Type": "application/json"})
-        return json.loads(resp).get("prompt_id")
-    except urllib.error.HTTPError as e:
-        log("SUBMIT FAIL", e.code, e.read().decode()[:400])
-        return None
+    """提交任务 + 队列验证。返回 prompt_id；失败抛异常（快速失败，立即退出）。"""
+    return cm.submit_with_verify(prompt_graph, CLIENT, comfy=COMFY)
 
 def find_video_output(outputs):
     for nid, o in outputs.items():
@@ -221,6 +217,27 @@ def main():
 
     log(f"计划镜头数={len(plan)}，开始处理")
 
+    # 0) 提交前健康检查：ComfyUI 不在线直接快速失败
+    try:
+        info = cm.health_check(comfy=COMFY)
+        log(f"[health] ComfyUI 在线: GPU={info['gpu']}, VRAM={info['vram_gb']}GB")
+    except Exception as e:
+        log(f"[FATAL] {e}")
+        sys.exit(1)
+
+    # WS 实时监听：中途失败事件立刻记录并让主循环感知
+    ws_error = {"msg": None}
+    def _on_ws_err(msg):
+        ws_error["msg"] = msg
+        log(f"[WS-ERROR] {msg}")
+    def _on_ws_evt(evt, data):
+        if evt == "execution_start":
+            log(f"[ws] 任务开始执行")
+    ws_thread = threading.Thread(target=cm.ws_watch,
+                                 args=(CLIENT, _on_ws_evt, _on_ws_err),
+                                 kwargs={"timeout_sec": 60 * 60}, daemon=True)
+    ws_thread.start()
+
     # 1) 提交阶段（跳过已存在 & 已提交且未完成）
     pending = {}  # key -> prompt_id
     for sid, shot, rel_sb, rel_ch, rel_sc, prompt, ref2va, ref_video, out_path in plan:
@@ -241,10 +258,14 @@ def main():
         if ref_video:
             u_video = upload_video(ref_video, f"batch_{sid}_{shot:02d}_ref.mp4")
         pg = build_prompt(wf, u_sb, u_ch, u_sc, prompt, ref2va, u_video)
-        pid = submit(pg)
+        try:
+            pid = submit(pg)
+        except Exception:
+            log(f"[FATAL] {key} 提交失败，立即退出")
+            sys.exit(1)
         if not pid:
-            log(f"[ERROR] {key} 提交失败，跳过")
-            continue
+            log(f"[FATAL] {key} 未拿到 prompt_id，立即退出")
+            sys.exit(1)
         state[key] = {"prompt_id": pid, "done": False, "out": out_path}
         pending[key] = pid
         log(f"[submit] {key} pid={pid}")
@@ -256,18 +277,21 @@ def main():
         out_path = state[key]["out"]
         done = False
         for _ in range(720):  # 最多 720*5s = 60min/镜头
+            if ws_error["msg"]:
+                log(f"[FATAL] WS 检测到任务异常: {ws_error['msg']}")
+                sys.exit(1)
             try:
                 h = json.loads(urllib.request.urlopen(f"{COMFY}/history/{pid}", timeout=30).read())
             except Exception:
                 h = {}
             if pid not in h:
+
                 time.sleep(5); continue
             res = h[pid]
             st = res.get("status", {})
             if st.get("status_str") == "error":
-                log(f"[ERROR] {key} 生成失败: {json.dumps(res.get('messages', []), ensure_ascii=False)[:300]}")
-                done = True  # 标记处理过，避免反复
-                break
+                log(f"[FATAL] {key} 生成失败: {json.dumps(res.get('messages', []), ensure_ascii=False)[:300]}")
+                sys.exit(1)
             outs = res.get("outputs", {})
             vid = find_video_output(outs)
             if vid:
