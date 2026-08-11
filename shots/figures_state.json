@@ -1,0 +1,32 @@
+{
+  "figures_01": {
+    "prompt_id": "5e328c7c-e3bf-44bf-936c-361730781f56",
+    "done": true,
+    "out": "F:\\WorkBuddy\\AI_Video\\shots\\figures\\output\\shot01.mp4"
+  },
+  "figures_02": {
+    "prompt_id": "c578964e-2b97-4ca2-94f6-0efd30624701",
+    "done": true,
+    "out": "F:\\WorkBuddy\\AI_Video\\shots\\figures\\output\\shot02.mp4"
+  },
+  "figures_03": {
+    "prompt_id": "85d4e0fe-863e-44de-9e94-771d180d62f6",
+    "done": true,
+    "out": "F:\\WorkBuddy\\AI_Video\\shots\\figures\\output\\shot03.mp4"
+  },
+  "figures_04": {
+    "prompt_id": "f12018d5-b5aa-4a88-88b7-fe7cf169d6f5",
+    "done": true,
+    "out": "F:\\WorkBuddy\\AI_Video\\shots\\figures\\output\\shot04.mp4"
+  },
+  "figures_05": {
+    "prompt_id": "055250d0-547c-4e1f-97d3-3ea6ba142c87",
+    "done": true,
+    "out": "F:\\WorkBuddy\\AI_Video\\shots\\figures\\output\\shot05.mp4"
+  },
+  "figures_06": {
+    "prompt_id": "582595d4-aabe-4196-85f5-c52901149726",
+    "done": true,
+    "out": "F:\\WorkBuddy\\AI_Video\\shots\\figures\\output\\shot06.mp4"
+  }
+}

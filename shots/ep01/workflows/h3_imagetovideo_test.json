@@ -1,0 +1,63 @@
+{
+  "1": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "scene_01.png"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "text": "A young woman in a yellow raincoat stands at the entrance of a rainy cyberpunk alley, holding a glowing mechanical cat. Slow camera push-in. Rain falls gently on wet stone pavement reflecting neon purple and cyan lights. Atmospheric fog drifts down the alley. Cinematic lighting, moody cyberpunk aesthetic.",
+      "clip": ["2", 0]
+    }
+  },
+  "5": {
+    "class_type": "MiniMaxH3ImageToVideo",
+    "inputs": {
+      "clip": ["2", 0],
+      "vae": ["3", 0],
+      "prompt": "A young woman in a yellow raincoat stands at the entrance of a rainy cyberpunk alley, holding a glowing mechanical cat. Slow camera push-in. Rain falls gently on wet stone pavement reflecting neon purple and cyan lights. Atmospheric fog drifts down the alley. Cinematic lighting, moody cyberpunk aesthetic.",
+      "width": 1344,
+      "height": 768,
+      "length": 124,
+      "first_frame": ["1", 0]
+    }
+  },
+  "6": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": ["5", 1],
+      "vae": ["3", 0]
+    }
+  },
+  "7": {
+    "class_type": "CreateVideo",
+    "inputs": {
+      "images": ["6", 0],
+      "fps": 24
+    }
+  },
+  "8": {
+    "class_type": "SaveVideo",
+    "inputs": {
+      "video": ["7", 0],
+      "filename_prefix": "ep01_shot01",
+      "format": "mp4",
+      "codec": "auto"
+    }
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "workflow": "shots/ep01/workflows/r2v_api.json",
+  "sets": [
+    {
+      "id": "figures_r2va",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "figures/characters/角色三视图设定表_同一位17岁真实男高中生_画面从左到右排列_2026-08-11T03-59-21.png",
+          "character": "figures/characters/角色三视图设定表_同一位17岁真实男高中生_画面从左到右排列_2026-08-11T03-59-49.png",
+          "scene": "figures/scenes/写实真人摄影风格_一个17岁男生的卧室_interior_现_2026-08-11T04-07-03.png",
+          "ref2va": {
+            "subject_definitions": [
+              "<Subject 1> 是 <Picture 1> 中的男生A：清瘦瓜子脸、黑色短发齐刘海、戴细框金属眼镜，身穿白色连帽卫衣、黑色工装裤、白色运动鞋。",
+              "<Subject 2> 是 <Picture 2> 中的男生B：微壮圆脸、棕色短发，身穿灰色连帽衫、蓝色牛仔裤、黑色板鞋。",
+              "<Subject 3> 是 <Picture 3> 中的男生卧室：现代简约装修，一面墙是玻璃手办展柜摆满精致手办，暖色台灯灯光营造温馨氛围。"
+            ],
+            "summary": "[参考图生成] 目标视频展示男生A在卧室书桌前向男生B展示一枚硬币大小的精致可动人偶，两人就手办的来历与价格展开轻松对话。",
+            "retention_analysis": [
+              "<Subject 1> (出现在 [Shot 1])：完全保留——A的脸部特征、细框眼镜、白色连帽卫衣、黑色工装裤均保留。",
+              "<Subject 2> (出现在 [Shot 1])：完全保留——B的圆脸、棕色短发、灰色连帽衫、蓝色牛仔裤均保留。",
+              "<Subject 3> (出现在 [Shot 1])：完全保留——卧室布局、玻璃手办展柜、暖色台灯光照均保留。"
+            ],
+            "detailed_description": "[Shot 1] 写实真人电影风格，中景。男生A(<Subject 1>)站在书桌前，正小心翼翼地将一枚硬币大小的精致可动人偶放在桌面上。男生B(<Subject 2>)站在旁边，身体前倾凑近观看。背景是<Subject 3>的卧室，玻璃展柜映出暖光。A动作轻柔专注，B表情好奇而惊讶。A轻声开口：<d>[中文] 你看这做工，万博会的限定款。</d>",
+            "overall_soundscape": "安静的室内环境音，台灯轻微的电流声，衣物与塑料人偶轻微的摩擦声。",
+            "non_diegetic_music": "N/A"
+          }
+        },
+        {
+          "shot": 2,
+          "storyboard": "figures/characters/角色三视图设定表_同一位17岁真实男高中生_画面从左到右排列_2026-08-11T03-59-21.png",
+          "character": "figures/characters/角色三视图设定表_同一位17岁真实男高中生_画面从左到右排列_2026-08-11T03-59-49.png",
+          "scene": "figures/scenes/写实真人摄影风格_一个17岁男生的卧室_interior_现_2026-08-11T04-07-03.png",
+          "ref2va": {
+            "subject_definitions": [
+              "<Subject 1> 是 <Picture 1> 中的男生A：清瘦瓜子脸、黑色短发齐刘海、戴细框金属眼镜，身穿白色连帽卫衣、黑色工装裤。",
+              "<Subject 2> 是 <Picture 2> 中的男生B：微壮圆脸、棕色短发，身穿灰色连帽衫、蓝色牛仔裤。",
+              "<Subject 3> 是 <Picture 3> 中的男生卧室：现代简约装修，玻璃手办展柜，暖色台灯。"
+            ],
+            "summary": "[参考图生成] 承接上一镜。同一场景、同一人物、同款服装：B凑近仔细端详桌上人偶，发出惊叹。",
+            "retention_analysis": [
+              "<Subject 1> (出现在 [Shot 2])：完全保留——A的白卫衣、黑工装裤、眼镜、身份不变。",
+              "<Subject 2> (出现在 [Shot 2])：完全保留——B的灰卫衣、蓝牛仔裤、圆脸不变。",
+              "<Subject 3> (出现在 [Shot 2])：完全保留——卧室与展柜暖光不变。"
+            ],
+            "detailed_description": "[Shot 2] 承接上一镜，同一场景同一人物同款服装。镜头稍推近到桌面与人偶特写。男生B(<Subject 2>)凑近桌子，手指比划着人偶的细微结构，嘴巴张开满脸惊叹。男生A(<Subject 1>)站在旁边双手抱胸，得意地微笑看着B的反应。背景<Subject 3>的玻璃手办展柜暖光依旧。B惊讶地问：<d>[中文] 这……这得多少钱啊？</d>",
+            "overall_soundscape": "室内安静的环境音，B凑近时衣物轻微的摩擦声，台灯低鸣。",
+            "non_diegetic_music": "N/A"
+          }
+        },
+        {
+          "shot": 3,
+          "storyboard": "figures/characters/角色三视图设定表_同一位17岁真实男高中生_画面从左到右排列_2026-08-11T03-59-21.png",
+          "character": "figures/characters/角色三视图设定表_同一位17岁真实男高中生_画面从左到右排列_2026-08-11T03-59-49.png",
+          "scene": "figures/scenes/写实真人摄影风格_一个17岁男生的卧室_interior_现_2026-08-11T04-07-03.png",
+          "ref2va": {
+            "subject_definitions": [
+              "<Subject 1> 是 <Picture 1> 中的男生A：清瘦瓜子脸、黑短发齐刘海、细框金属眼镜，白色连帽卫衣。",
+              "<Subject 2> 是 <Picture 2> 中的男生B：微壮圆脸、棕短发，灰色连帽衫。",
+              "<Subject 3> 是 <Picture 3> 中的男生卧室：玻璃手办展柜，暖色台灯。"
+            ],
+            "summary": "[参考图生成] 承接上一镜。A向B炫耀人偶的质感与限量身份，神情得意。",
+            "retention_analysis": [
+              "<Subject 1> (出现在 [Shot 3])：完全保留——A的白卫衣、眼镜、身份不变。",
+              "<Subject 2> (出现在 [Shot 3])：完全保留——B的灰卫衣、圆脸不变。",
+              "<Subject 3> (出现在 [Shot 3])：完全保留——卧室展柜与暖光不变。"
+            ],
+            "detailed_description": "[Shot 3] 承接上一镜，同一人物同款服装同场景。男生A(<Subject 1>)得意地昂起头，用指尖轻轻划过人偶的肩甲展示光泽，脸上满是炫耀的神情。男生B(<Subject 2>)站在一旁，表情从惊叹转为难以置信。背景<Subject 3>的展柜灯光映在两人脸上。A骄傲地说：<d>[中文] 五六千，全球就限量五百个。</d>",
+            "overall_soundscape": "室内安静环境音，A指尖划过人偶的细微摩擦声，台灯低鸣。",
+            "non_diegetic_music": "N/A"
+          }
+        },
+        {
+          "shot": 4,
+          "storyboard": "figures/characters/角色三视图设定表_同一位17岁真实男高中生_画面从左到右排列_2026-08-11T03-59-21.png",
+          "character": "figures/characters/角色三视图设定表_同一位17岁真实男高中生_画面从左到右排列_2026-08-11T03-59-49.png",
+          "scene": "figures/scenes/写实真人摄影风格_一个17岁男生的卧室_interior_现_2026-08-11T04-07-03.png",
+          "ref2va": {
+            "subject_definitions": [
+              "<Subject 1> 是 <Picture 1> 中的男生A：清瘦瓜子脸、细框金属眼镜，白色连帽卫衣。",
+              "<Subject 2> 是 <Picture 2> 中的男生B：微壮圆脸、棕短发，灰色连帽衫。",
+              "<Subject 3> 是 <Picture 3> 中的男生卧室：玻璃手办展柜，暖色台灯。"
+            ],
+            "summary": "[参考图生成] 承接上一镜。B做出夸张的难以置信表情吐槽，与A的陶醉形成反差喜剧感。",
+            "retention_analysis": [
+              "<Subject 1> (出现在 [Shot 4])：完全保留——A的白卫衣、眼镜、沉迷表情不变。",
+              "<Subject 2> (出现在 [Shot 4])：完全保留——B的灰卫衣、圆脸、吐槽表情不变。",
+              "<Subject 3> (出现在 [Shot 4])：完全保留——卧室暖光氛围不变。"
+            ],
+            "detailed_description": "[Shot 4] 承接上一镜，同一人物同款服装同场景。男生B(<Subject 2>)翻了个白眼，做出夸张的难以置信表情，嘴巴微张像在吐槽。男生A(<Subject 1>)完全没察觉，继续摸着人偶一脸陶醉沉迷。两人之间形成有趣的反差喜剧感。背景<Subject 3>卧室暖光氛围不变。B吐槽道：<d>[中文] 就一塑料疙瘩，卖五六千？</d>",
+            "overall_soundscape": "室内安静环境音，轻微衣物摩擦声，台灯低鸣。",
+            "non_diegetic_music": "N/A"
+          }
+        },
+        {
+          "shot": 5,
+          "storyboard": "figures/characters/角色三视图设定表_同一位17岁真实男高中生_画面从左到右排列_2026-08-11T03-59-21.png",
+          "character": "figures/characters/角色三视图设定表_同一位17岁真实男高中生_画面从左到右排列_2026-08-11T03-59-49.png",
+          "scene": "figures/scenes/写实真人摄影风格_一个17岁男生的卧室_interior_现_2026-08-11T04-07-03.png",
+          "ref2va": {
+            "subject_definitions": [
+              "<Subject 1> 是 <Picture 1> 中的男生A：清瘦瓜子脸、细框金属眼镜，白色连帽卫衣。",
+              "<Subject 2> 是 <Picture 2> 中的男生B：微壮圆脸、棕短发，灰色连帽衫。",
+              "<Subject 3> 是 <Picture 3> 中的男生卧室：玻璃手办展柜，暖色台灯。"
+            ],
+            "summary": "[参考图生成] 承接上一镜。A不服气，举起人偶对着灯光展示涂装细节。",
+            "retention_analysis": [
+              "<Subject 1> (出现在 [Shot 5])：完全保留——A的白卫衣、眼镜、不服表情不变。",
+              "<Subject 2> (出现在 [Shot 5])：完全保留——B的灰卫衣、圆脸不变。",
+              "<Subject 3> (出现在 [Shot 5])：完全保留——卧室展柜与暖光不变。"
+            ],
+            "detailed_description": "[Shot 5] 承接上一镜，同一人物同款服装同场景。男生A(<Subject 1>)不服气地拿起人偶举到台灯灯光前，指尖点着肩甲与涂装缝隙展示细节。男生B(<Subject 2>)凑近盯着看，表情半信半疑。背景<Subject 3>的暖光打在人偶上泛出细腻反光。A认真地说：<d>[中文] 你懂什么，这涂装，这细节。</d>",
+            "overall_soundscape": "室内安静环境音，A拿起人偶时塑料与衣物轻微摩擦声，台灯低鸣。",
+            "non_diegetic_music": "N/A"
+          }
+        },
+        {
+          "shot": 6,
+          "storyboard": "figures/characters/角色三视图设定表_同一位17岁真实男高中生_画面从左到右排列_2026-08-11T03-59-21.png",
+          "character": "figures/characters/角色三视图设定表_同一位17岁真实男高中生_画面从左到右排列_2026-08-11T03-59-49.png",
+          "scene": "figures/scenes/写实真人摄影风格_一个17岁男生的卧室_interior_现_2026-08-11T04-07-03.png",
+          "ref2va": {
+            "subject_definitions": [
+              "<Subject 1> 是 <Picture 1> 中的男生A：清瘦瓜子脸、细框金属眼镜，白色连帽卫衣。",
+              "<Subject 2> 是 <Picture 2> 中的男生B：微壮圆脸、棕短发，灰色连帽衫。",
+              "<Subject 3> 是 <Picture 3> 中的男生卧室：玻璃手办展柜，暖色台灯。"
+            ],
+            "summary": "[参考图生成] 承接上一镜。A把人偶放回展柜，B最终松口承认好看，对话轻松收尾。",
+            "retention_analysis": [
+              "<Subject 1> (出现在 [Shot 6])：完全保留——A的白卫衣、眼镜、身份不变。",
+              "<Subject 2> (出现在 [Shot 6])：完全保留——B的灰卫衣、圆脸不变。",
+              "<Subject 3> (出现在 [Shot 6])：完全保留——卧室展柜与暖光不变。"
+            ],
+            "detailed_description": "[Shot 6] 承接上一镜，同一人物同款服装同场景。男生A(<Subject 1>)小心地把人偶放回玻璃展柜的空位，轻轻合上柜门。男生B(<Subject 2>)抱着手靠在桌边，终于松口露出佩服的神色。背景<Subject 3>的展柜暖光把两人轮廓勾出柔和边光。B笑着承认：<d>[中文] 行吧，确实挺好看的。</d>",
+            "overall_soundscape": "室内安静环境音，展柜门轻微的合拢声，台灯低鸣。",
+            "non_diegetic_music": "N/A"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "figures_v3_01": {
+    "prompt_id": "ae6144a8-0ecd-4ca6-80a2-77e91dccd0f8",
+    "done": true,
+    "out": "F:\\WorkBuddy\\AI_Video\\shots\\figures_v3\\output\\shot01.mp4"
+  },
+  "figures_v3_02": {
+    "prompt_id": "345864ab-f092-41cd-a4cd-d66b74010d2d",
+    "done": true,
+    "out": "F:\\WorkBuddy\\AI_Video\\shots\\figures_v3\\output\\shot02.mp4"
+  },
+  "figures_v3_03": {
+    "prompt_id": "bc2b10cc-0b58-4b53-8430-f7de0d49de0c",
+    "done": true,
+    "out": "F:\\WorkBuddy\\AI_Video\\shots\\figures_v3\\output\\shot03.mp4"
+  },
+  "figures_v3_04": {
+    "prompt_id": "c886e1b8-c05a-43bb-a3f4-66879d43ad4c",
+    "done": false,
+    "out": "F:\\WorkBuddy\\AI_Video\\shots\\figures_v3\\output\\shot04.mp4"
+  },
+  "figures_v3_05": {
+    "prompt_id": "85e4fe2e-4cec-438d-9a98-b2d1b7faa89a",
+    "done": true,
+    "out": "F:\\WorkBuddy\\AI_Video\\shots\\figures_v3\\output\\shot05.mp4"
+  },
+  "figures_v3_06": {
+    "prompt_id": "28b349c6-4838-47a5-a065-0b7aa127d85c",
+    "done": true,
+    "out": "F:\\WorkBuddy\\AI_Video\\shots\\figures_v3\\output\\shot06.mp4"
+  }
+}

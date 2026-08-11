@@ -1,0 +1,42 @@
+{
+  "comfy_url": "http://100.67.139.74:8188",
+  "workflow": "shots/ep01/workflows/r2v_api.json",
+  "base_dir": "shots",
+  "sets": [
+    {
+      "id": "romance",
+      "title": "写实爱情《屋檐下的雨》",
+      "shots": [
+        {"shot": 1, "storyboard": "romance/assets/storyboards/storyboard_01.png", "character": "romance/assets/characters/char_female.png", "scene": "romance/assets/scenes/scene_storefront.png", "prompt": "电影感写实镜头从中景缓缓推近：雨夜便利店屋檐下，一男一女并肩躲雨，两人微微侧头尴尬而好奇地初次对视，雨丝斜落，暖色路灯在湿地面投下倒影，生活化的轻微呼吸微动"},
+        {"shot": 2, "storyboard": "romance/assets/storyboards/storyboard_02.png", "character": "romance/assets/characters/char_female.png", "scene": "romance/assets/scenes/scene_storefront.png", "prompt": "极致特写：女主脸颊，雨滴沿脸颊滑落，她嘴角缓缓浮起温柔浅笑，眼神柔和望向画外，背景虚化暖色霓虹光斑轻轻晃动，写实电影感"},
+        {"shot": 3, "storyboard": "romance/assets/storyboards/storyboard_03.png", "character": "romance/assets/characters/char_male.png", "scene": "romance/assets/scenes/scene_storefront.png", "prompt": "中景：男主将手中的伞微微倾向女主一侧，两人手指在伞柄附近短暂相触又收回，男主侧脸带着腼腆笑意，雨夜暖光，自然生活化动作"},
+        {"shot": 4, "storyboard": "romance/assets/storyboards/storyboard_04.png", "character": "romance/assets/characters/char_male.png", "scene": "romance/assets/scenes/scene_storefront.png", "prompt": "长镜头跟拍：两人共撑一把伞并肩走入雨街，肩膀轻靠，步伐缓缓，身后便利店灯光渐远，雨幕与街灯拉出光轨，温暖浪漫写实"},
+        {"shot": 5, "storyboard": "romance/assets/storyboards/storyboard_05.png", "character": "romance/assets/characters/char_female.png", "scene": "romance/assets/scenes/scene_storefront.png", "prompt": "低角度诗意镜头：湿漉漉的沥青路面上，一对情侣的倒影随雨滴涟漪轻轻晃动，彩色霓虹在积水里碎成光斑，慢节奏电影感"},
+        {"shot": 6, "storyboard": "romance/assets/storyboards/storyboard_06.png", "character": "romance/assets/characters/char_female.png", "scene": "romance/assets/scenes/scene_storefront.png", "prompt": "中近景双人：屋檐下男主女主相视而笑，女主低头抿嘴，男主目光温柔，雨停后第一缕微光，暖调收尾写实电影感"}
+      ]
+    },
+    {
+      "id": "cg",
+      "title": "CG科幻《霓虹与机械猫》",
+      "shots": [
+        {"shot": 1, "storyboard": "cg/assets/storyboards/storyboard_01.png", "character": "cg/assets/characters/char_sheet_01.png", "scene": "cg/assets/scenes/scene_01.png", "prompt": "中景建立镜头：黄雨衣少女与发光机械猫静立于霓虹走廊，机械猫眼中蓝光流转，少女微微抬头环顾，体积雾缓缓飘动，UE5 3D 渲染电影感，轻微 idle 动作"},
+        {"shot": 2, "storyboard": "cg/assets/storyboards/storyboard_02.png", "character": "cg/assets/characters/char_sheet_01.png", "scene": "cg/assets/scenes/scene_01.png", "prompt": "动态跟拍：黄雨衣少女与机械猫在霓虹雨街奔跑，水花飞溅，少女雨衣下摆飘起，机械猫腾空小跳，镜头随动带运动模糊，CG 3D 渲染"},
+        {"shot": 3, "storyboard": "cg/assets/storyboards/storyboard_03.png", "character": "cg/assets/characters/char_sheet_01.png", "scene": "cg/assets/scenes/scene_01.png", "prompt": "近景：机械猫跃上少女肩头，眼中射出蓝色全息投影悬浮空中，少女仰头凝视，光影在脸上流动，赛博朋克 CG 渲染细腻互动"},
+        {"shot": 4, "storyboard": "cg/assets/storyboards/storyboard_04.png", "character": "cg/assets/characters/char_sheet_01.png", "scene": "cg/assets/scenes/scene_01.png", "prompt": "大动作镜头：少女抱起机械猫从一栋楼顶跃向另一栋，长发与雨衣在风中扬起，下方霓虹城市俯瞰，CG 3D 渲染凌厉动感"},
+        {"shot": 5, "storyboard": "cg/assets/storyboards/storyboard_05.png", "character": "cg/assets/characters/char_sheet_01.png", "scene": "cg/assets/scenes/scene_alt.png", "prompt": "收尾静镜：少女与机械猫并肩坐在天台边缘，城市天际线在身后熠熠发光，机械猫蹭了蹭少女手背，少女轻抚它的头，宁静治愈 CG 渲染"}
+      ]
+    },
+    {
+      "id": "manga",
+      "title": "漫剧二次元《下一个春天》",
+      "shots": [
+        {"shot": 1, "storyboard": "manga/assets/storyboards/storyboard_01.png", "character": "manga/assets/characters/char_girl.png", "scene": "manga/assets/scenes/scene_platform.png", "prompt": "中景建立：樱花树下的车站月台，双马尾少女用力挥手告别，列车缓缓驶离，粉色花瓣随风飞舞，少女眼神不舍又期待，日系动画厚涂动态构图"},
+        {"shot": 2, "storyboard": "manga/assets/storyboards/storyboard_02.png", "character": "manga/assets/characters/char_girl.png", "scene": "manga/assets/scenes/scene_sakura.png", "prompt": "特写：少女眼眶泛红含泪，一滴泪将落未落，她咬唇强忍，樱花瓣拂过脸颊，柔焦背景二次元动画情绪镜"},
+        {"shot": 3, "storyboard": "manga/assets/storyboards/storyboard_03.png", "character": "manga/assets/characters/char_boy.png", "scene": "manga/assets/scenes/scene_platform.png", "prompt": "中景：列车窗内少年探身将手伸出窗外，少女踮脚去握那只手，指尖几乎相触又被车速拉开，花瓣在两人之间飘落，动画分镜感"},
+        {"shot": 4, "storyboard": "manga/assets/storyboards/storyboard_04.png", "character": "manga/assets/characters/char_girl.png", "scene": "manga/assets/scenes/scene_sakura.png", "prompt": "空镜诗意：列车远去后空荡的月台，樱花花瓣持续飘落铺满地面，长椅上空无一物，淡淡哀愁日系动画背景"},
+        {"shot": 5, "storyboard": "manga/assets/storyboards/storyboard_05.png", "character": "manga/assets/characters/char_girl.png", "scene": "manga/assets/scenes/scene_platform.png", "prompt": "中景：少女背对镜头独自沿月台走去，身影渐小，肩头落满花瓣，步伐轻轻，孤单却带着希望，二次元动画"},
+        {"shot": 6, "storyboard": "manga/assets/storyboards/storyboard_06.png", "character": "manga/assets/characters/char_girl.png", "scene": "manga/assets/scenes/scene_sakura.png", "prompt": "收尾特写：少女停下脚步抬头望向天空，花瓣落满发梢，她绽放出明亮微笑，阳光透过樱枝洒下，温暖治愈日系动画 key visual"}
+      ]
+    }
+  ]
+}

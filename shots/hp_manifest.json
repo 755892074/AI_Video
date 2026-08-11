@@ -1,0 +1,19 @@
+{
+  "comfy_url": "http://100.67.139.74:8188",
+  "workflow": "shots/ep01/workflows/r2v_api.json",
+  "base_dir": "shots",
+  "sets": [
+    {
+      "id": "hp",
+      "title": "哈利波特主题《小巫师入学记》",
+      "shots": [
+        {"shot": 1, "storyboard": "hp/assets/storyboards/storyboard_01.png", "character": "hp/assets/characters/harry_original.jpg", "scene": "hp/assets/scenes/scene_castle.png", "prompt": "电影感镜头缓慢推近：戴圆框眼镜的小男孩穿着格兰芬多红金长袍，在卧室窗边伸手接住白猫头鹰丢下的信封，暖色灯光柔和，温馨奇幻氛围，轻微呼吸般的生命感"},
+        {"shot": 2, "storyboard": "hp/assets/storyboards/storyboard_02.png", "character": "hp/assets/characters/harry_original.jpg", "scene": "hp/assets/scenes/scene_platform.png", "prompt": "戴眼镜小男孩推着行李车穿过蒸汽弥漫的9¾站台，朝红发朋友挥手，白色蒸汽缓缓飘动，镜头横向跟拍，欢快明亮魔法氛围"},
+        {"shot": 3, "storyboard": "hp/assets/storyboards/storyboard_03.png", "character": "hp/assets/characters/harry_original.jpg", "scene": "hp/assets/scenes/scene_great_hall.png", "prompt": "戴眼镜小男孩头戴破旧分院帽坐在礼堂高脚凳上，上千支蜡烛光影摇曳，他露出惊讶笑容，镜头缓缓环绕，宏大魔法氛围"},
+        {"shot": 4, "storyboard": "hp/assets/storyboards/storyboard_04.png", "character": "hp/assets/characters/harry_original.jpg", "scene": "hp/assets/scenes/scene_charms.png", "prompt": "小男孩举起魔杖，杖尖迸发暖金色星光并缓缓扩散，他表情专注，镜头微距推进，空气中光粒轻轻漂浮，魔咒课氛围"},
+        {"shot": 5, "storyboard": "hp/assets/storyboards/storyboard_05.png", "character": "hp/assets/characters/harry_original.jpg", "scene": "hp/assets/scenes/scene_sky.png", "prompt": "小男孩跨坐扫帚在蓝天中腾空飞翔，伸手追抓一闪一闪的金色飞贼，长袍与头发在风中翻飞，镜头跟随上升，充满速度感与自由"},
+        {"shot": 6, "storyboard": "hp/assets/storyboards/storyboard_06.png", "character": "hp/assets/characters/harry_original.jpg", "scene": "hp/assets/scenes/scene_castle.png", "prompt": "小男孩靠在城堡窗边微笑，魔杖轻点拨亮一颗温柔星光，夜色中远处塔楼灯火点点，镜头缓慢拉远，温暖治愈收尾"}
+      ]
+    }
+  ]
+}

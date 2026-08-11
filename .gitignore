@@ -1,0 +1,40 @@
+# ===== AI_Video 工作流 · Git 忽略规则 =====
+# 原则：源码脚本 + 工作流资产（参考图/manifest/文档）纳入版本控制；
+#       所有可重生成的产物（视频/日志/表格/运行数据）排除。
+
+# --- 生成的视频（重跑 batch_r2v.py 即可重新渲染，体积大）---
+*.mp4
+
+# --- 运行日志 ---
+*.log
+
+# --- 由 make_shot_table.py 生成的镜头档案表（可重新生成）---
+shots/**/shot_table.html
+shots/**/shot_table.md
+
+# --- 项目运行数据（按规则不纳入版本控制）---
+.workbuddy/
+
+# --- Python 缓存 ---
+__pycache__/
+*.pyc
+
+# --- 系统/临时 ---
+.DS_Store
+*.tmp
+Thumbs.db
+
+# --- 生成产物区的中间帧/测试图（资产在 assets/ 目录，保留）---
+shots/**/output/**/*.png
+
+# --- 重复检测产生的副本 ---
+**/_dupes/
+
+# --- ComfyUI 节点对象信息缓存（非工作流本体）---
+**/_objinfo/
+
+# --- 归一化中间产物 ---
+**/output/_norm/
+
+# --- 字体等可重新获取的二进制资源 ---
+*.ttf

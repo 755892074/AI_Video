@@ -1,0 +1,87 @@
+{
+  "romance_01": {
+    "prompt_id": "d819a88a-5f17-42f4-9a03-c0a09535fc43",
+    "done": false,
+    "out": "F:\\WorkBuddy\\AI_Video\\shots\\romance\\output\\shot01.mp4"
+  },
+  "romance_02": {
+    "prompt_id": "55bb4e17-86e1-4e4f-a66b-b15273f4b65a",
+    "done": false,
+    "out": "F:\\WorkBuddy\\AI_Video\\shots\\romance\\output\\shot02.mp4"
+  },
+  "romance_03": {
+    "prompt_id": "5a431f61-a145-47e5-9591-1458ca114a6e",
+    "done": false,
+    "out": "F:\\WorkBuddy\\AI_Video\\shots\\romance\\output\\shot03.mp4"
+  },
+  "romance_04": {
+    "prompt_id": "b005dab9-1e73-4a11-aba1-0ea56c7341fc",
+    "done": false,
+    "out": "F:\\WorkBuddy\\AI_Video\\shots\\romance\\output\\shot04.mp4"
+  },
+  "romance_05": {
+    "prompt_id": "6c7fefdf-8b71-4415-90a2-631fbf72ab7f",
+    "done": false,
+    "out": "F:\\WorkBuddy\\AI_Video\\shots\\romance\\output\\shot05.mp4"
+  },
+  "romance_06": {
+    "prompt_id": "1b66e687-2729-463d-89a7-49b6ab38c9c4",
+    "done": false,
+    "out": "F:\\WorkBuddy\\AI_Video\\shots\\romance\\output\\shot06.mp4"
+  },
+  "cg_01": {
+    "prompt_id": "a1a37f5a-1d73-4762-b72f-38b7176e5b7b",
+    "done": false,
+    "out": "F:\\WorkBuddy\\AI_Video\\shots\\cg\\output\\shot01.mp4"
+  },
+  "cg_02": {
+    "prompt_id": "e2a307c6-4273-48aa-b57d-86a2bf6b9788",
+    "done": false,
+    "out": "F:\\WorkBuddy\\AI_Video\\shots\\cg\\output\\shot02.mp4"
+  },
+  "cg_03": {
+    "prompt_id": "017015b1-6b2c-4a08-b432-6e029ae21bb3",
+    "done": false,
+    "out": "F:\\WorkBuddy\\AI_Video\\shots\\cg\\output\\shot03.mp4"
+  },
+  "cg_04": {
+    "prompt_id": "420ebb35-5223-4a8e-b6d2-f519d5a4e3df",
+    "done": false,
+    "out": "F:\\WorkBuddy\\AI_Video\\shots\\cg\\output\\shot04.mp4"
+  },
+  "cg_05": {
+    "prompt_id": "c06bfbfa-aaa4-43e2-94f6-6a442345fe5f",
+    "done": false,
+    "out": "F:\\WorkBuddy\\AI_Video\\shots\\cg\\output\\shot05.mp4"
+  },
+  "manga_01": {
+    "prompt_id": "3adebcda-7725-450e-8dd4-ea603bc31515",
+    "done": false,
+    "out": "F:\\WorkBuddy\\AI_Video\\shots\\manga\\output\\shot01.mp4"
+  },
+  "manga_02": {
+    "prompt_id": "005c46c0-2ab6-4be0-9245-db0474b228f2",
+    "done": false,
+    "out": "F:\\WorkBuddy\\AI_Video\\shots\\manga\\output\\shot02.mp4"
+  },
+  "manga_03": {
+    "prompt_id": "4bf32b11-31e7-4872-bbaa-9d21d890f432",
+    "done": false,
+    "out": "F:\\WorkBuddy\\AI_Video\\shots\\manga\\output\\shot03.mp4"
+  },
+  "manga_04": {
+    "prompt_id": "d9153e1b-b0b4-47ef-9484-c30eba36089e",
+    "done": false,
+    "out": "F:\\WorkBuddy\\AI_Video\\shots\\manga\\output\\shot04.mp4"
+  },
+  "manga_05": {
+    "prompt_id": "cb8d8a58-3dda-441a-a995-224acda92a11",
+    "done": false,
+    "out": "F:\\WorkBuddy\\AI_Video\\shots\\manga\\output\\shot05.mp4"
+  },
+  "manga_06": {
+    "prompt_id": "929993b4-742d-4b93-bbd1-6501e668ef63",
+    "done": false,
+    "out": "F:\\WorkBuddy\\AI_Video\\shots\\manga\\output\\shot06.mp4"
+  }
+}
