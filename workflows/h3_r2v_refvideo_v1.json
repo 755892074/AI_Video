@@ -1,5 +1,5 @@
 {
- "id": null,
+ "id": "b08c1a8f-af98-46d5-9764-b12b46f63f43",
  "revision": 0,
  "last_node_id": 141,
  "last_link_id": 28,
@@ -20,24 +20,6 @@
    "mode": 0,
    "inputs": [
     {
-     "name": "filename_prefix",
-     "type": "STRING",
-     "link": null
-    },
-    {
-     "name": "format",
-     "type": "STRING",
-     "widget": {
-      "name": "format"
-     },
-     "link": null
-    },
-    {
-     "name": "codec",
-     "type": "COMFY_DYNAMICCOMBO_V3",
-     "link": null
-    },
-    {
      "name": "video",
      "type": "VIDEO",
      "link": 1
@@ -50,9 +32,7 @@
      "links": null
     }
    ],
-   "properties": {
-    "Node name for S&R": "SaveVideo"
-   },
+   "properties": {},
    "widgets_values": [
     "video/MiniMax_H3",
     "auto",
@@ -73,26 +53,7 @@
    "flags": {},
    "order": 3,
    "mode": 0,
-   "inputs": [
-    {
-     "name": "aspect_ratio",
-     "type": "STRING",
-     "widget": {
-      "name": "aspect_ratio"
-     },
-     "link": null
-    },
-    {
-     "name": "megapixels",
-     "type": "FLOAT",
-     "link": null
-    },
-    {
-     "name": "multiple",
-     "type": "INT",
-     "link": null
-    }
-   ],
+   "inputs": [],
    "outputs": [
     {
      "name": "width",
@@ -109,9 +70,7 @@
      ]
     }
    ],
-   "properties": {
-    "Node name for S&R": "ResolutionSelector"
-   },
+   "properties": {},
    "widgets_values": [
     "16:9 (Widescreen)",
     0.4,
@@ -132,13 +91,7 @@
    "flags": {},
    "order": 7,
    "mode": 0,
-   "inputs": [
-    {
-     "name": "vae_name",
-     "type": "UNKNOWN",
-     "link": null
-    }
-   ],
+   "inputs": [],
    "outputs": [
     {
      "name": "VAE",
@@ -149,9 +102,7 @@
      ]
     }
    ],
-   "properties": {
-    "Node name for S&R": "VAELoader"
-   },
+   "properties": {},
    "widgets_values": [
     "minimax_h3_video_vae_fp16.safetensors"
    ]
@@ -170,13 +121,7 @@
    "flags": {},
    "order": 8,
    "mode": 0,
-   "inputs": [
-    {
-     "name": "vae_name",
-     "type": "UNKNOWN",
-     "link": null
-    }
-   ],
+   "inputs": [],
    "outputs": [
     {
      "name": "VAE",
@@ -187,9 +132,7 @@
      ]
     }
    ],
-   "properties": {
-    "Node name for S&R": "VAELoader"
-   },
+   "properties": {},
    "widgets_values": [
     "minimax_h3_audio_vae_fp32.safetensors"
    ]
@@ -229,10 +172,8 @@
      ]
     }
    ],
-   "properties": {
-    "Node name for S&R": "VAEDecodeAudio"
-   },
-   "widgets_values": null
+   "properties": {},
+   "widgets_values": []
   },
   {
    "id": 122,
@@ -269,10 +210,8 @@
      ]
     }
    ],
-   "properties": {
-    "Node name for S&R": "VAEDecode"
-   },
-   "widgets_values": null
+   "properties": {},
+   "widgets_values": []
   },
   {
    "id": 123,
@@ -288,16 +227,7 @@
    "flags": {},
    "order": 15,
    "mode": 0,
-   "inputs": [
-    {
-     "name": "sampler_name",
-     "type": "STRING",
-     "widget": {
-      "name": "sampler_name"
-     },
-     "link": null
-    }
-   ],
+   "inputs": [],
    "outputs": [
     {
      "name": "SAMPLER",
@@ -307,9 +237,7 @@
      ]
     }
    ],
-   "properties": {
-    "Node name for S&R": "KSamplerSelect"
-   },
+   "properties": {},
    "widgets_values": [
     "res_multistep"
    ]
@@ -330,24 +258,6 @@
    "mode": 0,
    "inputs": [
     {
-     "name": "scheduler",
-     "type": "STRING",
-     "widget": {
-      "name": "scheduler"
-     },
-     "link": null
-    },
-    {
-     "name": "steps",
-     "type": "INT",
-     "link": null
-    },
-    {
-     "name": "denoise",
-     "type": "FLOAT",
-     "link": null
-    },
-    {
      "name": "model",
      "type": "MODEL",
      "link": 6
@@ -362,9 +272,7 @@
      ]
     }
    ],
-   "properties": {
-    "Node name for S&R": "BasicScheduler"
-   },
+   "properties": {},
    "widgets_values": [
     "simple",
     20,
@@ -427,10 +335,8 @@
      "links": null
     }
    ],
-   "properties": {
-    "Node name for S&R": "SamplerCustomAdvanced"
-   },
-   "widgets_values": null
+   "properties": {},
+   "widgets_values": []
   },
   {
    "id": 126,
@@ -467,10 +373,8 @@
      ]
     }
    ],
-   "properties": {
-    "Node name for S&R": "BasicGuider"
-   },
-   "widgets_values": null
+   "properties": {},
+   "widgets_values": []
   },
   {
    "id": 127,
@@ -486,18 +390,7 @@
    "flags": {},
    "order": 1,
    "mode": 0,
-   "inputs": [
-    {
-     "name": "unet_name",
-     "type": "UNKNOWN",
-     "link": null
-    },
-    {
-     "name": "weight_dtype",
-     "type": "UNKNOWN",
-     "link": null
-    }
-   ],
+   "inputs": [],
    "outputs": [
     {
      "name": "MODEL",
@@ -508,9 +401,7 @@
      ]
     }
    ],
-   "properties": {
-    "Node name for S&R": "UNETLoader"
-   },
+   "properties": {},
    "widgets_values": [
     "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
     "default"
@@ -530,23 +421,7 @@
    "flags": {},
    "order": 6,
    "mode": 0,
-   "inputs": [
-    {
-     "name": "clip_name",
-     "type": "UNKNOWN",
-     "link": null
-    },
-    {
-     "name": "type",
-     "type": "UNKNOWN",
-     "link": null
-    },
-    {
-     "name": "device",
-     "type": "UNKNOWN",
-     "link": null
-    }
-   ],
+   "inputs": [],
    "outputs": [
     {
      "name": "CLIP",
@@ -556,9 +431,7 @@
      ]
     }
    ],
-   "properties": {
-    "Node name for S&R": "CLIPLoader"
-   },
+   "properties": {},
    "widgets_values": [
     "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
     "minimax",
@@ -579,13 +452,7 @@
    "flags": {},
    "order": 0,
    "mode": 0,
-   "inputs": [
-    {
-     "name": "noise_seed",
-     "type": "INT",
-     "link": null
-    }
-   ],
+   "inputs": [],
    "outputs": [
     {
      "name": "NOISE",
@@ -595,9 +462,7 @@
      ]
     }
    ],
-   "properties": {
-    "Node name for S&R": "RandomNoise"
-   },
+   "properties": {},
    "widgets_values": [
     157368968253448
    ]
@@ -618,16 +483,6 @@
    "mode": 0,
    "inputs": [
     {
-     "name": "fps",
-     "type": "FLOAT",
-     "link": null
-    },
-    {
-     "name": "bit_depth",
-     "type": "INT",
-     "link": null
-    },
-    {
      "name": "images",
      "type": "IMAGE",
      "link": 14
@@ -647,9 +502,7 @@
      ]
     }
    ],
-   "properties": {
-    "Node name for S&R": "CreateVideo"
-   },
+   "properties": {},
    "widgets_values": [
     24,
     8
@@ -670,11 +523,6 @@
    "order": 5,
    "mode": 0,
    "inputs": [
-    {
-     "name": "expression",
-     "type": "STRING",
-     "link": null
-    },
     {
      "name": "values.a",
      "type": "IMAGE",
@@ -700,9 +548,7 @@
      "links": null
     }
    ],
-   "properties": {
-    "Node name for S&R": "ComfyMathExpression"
-   },
+   "properties": {},
    "widgets_values": [
     "max(5, round(a * 24)) + (5 - (max(5, round(a * 24)) % 17)) % 17"
    ]
@@ -721,13 +567,7 @@
    "flags": {},
    "order": 4,
    "mode": 0,
-   "inputs": [
-    {
-     "name": "value",
-     "type": "FLOAT",
-     "link": null
-    }
-   ],
+   "inputs": [],
    "outputs": [
     {
      "name": "FLOAT",
@@ -737,9 +577,7 @@
      ]
     }
    ],
-   "properties": {
-    "Node name for S&R": "PrimitiveFloat"
-   },
+   "properties": {},
    "widgets_values": [
     5
    ]
@@ -778,14 +616,6 @@
      "name": "length",
      "type": "INT",
      "link": 20
-    },
-    {
-     "name": "ref_image_size",
-     "type": "STRING",
-     "widget": {
-      "name": "ref_image_size"
-     },
-     "link": null
     },
     {
      "name": "clip",
@@ -839,9 +669,7 @@
      ]
     }
    ],
-   "properties": {
-    "Node name for S&R": "MiniMaxH3ReferenceToVideo"
-   },
+   "properties": {},
    "widgets_values": [
     "match"
    ]
@@ -860,13 +688,7 @@
    "flags": {},
    "order": 9,
    "mode": 0,
-   "inputs": [
-    {
-     "name": "image",
-     "type": "UNKNOWN",
-     "link": null
-    }
-   ],
+   "inputs": [],
    "outputs": [
     {
      "name": "IMAGE",
@@ -881,9 +703,7 @@
      "links": null
     }
    ],
-   "properties": {
-    "Node name for S&R": "LoadImage"
-   },
+   "properties": {},
    "widgets_values": [
     "red_superboy_on_city_roof.png"
    ]
@@ -902,13 +722,7 @@
    "flags": {},
    "order": 2,
    "mode": 0,
-   "inputs": [
-    {
-     "name": "value",
-     "type": "STRING",
-     "link": null
-    }
-   ],
+   "inputs": [],
    "outputs": [
     {
      "name": "STRING",
@@ -918,9 +732,7 @@
      ]
     }
    ],
-   "properties": {
-    "Node name for S&R": "PrimitiveStringMultiline"
-   },
+   "properties": {},
    "widgets_values": [
     "Bold comic-book ink style, heavy linework, red and blue-black palette, night city. Use <Picture 2> and <Picture 1> as reference frames and <Audio 1> exactly as it is.\nCUT 1: top-down view of the little boy superhero on the rooftop — red cape fluttering in the wind, hands planted on his hips, freckles and a cocky grin as he looks straight up into the camera. The camera slowly descends toward him as he delivers his line — as he speaks, comic-book graphic overlay text word by word in sync with his voice: \"GET READY TO\" - \"MEET\" — \"YOUR\" — \"MAKER\" — huge jagged comic lettering, white with heavy black outlines and red drop shadows, tilted at scrappy angles, until the three words hang stacked in the air above him between his face and the lens.\nTRANSITION: a violent WHIP PAN off the rooftop that SMEARS the floating words away with it, motion-streaked —\nCUT 2: low hero angle on the colossal black mech-kaiju towering over the skyline as it rears back and unleashes a GIANT terrifying ROAR — jaws wide with fangs, red eyes and chest-core flaring blinding bright, blue lightning arcing off its head, the roar's shockwave rippling dust and rattling windows down the buildings, comic-style speed-lines and ink splatter bursting from the impact of the sound. It leans INTO the camera as the roar peaks. Hold on the roar."
    ]
@@ -939,13 +751,7 @@
    "flags": {},
    "order": 10,
    "mode": 0,
-   "inputs": [
-    {
-     "name": "image",
-     "type": "UNKNOWN",
-     "link": null
-    }
-   ],
+   "inputs": [],
    "outputs": [
     {
      "name": "IMAGE",
@@ -960,9 +766,7 @@
      "links": null
     }
    ],
-   "properties": {
-    "Node name for S&R": "LoadImage"
-   },
+   "properties": {},
    "widgets_values": [
     "mecha_dragon_lightning.png"
    ]
@@ -981,16 +785,7 @@
    "flags": {},
    "order": 11,
    "mode": 0,
-   "inputs": [
-    {
-     "name": "file",
-     "type": "STRING",
-     "widget": {
-      "name": "file"
-     },
-     "link": null
-    }
-   ],
+   "inputs": [],
    "outputs": [
     {
      "name": "VIDEO",
@@ -1000,9 +795,7 @@
      ]
     }
    ],
-   "properties": {
-    "Node name for S&R": "LoadVideo"
-   },
+   "properties": {},
    "widgets_values": [
     "kungfu_ref.mp4"
    ]
@@ -1054,10 +847,8 @@
      "links": null
     }
    ],
-   "properties": {
-    "Node name for S&R": "GetVideoComponents"
-   },
-   "widgets_values": null
+   "properties": {},
+   "widgets_values": []
   }
  ],
  "links": [
@@ -1066,7 +857,7 @@
    130,
    0,
    92,
-   3,
+   0,
    "VIDEO"
   ],
   [
@@ -1106,7 +897,7 @@
    127,
    0,
    124,
-   3,
+   0,
    "MODEL"
   ],
   [
@@ -1170,7 +961,7 @@
    122,
    0,
    130,
-   2,
+   0,
    "IMAGE"
   ],
   [
@@ -1178,7 +969,7 @@
    121,
    0,
    130,
-   3,
+   1,
    "AUDIO"
   ],
   [
@@ -1186,7 +977,7 @@
    132,
    0,
    131,
-   1,
+   0,
    "FLOAT"
   ],
   [
@@ -1226,7 +1017,7 @@
    128,
    0,
    136,
-   5,
+   4,
    "CLIP"
   ],
   [
@@ -1234,7 +1025,7 @@
    119,
    0,
    136,
-   6,
+   5,
    "VAE"
   ],
   [
@@ -1242,7 +1033,7 @@
    120,
    0,
    136,
-   7,
+   6,
    "VAE"
   ],
   [
@@ -1250,7 +1041,7 @@
    137,
    0,
    136,
-   8,
+   7,
    "IMAGE"
   ],
   [
@@ -1258,7 +1049,7 @@
    139,
    0,
    136,
-   9,
+   8,
    "IMAGE"
   ],
   [
@@ -1266,7 +1057,7 @@
    141,
    1,
    136,
-   10,
+   9,
    "AUDIO"
   ],
   [
@@ -1274,7 +1065,7 @@
    141,
    0,
    136,
-   11,
+   10,
    "IMAGE"
   ],
   [

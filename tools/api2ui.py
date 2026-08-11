@@ -9,10 +9,14 @@ api2ui.py — 把 H3 的 API 格式工作流 ({"prompt": {...}}) 转成 ComfyUI 
 
 原理:
     1. 从台式机 ComfyUI /object_info 拉取每个节点类型的输入/输出定义
-    2. 按 API 里的实际输入值生成节点槽位（widget 或 link）
+    2. 按节点定义区分"连线输入"和"widget 参数"：
+       - 连线输入 -> 放进 node.inputs（带 link）
+       - widget 参数 -> 按节点定义顺序放进 widgets_values
     3. 自动网格排布节点位置，生成 links 数组
+
+注意: node.inputs 只放连线输入（与官方导出格式一致），widget 全部走 widgets_values。
 """
-import json, os, sys, urllib.request
+import json, os, sys, urllib.request, uuid
 
 COMFY = "http://100.67.139.74:8188"
 _cache = {}
@@ -38,8 +42,9 @@ def is_link_val(v):
     return False, None
 
 def collect_input_defs(node_def):
-    """收集节点所有输入定义: name -> (type_str, is_combo, is_dynamic)"""
+    """收集节点所有输入定义（按定义顺序）: name -> (type_str, is_combo, is_dynamic)"""
     defs = {}
+    order = []
     inp = node_def.get("input", {})
     for gname in ("required", "optional"):
         for k, v in inp.get(gname, {}).items():
@@ -51,64 +56,60 @@ def collect_input_defs(node_def):
                     if v[0] == "COMFY_AUTOGROW_V3" or v[0].startswith("COMFY_AUTOGROW"):
                         dyn = True
                         t = "IMAGE"
-                    elif v[0] == "COMBO":
+                    elif v[0] == "COMBO" or v[0] == "COMFY_DYNAMICCOMBO_V3":
                         combo = True
                         t = "STRING"
                     else:
                         t = v[0]
             defs[k] = (t, combo, dyn)
-    return defs
+            order.append((k, gname))
+    return defs, order
 
-def build_ui_node(api_id, api_node, node_def, inputs_defs):
-    """构建一个 UI 节点，返回 (node, input_slots)
-    input_slots: [(ui_index, input_name, from_node, from_slot)] 或 None
+def build_ui_node(api_id, api_node, node_def, inputs_defs, input_order):
+    """构建一个 UI 节点。
+    返回 (node, slots)  slots: [(ui_input_index, in_name, from_node, from_slot)]
     """
     api_inputs = api_node.get("inputs", {})
     ui_inputs = []
     ui_outputs = []
     widgets = []
-    slots = []  # (ui_index, name, from_node, from_slot)
+    slots = []
 
-    # 静态输入（不含 . 前缀）
+    # 收集动态键（ref_images.ref_image_0 等）
+    dyn_keys = [k for k in api_inputs if "." in k]
+    stat_keys = [k for k in api_inputs if "." not in k]
+
+    # --- 静态输入：只把"连线输入"放进 inputs，widget 值进 widgets_values ---
     for name, val in api_inputs.items():
         if "." in name:
             continue
-        t, combo, dyn = inputs_defs.get(name, ("UNKNOWN", False, False))
         link, link_info = is_link_val(val)
-        entry = {"name": name, "type": t if not combo else "STRING"}
-        if combo:
-            entry["widget"] = {"name": name}
+        t, combo, dyn = inputs_defs.get(name, ("UNKNOWN", False, False))
         if link:
-            entry["link"] = None
-            slots.append((len(ui_inputs), name, link_info[0], link_info[1]))
-        else:
-            entry["link"] = None
-            if not combo:
-                widgets.append(val)
-            else:
-                widgets.append(val)
-        ui_inputs.append(entry)
-
-    # 动态键（ref_images.ref_image_0 等）
-    dyn_groups = {}
-    for name, val in api_inputs.items():
-        if "." in name:
-            prefix = name.split(".")[0]
-            dyn_groups.setdefault(prefix, []).append((name, val))
-    for prefix, items in sorted(dyn_groups.items()):
-        for name, val in items:
-            t = "IMAGE"
-            link, link_info = is_link_val(val)
             entry = {"name": name, "type": t}
-            if link:
-                entry["link"] = None
-                slots.append((len(ui_inputs), name, link_info[0], link_info[1]))
-            else:
-                entry["link"] = None
-                widgets.append(val)
+            entry["link"] = None
             ui_inputs.append(entry)
+            slots.append((len(ui_inputs) - 1, name, link_info[0], link_info[1]))
+        else:
+            # widget 值，不放进 inputs
+            widgets.append(val)
 
-    # 输出槽位
+    # --- 动态键（ref_images.ref_image_0 等）：都是 IMAGE 连线输入 ---
+    dyn_groups = {}
+    for name in dyn_keys:
+        prefix = name.split(".")[0]
+        dyn_groups.setdefault(prefix, []).append(name)
+    for prefix, names in sorted(dyn_groups.items()):
+        for name in names:
+            val = api_inputs[name]
+            link, link_info = is_link_val(val)
+            if link:
+                entry = {"name": name, "type": "IMAGE"}
+                entry["link"] = None
+                ui_inputs.append(entry)
+                slots.append((len(ui_inputs) - 1, name, link_info[0], link_info[1]))
+
+    # --- 输出槽位 ---
     outs = node_def.get("output", [])
     out_names = node_def.get("output_name", [])
     for i, t in enumerate(outs):
@@ -125,8 +126,8 @@ def build_ui_node(api_id, api_node, node_def, inputs_defs):
         "mode": 0,
         "inputs": ui_inputs,
         "outputs": ui_outputs,
-        "properties": {"Node name for S&R": api_node["class_type"]},
-        "widgets_values": widgets if widgets else None,
+        "properties": {},
+        "widgets_values": widgets if widgets else [],
     }
     return node, slots
 
@@ -136,19 +137,18 @@ def convert(api_json, comfy=COMFY):
     prompt = api_json["prompt"] if "prompt" in api_json else api_json
     ids = list(prompt.keys())
 
-    # 第一遍：构建所有节点，记录 input 槽位映射
     nodes = []
-    slots_map = {}  # api_id -> [(ui_index, in_name, from_api, from_slot)]
+    slots_map = {}
     id_set = set(ids)
     for api_id in ids:
         api_node = prompt[api_id]
         node_def = get_node_def(api_node["class_type"])
-        inputs_defs = collect_input_defs(node_def)
-        node, slots = build_ui_node(api_id, api_node, node_def, inputs_defs)
+        inputs_defs, input_order = collect_input_defs(node_def)
+        node, slots = build_ui_node(api_id, api_node, node_def, inputs_defs, input_order)
         nodes.append(node)
         slots_map[api_id] = slots
 
-    # 网格布局（拓扑粗排：被依赖的节点放前面）
+    # 拓扑排序（被依赖节点排前面）
     order = {}
     visited = set()
     def visit(api_id):
@@ -162,7 +162,6 @@ def convert(api_json, comfy=COMFY):
     for api_id in ids:
         visit(api_id)
 
-    # 根据 order 分配位置
     nx, ny = 0, 0
     for api_id in sorted(order, key=order.get):
         node = next(n for n in nodes if n["id"] == int(api_id))
@@ -173,31 +172,27 @@ def convert(api_json, comfy=COMFY):
             nx = 0
             ny += 240
 
-    # 第二遍：生成 links
+    # 生成 links
     links = []
     link_id = 1
-    # 建立 node_id -> node 索引
     node_by_id = {n["id"]: n for n in nodes}
-    # 建立 (node_id, in_name) -> ui_input_index
     input_idx = {}
     for n in nodes:
         for i, inp in enumerate(n["inputs"]):
             input_idx[(n["id"], inp["name"])] = i
-    # 建立 (node_id, out_slot) -> 输出类型
     out_type = {}
     for n in nodes:
         for i, o in enumerate(n["outputs"]):
             out_type[(n["id"], i)] = o["type"]
 
     for api_id in ids:
-        ui_src = int(api_id)  # 目标节点（输入方）
+        ui_src = int(api_id)
         for ui_in_idx, in_name, from_api, from_slot in slots_map.get(api_id, []):
             if from_api not in id_set:
                 continue
-            ui_dst = int(from_api)  # 源节点（输出方）
+            ui_dst = int(from_api)
             ltype = out_type.get((ui_dst, from_slot), "IMAGE")
             links.append([link_id, ui_dst, from_slot, ui_src, ui_in_idx, ltype])
-            # 回填
             node_by_id[ui_src]["inputs"][ui_in_idx]["link"] = link_id
             if node_by_id[ui_dst]["outputs"][from_slot]["links"] is None:
                 node_by_id[ui_dst]["outputs"][from_slot]["links"] = []
@@ -205,7 +200,7 @@ def convert(api_json, comfy=COMFY):
             link_id += 1
 
     return {
-        "id": None,
+        "id": str(uuid.uuid4()),
         "revision": 0,
         "last_node_id": max(int(i) for i in ids),
         "last_link_id": link_id - 1,
