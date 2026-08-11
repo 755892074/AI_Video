@@ -205,6 +205,14 @@
         "audio_vae": [
           "120",
           0
+        ],
+        "ref_videos.ref_video_0": [
+          "141",
+          0
+        ],
+        "ref_video_audios.ref_video_audio_0": [
+          "141",
+          1
         ]
       }
     },
@@ -224,6 +232,21 @@
       "class_type": "LoadImage",
       "inputs": {
         "image": "mecha_dragon_lightning.png"
+      }
+    },
+    "140": {
+      "class_type": "LoadVideo",
+      "inputs": {
+        "file": "kungfu_ref.mp4"
+      }
+    },
+    "141": {
+      "class_type": "GetVideoComponents",
+      "inputs": {
+        "video": [
+          "140",
+          0
+        ]
       }
     }
   }

@@ -1,0 +1,1167 @@
+{
+ "id": null,
+ "revision": 0,
+ "last_node_id": 139,
+ "last_link_id": 25,
+ "nodes": [
+  {
+   "id": 92,
+   "type": "SaveVideo",
+   "pos": [
+    1360,
+    720
+   ],
+   "size": [
+    300,
+    100
+   ],
+   "flags": {},
+   "order": 19,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "filename_prefix",
+     "type": "STRING",
+     "link": null
+    },
+    {
+     "name": "format",
+     "type": "STRING",
+     "widget": {
+      "name": "format"
+     },
+     "link": null
+    },
+    {
+     "name": "codec",
+     "type": "COMFY_DYNAMICCOMBO_V3",
+     "link": null
+    },
+    {
+     "name": "video",
+     "type": "VIDEO",
+     "link": 1
+    }
+   ],
+   "outputs": [
+    {
+     "name": "video",
+     "type": "VIDEO",
+     "links": null
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "SaveVideo"
+   },
+   "widgets_values": [
+    "video/MiniMax_H3",
+    "auto",
+    "auto"
+   ]
+  },
+  {
+   "id": 115,
+   "type": "ResolutionSelector",
+   "pos": [
+    1020,
+    0
+   ],
+   "size": [
+    300,
+    100
+   ],
+   "flags": {},
+   "order": 3,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "aspect_ratio",
+     "type": "STRING",
+     "widget": {
+      "name": "aspect_ratio"
+     },
+     "link": null
+    },
+    {
+     "name": "megapixels",
+     "type": "FLOAT",
+     "link": null
+    },
+    {
+     "name": "multiple",
+     "type": "INT",
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "name": "width",
+     "type": "INT",
+     "links": [
+      18
+     ]
+    },
+    {
+     "name": "height",
+     "type": "INT",
+     "links": [
+      19
+     ]
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "ResolutionSelector"
+   },
+   "widgets_values": [
+    "16:9 (Widescreen)",
+    0.4,
+    32
+   ]
+  },
+  {
+   "id": 119,
+   "type": "VAELoader",
+   "pos": [
+    680,
+    240
+   ],
+   "size": [
+    300,
+    100
+   ],
+   "flags": {},
+   "order": 7,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "vae_name",
+     "type": "UNKNOWN",
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "name": "VAE",
+     "type": "VAE",
+     "links": [
+      5,
+      22
+     ]
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "VAELoader"
+   },
+   "widgets_values": [
+    "minimax_h3_video_vae_fp16.safetensors"
+   ]
+  },
+  {
+   "id": 120,
+   "type": "VAELoader",
+   "pos": [
+    1020,
+    240
+   ],
+   "size": [
+    300,
+    100
+   ],
+   "flags": {},
+   "order": 8,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "vae_name",
+     "type": "UNKNOWN",
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "name": "VAE",
+     "type": "VAE",
+     "links": [
+      3,
+      23
+     ]
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "VAELoader"
+   },
+   "widgets_values": [
+    "minimax_h3_audio_vae_fp32.safetensors"
+   ]
+  },
+  {
+   "id": 121,
+   "type": "VAEDecodeAudio",
+   "pos": [
+    680,
+    720
+   ],
+   "size": [
+    300,
+    100
+   ],
+   "flags": {},
+   "order": 17,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "samples",
+     "type": "LATENT",
+     "link": 2
+    },
+    {
+     "name": "vae",
+     "type": "VAE",
+     "link": 3
+    }
+   ],
+   "outputs": [
+    {
+     "name": "AUDIO",
+     "type": "AUDIO",
+     "links": [
+      15
+     ]
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "VAEDecodeAudio"
+   },
+   "widgets_values": null
+  },
+  {
+   "id": 122,
+   "type": "VAEDecode",
+   "pos": [
+    340,
+    720
+   ],
+   "size": [
+    300,
+    100
+   ],
+   "flags": {},
+   "order": 16,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "samples",
+     "type": "LATENT",
+     "link": 4
+    },
+    {
+     "name": "vae",
+     "type": "VAE",
+     "link": 5
+    }
+   ],
+   "outputs": [
+    {
+     "name": "IMAGE",
+     "type": "IMAGE",
+     "links": [
+      14
+     ]
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "VAEDecode"
+   },
+   "widgets_values": null
+  },
+  {
+   "id": 123,
+   "type": "KSamplerSelect",
+   "pos": [
+    1020,
+    480
+   ],
+   "size": [
+    300,
+    100
+   ],
+   "flags": {},
+   "order": 13,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "sampler_name",
+     "type": "STRING",
+     "widget": {
+      "name": "sampler_name"
+     },
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "name": "SAMPLER",
+     "type": "SAMPLER",
+     "links": [
+      9
+     ]
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "KSamplerSelect"
+   },
+   "widgets_values": [
+    "res_multistep"
+   ]
+  },
+  {
+   "id": 124,
+   "type": "BasicScheduler",
+   "pos": [
+    1360,
+    480
+   ],
+   "size": [
+    300,
+    100
+   ],
+   "flags": {},
+   "order": 14,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "scheduler",
+     "type": "STRING",
+     "widget": {
+      "name": "scheduler"
+     },
+     "link": null
+    },
+    {
+     "name": "steps",
+     "type": "INT",
+     "link": null
+    },
+    {
+     "name": "denoise",
+     "type": "FLOAT",
+     "link": null
+    },
+    {
+     "name": "model",
+     "type": "MODEL",
+     "link": 6
+    }
+   ],
+   "outputs": [
+    {
+     "name": "SIGMAS",
+     "type": "SIGMAS",
+     "links": [
+      10
+     ]
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "BasicScheduler"
+   },
+   "widgets_values": [
+    "simple",
+    20,
+    1
+   ]
+  },
+  {
+   "id": 125,
+   "type": "SamplerCustomAdvanced",
+   "pos": [
+    0,
+    720
+   ],
+   "size": [
+    300,
+    100
+   ],
+   "flags": {},
+   "order": 15,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "noise",
+     "type": "NOISE",
+     "link": 7
+    },
+    {
+     "name": "guider",
+     "type": "GUIDER",
+     "link": 8
+    },
+    {
+     "name": "sampler",
+     "type": "SAMPLER",
+     "link": 9
+    },
+    {
+     "name": "sigmas",
+     "type": "SIGMAS",
+     "link": 10
+    },
+    {
+     "name": "latent_image",
+     "type": "LATENT",
+     "link": 11
+    }
+   ],
+   "outputs": [
+    {
+     "name": "output",
+     "type": "LATENT",
+     "links": [
+      2,
+      4
+     ]
+    },
+    {
+     "name": "denoised_output",
+     "type": "LATENT",
+     "links": null
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "SamplerCustomAdvanced"
+   },
+   "widgets_values": null
+  },
+  {
+   "id": 126,
+   "type": "BasicGuider",
+   "pos": [
+    680,
+    480
+   ],
+   "size": [
+    300,
+    100
+   ],
+   "flags": {},
+   "order": 12,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "model",
+     "type": "MODEL",
+     "link": 12
+    },
+    {
+     "name": "conditioning",
+     "type": "CONDITIONING",
+     "link": 13
+    }
+   ],
+   "outputs": [
+    {
+     "name": "GUIDER",
+     "type": "GUIDER",
+     "links": [
+      8
+     ]
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "BasicGuider"
+   },
+   "widgets_values": null
+  },
+  {
+   "id": 127,
+   "type": "UNETLoader",
+   "pos": [
+    340,
+    0
+   ],
+   "size": [
+    300,
+    100
+   ],
+   "flags": {},
+   "order": 1,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "unet_name",
+     "type": "UNKNOWN",
+     "link": null
+    },
+    {
+     "name": "weight_dtype",
+     "type": "UNKNOWN",
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "name": "MODEL",
+     "type": "MODEL",
+     "links": [
+      6,
+      12
+     ]
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "UNETLoader"
+   },
+   "widgets_values": [
+    "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+    "default"
+   ]
+  },
+  {
+   "id": 128,
+   "type": "CLIPLoader",
+   "pos": [
+    340,
+    240
+   ],
+   "size": [
+    300,
+    100
+   ],
+   "flags": {},
+   "order": 6,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "clip_name",
+     "type": "UNKNOWN",
+     "link": null
+    },
+    {
+     "name": "type",
+     "type": "UNKNOWN",
+     "link": null
+    },
+    {
+     "name": "device",
+     "type": "UNKNOWN",
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "name": "CLIP",
+     "type": "CLIP",
+     "links": [
+      21
+     ]
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "CLIPLoader"
+   },
+   "widgets_values": [
+    "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+    "minimax",
+    "default"
+   ]
+  },
+  {
+   "id": 129,
+   "type": "RandomNoise",
+   "pos": [
+    0,
+    0
+   ],
+   "size": [
+    300,
+    100
+   ],
+   "flags": {},
+   "order": 0,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "noise_seed",
+     "type": "INT",
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "name": "NOISE",
+     "type": "NOISE",
+     "links": [
+      7
+     ]
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "RandomNoise"
+   },
+   "widgets_values": [
+    157368968253448
+   ]
+  },
+  {
+   "id": 130,
+   "type": "CreateVideo",
+   "pos": [
+    1020,
+    720
+   ],
+   "size": [
+    300,
+    100
+   ],
+   "flags": {},
+   "order": 18,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "fps",
+     "type": "FLOAT",
+     "link": null
+    },
+    {
+     "name": "bit_depth",
+     "type": "INT",
+     "link": null
+    },
+    {
+     "name": "images",
+     "type": "IMAGE",
+     "link": 14
+    },
+    {
+     "name": "audio",
+     "type": "AUDIO",
+     "link": 15
+    }
+   ],
+   "outputs": [
+    {
+     "name": "VIDEO",
+     "type": "VIDEO",
+     "links": [
+      1
+     ]
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "CreateVideo"
+   },
+   "widgets_values": [
+    24,
+    8
+   ]
+  },
+  {
+   "id": 131,
+   "type": "ComfyMathExpression",
+   "pos": [
+    0,
+    240
+   ],
+   "size": [
+    300,
+    100
+   ],
+   "flags": {},
+   "order": 5,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "expression",
+     "type": "STRING",
+     "link": null
+    },
+    {
+     "name": "values.a",
+     "type": "IMAGE",
+     "link": 16
+    }
+   ],
+   "outputs": [
+    {
+     "name": "FLOAT",
+     "type": "FLOAT",
+     "links": null
+    },
+    {
+     "name": "INT",
+     "type": "INT",
+     "links": [
+      20
+     ]
+    },
+    {
+     "name": "BOOL",
+     "type": "BOOLEAN",
+     "links": null
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "ComfyMathExpression"
+   },
+   "widgets_values": [
+    "max(5, round(a * 24)) + (5 - (max(5, round(a * 24)) % 17)) % 17"
+   ]
+  },
+  {
+   "id": 132,
+   "type": "PrimitiveFloat",
+   "pos": [
+    1360,
+    0
+   ],
+   "size": [
+    300,
+    100
+   ],
+   "flags": {},
+   "order": 4,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "value",
+     "type": "FLOAT",
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "name": "FLOAT",
+     "type": "FLOAT",
+     "links": [
+      16
+     ]
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "PrimitiveFloat"
+   },
+   "widgets_values": [
+    10.0
+   ]
+  },
+  {
+   "id": 136,
+   "type": "MiniMaxH3ReferenceToVideo",
+   "pos": [
+    340,
+    480
+   ],
+   "size": [
+    300,
+    100
+   ],
+   "flags": {},
+   "order": 11,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "prompt",
+     "type": "STRING",
+     "link": 17
+    },
+    {
+     "name": "width",
+     "type": "INT",
+     "link": 18
+    },
+    {
+     "name": "height",
+     "type": "INT",
+     "link": 19
+    },
+    {
+     "name": "length",
+     "type": "INT",
+     "link": 20
+    },
+    {
+     "name": "ref_image_size",
+     "type": "STRING",
+     "widget": {
+      "name": "ref_image_size"
+     },
+     "link": null
+    },
+    {
+     "name": "clip",
+     "type": "CLIP",
+     "link": 21
+    },
+    {
+     "name": "vae",
+     "type": "VAE",
+     "link": 22
+    },
+    {
+     "name": "audio_vae",
+     "type": "VAE",
+     "link": 23
+    },
+    {
+     "name": "ref_images.ref_image_0",
+     "type": "IMAGE",
+     "link": 24
+    },
+    {
+     "name": "ref_images.ref_image_1",
+     "type": "IMAGE",
+     "link": 25
+    }
+   ],
+   "outputs": [
+    {
+     "name": "positive",
+     "type": "CONDITIONING",
+     "links": [
+      13
+     ]
+    },
+    {
+     "name": "LATENT",
+     "type": "LATENT",
+     "links": [
+      11
+     ]
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "MiniMaxH3ReferenceToVideo"
+   },
+   "widgets_values": [
+    "match"
+   ]
+  },
+  {
+   "id": 137,
+   "type": "LoadImage",
+   "pos": [
+    1360,
+    240
+   ],
+   "size": [
+    300,
+    100
+   ],
+   "flags": {},
+   "order": 9,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "image",
+     "type": "UNKNOWN",
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "name": "IMAGE",
+     "type": "IMAGE",
+     "links": [
+      24
+     ]
+    },
+    {
+     "name": "MASK",
+     "type": "MASK",
+     "links": null
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "LoadImage"
+   },
+   "widgets_values": [
+    "red_superboy_on_city_roof.png"
+   ]
+  },
+  {
+   "id": 138,
+   "type": "PrimitiveStringMultiline",
+   "pos": [
+    680,
+    0
+   ],
+   "size": [
+    300,
+    100
+   ],
+   "flags": {},
+   "order": 2,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "value",
+     "type": "STRING",
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "name": "STRING",
+     "type": "STRING",
+     "links": [
+      17
+     ]
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "PrimitiveStringMultiline"
+   },
+   "widgets_values": [
+    "Bold comic-book ink style, heavy linework, red and blue-black palette, night city. Use <Picture 2> and <Picture 1> as reference frames and <Audio 1> exactly as it is.\nCUT 1: top-down view of the little boy superhero on the rooftop — red cape fluttering in the wind, hands planted on his hips, freckles and a cocky grin as he looks straight up into the camera. The camera slowly descends toward him as he delivers his line — as he speaks, comic-book graphic overlay text word by word in sync with his voice: \"GET READY TO\" - \"MEET\" — \"YOUR\" — \"MAKER\" — huge jagged comic lettering, white with heavy black outlines and red drop shadows, tilted at scrappy angles, until the three words hang stacked in the air above him between his face and the lens.\nTRANSITION: a violent WHIP PAN off the rooftop that SMEARS the floating words away with it, motion-streaked —\nCUT 2: low hero angle on the colossal black mech-kaiju towering over the skyline as it rears back and unleashes a GIANT terrifying ROAR — jaws wide with fangs, red eyes and chest-core flaring blinding bright, blue lightning arcing off its head, the roar's shockwave rippling dust and rattling windows down the buildings, comic-style speed-lines and ink splatter bursting from the impact of the sound. It leans INTO the camera as the roar peaks. Hold on the roar."
+   ]
+  },
+  {
+   "id": 139,
+   "type": "LoadImage",
+   "pos": [
+    0,
+    480
+   ],
+   "size": [
+    300,
+    100
+   ],
+   "flags": {},
+   "order": 10,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "image",
+     "type": "UNKNOWN",
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "name": "IMAGE",
+     "type": "IMAGE",
+     "links": [
+      25
+     ]
+    },
+    {
+     "name": "MASK",
+     "type": "MASK",
+     "links": null
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "LoadImage"
+   },
+   "widgets_values": [
+    "mecha_dragon_lightning.png"
+   ]
+  }
+ ],
+ "links": [
+  [
+   1,
+   130,
+   0,
+   92,
+   3,
+   "VIDEO"
+  ],
+  [
+   2,
+   125,
+   0,
+   121,
+   0,
+   "LATENT"
+  ],
+  [
+   3,
+   120,
+   0,
+   121,
+   1,
+   "VAE"
+  ],
+  [
+   4,
+   125,
+   0,
+   122,
+   0,
+   "LATENT"
+  ],
+  [
+   5,
+   119,
+   0,
+   122,
+   1,
+   "VAE"
+  ],
+  [
+   6,
+   127,
+   0,
+   124,
+   3,
+   "MODEL"
+  ],
+  [
+   7,
+   129,
+   0,
+   125,
+   0,
+   "NOISE"
+  ],
+  [
+   8,
+   126,
+   0,
+   125,
+   1,
+   "GUIDER"
+  ],
+  [
+   9,
+   123,
+   0,
+   125,
+   2,
+   "SAMPLER"
+  ],
+  [
+   10,
+   124,
+   0,
+   125,
+   3,
+   "SIGMAS"
+  ],
+  [
+   11,
+   136,
+   1,
+   125,
+   4,
+   "LATENT"
+  ],
+  [
+   12,
+   127,
+   0,
+   126,
+   0,
+   "MODEL"
+  ],
+  [
+   13,
+   136,
+   0,
+   126,
+   1,
+   "CONDITIONING"
+  ],
+  [
+   14,
+   122,
+   0,
+   130,
+   2,
+   "IMAGE"
+  ],
+  [
+   15,
+   121,
+   0,
+   130,
+   3,
+   "AUDIO"
+  ],
+  [
+   16,
+   132,
+   0,
+   131,
+   1,
+   "FLOAT"
+  ],
+  [
+   17,
+   138,
+   0,
+   136,
+   0,
+   "STRING"
+  ],
+  [
+   18,
+   115,
+   0,
+   136,
+   1,
+   "INT"
+  ],
+  [
+   19,
+   115,
+   1,
+   136,
+   2,
+   "INT"
+  ],
+  [
+   20,
+   131,
+   1,
+   136,
+   3,
+   "INT"
+  ],
+  [
+   21,
+   128,
+   0,
+   136,
+   5,
+   "CLIP"
+  ],
+  [
+   22,
+   119,
+   0,
+   136,
+   6,
+   "VAE"
+  ],
+  [
+   23,
+   120,
+   0,
+   136,
+   7,
+   "VAE"
+  ],
+  [
+   24,
+   137,
+   0,
+   136,
+   8,
+   "IMAGE"
+  ],
+  [
+   25,
+   139,
+   0,
+   136,
+   9,
+   "IMAGE"
+  ]
+ ],
+ "groups": [],
+ "config": {},
+ "extra": {},
+ "version": 0.4
+}

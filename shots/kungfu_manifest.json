@@ -1,0 +1,190 @@
+{
+  "workflow": "shots/ep01/workflows/r2v_api.json",
+  "sets": [
+    {
+      "id": "kungfu",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "kungfu/assets/characters/Photorealistic_character_refer_2026-08-11T10-33-35.png",
+          "character": "kungfu/assets/characters/Photorealistic_character_refer_2026-08-11T10-34-03.png",
+          "scene": "kungfu/assets/scenes/Photorealistic_photograph_of_a_2026-08-11T10-29-39.png",
+          "ref_video": "kungfu/assets/references/kungfu_ref.mp4",
+          "ref2va": {
+            "camera": "镜头：全景(WS)稳定架拍，展示整条走廊；自然光从窗外打入，双人呈对峙姿态。",
+            "subject_definitions": [
+              "<Subject 1> 是 <Picture 1> 中的男生A：清瘦瓜子脸、黑色短发齐刘海、细框金属眼镜，身穿蓝白运动校服外套（拉链款）、白色内搭衬衫、深蓝运动裤（白边条纹）、白色运动鞋。",
+              "<Subject 2> 是 <Picture 2> 中的男生B：微壮圆脸、棕色短发，身穿蓝白运动校服外套（拉链款）、白色内搭衬衫、深蓝运动裤（白边条纹）、黑色板鞋。",
+              "<Subject 3> 是 <Picture 3> 中的校园走廊：白天、空旷走廊、两侧是储物柜(lockers)、大窗户透入自然光、地面是光滑瓷砖、远处可见楼梯口。",
+              "<Subject 4> 是走廊墙上挂着的消防灭火器：红色，金属质感，固定在墙上。"
+            ],
+            "summary": "目标视频展示男生A与男生B在走廊对峙，气氛紧张，即将爆发冲突。",
+            "retention_analysis": [
+              "<Subject 1> (出现在 [Shot 1])：完全保留——A的清瘦脸型、眼镜、蓝白运动校服校服。",
+              "<Subject 2> (出现在 [Shot 1])：完全保留——B的圆脸、棕发、蓝白运动校服校服。",
+              "<Subject 3> (出现在 [Shot 1])：完全保留——走廊、储物柜、窗户自然光。"
+            ],
+            "detailed_description": "[Shot 1] 写实真人功夫片风格，贴身搏击。男生A(<Subject 1>)与男生B(<Subject 2>)在<Subject 3>走廊中央扭打缠斗，A一个猛烈的过肩摔将B狠狠摔倒在地，B的后背重重砸在瓷砖地面上。A随即整个人跨骑在B身上，左膝压住B的胸口，左手按住B的肩膀，右手握拳连续重拳砸向B面部。B躺在地上用双臂格挡，被一拳接一拳打得毫无还手之力，身体在A身下挣扎扭动。A的拳头如雨点般密集落下，每一下都带着狠劲，校服外套在剧烈动作中掀起褶皱。阳光从窗外斜射，在两人身上投下晃动的光影。A一边挥拳一边怒吼：<d>[中文] 认不认输！</d>",
+            "overall_soundscape": "走廊远处传来的课间嘈杂声，两人沉重的呼吸声，脚步声在瓷砖上的轻微回响。",
+            "non_diegetic_music": "低沉的鼓点开始渐起，暗示冲突即将爆发。"
+          }
+        },
+        {
+          "shot": 2,
+          "storyboard": "kungfu/assets/characters/Photorealistic_character_refer_2026-08-11T10-33-35.png",
+          "character": "kungfu/assets/characters/Photorealistic_character_refer_2026-08-11T10-34-03.png",
+          "scene": "kungfu/assets/scenes/Photorealistic_photograph_of_a_2026-08-11T10-29-39.png",
+          "ref2va": {
+            "camera": "镜头：快速推轨(dolly-in)中景(MS)，从走廊一端急速推向对峙中心。",
+            "subject_definitions": [
+              "<Subject 1> 是 <Picture 1> 中的男生A：清瘦、眼镜、蓝白运动校服校服。",
+              "<Subject 2> 是 <Picture 2> 中的男生B：微壮圆脸、蓝白运动校服校服。",
+              "<Subject 3> 是 <Picture 3> 中的校园走廊：储物柜、窗户自然光、瓷砖地面。"
+            ],
+            "summary": "承接上一镜。B率先发起攻击，冲向A。",
+            "retention_analysis": [
+              "<Subject 1> (出现在 [Shot 2])：完全保留——A的清瘦、眼镜、校服。",
+              "<Subject 2> (出现在 [Shot 2])：完全保留——B的微壮、校服。"
+            ],
+            "detailed_description": "[Shot 2] 承接上一镜，同一场景同款服装。B(<Subject 2>)突然暴起，右腿蹬地，整个人如离弦之箭冲向A(<Subject 1>)。镜头急速推轨跟随B的动作，瓷砖地面在脚下飞速后退。A瞳孔微缩，迅速调整站姿应对。B怒吼：<d>[中文] 少废话！</d>",
+            "overall_soundscape": "急促的脚步声在走廊瓷砖上回响，B的怒吼，衣物摩擦声。",
+            "non_diegetic_music": "鼓点骤然加速，弦乐紧张上行。"
+          }
+        },
+        {
+          "shot": 3,
+          "storyboard": "kungfu/assets/characters/Photorealistic_character_refer_2026-08-11T10-33-35.png",
+          "character": "kungfu/assets/characters/Photorealistic_character_refer_2026-08-11T10-34-03.png",
+          "scene": "kungfu/assets/scenes/Photorealistic_photograph_of_a_2026-08-11T10-29-39.png",
+          "ref2va": {
+            "camera": "镜头：低角度仰拍(low-angle)近景(CU)，捕捉A闪避动作；手持晃动增强临场感。",
+            "subject_definitions": [
+              "<Subject 1> 是 <Picture 1> 中的男生A：清瘦、眼镜、蓝白运动校服校服。",
+              "<Subject 2> 是 <Picture 2> 中的男生B：微壮圆脸、蓝白运动校服校服。",
+              "<Subject 3> 是 <Picture 3> 中的校园走廊：储物柜、窗户自然光。"
+            ],
+            "summary": "承接上一镜。A侧身闪避B的直拳，动作利落。",
+            "retention_analysis": [
+              "<Subject 1> (出现在 [Shot 3])：完全保留——A的清瘦、眼镜、校服。",
+              "<Subject 2> (出现在 [Shot 3])：完全保留——B的微壮、校服。"
+            ],
+            "detailed_description": "[Shot 3] 承接上一镜，同一场景同款服装。B(<Subject 2>)右拳直直轰向A(<Subject 1>)面门。A身体如柳枝般侧弯，拳风擦着鼻尖掠过。A同时左手顺势抓住B手腕，借力一拧。B失去重心向前踉跄。低角度镜头捕捉到A眼镜片反射的冷光。",
+            "overall_soundscape": "拳风呼啸，B的拳头落空时的闷响，A制服衬衫的摩擦声，B踉跄时脚步的杂乱声。",
+            "non_diegetic_music": "弦乐快速滑音，打击乐重击。"
+          }
+        },
+        {
+          "shot": 4,
+          "storyboard": "kungfu/assets/characters/Photorealistic_character_refer_2026-08-11T10-33-35.png",
+          "character": "kungfu/assets/characters/Photorealistic_character_refer_2026-08-11T10-34-03.png",
+          "scene": "kungfu/assets/scenes/Photorealistic_photograph_of_a_2026-08-11T10-29-39.png",
+          "ref2va": {
+            "camera": "镜头：环绕轨道(orbit shot)中景(MS)，360度环绕两人打斗；手持晃动。",
+            "subject_definitions": [
+              "<Subject 1> 是 <Picture 1> 中的男生A：清瘦、眼镜、蓝白运动校服校服。",
+              "<Subject 2> 是 <Picture 2> 中的男生B：微壮圆脸、蓝白运动校服校服。",
+              "<Subject 3> 是 <Picture 3> 中的校园走廊：储物柜、窗户自然光。"
+            ],
+            "summary": "承接上一镜。两人开始近身缠斗，互有攻防。",
+            "retention_analysis": [
+              "<Subject 1> (出现在 [Shot 4])：完全保留——A的清瘦、眼镜、校服。",
+              "<Subject 2> (出现在 [Shot 4])：完全保留——B的微壮、校服。"
+            ],
+            "detailed_description": "[Shot 4] 承接上一镜，同一场景同款服装。镜头环绕两人旋转。B(<Subject 2>)稳住身形后旋身一记扫腿，A(<Subject 1>)向后跃起闪避，落地时顺势踢向B肩膀。B双臂交叉格挡，被踢得后退一步。两人再次对峙，呼吸粗重。背景<Subject 3>的储物柜在旋转中模糊。",
+            "overall_soundscape": "两人的喘息声，腿脚碰撞时的闷响，衣物剧烈摩擦声，瓷砖地面的脚步声。",
+            "non_diegetic_music": "快节奏的打击乐与电吉他riff交织。"
+          }
+        },
+        {
+          "shot": 5,
+          "storyboard": "kungfu/assets/characters/Photorealistic_character_refer_2026-08-11T10-33-35.png",
+          "character": "kungfu/assets/characters/Photorealistic_character_refer_2026-08-11T10-34-03.png",
+          "scene": "kungfu/assets/scenes/Photorealistic_photograph_of_a_2026-08-11T10-29-39.png",
+          "ref2va": {
+            "camera": "镜头：过肩(OTS)从B肩后拍A，中近景(MCU)；捕捉A的反击动作。",
+            "subject_definitions": [
+              "<Subject 1> 是 <Picture 1> 中的男生A：清瘦、眼镜、蓝白运动校服校服。",
+              "<Subject 2> 是 <Picture 2> 中的男生B：微壮圆脸、蓝白运动校服校服。",
+              "<Subject 3> 是 <Picture 3> 中的校园走廊：储物柜、窗户自然光。"
+            ],
+            "summary": "承接上一镜。A开始反击，连招进攻。",
+            "retention_analysis": [
+              "<Subject 1> (出现在 [Shot 5])：完全保留——A的清瘦、眼镜、校服。",
+              "<Subject 2> (出现在 [Shot 5])：完全保留——B的微壮、校服。"
+            ],
+            "detailed_description": "[Shot 5] 承接上一镜，同一场景同款服装。镜头从B(<Subject 2>)右肩后方越过，聚焦A(<Subject 1>)的反击。A一个箭步上前，左拳虚晃B面门，B抬臂格挡，A顺势低身右拳直击B腹部。B吃痛弯腰，A抓住机会双手抓住B肩膀，膝盖猛顶上顶。B被顶得向后仰倒。前景显示B的后脑勺与肩膀，A在画面中心。",
+            "overall_soundscape": "拳击闷响，膝盖撞击腹部的闷哼，B的痛苦喘息，A的喘息与低吼。",
+            "non_diegetic_music": "鼓点密集，弦乐急促。"
+          }
+        },
+        {
+          "shot": 6,
+          "storyboard": "kungfu/assets/characters/Photorealistic_character_refer_2026-08-11T10-33-35.png",
+          "character": "kungfu/assets/characters/Photorealistic_character_refer_2026-08-11T10-34-03.png",
+          "scene": "kungfu/assets/scenes/Photorealistic_photograph_of_a_2026-08-11T10-29-39.png",
+          "ref2va": {
+            "camera": "镜头：高速慢动作(slow-motion)特写(CU)，A的拳头在B面前停住。",
+            "subject_definitions": [
+              "<Subject 1> 是 <Picture 1> 中的男生A：清瘦、眼镜、蓝白运动校服校服。",
+              "<Subject 2> 是 <Picture 2> 中的男生B：微壮圆脸、蓝白运动校服校服。",
+              "<Subject 3> 是 <Picture 3> 中的校园走廊：储物柜、窗户自然光。"
+            ],
+            "summary": "承接上一镜。A的拳头在B面前停住，气氛凝固。",
+            "retention_analysis": [
+              "<Subject 1> (出现在 [Shot 6])：完全保留——A的清瘦、眼镜、校服。",
+              "<Subject 2> (出现在 [Shot 6])：完全保留——B的微壮、校服。"
+            ],
+            "detailed_description": "[Shot 6] 承接上一镜，同一场景同款服装。高速慢动作镜头。A(<Subject 1>)的右拳停在B(<Subject 2>)鼻尖前一厘米处，拳风掀起B额前碎发。B瞳孔放大，汗水从额头滑落。A眼神复杂，拳头微微颤抖。背景<Subject 3>的走廊在景深中虚化，阳光从窗户斜射形成光晕。",
+            "overall_soundscape": "时间仿佛静止，只有两人的呼吸声，远处走廊微弱的回音。",
+            "non_diegetic_music": "所有音乐戛然而止，只剩一个延长的弦音在高音区颤抖。"
+          }
+        },
+        {
+          "shot": 7,
+          "storyboard": "kungfu/assets/characters/Photorealistic_character_refer_2026-08-11T10-33-35.png",
+          "character": "kungfu/assets/characters/Photorealistic_character_refer_2026-08-11T10-34-03.png",
+          "scene": "kungfu/assets/scenes/Photorealistic_photograph_of_a_2026-08-11T10-29-39.png",
+          "ref2va": {
+            "camera": "镜头：快速横摇(pan)从A的拳头拉到两人全景，中景(MS)。",
+            "subject_definitions": [
+              "<Subject 1> 是 <Picture 1> 中的男生A：清瘦、眼镜、蓝白运动校服校服。",
+              "<Subject 2> 是 <Picture 2> 中的男生B：微壮圆脸、蓝白运动校服校服。",
+              "<Subject 3> 是 <Picture 3> 中的校园走廊：储物柜、窗户自然光。"
+            ],
+            "summary": "承接上一镜。A收拳，两人对峙，气氛微妙变化。",
+            "retention_analysis": [
+              "<Subject 1> (出现在 [Shot 7])：完全保留——A的清瘦、眼镜、校服。",
+              "<Subject 2> (出现在 [Shot 7])：完全保留——B的微壮、校服。"
+            ],
+            "detailed_description": "[Shot 7] 承接上一镜，同一场景同款服装。A(<Subject 1>)缓缓收拳，站直身体。B(<Subject 2>)擦去额头的汗水，两人对视。走廊里安静得能听见窗外的鸟鸣。A转身走向窗边，背对着B。B看着A的背影，欲言又止。",
+            "overall_soundscape": "走廊安静，窗外隐约的鸟鸣，两人沉重的呼吸逐渐平复。",
+            "non_diegetic_music": "舒缓的弦乐渐起，带有一丝忧伤。"
+          }
+        },
+        {
+          "shot": 8,
+          "storyboard": "kungfu/assets/characters/Photorealistic_character_refer_2026-08-11T10-33-35.png",
+          "character": "kungfu/assets/characters/Photorealistic_character_refer_2026-08-11T10-34-03.png",
+          "scene": "kungfu/assets/scenes/Photorealistic_photograph_of_a_2026-08-11T10-29-39.png",
+          "ref2va": {
+            "camera": "镜头：全景(WS)缓慢拉远(pull-out)，展示整个走廊与两人背影；逆光剪影。",
+            "subject_definitions": [
+              "<Subject 1> 是 <Picture 1> 中的男生A：清瘦、眼镜、蓝白运动校服校服。",
+              "<Subject 2> 是 <Picture 2> 中的男生B：微壮圆脸、蓝白运动校服校服。",
+              "<Subject 3> 是 <Picture 3> 中的校园走廊：储物柜、窗户自然光。"
+            ],
+            "summary": "承接上一镜。A和B各自离去，走廊恢复平静。",
+            "retention_analysis": [
+              "<Subject 1> (出现在 [Shot 8])：完全保留——A的清瘦、眼镜、校服。",
+              "<Subject 2> (出现在 [Shot 8])：完全保留——B的微壮、校服。",
+              "<Subject 3> (出现在 [Shot 8])：完全保留——走廊、储物柜、窗户。"
+            ],
+            "detailed_description": "[Shot 8] 承接上一镜，同一场景同款服装。镜头缓缓拉远，A(<Subject 1>)和B(<Subject 2>)各自朝走廊两端走去，背影渐行渐远。逆光将两人的轮廓勾勒成剪影。走廊尽头的窗户透入温暖的夕阳，储物柜在光影中拉出长长的影子。画面渐暗。",
+            "overall_soundscape": "两人的脚步声在走廊中渐行渐远，最终消失。安静。",
+            "non_diegetic_music": "忧伤的钢琴旋律渐弱至无声。"
+          }
+        }
+      ]
+    }
+  ]
+}
