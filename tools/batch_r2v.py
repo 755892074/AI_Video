@@ -98,7 +98,7 @@ def extract_video_frame(video_rel_path, output_rel_path):
     subprocess.run(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     return output_rel_path
 
-def assemble_ref2va_prompt(ref2va):
+def assemble_ref2va_prompt(ref2va, has_ref_video=False):
     """把结构化的 ref2va 字典拼成 H3 ReferenceToVideo 的六段提示词。
     顺序严格遵循 MiniMax 官方 h3-prompt-writing：
     subject_definitions -> summary -> retention_analysis ->
@@ -107,6 +107,9 @@ def assemble_ref2va_prompt(ref2va):
     可选字段：
       camera —— 电影摄影语言（镜头距离/运动/景深/光线），拼到 detailed_description
                 开头，用于打破"AI 平铺感"、制造镜头层次与差异化。
+      ref_video —— 若提供了参考视频（has_ref_video=True），按官方格式用 <Video 1>
+                标签在 subject_definitions 和 retention_analysis 中显式引用并分配
+                "动作/运动来自 <Video 1>" 任务。官方指南：显式分配效果远好于不提。
     """
     def _blk(v):
         if isinstance(v, list):
@@ -120,10 +123,17 @@ def assemble_ref2va_prompt(ref2va):
     # 强制语言锁（用户硬性要求：中文对白+中文画面文字，禁英文/其他语言）
     if "中文" not in dd:
         dd += "\n所有对白与画面文字用中文，禁止英文或其他语言字幕。"
+
+    # 视频参考：不再自动追加任何内容（按官方规范，动作必须内嵌到
+    # <Subject N> 定义里写"动作来自 <Video 1>"，而 <Video N> 不能单独
+    # 定义为主体）。manifest 里已经按官方写法组织，代码层不再插手。
+    sd = _blk(ref2va.get("subject_definitions", "")).rstrip()
+    ra = _blk(ref2va.get("retention_analysis", "")).rstrip()
+
     sections = [
-        ("subject_definitions", ref2va.get("subject_definitions", "")),
+        ("subject_definitions", sd),
         ("summary", ref2va.get("summary", "")),
-        ("retention_analysis", ref2va.get("retention_analysis", "")),
+        ("retention_analysis", ra),
         ("detailed_description", dd),
         ("overall_soundscape", ref2va.get("overall_soundscape", "")),
         ("non_diegetic_music", ref2va.get("non_diegetic_music", "")),
@@ -135,10 +145,12 @@ def assemble_ref2va_prompt(ref2va):
             parts.append(f"{name}:\n{b}")
     return "\n\n".join(parts)
 
-def build_prompt(wf, sb_name, ch_name, sc_name, prompt_text, ref2va=None, ref_video_name=None):
+def build_prompt(wf, sb_name, ch_name, sc_name, prompt_text, ref2va=None, ref_video_name=None,
+                 extra_images=None):
+    """extra_images: list of 已上传文件名，依次接到 ref_images.ref_image_3..N"""
     # 若提供结构化 ref2va（官方六段），优先用它组装提示词
     if ref2va:
-        prompt_text = assemble_ref2va_prompt(ref2va)
+        prompt_text = assemble_ref2va_prompt(ref2va, has_ref_video=bool(ref_video_name))
     p = json.loads(json.dumps(wf))  # deep copy
     p[SB]["inputs"]["image"] = sb_name
     p[CH]["inputs"]["image"] = ch_name
@@ -149,6 +161,19 @@ def build_prompt(wf, sb_name, ch_name, sc_name, prompt_text, ref2va=None, ref_vi
     # 由 H3 的 ref_videos.ref_video_0 作为动作参考（帧序列），音轨接 ref_video_audio_0
     if ref_video_name:
         p[VIDEO_NODE]["inputs"]["file"] = ref_video_name
+    else:
+        # 无视频参考时：移除 LoadVideo(140)/GetVideoComponents(141) 及 H3 的视频连接，
+        # 否则 LoadVideo 会尝试加载不存在的默认文件导致提交失败
+        p.pop("140", None)
+        p.pop("141", None)
+        p[H3]["inputs"].pop("ref_videos.ref_video_0", None)
+        p[H3]["inputs"].pop("ref_video_audios.ref_video_audio_0", None)
+    # 多图参考：动态创建 LoadImage 节点（901 起），接到 ref_images.ref_image_3..N
+    if extra_images:
+        for i, img_name in enumerate(extra_images):
+            nid = str(901 + i)
+            p[nid] = {"class_type": "LoadImage", "inputs": {"image": img_name}}
+            p[H3]["inputs"][f"ref_images.ref_image_{3 + i}"] = [nid, 0]
     return p
 
 def submit(prompt_graph):
@@ -213,7 +238,8 @@ def main():
         for sh in s["shots"]:
             out_path = os.path.join(out_dir, f"shot{sh['shot']:02d}.mp4")
             plan.append((sid, sh["shot"], sh["storyboard"], sh["character"],
-                         sh["scene"], sh.get("prompt", ""), sh.get("ref2va"), sh.get("ref_video"), out_path))
+                         sh["scene"], sh.get("prompt", ""), sh.get("ref2va"), sh.get("ref_video"),
+                         sh.get("extra_images", []), out_path))
 
     log(f"计划镜头数={len(plan)}，开始处理")
 
@@ -240,7 +266,7 @@ def main():
 
     # 1) 提交阶段（跳过已存在 & 已提交且未完成）
     pending = {}  # key -> prompt_id
-    for sid, shot, rel_sb, rel_ch, rel_sc, prompt, ref2va, ref_video, out_path in plan:
+    for sid, shot, rel_sb, rel_ch, rel_sc, prompt, ref2va, ref_video, extra_images, out_path in plan:
         key = shot_key(sid, shot)
         if os.path.exists(out_path) and os.path.getsize(out_path) > 5000:
             log(f"[skip] {key} 已有输出")
@@ -253,11 +279,15 @@ def main():
         u_sb = upload_image(rel_sb, f"batch_{sid}_{shot:02d}_sb.png")
         u_ch = upload_image(rel_ch, f"batch_{sid}_{shot:02d}_ch.png")
         u_sc = upload_image(rel_sc, f"batch_{sid}_{shot:02d}_sc.png")
+        # 多图参考：上传额外参考图（如多角度角色表），接 ref_images.ref_image_3..
+        u_extra = []
+        for i, rel_extra in enumerate(extra_images or []):
+            u_extra.append(upload_image(rel_extra, f"batch_{sid}_{shot:02d}_x{i}.png"))
         # 如果有视频参考，上传到台式机并接入 ref_videos（帧序列动作参考）
         u_video = None
         if ref_video:
             u_video = upload_video(ref_video, f"batch_{sid}_{shot:02d}_ref.mp4")
-        pg = build_prompt(wf, u_sb, u_ch, u_sc, prompt, ref2va, u_video)
+        pg = build_prompt(wf, u_sb, u_ch, u_sc, prompt, ref2va, u_video, u_extra or None)
         try:
             pid = submit(pg)
         except Exception:

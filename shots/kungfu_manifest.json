@@ -9,24 +9,23 @@
           "storyboard": "kungfu/assets/characters/Photorealistic_character_refer_2026-08-11T10-33-35.png",
           "character": "kungfu/assets/characters/Photorealistic_character_refer_2026-08-11T10-34-03.png",
           "scene": "kungfu/assets/scenes/Photorealistic_photograph_of_a_2026-08-11T10-29-39.png",
-          "ref_video": "kungfu/assets/references/kungfu_ref.mp4",
+          "ref_video": "kungfu/assets/references/kungfu_ref_trim.mp4",
           "ref2va": {
-            "camera": "镜头：全景(WS)稳定架拍，展示整条走廊；自然光从窗外打入，双人呈对峙姿态。",
+            "camera": "",
             "subject_definitions": [
-              "<Subject 1> 是 <Picture 1> 中的男生A：清瘦瓜子脸、黑色短发齐刘海、细框金属眼镜，身穿蓝白运动校服外套（拉链款）、白色内搭衬衫、深蓝运动裤（白边条纹）、白色运动鞋。",
-              "<Subject 2> 是 <Picture 2> 中的男生B：微壮圆脸、棕色短发，身穿蓝白运动校服外套（拉链款）、白色内搭衬衫、深蓝运动裤（白边条纹）、黑色板鞋。",
-              "<Subject 3> 是 <Picture 3> 中的校园走廊：白天、空旷走廊、两侧是储物柜(lockers)、大窗户透入自然光、地面是光滑瓷砖、远处可见楼梯口。",
-              "<Subject 4> 是走廊墙上挂着的消防灭火器：红色，金属质感，固定在墙上。"
+              "<Subject 1> 是 <Picture 1> 中的男生A：清瘦瓜子脸、细框金属眼镜，身穿蓝白运动校服外套、白色内搭衬衫、深蓝运动裤、白色运动鞋。其打斗动作来自 <Video 1>。",
+              "<Subject 2> 是 <Picture 2> 中的男生B：微壮圆脸、棕色短发，身穿蓝白运动校服外套、白色内搭衬衫、深蓝运动裤、黑色板鞋。其打斗动作来自 <Video 1>。",
+              "<Subject 3> 是 <Picture 3> 中的校园走廊：白天、空旷、两侧储物柜、大窗户透入自然光、光滑瓷砖地面。"
             ],
-            "summary": "目标视频展示男生A与男生B在走廊对峙，气氛紧张，即将爆发冲突。",
+            "summary": "男生A与男生B在走廊里打斗。",
             "retention_analysis": [
-              "<Subject 1> (出现在 [Shot 1])：完全保留——A的清瘦脸型、眼镜、蓝白运动校服校服。",
-              "<Subject 2> (出现在 [Shot 1])：完全保留——B的圆脸、棕发、蓝白运动校服校服。",
-              "<Subject 3> (出现在 [Shot 1])：完全保留——走廊、储物柜、窗户自然光。"
+              "<Subject 1> (出现在 [Shot 1])：attribute_transfer - A的清瘦脸型、眼镜、蓝白校服来自 <Picture 1>，其打斗动作来自 <Video 1>。",
+              "<Subject 2> (出现在 [Shot 1])：attribute_transfer - B的圆脸、棕发、蓝白校服来自 <Picture 2>，其打斗动作来自 <Video 1>。",
+              "<Subject 3> (出现在 [Shot 1])：fully_preserved - 走廊、储物柜、窗户自然光来自 <Picture 3>。"
             ],
-            "detailed_description": "[Shot 1] 写实真人功夫片风格，贴身搏击。男生A(<Subject 1>)与男生B(<Subject 2>)在<Subject 3>走廊中央扭打缠斗，A一个猛烈的过肩摔将B狠狠摔倒在地，B的后背重重砸在瓷砖地面上。A随即整个人跨骑在B身上，左膝压住B的胸口，左手按住B的肩膀，右手握拳连续重拳砸向B面部。B躺在地上用双臂格挡，被一拳接一拳打得毫无还手之力，身体在A身下挣扎扭动。A的拳头如雨点般密集落下，每一下都带着狠劲，校服外套在剧烈动作中掀起褶皱。阳光从窗外斜射，在两人身上投下晃动的光影。A一边挥拳一边怒吼：<d>[中文] 认不认输！</d>",
-            "overall_soundscape": "走廊远处传来的课间嘈杂声，两人沉重的呼吸声，脚步声在瓷砖上的轻微回响。",
-            "non_diegetic_music": "低沉的鼓点开始渐起，暗示冲突即将爆发。"
+            "detailed_description": "[Shot 1] <Subject 1>和<Subject 2>在<Subject 3>走廊里打斗。两人的攻击动作、出拳方式、节奏、姿态、镜头角度都按照参考视频 <Video 1> 里的动作。",
+            "overall_soundscape": "打斗声、喘息声、脚步声。",
+            "non_diegetic_music": "紧张的打斗配乐。"
           }
         },
         {
