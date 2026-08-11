@@ -362,6 +362,15 @@
  ],
  "groups": [],
  "config": {},
- "extra": {},
+ "extra": {
+  "ds": {
+   "scale": 1.0,
+   "offset": [
+    280.0,
+    420.0
+   ]
+  },
+  "frontendVersion": "1.0.0"
+ },
  "version": 0.4
 }
