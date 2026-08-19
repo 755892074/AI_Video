@@ -1,0 +1,43 @@
+{
+  "workflow": "shots/ep01/workflows/r2v_api.json",
+  "sets": [
+    {
+      "id": "kungfu_v11_1mp",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "kungfu/assets/characters/Photorealistic_character_refer_2026-08-11T10-33-35.png",
+          "character": "kungfu/assets/characters/Photorealistic_character_refer_2026-08-11T10-34-03.png",
+          "scene": "kungfu/assets/scenes/Photorealistic_photograph_of_a_2026-08-11T10-29-39.png",
+          "ref_video": "kungfu/assets/references/mma_ref_4s.mp4",
+          "extra_images": [
+            "kungfu/assets/storyboards/Realistic_photograph_of_two_yo_2026-08-12T02-41-39.png",
+            "kungfu/assets/storyboards/Realistic_photograph_of_an_int_2026-08-12T02-42-18.png"
+          ],
+          "ref2va": {
+            "camera": "",
+            "subject_definitions": [
+              "<Subject 1> 是 <Picture 1> 中的男生A：清瘦瓜子脸、细框金属眼镜，身穿蓝白运动校服外套、白色内搭衬衫、深蓝运动裤、白色运动鞋。其打斗动作来自 <Video 1>，起始姿势参考 <Picture 4>，结束姿势参考 <Picture 5>。",
+              "<Subject 2> 是 <Picture 2> 中的男生B：微壮圆脸、棕色短发，身穿蓝白运动校服外套、白色内搭衬衫、深蓝运动裤、黑色板鞋。其打斗动作来自 <Video 1>，起始姿势参考 <Picture 4>，结束姿势参考 <Picture 5>。",
+              "<Subject 3> 是 <Picture 3> 中的校园走廊：白天、空旷、两侧储物柜、大窗户透入自然光、光滑瓷砖地面。",
+              "<Subject 4> 是 <Picture 4> 中的起始姿势参考：两人面对面站立，双拳护胸，摆出标准拳击架势，蓝白校服，走廊场景。",
+              "<Subject 5> 是 <Picture 5> 中的结束姿势参考：A 出右拳猛击 B 面部，B 双臂格挡后仰，动态出拳姿势，蓝白校服，走廊场景。"
+            ],
+            "summary": "男生A与男生B在走廊里打斗。所有对白与画面文字用中文。",
+            "retention_analysis": [
+              "<Subject 1> (出现在 [Shot 1])：attribute_transfer - A的清瘦脸型、眼镜、蓝白校服来自 <Picture 1>，其打斗动作来自 <Video 1>，起始和结束姿势分别参考 <Picture 4> 和 <Picture 5>。",
+              "<Subject 2> (出现在 [Shot 1])：attribute_transfer - B的圆脸、棕发、蓝白校服来自 <Picture 2>，其打斗动作来自 <Video 1>，起始和结束姿势分别参考 <Picture 4> 和 <Picture 5>。",
+              "<Subject 3> (出现在 [Shot 1])：fully_preserved - 走廊、储物柜、窗户自然光来自 <Picture 3>。",
+              "<Subject 4> (出现在 [Shot 1])：weak_reference - 起始姿势参考，模型参考 <Picture 4> 的双人拳击架势构图。",
+              "<Subject 5> (出现在 [Shot 1])：weak_reference - 结束姿势参考，模型参考 <Picture 5> 的出拳格挡动态构图。"
+            ],
+            "detailed_description": "[Shot 1] <Subject 1>和<Subject 2>在<Subject 3>走廊里打斗。动作严格按照 <Picture 4> 的起始姿势开始：两人面对面站立，双拳护胸，摆出标准拳击架势。然后动作逐步过渡到 <Picture 5> 的结束姿势：A 出右拳猛击 B 面部，B 双臂格挡后仰。中间的攻击动作、出拳方式、节奏、姿态都按照参考视频 <Video 1> 里的动作。整个动作序列从对峙到出拳一气呵成，镜头保持中景正面，自然光从窗外打入。画质要求：sharp focus, clear facial features, high detail, crisp image quality, well-defined faces, no motion blur, no distortion, photorealistic rendering. 面部特征必须清晰锐利，即使在高速运动中也要保持清晰。",
+            "overall_soundscape": "打斗声、喘息声、脚步声。",
+            "non_diegetic_music": "紧张的打斗配乐。"
+          },
+          "megapixels": 1.0
+        }
+      ]
+    }
+  ]
+}

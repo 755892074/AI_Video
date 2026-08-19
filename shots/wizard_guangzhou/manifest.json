@@ -1,0 +1,142 @@
+{
+  "workflow": "shots/ep01/workflows/r2v_api.json",
+  "sets": [
+    {
+      "id": "wizard_guangzhou",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "wizard_guangzhou/assets/characters/xiaole_wizard.jpg",
+          "character": "wizard_guangzhou/assets/characters/xiaole_wizard.jpg",
+          "scene": "wizard_guangzhou/assets/storyboards/shot01.jpg",
+          "megapixels": 0.6,
+          "ref2va": {
+            "camera": "镜头：全景(WS)，仰拍；珠江边，夜晚，背景是广州塔，灯光璀璨。",
+            "subject_definitions": [
+              "<Subject 1> 是 <Picture 1> 中的小乐法师：7岁男童，黑色短发，透明框眼镜，身穿格兰芬多风格巫师袍（黑色长袍，深红内衬，金色校徽），手持魔杖。",
+              "<Subject 2> 是 <Picture 2> 中的广州夜景：珠江边，广州塔在远处闪耀，城市灯光璀璨，夜空深邃。"
+            ],
+            "summary": "小乐法师站在珠江边，抬头望向广州塔，眼神充满好奇与向往。",
+            "retention_analysis": [
+              "<Subject 1> (出现在 [Shot 1])：fully_preserved - 小乐法师的外貌特征（黑色短发、眼镜、巫师袍、魔杖）来自 <Picture 1>。",
+              "<Subject 2> (出现在 [Shot 1])：weak_reference - 广州夜景的氛围和灯光来自 <Picture 2>。"
+            ],
+            "detailed_description": "[Shot 1] <Subject 1>小乐法师站在<Subject 2>珠江边，抬头望向远处的广州塔。他眼神充满好奇与向往，双手握着魔杖，巫师袍在夜风中轻轻飘动。广州塔在远处闪耀着五彩灯光，珠江水面倒映着城市灯火。小乐深吸一口气，脸上露出兴奋的笑容，大声喊道：<d>[中文] 广州塔，我来啦！</d> 所有对白与画面文字用中文，禁止英文。",
+            "overall_soundscape": "珠江边的夜风声，远处的城市车流声，广州塔的轻柔音乐。",
+            "non_diegetic_music": "轻快好奇的背景音乐，带有魔法氛围。"
+          }
+        },
+        {
+          "shot": 2,
+          "storyboard": "wizard_guangzhou/assets/characters/xiaole_wizard.jpg",
+          "character": "wizard_guangzhou/assets/characters/xiaole_wizard.jpg",
+          "scene": "wizard_guangzhou/assets/storyboards/shot02.jpg",
+          "megapixels": 0.6,
+          "ref2va": {
+            "camera": "镜头：中景(MS)，跟拍；小法师骑扫帚腾空，背景是广州塔和夜空。",
+            "subject_definitions": [
+              "<Subject 1> 是 <Picture 1> 中的小乐法师：7岁男童，黑色短发，透明框眼镜，身穿格兰芬多风格巫师袍，骑在扫帚上，手持魔杖。",
+              "<Subject 2> 是 <Picture 2> 中的广州夜空：深邃夜空，广州塔高耸入云，城市灯光璀璨。"
+            ],
+            "summary": "小乐法师骑上扫帚，腾空而起，朝着广州塔飞去。",
+            "retention_analysis": [
+              "<Subject 1> (出现在 [Shot 1])：fully_preserved - 小乐法师的外貌特征和巫师袍来自 <Picture 1>。",
+              "<Subject 2> (出现在 [Shot 1])：weak_reference - 广州夜空和广州塔的氛围来自 <Picture 2>。"
+            ],
+            "detailed_description": "[Shot 1] <Subject 1>小乐法师骑上扫帚，双脚一蹬，腾空而起！他紧握魔杖，巫师袍在夜空中飘扬，朝着<Subject 2>广州塔飞去。风吹动他的短发，眼镜后的眼睛闪烁着兴奋的光芒。他一边飞一边开心地喊道：<d>[中文] 哇，飞起来啦！</d> 所有对白与画面文字用中文，禁止英文。",
+            "overall_soundscape": "扫帚飞行的呼呼声，夜风声，远处的城市噪音。",
+            "non_diegetic_music": "轻快欢快的飞行音乐，节奏感强。"
+          }
+        },
+        {
+          "shot": 3,
+          "storyboard": "wizard_guangzhou/assets/characters/xiaole_wizard.jpg",
+          "character": "wizard_guangzhou/assets/characters/xiaole_wizard.jpg",
+          "scene": "wizard_guangzhou/assets/storyboards/shot03.jpg",
+          "megapixels": 0.6,
+          "ref2va": {
+            "camera": "镜头：鸟瞰(Bird's Eye View)，俯拍；小法师飞过广州塔，俯瞰珠江新城。",
+            "subject_definitions": [
+              "<Subject 1> 是 <Picture 1> 中的小乐法师：7岁男童，黑色短发，透明框眼镜，身穿格兰芬多风格巫师袍，骑在扫帚上，手持魔杖。",
+              "<Subject 2> 是 <Picture 2> 中的珠江新城夜景：高楼大厦灯火通明，广州塔在身旁闪耀，整个城市灯光逐渐亮起。"
+            ],
+            "summary": "小法师飞过广州塔，俯瞰整个珠江新城，灯光逐渐亮起。",
+            "retention_analysis": [
+              "<Subject 1> (出现在 [Shot 1])：fully_preserved - 小乐法师的外貌特征和巫师袍来自 <Picture 1>。",
+              "<Subject 2> (出现在 [Shot 1])：weak_reference - 珠江新城的城市灯光和广州塔来自 <Picture 2>。"
+            ],
+            "detailed_description": "[Shot 1] <Subject 1>小乐法师骑着扫帚飞过<Subject 2>广州塔，俯瞰整个珠江新城。城市灯光在他脚下逐渐亮起，如同一片星海。高楼大厦灯火通明，珠江如一条闪亮的丝带穿过城市。小乐惊叹道：<d>[中文] 真漂亮啊！</d> 所有对白与画面文字用中文，禁止英文。",
+            "overall_soundscape": "高空的风声，城市的远噪音，扫帚的轻微嗡鸣。",
+            "non_diegetic_music": "宏大壮丽的背景音乐，带有魔法和惊奇感。"
+          }
+        },
+        {
+          "shot": 4,
+          "storyboard": "wizard_guangzhou/assets/characters/xiaole_wizard.jpg",
+          "character": "wizard_guangzhou/assets/characters/xiaole_wizard.jpg",
+          "scene": "wizard_guangzhou/assets/storyboards/shot04.jpg",
+          "megapixels": 0.6,
+          "ref2va": {
+            "camera": "镜头：中景(MS)，侧面跟拍；小法师穿过高楼大厦之间，进入繁华闹市。",
+            "subject_definitions": [
+              "<Subject 1> 是 <Picture 1> 中的小乐法师：7岁男童，黑色短发，透明框眼镜，身穿格兰芬多风格巫师袍，骑在扫帚上，手持魔杖。",
+              "<Subject 2> 是 <Picture 2> 中的广州繁华闹市街道：霓虹灯闪烁，车水马龙，高楼大厦林立，热闹非凡。"
+            ],
+            "summary": "小法师穿过高楼大厦之间，进入广州繁华的闹市街道。",
+            "retention_analysis": [
+              "<Subject 1> (出现在 [Shot 1])：fully_preserved - 小乐法师的外貌特征和巫师袍来自 <Picture 1>。",
+              "<Subject 2> (出现在 [Shot 1])：weak_reference - 繁华闹市街道的霓虹灯和车流来自 <Picture 2>。"
+            ],
+            "detailed_description": "[Shot 1] <Subject 1>小乐法师骑着扫帚穿过<Subject 2>高楼大厦之间，进入广州繁华的闹市街道。霓虹灯闪烁，广告牌五彩斑斓，车流如织。小乐好奇地左右张望，兴奋地喊道：<d>[中文] 这里好热闹！</d> 所有对白与画面文字用中文，禁止英文。",
+            "overall_soundscape": "街道的车流声、人声、霓虹灯的嗡嗡声。",
+            "non_diegetic_music": "节奏感强的城市夜曲，带有探索和冒险感。"
+          }
+        },
+        {
+          "shot": 5,
+          "storyboard": "wizard_guangzhou/assets/characters/xiaole_wizard.jpg",
+          "character": "wizard_guangzhou/assets/characters/xiaole_wizard.jpg",
+          "scene": "wizard_guangzhou/assets/storyboards/shot05.jpg",
+          "megapixels": 0.6,
+          "ref2va": {
+            "camera": "镜头：中景(MS)，仰拍；小法师在街道上空飞行，路人抬头惊讶。",
+            "subject_definitions": [
+              "<Subject 1> 是 <Picture 1> 中的小乐法师：7岁男童，黑色短发，透明框眼镜，身穿格兰芬多风格巫师袍，骑在扫帚上，手持魔杖。",
+              "<Subject 2> 是 <Picture 2> 中的广州繁华街道：车水马龙，行人来往，霓虹灯闪烁。"
+            ],
+            "summary": "小法师在车水马龙的街道上空飞行，路人抬头惊讶地看着他。",
+            "retention_analysis": [
+              "<Subject 1> (出现在 [Shot 1])：fully_preserved - 小乐法师的外貌特征和巫师袍来自 <Picture 1>。",
+              "<Subject 2> (出现在 [Shot 1])：weak_reference - 繁华街道的氛围来自 <Picture 2>。"
+            ],
+            "detailed_description": "[Shot 1] <Subject 1>小乐法师骑着扫帚在<Subject 2>车水马龙的街道上空飞行。路人纷纷停下脚步，抬头惊讶地看着他。小乐开心地向下面的路人挥手，笑着喊道：<d>[中文] 嘿嘿，你们好呀！</d> 所有对白与画面文字用中文，禁止英文。",
+            "overall_soundscape": "街道的嘈杂声，路人的惊叹声，扫帚飞行的呼呼声。",
+            "non_diegetic_music": "欢快有趣的背景音乐，带有互动感和欢乐氛围。"
+          }
+        },
+        {
+          "shot": 6,
+          "storyboard": "wizard_guangzhou/assets/characters/xiaole_wizard.jpg",
+          "character": "wizard_guangzhou/assets/characters/xiaole_wizard.jpg",
+          "scene": "wizard_guangzhou/assets/storyboards/shot06.jpg",
+          "megapixels": 0.6,
+          "ref2va": {
+            "camera": "镜头：全景(WS)，远景；小法师在珠江上空盘旋，广州塔在背后闪耀。",
+            "subject_definitions": [
+              "<Subject 1> 是 <Picture 1> 中的小乐法师：7岁男童，黑色短发，透明框眼镜，身穿格兰芬多风格巫师袍，骑在扫帚上，手持魔杖。",
+              "<Subject 2> 是 <Picture 2> 中的珠江夜景：江面波光粼粼，广州塔在背后闪耀着五彩灯光，夜空深邃。"
+            ],
+            "summary": "夜晚，小法师在珠江上空盘旋，广州塔的灯光在背后闪耀。",
+            "retention_analysis": [
+              "<Subject 1> (出现在 [Shot 1])：fully_preserved - 小乐法师的外貌特征和巫师袍来自 <Picture 1>。",
+              "<Subject 2> (出现在 [Shot 1])：weak_reference - 珠江夜景和广州塔灯光来自 <Picture 2>。"
+            ],
+            "detailed_description": "[Shot 1] <Subject 1>小乐法师骑着扫帚在<Subject 2>珠江上空盘旋。广州塔在身后闪耀着五彩灯光，如同一座巨大的灯塔。珠江水面波光粼粼，倒映着城市灯火。小乐满脸笑容，开心地向广州塔挥手： <d>[中文] 太好玩啦！下次还要来！</d> 所有对白与画面文字用中文，禁止英文。",
+            "overall_soundscape": "珠江的流水声，远处城市的夜声，风声。",
+            "non_diegetic_music": "温馨欢快的结尾音乐，带有满足和期待感。"
+          }
+        }
+      ]
+    }
+  ]
+}

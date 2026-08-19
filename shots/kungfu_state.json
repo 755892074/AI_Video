@@ -1,0 +1,42 @@
+{
+  "kungfu_02": {
+    "prompt_id": "b7364782-0689-404e-8145-99d0b4a5522c",
+    "done": true,
+    "out": "F:\\WorkBuddy\\AI_Video\\shots\\kungfu\\output\\shot02.mp4"
+  },
+  "kungfu_03": {
+    "prompt_id": "bd4cc242-708e-45b3-9466-62673da6abdf",
+    "done": true,
+    "out": "F:\\WorkBuddy\\AI_Video\\shots\\kungfu\\output\\shot03.mp4"
+  },
+  "kungfu_04": {
+    "prompt_id": "5451ab7a-d4b1-4daf-b9fc-4bacad597d80",
+    "done": false,
+    "out": "F:\\WorkBuddy\\AI_Video\\shots\\kungfu\\output\\shot04.mp4"
+  },
+  "kungfu_05": {
+    "prompt_id": "d238fa2b-f74b-49d5-b73d-d6b6a0a0ba49",
+    "done": true,
+    "out": "F:\\WorkBuddy\\AI_Video\\shots\\kungfu\\output\\shot05.mp4"
+  },
+  "kungfu_06": {
+    "prompt_id": "06cbf0d4-2f9f-4066-8023-4e5693578689",
+    "done": true,
+    "out": "F:\\WorkBuddy\\AI_Video\\shots\\kungfu\\output\\shot06.mp4"
+  },
+  "kungfu_07": {
+    "prompt_id": "15a2b73b-7471-4d7a-9dce-1a47831408ff",
+    "done": true,
+    "out": "F:\\WorkBuddy\\AI_Video\\shots\\kungfu\\output\\shot07.mp4"
+  },
+  "kungfu_08": {
+    "prompt_id": "6d3363d9-1653-4efc-8f5f-8a23d27f7a82",
+    "done": true,
+    "out": "F:\\WorkBuddy\\AI_Video\\shots\\kungfu\\output\\shot08.mp4"
+  },
+  "kungfu_01": {
+    "prompt_id": "bfaea979-b9b5-4f1f-8c96-c3178f2724cc",
+    "done": true,
+    "out": "F:\\WorkBuddy\\AI_Video\\shots\\kungfu\\output\\shot01.mp4"
+  }
+}

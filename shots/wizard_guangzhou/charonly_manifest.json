@@ -1,0 +1,32 @@
+{
+  "workflow": "shots/ep01/workflows/r2v_api.json",
+  "sets": [
+    {
+      "id": "wizard_guangzhou_charonly",
+      "shots": [
+        {
+          "shot": 2,
+          "storyboard": "wizard_guangzhou/assets/characters/xiaole_wizard.jpg",
+          "character": "wizard_guangzhou/assets/characters/xiaole_wizard.jpg",
+          "scene": "wizard_guangzhou/assets/scenes/guangzhou_night_bg.jpg",
+          "megapixels": 0.6,
+          "ref2va": {
+            "camera": "镜头：中景(MS)，跟拍；小法师骑扫帚腾空，背景是广州塔和夜空。",
+            "subject_definitions": [
+              "<Subject 1> 是 <Picture 1> 中的小乐法师：7岁男童，黑色短发，透明框眼镜，身穿格兰芬多风格巫师袍（黑色长袍，深红内衬，金色校徽），手持魔杖。这是角色的唯一外观参考。",
+              "<Subject 2> 是 <Picture 2> 中的广州夜景背景：珠江边，广州塔在远处闪耀，城市灯光璀璨，夜空深邃。纯场景背景，不包含任何人物形象。"
+            ],
+            "summary": "小乐法师骑扫帚在广州夜空飞行，角色严格参考Picture 1。",
+            "retention_analysis": [
+              "<Subject 1> (出现在 [Shot 1])：fully_preserved - 小乐法师的外貌特征（黑色短发、眼镜、巫师袍、魔杖）完全来自 <Picture 1>。",
+              "<Subject 2> (出现在 [Shot 1])：weak_reference - 广州夜景场景氛围来自 <Picture 2>，仅作为背景参考。"
+            ],
+            "detailed_description": "[Shot 1] <Subject 1>小乐法师骑上扫帚，双脚一蹬，腾空而起！他紧握魔杖，巫师袍在夜空中飘扬，朝着广州塔飞去。风吹动他的短发，眼镜后的眼睛闪烁着兴奋的光芒。背景是<Subject 2>珠江夜景，广州塔在远处闪耀。角色外貌必须严格匹配<Picture 1>中的小乐法师：黑色短发、透明框眼镜、格兰芬多巫师袍。他一边飞一边开心地喊道：<d>[中文] 哇，飞起来啦！真好玩！</d> 所有对白与画面文字用中文，禁止英文。",
+            "overall_soundscape": "扫帚飞行的呼呼声，夜风声，远处的城市噪音。",
+            "non_diegetic_music": "轻快欢快的飞行音乐，节奏感强。"
+          }
+        }
+      ]
+    }
+  ]
+}

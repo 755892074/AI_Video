@@ -1,0 +1,32 @@
+{
+  "wizard_guangzhou_01": {
+    "prompt_id": "be03e216-cb9b-49fb-ab81-ad90423b5ad6",
+    "done": false,
+    "out": "F:\\WorkBuddy\\AI_Video\\shots\\wizard_guangzhou\\output\\shot01.mp4"
+  },
+  "wizard_guangzhou_02": {
+    "prompt_id": "e9c7919f-6528-4060-8d66-208f35371766",
+    "done": false,
+    "out": "F:\\WorkBuddy\\AI_Video\\shots\\wizard_guangzhou\\output\\shot02.mp4"
+  },
+  "wizard_guangzhou_03": {
+    "prompt_id": "e1812605-c6fa-4b00-9557-24a63913c793",
+    "done": false,
+    "out": "F:\\WorkBuddy\\AI_Video\\shots\\wizard_guangzhou\\output\\shot03.mp4"
+  },
+  "wizard_guangzhou_04": {
+    "prompt_id": "606a6189-5ed6-4928-bdeb-d93041fd35b0",
+    "done": false,
+    "out": "F:\\WorkBuddy\\AI_Video\\shots\\wizard_guangzhou\\output\\shot04.mp4"
+  },
+  "wizard_guangzhou_05": {
+    "prompt_id": "f32d16a4-0da2-4449-88a5-12ebcbc1f340",
+    "done": false,
+    "out": "F:\\WorkBuddy\\AI_Video\\shots\\wizard_guangzhou\\output\\shot05.mp4"
+  },
+  "wizard_guangzhou_06": {
+    "prompt_id": "0e0279db-4782-4665-b8e1-722ced77b230",
+    "done": false,
+    "out": "F:\\WorkBuddy\\AI_Video\\shots\\wizard_guangzhou\\output\\shot06.mp4"
+  }
+}

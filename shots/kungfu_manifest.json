@@ -9,21 +9,35 @@
           "storyboard": "kungfu/assets/characters/Photorealistic_character_refer_2026-08-11T10-33-35.png",
           "character": "kungfu/assets/characters/Photorealistic_character_refer_2026-08-11T10-34-03.png",
           "scene": "kungfu/assets/scenes/Photorealistic_photograph_of_a_2026-08-11T10-29-39.png",
-          "ref_video": "kungfu/assets/references/kungfu_ref_trim.mp4",
+          "ref_video": "kungfu/assets/references/mma_ref_4s.mp4",
+          "extra_images": [
+            "kungfu/assets/storyboards/user_gen/shot2_start.jpg",
+            "kungfu/assets/storyboards/user_gen/shot2_end.jpg",
+            "kungfu/assets/storyboards/user_gen/shot3_start.jpg",
+            "kungfu/assets/storyboards/user_gen/shot3_end.jpg"
+          ],
           "ref2va": {
             "camera": "",
             "subject_definitions": [
               "<Subject 1> 是 <Picture 1> 中的男生A：清瘦瓜子脸、细框金属眼镜，身穿蓝白运动校服外套、白色内搭衬衫、深蓝运动裤、白色运动鞋。其打斗动作来自 <Video 1>。",
               "<Subject 2> 是 <Picture 2> 中的男生B：微壮圆脸、棕色短发，身穿蓝白运动校服外套、白色内搭衬衫、深蓝运动裤、黑色板鞋。其打斗动作来自 <Video 1>。",
-              "<Subject 3> 是 <Picture 3> 中的校园走廊：白天、空旷、两侧储物柜、大窗户透入自然光、光滑瓷砖地面。"
+              "<Subject 3> 是 <Picture 3> 中的校园走廊：白天、空旷、两侧储物柜、大窗户透入自然光、光滑瓷砖地面。",
+              "<Subject 4> 是 <Picture 4> 中的镜头2参考：中景侧面，A和B攻防交换，A出拳B格挡的动态姿势。",
+              "<Subject 5> 是 <Picture 5> 中的镜头2结束参考：中景侧面，A收拳B反击的动态姿势。",
+              "<Subject 6> 是 <Picture 6> 中的镜头3参考：全景正面，A站立B倒地，战斗结束的姿势。",
+              "<Subject 7> 是 <Picture 7> 中的镜头3结束参考：全景正面，A站立B倒地不起，战斗结束的姿势。"
             ],
-            "summary": "男生A与男生B在走廊里打斗。",
+            "summary": "男生A与男生B在走廊里打斗。动作从攻防交换到一方倒地。",
             "retention_analysis": [
               "<Subject 1> (出现在 [Shot 1])：attribute_transfer - A的清瘦脸型、眼镜、蓝白校服来自 <Picture 1>，其打斗动作来自 <Video 1>。",
               "<Subject 2> (出现在 [Shot 1])：attribute_transfer - B的圆脸、棕发、蓝白校服来自 <Picture 2>，其打斗动作来自 <Video 1>。",
-              "<Subject 3> (出现在 [Shot 1])：fully_preserved - 走廊、储物柜、窗户自然光来自 <Picture 3>。"
+              "<Subject 3> (出现在 [Shot 1])：fully_preserved - 走廊、储物柜、窗户自然光来自 <Picture 3>。",
+              "<Subject 4> (出现在 [Shot 1])：weak_reference - 镜头2起始姿势参考，模型参考 <Picture 4> 的攻防交换动态。",
+              "<Subject 5> (出现在 [Shot 1])：weak_reference - 镜头2结束姿势参考，模型参考 <Picture 5> 的攻防转换动态。",
+              "<Subject 6> (出现在 [Shot 1])：weak_reference - 镜头3起始姿势参考，模型参考 <Picture 6> 的站立倒地姿势。",
+              "<Subject 7> (出现在 [Shot 1])：weak_reference - 镜头3结束姿势参考，模型参考 <Picture 7> 的战斗结束姿势。"
             ],
-            "detailed_description": "[Shot 1] <Subject 1>和<Subject 2>在<Subject 3>走廊里打斗。两人的攻击动作、出拳方式、节奏、姿态、镜头角度都按照参考视频 <Video 1> 里的动作。",
+            "detailed_description": "[Shot 1] <Subject 1>和<Subject 2>在<Subject 3>走廊里打斗。前半段动作参考 <Picture 4> 到 <Picture 5> 的攻防交换：A出拳攻击，B格挡后反击，双方拳脚相接，攻防不断转换。后半段动作参考 <Picture 6> 到 <Picture 7> 的结局定格：A占据上风，B倒地不起，战斗结束。整个动作序列按照参考视频 <Video 1> 的格斗节奏进行，中景侧面机位。",
             "overall_soundscape": "打斗声、喘息声、脚步声。",
             "non_diegetic_music": "紧张的打斗配乐。"
           }
