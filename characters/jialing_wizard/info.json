@@ -1,0 +1,35 @@
+{
+  "id": "jialing_wizard",
+  "name": "嘉玲法师",
+  "display_name": "嘉玲法师",
+  "type": "character",
+  "origin_image": "characters/jialing_wizard/reference.png",
+  "created_at": "2026-08-15",
+  "description": "17岁高三女生，魔法学院法师角色。红棕波浪长发，身穿霍格沃茨风格法师袍，手持木制魔杖。大姐头气场 + LOL萝莉混搭，清冷带疏离感。",
+  "attributes": {
+    "age": "17岁",
+    "grade": "高三",
+    "height": "168cm",
+    "weight": "55kg",
+    "gender": "女",
+    "body_type": "纤细匀称"
+  },
+  "appearance": {
+    "hair": "红棕波浪长发，自然垂落至肩下",
+    "face": "亚洲鹅蛋脸，单眼皮，清冷纯净",
+    "clothing": "霍格沃茨风格：深色长袍（黑/暗红）+ 红黄条纹围巾 + 学院徽章 + 灰色百褶裙 + 过膝长袜 + 皮鞋",
+    "accessories": ["木质魔杖", "学院徽章", "红黄围巾"]
+  },
+  "personality": "大姐头气场，话少但教学认真，带点傲娇和疏离感；混搭LOL萝莉的萌感",
+  "reference_views": {
+    "front": "正面全身像，手持魔杖，正视前方",
+    "side": "侧面全身像，展示法师袍侧面线条",
+    "back": "背面全身像，展示红棕波浪长发和长袍背面"
+  },
+  "notes": [
+    "角色图来源：豆包AI基于真人照片图生图生成（音哥2026-08-15确认定稿）",
+    "角色图为四视图设定图，含多角度参考，适合作为 R2V 参考图中的 Subject 定义，锁定角色身份",
+    "红棕波浪长发 + 红黄围巾是重要识别特征，需保持一致",
+    "Claw 工作区另有副本：c:/Users/Lionel/WorkBuddy/Claw/character_library/嘉玲法师/"
+  ]
+}

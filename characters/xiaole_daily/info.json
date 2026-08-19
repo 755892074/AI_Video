@@ -1,0 +1,44 @@
+{
+  "id": "xiaole_daily",
+  "name": "二年级小乐",
+  "display_name": "二年级小乐",
+  "type": "character",
+  "origin_image": "characters/xiaole_daily/reference.jpg",
+  "created_at": "2026-08-12",
+  "description": "7岁男童，小学一年级/二年级学生。活泼好奇、开朗的性格。",
+  "attributes": {
+    "age": "7岁",
+    "grade": "二年级",
+    "height": "130cm",
+    "weight": "25kg",
+    "gender": "男",
+    "body_type": "偏瘦，儿童体型"
+  },
+  "appearance": {
+    "hair": "黑色短发，自然碎发",
+    "glasses": "透明框眼镜",
+    "face": "表情灵动，五官清秀",
+    "clothing": "红色印花毛衣开衫，深色牛仔裤，运动鞋",
+    "accessories": ["透明框眼镜"]
+  },
+  "personality": "活泼好奇、开朗",
+  "reference_views": {
+    "front": "正面全身像，正视前方，表情自然",
+    "side": "侧面全身像，展示体型和服装侧面",
+    "back": "背面全身像，展示发型和服装背面"
+  },
+  "expressions": {
+    "happy": "开心",
+    "surprised": "惊讶",
+    "thinking": "思考",
+    "sad": "难过",
+    "focused": "专注",
+    "laughing": "大笑"
+  },
+  "notes": [
+    "角色图为多角度综合参考图，包含：脸部特写（前/左/右/后）、三视图（正/侧/背）、表情参考（6种）、细节展示（眼镜/耳朵/衣服/鞋子）、尺寸参考",
+    "适合作为 R2V 参考图中的 Subject 定义，锁定角色身份",
+    "透明框眼镜是重要识别特征，需保持一致",
+    "服装可随场景变化，但建议保留红色印花毛衣开衫作为标志性服装"
+  ]
+}

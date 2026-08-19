@@ -1,0 +1,33 @@
+{
+  "id": "xiaole_wizard",
+  "name": "小乐法师",
+  "display_name": "小乐法师",
+  "type": "character",
+  "origin_image": "characters/xiaole_wizard/reference.jpg",
+  "created_at": "2026-08-12",
+  "description": "小学二年级学生，魔法师角色。身穿格兰芬多风格巫师袍，手持魔杖，佩戴眼镜。",
+  "attributes": {
+    "grade": "二年级",
+    "height": "130cm",
+    "weight": "25kg",
+    "age_group": "小学低年级"
+  },
+  "appearance": {
+    "hair": "黑色短发",
+    "glasses": "透明框眼镜",
+    "clothing": "格兰芬多风格巫师袍（黑色长袍，深红内衬，金色校徽）",
+    "accessories": ["魔杖", "校徽", "眼镜"],
+    "shoes": "黑色皮鞋"
+  },
+  "reference_views": {
+    "front": "正面全身像，手持魔杖，正视前方",
+    "side": "侧面全身像，展示巫师袍侧面线条",
+    "back": "背面全身像，展示巫师袍背面和兜帽"
+  },
+  "notes": [
+    "角色图为三视图（正/侧/背）+ 面部特写 + 校徽细节 + 魔杖细节",
+    "适合作为 R2V 参考图中的 Subject 定义，锁定角色身份",
+    "巫师袍颜色：外袍黑色，内衬深红/酒红，校徽金红配色",
+    "魔杖为深棕色木质纹理"
+  ]
+}
