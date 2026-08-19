@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>功夫场景 R2V 对照实验验收报告</title>
+<style>
+body { font-family: "Microsoft YaHei", sans-serif; background: #1e1e1e; color: #e0e0e0; padding: 20px; line-height: 1.6; }
+h1 { color: #4fc3f7; border-bottom: 2px solid #4fc3f7; padding-bottom: 10px; }
+h2 { color: #81c784; margin-top: 30px; }
+.experiment { background: #2d2d2d; border-radius: 8px; padding: 15px; margin: 15px 0; border-left: 4px solid #4fc3f7; }
+.frame-row { display: flex; gap: 8px; flex-wrap: wrap; margin: 10px 0; }
+.frame-row img { width: 300px; height: auto; border-radius: 4px; border: 1px solid #444; }
+table { border-collapse: collapse; width: 100%; margin: 15px 0; }
+th, td { border: 1px solid #444; padding: 10px; text-align: left; }
+th { background: #333; color: #4fc3f7; }
+.good { color: #81c784; font-weight: bold; }
+.bad { color: #ef5350; font-weight: bold; }
+.neutral { color: #ffb74d; }
+.conclusion { background: #263238; border: 1px solid #4fc3f7; border-radius: 8px; padding: 15px; margin: 20px 0; }
+</style>
+</head>
+<body>
+
+<h1>功夫场景 R2V 对照实验验收报告</h1>
+<p><strong>时间：</strong>2026-08-12 09:16<br>
+<strong>实验目的：</strong>验证官方规范提示词写法、视频参考有效性、多图参考效果</p>
+
+<h2>实验变量对照表</h2>
+<table>
+<tr><th>版本</th><th>提示词写法</th><th>视频参考</th><th>图片参考</th><th>预期验证</th></tr>
+<tr><td>v7</td><td>官方规范（动作绑定 Subject）</td><td>有</td><td>3张</td><td>写法修正后视频参考是否生效</td></tr>
+<tr><td>v8</td><td>官方规范（动作绑定 Subject）</td><td>无</td><td>3张</td><td>视频参考的净效果（对照）</td></tr>
+<tr><td>v9</td><td>官方规范（动作绑定 Subject）</td><td>有</td><td>5张（多图）</td><td>多图是否增强身份一致性</td></tr>
+</table>
+
+<h2>关键帧对比</h2>
+
+<div class="experiment">
+<h3>v7 — 官方规范 + 视频参考</h3>
+<p><strong>文件：</strong><code>shots/kungfu/output/shot01.mp4</code> | 5.2s | 934KB</p>
+<div class="frame-row">
+<img src="../v7/frame_00.jpg" alt="v7 frame 0">
+<img src="../v7/frame_01.jpg" alt="v7 frame 41">
+<img src="../v7/frame_02.jpg" alt="v7 frame 82">
+<img src="../v7/frame_03.jpg" alt="v7 frame 119">
+</div>
+<p><strong>观察：</strong>两人摆出拳击架势，有出拳动作，动作比无视频版丰富。</p>
+</div>
+
+<div class="experiment">
+<h3>v8 — 官方规范 + 无视频参考（对照组）</h3>
+<p><strong>文件：</strong><code>shots/kungfu_v8/output/shot01.mp4</code> | 5.2s | 879KB</p>
+<div class="frame-row">
+<img src="../v8/frame_00.jpg" alt="v8 frame 0">
+<img src="../v8/frame_01.jpg" alt="v8 frame 41">
+<img src="../v8/frame_02.jpg" alt="v8 frame 82">
+<img src="../v8/frame_03.jpg" alt="v8 frame 119">
+</div>
+<p><strong>观察：</strong>第一帧只是站立对峙，后续有推搡/格挡，但整体更静态。</p>
+</div>
+
+<div class="experiment">
+<h3>v9 — 官方规范 + 视频参考 + 多图（5张）</h3>
+<p><strong>文件：</strong><code>shots/kungfu_v9/output/shot01.mp4</code> | 5.2s | 935KB</p>
+<div class="frame-row">
+<img src="../v9/frame_00.jpg" alt="v9 frame 0">
+<img src="../v9/frame_01.jpg" alt="v9 frame 41">
+<img src="../v9/frame_02.jpg" alt="v9 frame 82">
+<img src="../v9/frame_03.jpg" alt="v9 frame 119">
+</div>
+<p><strong>观察：</strong>与 v7 几乎完全相同，多图没有带来额外改善。</p>
+</div>
+
+<h2>验收结论</h2>
+
+<div class="conclusion">
+<h3>1. 视频参考 <span class="good">确实有效</span></h3>
+<p>v7/v9（有视频）动作明显比 v8（无视频）丰富。v8 第一帧只是站着，v7/v9 第一帧就已经摆出拳击架势。</p>
+</div>
+
+<div class="conclusion">
+<h3>2. 多图参考 <span class="bad">无额外效果</span></h3>
+<p>v7（3张图）和 v9（5张图）输出几乎完全相同。可能原因：① H3 最多只认 3 张 ref_images；② 额外图片被忽略；③ 图片本身角度/内容相似，信息量不够。</p>
+</div>
+
+<div class="conclusion">
+<h3>3. "双手交替攻击" <span class="bad">仍未达成</span></h3>
+<p>三个版本都只有"摆出架势→出拳"，没有出现参考视频里的连续交替连击。说明：官方规范写法虽然让视频参考生效了，但"动作迁移"的深度仍然有限——模型学会了"有打架动作"但没学会"双手交替连击的具体节奏"。</p>
+</div>
+
+<h2>下一步建议</h2>
+<table>
+<tr><th>方案</th><th>操作</th><th>预期效果</th></tr>
+<tr><td>换参考视频</td><td>用双人实际对打的视频（而非单人打沙袋）</td><td>目标动作与参考动作语义更接近，迁移成功率更高</td></tr>
+<tr><td>强化文字描述</td><td>提示词中明确"双手交替连续出拳，左右左右节奏"</td><td>弥补视频参考的不足，双重保险</td></tr>
+<tr><td>加长参考片段</td><td>用 6-8 秒完整动作片段</td><td>给模型更多动作信息</td></tr>
+<tr><td>降低文字干扰</td><td>进一步精简提示词，只保留"动作参考视频"</td><td>减少文字剧本对视频参考的覆盖</td></tr>
+</table>
+
+</body>
+</html>
