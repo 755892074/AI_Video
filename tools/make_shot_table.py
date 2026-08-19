@@ -207,6 +207,7 @@ def main():
     ap.add_argument("--state", default=None)
     ap.add_argument("--log", default=None)
     ap.add_argument("--workflow", default=None)
+    ap.add_argument("--commit", action="store_true", help="生成后自动 git add/commit/push")
     args = ap.parse_args()
     man = load_json(args.manifest)
     mdir = os.path.dirname(os.path.abspath(args.manifest))
@@ -284,6 +285,21 @@ def main():
             else:
                 r["elapsed"] = None
         render_set(s, sid, rows, wp, prefix)
+
+    # ---- 自动 git 提交 ----
+    if getattr(args, "commit", False):
+        import subprocess as sp
+        repo = ROOT
+        for s in man["sets"]:
+            sid = s["id"]
+            html_path = os.path.join(ROOT, "shots", sid, "shot_table.html")
+            if os.path.exists(html_path):
+                sp.run(["git", "add", html_path], cwd=repo, check=False)
+                msg = f"auto: update shot_table for {sid}"
+                sp.run(["git", "commit", "-m", msg], cwd=repo, check=False)
+                # 推送到 origin main
+                sp.run(["git", "push", "origin", "main"], cwd=repo, check=False)
+                print(f"[git] {msg} -> pushed")
 
 if __name__ == "__main__":
     main()

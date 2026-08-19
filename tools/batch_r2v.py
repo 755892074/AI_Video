@@ -146,8 +146,10 @@ def assemble_ref2va_prompt(ref2va, has_ref_video=False):
     return "\n\n".join(parts)
 
 def build_prompt(wf, sb_name, ch_name, sc_name, prompt_text, ref2va=None, ref_video_name=None,
-                 extra_images=None):
-    """extra_images: list of 已上传文件名，依次接到 ref_images.ref_image_3..N"""
+                 extra_images=None, megapixels=None):
+    """extra_images: list of 已上传文件名，依次接到 ref_images.ref_image_3..N
+    megapixels: float，修改 ResolutionSelector 的 megapixels 值（如 0.6）
+    """
     # 若提供结构化 ref2va（官方六段），优先用它组装提示词
     if ref2va:
         prompt_text = assemble_ref2va_prompt(ref2va, has_ref_video=bool(ref_video_name))
@@ -157,6 +159,14 @@ def build_prompt(wf, sb_name, ch_name, sc_name, prompt_text, ref2va=None, ref_vi
     p[SCENE_NODE] = {"class_type": "LoadImage", "inputs": {"image": sc_name}}
     p[H3]["inputs"]["ref_images.ref_image_2"] = [SCENE_NODE, 0]
     p[PROMPT]["inputs"]["value"] = prompt_text
+    
+    # 修改分辨率（如果指定了 megapixels）
+    if megapixels is not None:
+        for nid, node in p.items():
+            if isinstance(node, dict) and node.get("class_type") == "ResolutionSelector":
+                node["inputs"]["megapixels"] = megapixels
+                break
+    
     # 如果有参考视频，上传并接到 LoadVideo 节点(140)，经 GetVideoComponents 拆帧后
     # 由 H3 的 ref_videos.ref_video_0 作为动作参考（帧序列），音轨接 ref_video_audio_0
     if ref_video_name:
@@ -230,7 +240,7 @@ def main():
     wf = load_json(os.path.join(ROOT, man["workflow"]))["prompt"]
 
     # 收集所有待跑镜头
-    plan = []  # (sid, shot, rel_sb, rel_ch, rel_sc, prompt, out_path)
+    plan = []  # (sid, shot, rel_sb, rel_ch, rel_sc, prompt, ref2va, ref_video, extra_images, megapixels, out_path)
     for s in man["sets"]:
         sid = s["id"]
         out_dir = os.path.join(ROOT, "shots", sid, "output")
@@ -239,7 +249,7 @@ def main():
             out_path = os.path.join(out_dir, f"shot{sh['shot']:02d}.mp4")
             plan.append((sid, sh["shot"], sh["storyboard"], sh["character"],
                          sh["scene"], sh.get("prompt", ""), sh.get("ref2va"), sh.get("ref_video"),
-                         sh.get("extra_images", []), out_path))
+                         sh.get("extra_images", []), sh.get("megapixels"), out_path))
 
     log(f"计划镜头数={len(plan)}，开始处理")
 
@@ -266,7 +276,7 @@ def main():
 
     # 1) 提交阶段（跳过已存在 & 已提交且未完成）
     pending = {}  # key -> prompt_id
-    for sid, shot, rel_sb, rel_ch, rel_sc, prompt, ref2va, ref_video, extra_images, out_path in plan:
+    for sid, shot, rel_sb, rel_ch, rel_sc, prompt, ref2va, ref_video, extra_images, megapixels, out_path in plan:
         key = shot_key(sid, shot)
         if os.path.exists(out_path) and os.path.getsize(out_path) > 5000:
             log(f"[skip] {key} 已有输出")
@@ -287,7 +297,7 @@ def main():
         u_video = None
         if ref_video:
             u_video = upload_video(ref_video, f"batch_{sid}_{shot:02d}_ref.mp4")
-        pg = build_prompt(wf, u_sb, u_ch, u_sc, prompt, ref2va, u_video, u_extra or None)
+        pg = build_prompt(wf, u_sb, u_ch, u_sc, prompt, ref2va, u_video, u_extra or None, megapixels)
         try:
             pid = submit(pg)
         except Exception:
