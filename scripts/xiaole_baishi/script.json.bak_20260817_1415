@@ -1,0 +1,173 @@
+{
+  "title": "小乐拜师记 · 马桶刷第一课",
+  "created": "2026-08-16",
+  "resolution": "1MP (1376x768 16:9)",
+  "fps": 24,
+  "template": "F:/WorkBuddy/AI_Video/workflows/h3_ref2va_v1_api.json",
+  "refs": {
+    "JIALING": {
+      "local": "F:/WorkBuddy/AI_Video/characters/jialing_wizard/reference.png",
+      "remote": "jialing_ref.png"
+    },
+    "XIAOLE": {
+      "local": "F:/WorkBuddy/AI_Video/characters/xiaole_wizard/reference_new.png",
+      "remote": "xiaole_wizard_v2.png"
+    },
+    "HALL": {
+      "local": "F:/WorkBuddy/AI_Video/scenes/hogwarts_old_hall.png",
+      "remote": "hogwarts_hall.png"
+    }
+  },
+  "subjects": {
+    "JIALING": {
+      "label": "a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, holding a wooden wand",
+      "retention": "fully_preserved",
+      "picture_retention": "fully_preserved - face, auburn-red wavy hair, robe, scarf",
+      "note": "the senior female teacher (identical in all shots)",
+      "picture": true
+    },
+    "XIAOLE": {
+      "label": "a 7-year-old Chinese boy, second grade, short black hair, transparent-frame glasses, wearing an oversized Gryffindor style wizard robe, excited goofy face, holding a toilet brush like a wand",
+      "retention": "fully_preserved",
+      "picture_retention": "fully_preserved - boy face, glasses, robe, toilet brush",
+      "note": "the novice apprentice (identical in all shots)",
+      "picture": true
+    },
+    "HALL": {
+      "label": "an old Hogwarts style magic school hall: ancient stone walls, tall arched windows with amber stained glass, floating candles, long wooden tables, raised wooden podium, warm torchlight",
+      "retention": "fully_preserved",
+      "picture_retention": "fully_preserved - stone walls, candles, tables, warm light",
+      "note": "the scene (background)",
+      "picture": true
+    }
+  },
+  "shots": [
+    {
+      "name": "shot01",
+      "seconds": 6.0,
+      "refs": [
+        "JIALING",
+        "HALL"
+      ],
+      "dialogue": "今天先教你基础施法，首先，要学会正确拿捏魔法棒的手法。要认真听哦，钟启乐！",
+      "speaker": "S1",
+      "action": "[Shot 1] In the old magic school hall, [Subject 1], the senior girl teacher, stands behind the podium holding a wooden wand, then leans down toward [Subject 2], the little apprentice boy sitting upright in his seat, and speaks to him seriously. The boy nods earnestly. [Subject 3] fills the background with warm candlelight and a magical atmosphere.",
+      "sound": "quiet hall ambience, soft footsteps, faint candle flicker",
+      "music": "light playful piano, comedic",
+      "zh": {
+        "action": "嘉玲双手背后站在讲台，弯下腰对小乐法师说到，小乐法师端正坐在座位，一脸正经得点点头回应",
+        "sound": "安静的礼堂环境音，轻柔的脚步声，蜡烛微弱的闪烁声",
+        "music": "轻快的俏皮钢琴曲，带喜剧感"
+      }
+    },
+    {
+      "name": "shot02",
+      "seconds": 6.0,
+      "refs": [
+        "JIALING",
+        "HALL"
+      ],
+      "dialogue": "念咒的时候要集中精神，把法力和意志一同传递到法杖，就像这样：马里马里轰！",
+      "speaker": "S1",
+      "action": "[Shot 1] [Subject 1] calmly demonstrates a spell: she flicks her wooden wand, a thin golden arc of light traces through the air, controlled and elegant. Her expression stays cool. She turns slightly toward [Subject 2] to show him.",
+      "sound": "faint magical shimmer, hall ambience",
+      "music": "calm elegant piano, then comedic",
+      "zh": {
+        "action": "嘉玲平静地演示咒语：轻挥木魔杖，一道细长的金色弧光划过空中，克制而优雅。她神情保持冷静，向旁边的一个纸鹤施法，那个纸鹤突然像活了一样，周围有一些特效能量，扇了扇翅膀",
+        "sound": "轻微的魔法微光声，礼堂环境音",
+        "music": "沉稳优雅的钢琴曲，随后转向喜剧"
+      }
+    },
+    {
+      "name": "shot03",
+      "seconds": 5.0,
+      "refs": [
+        "XIAOLE",
+        "HALL"
+      ],
+      "dialogue": "哇哇哇，好好玩！姐姐好厉害！",
+      "speaker": "S2",
+      "action": "[Shot 1] [Subject 1], the little boy in the oversized wizard robe, holds up the toilet brush like a wand, takes a big breath until his face turns red, and shouts the spell loudly, waving the brush wildly. A few small soap bubbles pop out. Comedic and clumsy.",
+      "sound": "boy shouting (S2), bubble pops, hall echo",
+      "music": "building comedic music, then slapstick",
+      "zh": {
+        "action": "纸鹤在教堂空中飞翔盘旋，像一只鲜活的小鸽子一般，小乐看着开心，兴奋，惊讶，镜头要随着纸鹤一起废气，也能看到小乐开心的表情",
+        "sound": "男孩大喊（小乐），泡泡破裂声，礼堂回声",
+        "music": "渐强的喜剧配乐，随后转入闹剧式"
+      }
+    },
+    {
+      "name": "shot04",
+      "seconds": 5.0,
+      "refs": [
+        "XIAOLE",
+        "HALL"
+      ],
+      "dialogue": "嘉玲姐姐，我也来。马里马里轰！",
+      "speaker": "S2",
+      "action": "[Shot 1] The spell backfires: the toilet brush spins out of [Subject 1]'s hand, a burst of soap bubbles explodes everywhere, and he is knocked flat onto his back by his own magic. He yelps as he falls, glasses askew. Comic timing.",
+      "sound": "boy yelp (S2), bubbles bursting, comedic thud",
+      "music": "slapstick music, silly string effect",
+      "zh": {
+        "action": "小乐也很自信得拿起马桶刷，念起了咒语，指向另一只纸鹤，纸鹤也是发出了一些特效，扇了扇翅膀，只不过是变成了类似公鸡，发出了鸡鸣",
+        "sound": "男孩惊叫（小乐），泡泡炸裂声，喜剧式的闷响",
+        "music": "闹剧配乐，滑稽的滑音音效"
+      }
+    },
+    {
+      "name": "shot05",
+      "seconds": 4.0,
+      "refs": [
+        "JIALING",
+        "HALL"
+      ],
+      "dialogue": "你这。。。是马桶刷？啊哈哈哈哈！",
+      "speaker": "S1",
+      "action": "[Shot 1] [Subject 1] looks down at the boy sprawled on the floor surrounded by soap bubbles, then at the toilet brush on the ground. Her expression is deadpan, one eyebrow twitching slightly. She sighs quietly. Warm candlelight, comedic pause.",
+      "sound": "quiet hall, a soft sigh, bubble fizz",
+      "music": "deadpan comedy beat, one soft piano note",
+      "zh": {
+        "action": "嘉玲不可置信得看着小乐和他手里的马桶刷法杖，捂着肚子大笑",
+        "sound": "安静的礼堂，一声轻叹，泡泡嘶嘶声",
+        "music": "冷面笑匠式喜剧拍点，配一个轻柔的钢琴单音"
+      }
+    },
+    {
+      "name": "shot06",
+      "seconds": 4.0,
+      "refs": [
+        "XIAOLE",
+        "HALL"
+      ],
+      "dialogue": "这是我家里能找到最像法杖的工具了。。。",
+      "speaker": "S2",
+      "action": "[Shot 1] [Subject 1] scrambles back up, dusts himself off with a goofy proud grin, and gives a thumbs-up. He looks at [Subject 2] hopefully, eyes sparkling behind his crooked glasses.",
+      "sound": "boy voice (S2), happy excited tone, hall ambience",
+      "music": "hopeful comedic rise",
+      "zh": {
+        "action": "小乐不好意思摸了摸脑袋，不好意思回应着嘉玲；同时这只纸鹤混着点鸡叫，普通一下翅膀飞了一会又掉在了地上，像是一只不会飞的鸡",
+        "sound": "男孩说话声（小乐），兴奋愉快的语气，礼堂环境音",
+        "music": "充满希望的喜剧上扬"
+      }
+    },
+    {
+      "name": "shot07",
+      "seconds": 6.0,
+      "refs": [
+        "XIAOLE",
+        "JIALING",
+        "HALL"
+      ],
+      "dialogue": "你已经做得很棒啦钟启乐，至少你的公鸡可以每天早上喊你起床啦！哈哈哈",
+      "speaker": "S1",
+      "action": "[Shot 1] [Subject 1] closes his eyes and concentrates, holding the toilet brush tight. A tiny flame actually sparks at his fingertips. His eyes fly open in delight and he jumps cheering. In the blurred background [Subject 2] hides a tiny smile at the corner of her mouth before turning away.",
+      "sound": "boy cheer (S2), soft flame crackle, hall ambience",
+      "music": "warm heartwarming piano swell",
+      "zh": {
+        "action": "嘉玲乐呵呵得摸着小乐的头，安慰他，这时候那只纸鹤还在不断晨鸣。。。",
+        "sound": "男孩欢呼（小乐），火焰轻微的噼啪声，礼堂环境音",
+        "music": "温暖感人的钢琴渐强"
+      }
+    }
+  ]
+}

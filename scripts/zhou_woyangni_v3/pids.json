@@ -1,0 +1,32 @@
+[
+ {
+  "name": "shot01",
+  "pid": "7b7a8ca7-f874-4548-ae9a-63c02c9d74d7",
+  "seconds": 6
+ },
+ {
+  "name": "shot02",
+  "pid": "9da1779a-1d4e-4f81-8633-25b530a7765a",
+  "seconds": 5
+ },
+ {
+  "name": "shot03",
+  "pid": "5b146848-a696-4494-901f-8c60185166f0",
+  "seconds": 4
+ },
+ {
+  "name": "shot04",
+  "pid": "295e59a3-95c5-40b5-818b-3157afad8f42",
+  "seconds": 5
+ },
+ {
+  "name": "shot05",
+  "pid": "134cad0d-0a2d-4c80-8914-c8ae3578f464",
+  "seconds": 6
+ },
+ {
+  "name": "shot06",
+  "pid": "954bf991-36b0-4cc1-85ad-fccd72b16288",
+  "seconds": 5
+ }
+]
