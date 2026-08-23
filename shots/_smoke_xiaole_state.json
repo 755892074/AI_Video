@@ -1,0 +1,17 @@
+{
+  "xiaole_smoke_01": {
+    "prompt_id": "715fcc48-067c-4372-86d5-b65e43422021",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\xiaole_smoke\\output\\shot01.mp4"
+  },
+  "xiaole_smoke_02": {
+    "prompt_id": "b731c672-aee9-4fc5-9422-55711ab8a579",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\xiaole_smoke\\output\\shot02.mp4"
+  },
+  "xiaole_smoke_03": {
+    "prompt_id": "f90ad847-6b18-4c71-a003-3119102ba9fd",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\xiaole_smoke\\output\\shot03.mp4"
+  }
+}

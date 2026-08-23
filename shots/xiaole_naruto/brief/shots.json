@@ -1,0 +1,38 @@
+{
+  "subjects": [
+    {
+      "label": "Xiao Le, a small male wizard about 130cm tall, a second-grade primary school boy, short black hair, transparent-framed glasses, wearing a Gryffindor-style wizard robe with black outer robe, deep-red lining and a golden house badge, holding a dark-brown wooden wand",
+      "picture": "xiaole_wizard.jpg",
+      "retention": "fully_preserved",
+      "picture_retention": "fully_preserved",
+      "note": "main character, identical in all shots"
+    },
+    {
+      "label": "Xiao Le, the same little wizard, alternate view showing the robe side lines, the golden badge and the wand detail",
+      "picture": "xiaole_wizard_new.png",
+      "retention": "fully_preserved",
+      "picture_retention": "fully_preserved",
+      "note": "same character, second view for identity lock"
+    }
+  ],
+  "shots": [
+    {
+      "name": "shot01_rasengan",
+      "action": "[Subject 1], the little wizard in the black Gryffindor robe with red lining and golden badge, raises his dark-brown wooden wand with one hand. A brilliant blue-white chakra orb (Rasengan) condenses and spins rapidly at the wand tip, humming with crackling energy, its glow reflecting across his glasses and robe. The robe flares in the swirling airflow. He wears a focused, determined expression. The camera slowly orbits and pushes in toward him.",
+      "dialogue": "螺旋丸！",
+      "speaker": "S1",
+      "refs": ["xiaole_wizard.jpg", "xiaole_wizard_new.png"],
+      "sound": "crackling chakra energy, whooshing wind, cloth flapping",
+      "music": "tense orchestral build-up, heroic"
+    },
+    {
+      "name": "shot02_shadowclone",
+      "action": "[Subject 1] brings both hands together around his wand, forming a hand sign. A burst of blue light and smoke erupts around him; three to four identical clones of himself appear, each in the same Gryffindor robe holding the same wand, arranged in a neat line. They turn in sync and raise their wands. The camera pulls back to reveal the row of clones.",
+      "dialogue": "影分身之术！",
+      "speaker": "S1",
+      "refs": ["xiaole_wizard.jpg", "xiaole_wizard_new.png"],
+      "sound": "energy burst, smoke puff, synchronized footsteps",
+      "music": "rising triumphant percussion"
+    }
+  ]
+}

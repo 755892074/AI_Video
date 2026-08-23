@@ -1,0 +1,227 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax",
+      "device": "default"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    }
+  },
+  "5": {
+    "class_type": "ResolutionSelector",
+    "inputs": {
+      "aspect_ratio": "16:9 (Widescreen)",
+      "megapixels": 0.6,
+      "multiple": 32
+    }
+  },
+  "10": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "jialing_wizard.png"
+    }
+  },
+  "11": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "xiaole_wizard.jpg"
+    }
+  },
+  "14": {
+    "class_type": "MiniMaxH3ReferenceToVideo",
+    "inputs": {
+      "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: Jialing, a 17-year-old female wizard (senior high school girl), red-brown wavy long hair past her shoulders, single eyelids, oval Asian face, cold and aloof aura with a confident big-sister presence, wearing a Hogwarts-style dark robe (black / dark red) with a red-yellow striped scarf, a house badge, a grey pleated skirt, knee-high socks and leather shoes, holding a wooden wand, [Picture 1]\n<Subject 2>: Xiao Le, a small male wizard about 130cm tall, a second-grade primary school boy, short black hair, transparent-framed glasses, wearing a Gryffindor-style wizard robe with black outer robe, deep-red lining and a golden house badge, holding a dark-brown wooden wand, smiling happily, [Picture 2]\n\n<Summary>\n[Subject 1] (the older sister wizard Jialing) and [Subject 2] (the little wizard Xiao Le, smiling) walk side by side along a garden path; Jialing holds Xiao Le's hand as he beams with a happy smile, the two stroll forward at a gentle pace, the camera follows them from the side and slightly behind.\n\n<Retention Analysis>\nSubject 1: fully_preserved - Jialing, the female mage sister, identical throughout\nPicture 1: fully_preserved\nSubject 2: fully_preserved - Xiao Le, the little smiling wizard, identical throughout\nPicture 2: fully_preserved\n\n<Detailed Description>\nReference: [Picture 1], [Picture 2]\n[Subject 1] and [Subject 2] walk together along a winding garden path in soft afternoon light. [Subject 1] gently holds [Subject 2]'s small hand; [Subject 2] looks up at her with a bright, happy smile and giggles as they walk. They move at a relaxed stroll, the camera tracking alongside them and then pulling slightly back to show the two walking away, their robes gently lifted by a soft breeze.\nDialogue: (none)\nNo narration, no other language.\n\n<Overall Soundscape>\nsoft footsteps on the path, gentle breeze, rustling leaves, light cheerful humming\n\n<Non-Diegetic Music>\nwarm gentle acoustic, wholesome\n\n</Prompt>",
+      "width": [
+        "5",
+        0
+      ],
+      "height": [
+        "5",
+        1
+      ],
+      "length": [
+        "17",
+        1
+      ],
+      "ref_image_size": "match",
+      "clip": [
+        "2",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ],
+      "audio_vae": [
+        "4",
+        0
+      ],
+      "ref_images.ref_image_0": [
+        "10",
+        0
+      ],
+      "ref_images.ref_image_1": [
+        "11",
+        0
+      ]
+    }
+  },
+  "15": {
+    "class_type": "ResolutionSelector",
+    "inputs": {
+      "aspect_ratio": "16:9 (Widescreen)",
+      "megapixels": 0.6,
+      "multiple": 32
+    }
+  },
+  "16": {
+    "class_type": "PrimitiveFloat",
+    "inputs": {
+      "value": 6.0
+    }
+  },
+  "17": {
+    "class_type": "ComfyMathExpression",
+    "inputs": {
+      "expression": "max(5, round(a * 24)) + (5 - (max(5, round(a * 24)) % 17)) % 17",
+      "values.a": [
+        "16",
+        0
+      ]
+    }
+  },
+  "18": {
+    "class_type": "KSamplerSelect",
+    "inputs": {
+      "sampler_name": "res_multistep"
+    }
+  },
+  "19": {
+    "class_type": "BasicScheduler",
+    "inputs": {
+      "scheduler": "simple",
+      "steps": 20,
+      "denoise": 1.0,
+      "model": [
+        "1",
+        0
+      ]
+    }
+  },
+  "20": {
+    "class_type": "BasicGuider",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "conditioning": [
+        "14",
+        0
+      ]
+    }
+  },
+  "21": {
+    "class_type": "RandomNoise",
+    "inputs": {
+      "noise_seed": 918273645
+    }
+  },
+  "22": {
+    "class_type": "SamplerCustomAdvanced",
+    "inputs": {
+      "noise": [
+        "21",
+        0
+      ],
+      "guider": [
+        "20",
+        0
+      ],
+      "sampler": [
+        "18",
+        0
+      ],
+      "sigmas": [
+        "19",
+        0
+      ],
+      "latent_image": [
+        "14",
+        1
+      ]
+    }
+  },
+  "23": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "22",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "24": {
+    "class_type": "VAEDecodeAudio",
+    "inputs": {
+      "samples": [
+        "22",
+        0
+      ],
+      "vae": [
+        "4",
+        0
+      ]
+    }
+  },
+  "25": {
+    "class_type": "CreateVideo",
+    "inputs": {
+      "fps": 24.0,
+      "bit_depth": 8,
+      "images": [
+        "23",
+        0
+      ],
+      "audio": [
+        "24",
+        0
+      ]
+    }
+  },
+  "26": {
+    "class_type": "SaveVideo",
+    "inputs": {
+      "filename_prefix": "video/xiaole_naruto_walk",
+      "format": "auto",
+      "codec": "auto",
+      "video": [
+        "25",
+        0
+      ]
+    }
+  }
+}

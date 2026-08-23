@@ -1,0 +1,17 @@
+{
+  "xiaole_crane_01": {
+    "prompt_id": "8f74015f-504c-4160-a766-d8646b65daba",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\xiaole_crane\\output\\shot01.mp4"
+  },
+  "xiaole_crane_02": {
+    "prompt_id": "61286cb8-8d46-48af-a76a-9f1f3ce1e5b1",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\xiaole_crane\\output\\shot02.mp4"
+  },
+  "xiaole_crane_03": {
+    "prompt_id": "d5afbad3-4b5f-449c-89b9-44313b6373e1",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\xiaole_crane\\output\\shot03.mp4"
+  }
+}

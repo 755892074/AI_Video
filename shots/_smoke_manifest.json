@@ -1,0 +1,15 @@
+{
+  "comfy_url": "http://100.67.139.74:8188",
+  "workflow": "workflows/h3_r2v_motion_context_api.json",
+  "base_dir": "shots",
+  "sets": [
+    {
+      "id": "smoke",
+      "title": "冒烟测试_链式接力_2镜",
+      "shots": [
+        {"shot": 1, "storyboard": "romance/assets/storyboards/storyboard_01.png", "character": "romance/assets/characters/char_female.png", "scene": "romance/assets/scenes/scene_storefront.png", "prompt": "电影感写实镜头从中景缓缓推近：雨夜便利店屋檐下，一男一女并肩躲雨，两人微微侧头尴尬而好奇地初次对视，雨丝斜落，暖色路灯在湿地面投下倒影，生活化的轻微呼吸微动"},
+        {"shot": 2, "storyboard": "romance/assets/storyboards/storyboard_02.png", "character": "romance/assets/characters/char_female.png", "scene": "romance/assets/scenes/scene_storefront.png", "prompt": "极致特写：女主脸颊，雨滴沿脸颊滑落，她嘴角缓缓浮起温柔浅笑，眼神柔和望向画外，背景虚化暖色霓虹光斑轻轻晃动，写实电影感"}
+      ]
+    }
+  ]
+}

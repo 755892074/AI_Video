@@ -1,0 +1,49 @@
+{
+ "comfy_url": "http://100.67.139.74:8188",
+ "workflow": "workflows/h3_r2v_motion_context_api.json",
+ "base_dir": "shots",
+ "sets": [
+  {
+   "id": "xiaole_crane_v1fix",
+   "title": "镜1_嘉玲施法_口型同步修复",
+   "shots": [
+    {
+     "shot": 1,
+     "storyboard": "../characters/jialing_wizard/reference.png",
+     "character": "../scenes/hogwarts_old_hall.png",
+     "scene": "../scenes/hogwarts_old_hall.png",
+     "extra_images": [
+      "../scenes/hogwarts_old_hall.png"
+     ],
+     "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, holding a wooden wand, [Picture 1]\n<Subject 2>: an old Hogwarts style magic school hall: ancient stone walls, tall arched windows with amber stained glass, floating candles, long wooden tables, raised wooden podium, warm torchlight, [Picture 2]\n<Subject 3>: the warm Hogwarts hall background reinforcing stone walls, candles, amber stained glass, NOT a plain white background, [Picture 3]\n\n<Summary>\n[Shot 1] [Subject 1] calmly focuses, raises her wooden wand and opens her mouth to chant the spell in sync with the dialogue. A golden arc of light traces through the air toward a paper crane on the table. The paper crane suddenly comes alive, magical energy shimmering around it as it flaps its wings. Her expression stays cool and elegant. [Subject 2] surrounds them with warm hall ambience.\n\n<Retention Analysis>\nSubject 1: fully_preserved - the senior female teacher (identical in all shots)\nPicture 1: fully_preserved - face, auburn-red wavy hair, robe, scarf\nSubject 2: fully_preserved - the scene (background)\nPicture 2: fully_preserved - stone walls, candles, tables, warm light\n\n<Detailed Description>\nReference: [Picture 1], [Picture 2], [Picture 3]\n[Shot 1] [Subject 1] calmly focuses, raises her wooden wand and opens her mouth, chanting the spell in sync with the dialogue. A golden arc of light traces through the air toward a paper crane on the table. The paper crane suddenly comes alive, magical energy shimmering around it as it flaps its wings. Her expression stays cool and elegant. [Subject 2] surrounds them with warm hall ambience, [Subject 3] reinforcing the warm background.\nDialogue: (S1) <d>[Chinese] 集中精神。马里马里轰！</d>\nNo narration, no other language.\n\n<Overall Soundscape>\nfaint magical shimmer, paper crane rustling, hall ambience\n\n<Non-Diegetic Music>\ncalm elegant piano, then comedic\n\n</Prompt>"
+    }
+   ]
+  },
+  {
+   "id": "xiaole_crane_v3",
+   "title": "镜2/3_小乐接力_镜3对白修复",
+   "shots": [
+    {
+     "shot": 1,
+     "storyboard": "../characters/xiaole_wizard/reference_new.png",
+     "character": "../scenes/hogwarts_old_hall.png",
+     "scene": "../scenes/hogwarts_old_hall.png",
+     "extra_images": [
+      "../scenes/hogwarts_old_hall.png"
+     ],
+     "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 7-year-old Chinese boy, second grade, short black hair, transparent-frame glasses, wearing an oversized Gryffindor style wizard robe, excited goofy face, holding a toilet brush like a wand, [Picture 1]\n<Subject 2>: an old Hogwarts style magic school hall: ancient stone walls, tall arched windows with amber stained glass, floating candles, long wooden tables, raised wooden podium, warm torchlight, [Picture 2]\n<Subject 3>: the warm Hogwarts hall background reinforcing stone walls, candles, amber stained glass, NOT a plain white background, [Picture 3]\n\n<Summary>\n[Shot 1] Inside the warm ancient Hogwarts hall (NOT plain white), the paper crane flies and circles through the air like a lively little dove, leaving a faint golden trail. [Subject 1], the little boy in the oversized wizard robe, watches with pure joy and amazement, eyes wide and sparkling. The camera rises with the crane while keeping the boy's delighted face in view. [Subject 2] the old hall.\n\n<Retention Analysis>\nSubject 1: fully_preserved - the novice apprentice (identical in all shots)\nPicture 1: fully_preserved - boy face, glasses, robe, toilet brush\nSubject 2: fully_preserved - the scene (background)\nPicture 2: fully_preserved - stone walls, candles, tables, warm light\n\n<Detailed Description>\nReference: [Picture 1], [Picture 2], [Picture 3]\n[Shot 1] Background: the warm ancient Hogwarts hall with amber stained glass windows, floating candles, and long wooden tables clearly visible behind the boy. The entire scene is bathed in warm torchlight and amber light. NOT a plain white background, NOT a studio backdrop. Inside the warm ancient Hogwarts hall (NOT plain white), the paper crane flies and circles through the air like a lively little dove, leaving a faint golden trail. [Subject 1], the little boy in the oversized wizard robe, watches with pure joy and amazement, eyes wide and sparkling. The camera rises with the crane while keeping the boy's delighted face in view. [Subject 2] the old hall, [Subject 3] the background reinforcing the warm hall ambiance.\nDialogue: (S2) <d>[Chinese] 哇哇哇，好好玩！姐姐好厉害！</d>\nNo narration, no other language.\n\n<Overall Soundscape>\npaper wings flapping, magical shimmer, boy's excited voice (S2), hall echo\n\n<Non-Diegetic Music>\nplayful magical rise, comedic\n\n</Prompt>"
+    },
+    {
+     "shot": 2,
+     "storyboard": "../characters/xiaole_wizard/reference_new.png",
+     "character": "../scenes/hogwarts_old_hall.png",
+     "scene": "../characters/rooster/reference.png",
+     "extra_images": [
+      "../scenes/hogwarts_old_hall.png"
+     ],
+     "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 7-year-old Chinese boy, second grade, short black hair, transparent-frame glasses, wearing an oversized Gryffindor style wizard robe, excited goofy face, holding a toilet brush like a wand, [Picture 1]\n<Subject 2>: an old Hogwarts style magic school hall: ancient stone walls, tall arched arched windows with amber stained glass, floating candles, long wooden tables, raised wooden podium, warm torchlight, [Picture 2]\n<Subject 3>: a realistic large farm rooster with bright red serrated comb and wattle, rich orange-red breast and neck feathers, dark green iridescent tail feathers, brown body, sturdy legs with spurs, photorealistic animal matching the photographic scene style, [Picture 3]\n\n<Summary>\n[Shot 1] [Subject 1] the little boy raises the toilet brush high and loudly casts the spell (sync with the dialogue \"马里马里轰\"). A bright golden light bursts from the brush tip and hits the paper crane. The paper crane, enveloped in the golden light, mid-air transforms into a realistic large farm rooster matching [Picture 3] (bright red comb, orange-red neck feathers, dark green iridescent tail). The rooster flaps its wings powerfully and lets out a loud clucking crow. [Subject 1] looks at the rooster with eyes wide open in amazement.\n\n<Retention Analysis>\nSubject 1: fully_preserved - the novice apprentice (identical in all shots)\nPicture 1: fully_preserved - boy face, glasses, robe, toilet brush\nSubject 2: fully_preserved - the scene (background)\nPicture 2: fully_preserved - stone walls, candles, tables, warm light\nSubject 3: fully_preserved - the realistic rooster (transformed from paper crane, identical in all rooster shots)\nPicture 3: fully_preserved - red comb, orange-red neck, green tail, body shape\n\n<Detailed Description>\nReference: [Picture 1], [Picture 2], [Picture 3]\n[Shot 1] [Subject 1] the little boy excitedly raises the toilet brush wand high, opens his mouth wide and loudly says the magic words in perfect sync with the dialogue, and the golden light bursts from the brush tip. A bright golden light bursts from the brush tip. The paper crane, flying in the warm Hogwarts hall, is enveloped in the golden light and mid-air it transforms into a realistic large farm rooster matching [Subject 3] / [Picture 3] (bright red comb, orange-red neck feathers, dark green iridescent tail). The rooster flaps its wings powerfully and lets out a loud clucking crow. [Subject 1] looks at the rooster with eyes wide open in amazement, glasses slightly askew. [Subject 2] the warm ancient hall with amber stained glass and floating candles surrounds the scene.\nDialogue: (S2) <d>[Chinese] 我也来。马里马里轰！</d>\nNo narration, no other language.\n\n<Overall Soundscape>\nboy's spell voice (S2), golden light shimmer, paper crane rustling, rooster loud crow, hall echo\n\n<Non-Diegetic Music>\nslapstick music, silly string effect\n\n</Prompt>"
+    }
+   ]
+  }
+ ]
+}

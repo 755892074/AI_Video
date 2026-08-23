@@ -1,0 +1,34 @@
+{
+  "comfy_url": "http://100.67.139.74:8188",
+  "workflow": "workflows/h3_r2v_motion_context_api.json",
+  "base_dir": "shots",
+  "sets": [
+    {
+      "id": "xiaole_smoke",
+      "title": "小乐拜师记_链式接力冒烟_3镜",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": "../scenes/hogwarts_old_hall.png",
+          "prompt": "电影感写实中景缓缓推近：古老魔法礼堂讲台前，17岁少女老师（深棕微卷红褐长发、单眼皮、高冷气场、霍格沃茨暗色长袍配红黄条纹围巾、灰色百褶裙、手持木魔杖）双手背后站在讲台，弯腰对端正坐在长木凳上、穿着过大的格兰芬多式巫师袍、戴透明框眼镜、手拿马桶刷的7岁小男孩认真说话，小男孩一本正经点头回应；背景高耸石墙、琥珀色花窗、漂浮蜡烛、温暖烛光，奇幻氛围"
+        },
+        {
+          "shot": 2,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": "../scenes/hogwarts_old_hall.png",
+          "prompt": "电影感写实中景：同一名17岁少女老师平静地演示咒语，轻挥木魔杖，一道细长金色弧光划过空中，克制而优雅，她微微侧身转向身旁的小男孩展示；礼堂高耸石墙、漂浮蜡烛、琥珀色花窗温暖烛光，魔法微光弥漫"
+        },
+        {
+          "shot": 3,
+          "storyboard": "../characters/xiaole_wizard/reference_new.png",
+          "character": "../characters/xiaole_wizard/reference_new.png",
+          "scene": "../scenes/hogwarts_old_hall.png",
+          "prompt": "电影感写实中景：7岁小男孩（短黑发、透明框眼镜、过大的格兰芬多式巫师袍）把马桶刷当魔杖高高举起，深吸一口气脸涨红，大声喊出咒语并胡乱挥舞，几个小肥皂泡冒出来，滑稽笨拙；背景古老魔法礼堂高耸石墙、温暖烛光、漂浮蜡烛"
+        }
+      ]
+    }
+  ]
+}
