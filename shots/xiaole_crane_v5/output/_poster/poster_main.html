@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1080px; }
+  body {
+    font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+    background: radial-gradient(1200px 800px at 50% 0%, #1a2a4a 0%, #0d1526 55%, #070b14 100%);
+    color: #fff;
+    padding: 44px 48px 40px;
+    overflow: hidden;
+  }
+  .badge {
+    display: inline-block; padding: 8px 22px; border-radius: 999px;
+    border: 1.5px solid rgba(255, 205, 100, .55); color: #ffcd64;
+    font-size: 22px; letter-spacing: 4px; margin-bottom: 18px;
+  }
+  h1 { font-size: 74px; font-weight: 900; letter-spacing: 8px; line-height: 1.15;
+       background: linear-gradient(180deg, #ffe9b0 0%, #ffcd64 55%, #c9962f 100%);
+       -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .sub { font-size: 30px; color: #c9d6ee; margin-top: 12px; letter-spacing: 2px; }
+  .sub b { color: #ffcd64; font-weight: 700; }
+  .shots { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 26px 0; }
+  .shots img { width: 100%; height: 316px; object-fit: cover; border-radius: 16px;
+               border: 2px solid rgba(255,205,100,.35); display: block; }
+  .chars { display: flex; gap: 16px; margin-bottom: 20px; }
+  .char { flex: 1; text-align: center; }
+  .char img { width: 100%; height: 230px; object-fit: cover; border-radius: 14px;
+              border: 2px solid rgba(255,255,255,.18); display: block; }
+  .char .nm { font-size: 22px; margin-top: 8px; color: #e8efff; }
+  .char .rol { font-size: 17px; color: #8fa3c8; margin-top: 2px; }
+  .scene { position: relative; border-radius: 16px; overflow: hidden; height: 240px;
+           border: 2px solid rgba(255,205,100,.35); }
+  .scene img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .scene .cap { position: absolute; left: 0; right: 0; bottom: 0; padding: 26px 24px 14px;
+                background: linear-gradient(transparent, rgba(0,0,0,.82)); font-size: 24px; }
+  .scene .cap b { color: #ffcd64; }
+  .foot { margin-top: 20px; text-align: center; font-size: 26px; color: #ffcd64; letter-spacing: 3px; }
+  .foot small { display: block; font-size: 18px; color: #7e91b5; margin-top: 6px; letter-spacing: 2px; }
+</style>
+</head>
+<body>
+  <div class="badge">开源 AI 电影计划 · 纯本地生成</div>
+  <h1>《小乐拜师记》</h1>
+  <div class="sub">AI 生成的 <b>50 秒</b>小电影 · 纸鹤变公鸡 · 全程无云端</div>
+
+  <div class="shots">
+    <img src="file:///D:/WorkBuddy/AI_Video/shots/xiaole_crane_v5/output/_poster/shot_m1_转椅.jpg" alt="嘉玲转椅施法">
+    <img src="file:///D:/WorkBuddy/AI_Video/shots/xiaole_crane_v5/output/_poster/shot_m2_纸鹤飞.jpg" alt="纸鹤飞翔">
+    <img src="file:///D:/WorkBuddy/AI_Video/shots/xiaole_crane_v5/output/_poster/shot_m4_施咒.jpg" alt="小乐施咒">
+    <img src="file:///D:/WorkBuddy/AI_Video/shots/xiaole_crane_v5/output/_poster/shot_m5_公鸡跳头.jpg" alt="公鸡跳头">
+  </div>
+
+  <div class="chars">
+    <div class="char">
+      <img src="file:///D:/WorkBuddy/AI_Video/characters/jialing_wizard/reference.png" alt="嘉玲">
+      <div class="nm">嘉玲</div><div class="rol">大姐姐法师</div>
+    </div>
+    <div class="char">
+      <img src="file:///D:/WorkBuddy/AI_Video/characters/xiaole_wizard/reference_new.png" alt="小乐">
+      <div class="nm">小乐</div><div class="rol">二年级小魔法师</div>
+    </div>
+    <div class="char">
+      <img src="file:///D:/WorkBuddy/AI_Video/characters/rooster/reference.png" alt="公鸡">
+      <div class="nm">公鸡</div><div class="rol">纸鹤变的</div>
+    </div>
+  </div>
+
+  <div class="scene">
+    <img src="file:///D:/WorkBuddy/AI_Video/scenes/hogwarts_old_hall.png" alt="魔法礼堂">
+    <div class="cap">取景：<b>霍格沃茨风格魔法礼堂</b> · 漂浮蜡烛 · 琥珀彩窗</div>
+  </div>
+
+  <div class="foot">一张角色图 + 一句提示词 → 画面与声音一起生成
+    <small>MiniMax H3 开源模型 · ComfyUI 本地部署 · 一张 4060Ti</small>
+  </div>
+</body>
+</html>

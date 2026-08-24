@@ -1,0 +1,23 @@
+{
+  "comfy_url": "http://100.67.139.74:8188",
+  "workflow": "workflows/h3_r2v_motion_context_api.json",
+  "base_dir": "shots",
+  "sets": [
+    {
+      "id": "xiaole_crane_v5_m1fix",
+      "title": "镜1fix_嘉玲转椅_面部稳定(半转+正面朝向)",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../scenes/hogwarts_old_hall.png",
+          "scene": "../scenes/hogwarts_old_hall.png",
+          "extra_images": [
+            "../scenes/hogwarts_old_hall.png"
+          ],
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, sitting in an old antique swivel chair, holding a wooden wand, [Picture 1]\n<Subject 2>: an old Hogwarts style magic school hall: ancient stone walls, tall arched windows with amber stained glass, floating candles, long wooden tables, raised wooden podium, warm torchlight, [Picture 2]\n<Subject 3>: the warm Hogwarts hall background reinforcing stone walls, candles, amber stained glass, NOT a plain white background, [Picture 3]\n\n<Summary>\n[Shot 1] Inside the warm ancient Hogwarts hall, dozens of small white paper cranes hang from the ceiling on thin threads, swaying gently like wind chimes. [Subject 1] sits in the old antique swivel chair in the center of the hall. She gently swivels the chair in a smooth, slow half-turn, her face staying front-facing and intact throughout the turn, until she faces one of the hanging paper cranes, then raises her wooden wand. She opens her mouth and chants the spell in sync with the dialogue. A golden arc of light traces from the wand and hits that one small paper crane (realistic small size, only about the size of a hand, NOT oversized). The paper crane suddenly comes alive, magical energy shimmering around it as it flaps its small paper wings and lifts off. [Subject 2] surrounds them with warm hall ambience.\n\n<Retention Analysis>\nSubject 1: fully_preserved - the senior female teacher (identical in all shots)\nPicture 1: fully_preserved - face, auburn-red wavy hair, robe, scarf\nSubject 2: fully_preserved - the scene (background)\nPicture 2: fully_preserved - stone walls, candles, tables, warm light\n\n<Detailed Description>\nReference: [Picture 1], [Picture 2], [Picture 3]\n[Shot 1] Background: the warm ancient Hogwarts hall with amber stained glass windows, floating candles, long wooden tables, and dozens of small white paper cranes hanging from the ceiling on thin threads, swaying gently like wind chimes. The entire scene is bathed in warm torchlight and amber light. NOT a plain white background, NOT a studio backdrop. [Subject 1] sits in an old antique swivel chair with carved wooden arms and a worn velvet seat in the center of the hall. The camera stays at a fixed frontal angle facing her. She gently swivels the chair in a smooth, slow half-turn. During the turn, her face stays perfectly intact and consistent with [Picture 1] — same Asian oval face, single eyelids, auburn-red wavy hair, sharp features, no distortion, no melting, no deformed or extra facial features. She keeps her head turned toward the camera, so her face remains clearly visible and front-facing while the chair glides. When the chair stops, she faces one particular small paper crane hanging nearby. She raises her wooden wand, aims it at that paper crane, opens her mouth and chants the spell in sync with the dialogue. A golden arc of light traces from the wand tip through the air and strikes the small paper crane. The paper crane is a realistic small white origami crane, only about the size of a hand (around 15 cm), NOT a giant enlarged crane, with realistic size matching everyday life. It suddenly comes alive, magical energy shimmering around it, and it flaps its small paper wings and lifts off from where it hangs. Her expression stays cool and elegant. [Subject 2] surrounds them with warm hall ambience, [Subject 3] reinforcing the warm background.\nDialogue: (S1) <d>[Chinese] 集中精神。马里马里轰！</d>\nNo narration, no other language.\n\n<Overall Soundscape>\npaper cranes rustling gently, faint magical shimmer, hall ambience, chair creaking softly\n\n<Non-Diegetic Music>\ncalm elegant piano, then comedic\n\n</Prompt>"
+        }
+      ]
+    }
+  ]
+}

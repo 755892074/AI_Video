@@ -1,0 +1,22 @@
+{
+  "xiaole_crane_v5_cast1_01": {
+    "prompt_id": "ce40203f-d1fc-4f59-8172-66ff8fa6733d",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\xiaole_crane_v5_cast1\\output\\shot01.mp4"
+  },
+  "xiaole_crane_v5_fly_01": {
+    "prompt_id": "4d551a41-16df-422a-9535-4838ac9a46ae",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\xiaole_crane_v5_fly\\output\\shot01.mp4"
+  },
+  "xiaole_crane_v5_cast2_01": {
+    "prompt_id": "3efc121c-3b05-45eb-8572-a718161f5377",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\xiaole_crane_v5_cast2\\output\\shot01.mp4"
+  },
+  "xiaole_crane_v5_cast2_02": {
+    "prompt_id": "91e9900e-0119-4b33-b600-c7aa8df5b19d",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\xiaole_crane_v5_cast2\\output\\shot02.mp4"
+  }
+}

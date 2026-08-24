@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1080px; }
+  body {
+    font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+    background: radial-gradient(1200px 800px at 50% 0%, #16253f 0%, #0c1322 55%, #06090f 100%);
+    color: #fff;
+    padding: 46px 52px 40px;
+    overflow: hidden;
+  }
+  .badge { display: inline-block; padding: 8px 22px; border-radius: 999px;
+           border: 1.5px solid rgba(120,200,255,.5); color: #78c8ff;
+           font-size: 22px; letter-spacing: 4px; margin-bottom: 16px; }
+  h1 { font-size: 58px; font-weight: 900; letter-spacing: 6px; line-height: 1.15;
+       background: linear-gradient(180deg, #dff1ff 0%, #78c8ff 60%, #3f8fd6 100%);
+       -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .sub { font-size: 27px; color: #b9cbe4; margin-top: 10px; letter-spacing: 2px; }
+  .card { background: rgba(255,255,255,.045); border: 1.5px solid rgba(255,255,255,.12);
+          border-radius: 18px; padding: 22px 26px; margin-top: 22px; }
+  .card h2 { font-size: 28px; color: #78c8ff; letter-spacing: 3px; margin-bottom: 14px;
+             display: flex; align-items: center; gap: 12px; }
+  .card h2::before { content: ""; width: 8px; height: 28px; border-radius: 4px;
+                     background: linear-gradient(180deg,#78c8ff,#3f8fd6); }
+  .row { display: flex; gap: 16px; }
+  .cell { flex: 1; background: rgba(255,255,255,.05); border: 1.5px solid rgba(255,255,255,.1);
+          border-radius: 14px; padding: 16px 14px; text-align: center; }
+  .cell .k { font-size: 20px; color: #8fa3c8; margin-bottom: 6px; letter-spacing: 1px; }
+  .cell .v { font-size: 27px; font-weight: 800; color: #fff; }
+  .cell .s { font-size: 15px; color: #7e91b5; margin-top: 4px; }
+  .row3 .cell { flex: 1; }
+  ul.tags { list-style: none; margin-top: 8px; }
+  ul.tags li { font-size: 25px; line-height: 1.9; color: #d5e3f7; padding-left: 26px; position: relative; }
+  ul.tags li::before { content: "✦"; position: absolute; left: 0; color: #78c8ff; }
+  ul.tags li b { color: #fff; }
+  .flow { display: flex; align-items: stretch; gap: 0; margin-top: 8px; }
+  .fstep { flex: 1; text-align: center; position: relative; }
+  .fstep .n { width: 56px; height: 56px; margin: 0 auto 10px; border-radius: 50%;
+              background: linear-gradient(180deg,#78c8ff,#3f8fd6); color: #06121f;
+              font-size: 28px; font-weight: 900; display: flex; align-items: center;
+              justify-content: center; }
+  .fstep .t { font-size: 19px; color: #d5e3f7; line-height: 1.35; }
+  .fstep .t small { display: block; color: #7e91b5; font-size: 15px; }
+  .fstep:not(:last-child)::after { content: "→"; position: absolute; right: -10px; top: 14px;
+              color: #78c8ff; font-size: 30px; font-weight: 900; }
+  .foot { margin-top: 24px; text-align: center; font-size: 27px; color: #78c8ff; letter-spacing: 4px; }
+  .foot small { display: block; font-size: 17px; color: #7e91b5; margin-top: 6px; letter-spacing: 2px; }
+</style>
+</head>
+<body>
+  <div class="badge">幕后 · TECH SPEC</div>
+  <h1>这台电脑是怎么生成一部 AI 电影的？</h1>
+  <div class="sub">i5 + 32G + 一张 4060Ti · 全程本地推理 · 零云端费用</div>
+
+  <div class="card">
+    <h2>本机配置</h2>
+    <div class="row">
+      <div class="cell"><div class="k">处理器</div><div class="v">i5-12490F</div><div class="s">6核12线程</div></div>
+      <div class="cell"><div class="k">内存</div><div class="v">32 GB</div><div class="s">DDR4</div></div>
+      <div class="cell"><div class="k">显卡</div><div class="v">RTX 4060 Ti</div><div class="s">16 GB 显存</div></div>
+      <div class="cell"><div class="k">系统</div><div class="v">Win11 专业版</div><div class="s">&nbsp;</div></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>视频模型 · MiniMax H3（开源）</h2>
+    <ul class="tags">
+      <li><b>画面 + 立体声同步生成</b>，对白和画面同时出来</li>
+      <li><b>ref2va 模式</b>：角色图 / 场景图 + 一段提示词 → 直接出视频</li>
+      <li>文本理解用 <b>Qwen3-VL-32B</b> · 视频 / 音频专用 VAE</li>
+      <li>逐镜 <b>10 秒</b>生成（864×480 · 24fps）</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>渲染平台 · ComfyUI 本地部署</h2>
+    <ul class="tags">
+      <li><b>开源工作流引擎</b>，自托管在本机，不买任何云算力</li>
+      <li><b>Motion Context 链式接力</b>：跨镜头画面 + 音频无缝续接</li>
+      <li>多镜生成后 ffmpeg 拼成 50 秒成片</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>一条流水线</h2>
+    <div class="flow">
+      <div class="fstep"><div class="n">1</div><div class="t">角色设定图<small>AI 生成三视图</small></div></div>
+      <div class="fstep"><div class="n">2</div><div class="t">写提示词<small>六段式剧本</small></div></div>
+      <div class="fstep"><div class="n">3</div><div class="t">H3 逐镜生成<small>画面+声音</small></div></div>
+      <div class="fstep"><div class="n">4</div><div class="t">链式接力<small>跨镜续接</small></div></div>
+      <div class="fstep"><div class="n">5</div><div class="t">拼接成片<small>50s 成片</small></div></div>
+    </div>
+  </div>
+
+  <div class="foot">开源 · 免费 · 一台家用电脑就能做 AI 视频
+    <small>MiniMax H3 / ComfyUI / Motion Context</small>
+  </div>
+</body>
+</html>

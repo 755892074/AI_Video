@@ -1,0 +1,5 @@
+file 'D:\WorkBuddy\AI_Video\shots/xiaole_crane_v5/output\_norm_v5\n0.mp4'
+file 'D:\WorkBuddy\AI_Video\shots/xiaole_crane_v5/output\_norm_v5\n1.mp4'
+file 'D:\WorkBuddy\AI_Video\shots/xiaole_crane_v5/output\_norm_v5\n2.mp4'
+file 'D:\WorkBuddy\AI_Video\shots/xiaole_crane_v5/output\_norm_v5\n3.mp4'
+file 'D:\WorkBuddy\AI_Video\shots/xiaole_crane_v5/output\_norm_v5\n4.mp4'
