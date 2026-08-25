@@ -1,0 +1,32 @@
+{
+  "crowd_fix_00_cafe_01": {
+    "prompt_id": "d3f4a1e1-40db-4d2e-b46b-465d37e1d866",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\crowd_fix_00_cafe\\output\\shot01.mp4"
+  },
+  "crowd_fix_01_market_01": {
+    "prompt_id": "a8799bb9-90da-4ee6-af12-9505f2fc7cfe",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\crowd_fix_01_market\\output\\shot01.mp4"
+  },
+  "crowd_fix_02_station_01": {
+    "prompt_id": "fea2da69-c011-4fd1-9aff-6733373fc903",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\crowd_fix_02_station\\output\\shot01.mp4"
+  },
+  "crowd_fix_03_crossing_01": {
+    "prompt_id": "5e67162e-045c-4c11-b0af-6e28c9f50368",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\crowd_fix_03_crossing\\output\\shot01.mp4"
+  },
+  "crowd_fix_04_schoolgate_01": {
+    "prompt_id": "76939c40-cdf9-46fa-8ebb-a4c49c572e31",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\crowd_fix_04_schoolgate\\output\\shot01.mp4"
+  },
+  "crowd_fix_05_park_01": {
+    "prompt_id": "5d132ff9-0c5f-4e98-a161-3a8648c13acf",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\crowd_fix_05_park\\output\\shot01.mp4"
+  }
+}

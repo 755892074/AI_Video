@@ -146,16 +146,29 @@ def assemble_ref2va_prompt(ref2va, has_ref_video=False):
     return "\n\n".join(parts)
 
 def build_prompt(wf, sb_name, ch_name, sc_name, prompt_text, ref2va=None, ref_video_name=None,
-                 extra_images=None, megapixels=None):
+                 extra_images=None, megapixels=None, seconds=None):
     """extra_images: list of 已上传文件名，依次接到 ref_images.ref_image_3..N
     megapixels: float，修改 ResolutionSelector 的 megapixels 值（如 0.6）
+    seconds: float，覆盖镜头时长（H3 节点 length 由 132 PrimitiveFloat 秒数经 131 表达式换算帧数）
     """
     # 若提供结构化 ref2va（官方六段），优先用它组装提示词
     if ref2va:
         prompt_text = assemble_ref2va_prompt(ref2va, has_ref_video=bool(ref_video_name))
     p = json.loads(json.dumps(wf))  # deep copy
-    p[SB]["inputs"]["image"] = sb_name
-    p[CH]["inputs"]["image"] = ch_name
+    if seconds is not None:
+        p["132"]["inputs"]["value"] = seconds
+    if sb_name:
+        p[SB]["inputs"]["image"] = sb_name
+    else:
+        # 无分镜参考图：移除 LoadImage(137) 并断开 ref_image_0
+        p.pop(SB, None)
+        p[H3]["inputs"].pop("ref_images.ref_image_0", None)
+    if ch_name:
+        p[CH]["inputs"]["image"] = ch_name
+    else:
+        # 无角色参考图：移除 LoadImage(139) 并断开 ref_image_1
+        p.pop(CH, None)
+        p[H3]["inputs"].pop("ref_images.ref_image_1", None)
     if sc_name:
         p[SCENE_NODE] = {"class_type": "LoadImage", "inputs": {"image": sc_name}}
         p[H3]["inputs"]["ref_images.ref_image_2"] = [SCENE_NODE, 0]
@@ -304,7 +317,7 @@ def main():
     wf = load_json(os.path.join(ROOT, wf_path))["prompt"]
 
     # 收集所有待跑镜头
-    plan = []  # (sid, shot, rel_sb, rel_ch, rel_sc, prompt, ref2va, ref_video, extra_images, megapixels, out_path)
+    plan = []  # (sid, shot, rel_sb, rel_ch, rel_sc, prompt, ref2va, ref_video, extra_images, megapixels, seconds, out_path)
     for s in man["sets"]:
         sid = s["id"]
         out_dir = os.path.join(ROOT, "shots", sid, "output")
@@ -313,7 +326,7 @@ def main():
             out_path = os.path.join(out_dir, f"shot{sh['shot']:02d}.mp4")
             plan.append((sid, sh["shot"], sh["storyboard"], sh["character"],
                          sh["scene"], sh.get("prompt", ""), sh.get("ref2va"), sh.get("ref_video"),
-                         sh.get("extra_images", []), sh.get("megapixels"), out_path, i_in_set))
+                         sh.get("extra_images", []), sh.get("megapixels"), sh.get("seconds"), out_path, i_in_set))
 
     log(f"计划镜头数={len(plan)}，开始处理")
 
@@ -340,7 +353,7 @@ def main():
 
     # 1) 提交阶段（跳过已存在 & 已提交且未完成）
     pending = {}  # key -> prompt_id
-    for sid, shot, rel_sb, rel_ch, rel_sc, prompt, ref2va, ref_video, extra_images, megapixels, out_path, i_in_set in plan:
+    for sid, shot, rel_sb, rel_ch, rel_sc, prompt, ref2va, ref_video, extra_images, megapixels, seconds, out_path, i_in_set in plan:
         key = shot_key(sid, shot)
         if os.path.exists(out_path) and os.path.getsize(out_path) > 5000:
             log(f"[skip] {key} 已有输出")
@@ -350,8 +363,8 @@ def main():
             log(f"[queued-resume] {key} pid={pending[key]}")
             continue
         # 上传三张图（带唯一名，避免跨套同名冲突；返回值含真实扩展名）
-        u_sb = upload_image(rel_sb, f"batch_{sid}_{shot:02d}_sb.png")
-        u_ch = upload_image(rel_ch, f"batch_{sid}_{shot:02d}_ch.png")
+        u_sb = upload_image(rel_sb, f"batch_{sid}_{shot:02d}_sb.png") if rel_sb else None
+        u_ch = upload_image(rel_ch, f"batch_{sid}_{shot:02d}_ch.png") if rel_ch else None
         u_sc = upload_image(rel_sc, f"batch_{sid}_{shot:02d}_sc.png") if rel_sc else None
         # 多图参考：上传额外参考图（如多角度角色表），接 ref_images.ref_image_3..
         u_extra = []
@@ -361,7 +374,7 @@ def main():
         u_video = None
         if ref_video:
             u_video = upload_video(ref_video, f"batch_{sid}_{shot:02d}_ref.mp4")
-        pg = build_prompt(wf, u_sb, u_ch, u_sc, prompt, ref2va, u_video, u_extra or None, megapixels)
+        pg = build_prompt(wf, u_sb, u_ch, u_sc, prompt, ref2va, u_video, u_extra or None, megapixels, seconds)
         if CHAIN:
             chained = apply_chain(pg, sid, i_in_set)
             if chained:

@@ -1,0 +1,127 @@
+{
+  "comfy_url": "http://100.67.139.74:8188",
+  "workflow": "workflows/h3_r2v_motion_context_api.json",
+  "base_dir": "shots",
+  "sets": [
+    {
+      "id": "crowd_crowd_00_metro",
+      "title": "00 早高峰地铁站台",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": null,
+          "character": null,
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\nNo specific subject definitions, scenes only.\n\n<Summary>\nMedium shot, camera slowly panning along a crowded rush-hour subway platform. A dense flow of commuters moves in both directions: office workers in suits checking phones, a student with a backpack rushing past, an old woman carrying a shopping bag, a couple holding hands, people queuing near the yellow safety line as the train lights approach in the tunnel. Fluorescent station lights, tiled walls, ad panels. The crowd must look natural and alive: people of varied ages, heights, outfits and skin tones, each with different poses and directions of movement, some looking around, some talking, some on phones, natural random spacing and overlapping, NO duplicated faces or identical repeated people, NO robotic synchronized motion, NO malformed hands or blank hollow expressions. Treat every extra as a real background performer. Color grade: cool fluorescent urban realism, slightly desaturated, documentary film look.\n\n<Retention Analysis>\nPictures: partially_preserved (style, mood, lighting).\n\n<Detailed Description>\nMedium shot, camera slowly panning along a crowded rush-hour subway platform. A dense flow of commuters moves in both directions: office workers in suits checking phones, a student with a backpack rushing past, an old woman carrying a shopping bag, a couple holding hands, people queuing near the yellow safety line as the train lights approach in the tunnel. Fluorescent station lights, tiled walls, ad panels.\nThe crowd must look natural and alive: people of varied ages, heights, outfits and skin tones, each with different poses and directions of movement, some looking around, some talking, some on phones, natural random spacing and overlapping, NO duplicated faces or identical repeated people, NO robotic synchronized motion, NO malformed hands or blank hollow expressions. Treat every extra as a real background performer.\nColor grade: cool fluorescent urban realism, slightly desaturated, documentary film look.\nNo narration, no other language.\n\n<Overall Soundscape>\nechoing station announcements, train rumble approaching, shuffling footsteps, chatter\n\n<Non-Diegetic Music>\nnone\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "crowd_crowd_01_concert",
+      "title": "01 夏日音乐节现场",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": null,
+          "character": null,
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\nNo specific subject definitions, scenes only.\n\n<Summary>\nWide shot from the crowd level of a huge outdoor summer music festival, camera slowly pushing forward over thousands of raised hands and phones. The crowd surges and jumps together, beach balls bounce over heads, colorful flags wave, dazzling stage lights and confetti fall from the dark sky, sweat and energy everywhere, faces lit by changing colors. The crowd must look natural and alive: people of varied ages, heights, outfits and skin tones, each with different poses and directions of movement, some looking around, some talking, some on phones, natural random spacing and overlapping, NO duplicated faces or identical repeated people, NO robotic synchronized motion, NO malformed hands or blank hollow expressions. Treat every extra as a real background performer. Color grade: high-contrast festival grade, vivid stage lights magenta and amber against deep night blue.\n\n<Retention Analysis>\nPictures: partially_preserved (style, mood, lighting).\n\n<Detailed Description>\nWide shot from the crowd level of a huge outdoor summer music festival, camera slowly pushing forward over thousands of raised hands and phones. The crowd surges and jumps together, beach balls bounce over heads, colorful flags wave, dazzling stage lights and confetti fall from the dark sky, sweat and energy everywhere, faces lit by changing colors.\nThe crowd must look natural and alive: people of varied ages, heights, outfits and skin tones, each with different poses and directions of movement, some looking around, some talking, some on phones, natural random spacing and overlapping, NO duplicated faces or identical repeated people, NO robotic synchronized motion, NO malformed hands or blank hollow expressions. Treat every extra as a real background performer.\nColor grade: high-contrast festival grade, vivid stage lights magenta and amber against deep night blue.\nNo narration, no other language.\n\n<Overall Soundscape>\nthumping bass and guitar feedback, thousands cheering, singing along\n\n<Non-Diegetic Music>\nenergetic rock anthem under the crowd roar\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "crowd_crowd_02_nightmarket",
+      "title": "02 老街夜市小吃街",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": null,
+          "character": null,
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\nNo specific subject definitions, scenes only.\n\n<Summary>\nMedium shot, camera tracking forward through a packed old-town night market street at dinner time. Thick crowds drift between food stalls, steam and smoke rising from grills, skewers sizzling, a kid on a father's shoulders pointing at candy, a cook tossing wok flames, tables of diners squeezed together, paper lanterns and string lights overhead. The crowd must look natural and alive: people of varied ages, heights, outfits and skin tones, each with different poses and directions of movement, some looking around, some talking, some on phones, natural random spacing and overlapping, NO duplicated faces or identical repeated people, NO robotic synchronized motion, NO malformed hands or blank hollow expressions. Treat every extra as a real background performer. Color grade: warm amber tungsten mixed with neon sign colors, lively street photography look.\n\n<Retention Analysis>\nPictures: partially_preserved (style, mood, lighting).\n\n<Detailed Description>\nMedium shot, camera tracking forward through a packed old-town night market street at dinner time. Thick crowds drift between food stalls, steam and smoke rising from grills, skewers sizzling, a kid on a father's shoulders pointing at candy, a cook tossing wok flames, tables of diners squeezed together, paper lanterns and string lights overhead.\nThe crowd must look natural and alive: people of varied ages, heights, outfits and skin tones, each with different poses and directions of movement, some looking around, some talking, some on phones, natural random spacing and overlapping, NO duplicated faces or identical repeated people, NO robotic synchronized motion, NO malformed hands or blank hollow expressions. Treat every extra as a real background performer.\nColor grade: warm amber tungsten mixed with neon sign colors, lively street photography look.\nNo narration, no other language.\n\n<Overall Soundscape>\nsizzling oil, clinking woks, vendor shouts, overlapping conversations, laughter\n\n<Non-Diegetic Music>\nnone\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "crowd_crowd_03_springfestival",
+      "title": "03 春运火车站候车厅",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": null,
+          "character": null,
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\nNo specific subject definitions, scenes only.\n\n<Summary>\nMedium-wide shot, camera slowly panning across a vast railway waiting hall packed with Spring Festival travelers. Crowds sit on luggage, squat by pillars, mothers feed children, old men smoke near the door, a young man talks loudly on the phone, luggage carts wheel past, red lanterns and Spring Festival banners overhead, tired but warm faces. The crowd must look natural and alive: people of varied ages, heights, outfits and skin tones, each with different poses and directions of movement, some looking around, some talking, some on phones, natural random spacing and overlapping, NO duplicated faces or identical repeated people, NO robotic synchronized motion, NO malformed hands or blank hollow expressions. Treat every extra as a real background performer. Color grade: warm tungsten interior with cool window light, slightly hazy air, cinematic realism.\n\n<Retention Analysis>\nPictures: partially_preserved (style, mood, lighting).\n\n<Detailed Description>\nMedium-wide shot, camera slowly panning across a vast railway waiting hall packed with Spring Festival travelers. Crowds sit on luggage, squat by pillars, mothers feed children, old men smoke near the door, a young man talks loudly on the phone, luggage carts wheel past, red lanterns and Spring Festival banners overhead, tired but warm faces.\nThe crowd must look natural and alive: people of varied ages, heights, outfits and skin tones, each with different poses and directions of movement, some looking around, some talking, some on phones, natural random spacing and overlapping, NO duplicated faces or identical repeated people, NO robotic synchronized motion, NO malformed hands or blank hollow expressions. Treat every extra as a real background performer.\nColor grade: warm tungsten interior with cool window light, slightly hazy air, cinematic realism.\nNo narration, no other language.\n\n<Overall Soundscape>\nechoing station noise, rolling luggage wheels, baby crying, muffled announcements\n\n<Non-Diegetic Music>\nnone\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "crowd_crowd_04_crosswalk",
+      "title": "04 城市十字路口过街",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": null,
+          "character": null,
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\nNo specific subject definitions, scenes only.\n\n<Summary>\nHigh-angle shot looking down at a busy city crosswalk at morning rush, camera slowly descending. A dense river of pedestrians crosses the zebra crossing from all four directions when the light turns, umbrellas and backpacks bobbing, bicycles weaving through, a delivery rider zigzagging, an elderly couple walking arm in arm, cars waiting at the stop line, buildings and billboards surrounding the intersection. The crowd must look natural and alive: people of varied ages, heights, outfits and skin tones, each with different poses and directions of movement, some looking around, some talking, some on phones, natural random spacing and overlapping, NO duplicated faces or identical repeated people, NO robotic synchronized motion, NO malformed hands or blank hollow expressions. Treat every extra as a real background performer. Color grade: clean modern city daylight, slightly high-key, realistic urban grade.\n\n<Retention Analysis>\nPictures: partially_preserved (style, mood, lighting).\n\n<Detailed Description>\nHigh-angle shot looking down at a busy city crosswalk at morning rush, camera slowly descending. A dense river of pedestrians crosses the zebra crossing from all four directions when the light turns, umbrellas and backpacks bobbing, bicycles weaving through, a delivery rider zigzagging, an elderly couple walking arm in arm, cars waiting at the stop line, buildings and billboards surrounding the intersection.\nThe crowd must look natural and alive: people of varied ages, heights, outfits and skin tones, each with different poses and directions of movement, some looking around, some talking, some on phones, natural random spacing and overlapping, NO duplicated faces or identical repeated people, NO robotic synchronized motion, NO malformed hands or blank hollow expressions. Treat every extra as a real background performer.\nColor grade: clean modern city daylight, slightly high-key, realistic urban grade.\nNo narration, no other language.\n\n<Overall Soundscape>\ncrosswalk beeping signal, car engines, city hum, footsteps and bicycle bells\n\n<Non-Diegetic Music>\nnone\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "crowd_crowd_05_beach",
+      "title": "05 夏日海滩游客群",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": null,
+          "character": null,
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\nNo specific subject definitions, scenes only.\n\n<Summary>\nMedium-wide shot, camera tracking sideways along a crowded summer beach. Sunbathers on towels, kids splashing at the waterline, a volleyball game in the middle, families under striped umbrellas, a vendor carrying a cooler between blankets, seagulls circling, people walking dogs and playing frisbee, bright swimsuits scattered across the golden sand. The crowd must look natural and alive: people of varied ages, heights, outfits and skin tones, each with different poses and directions of movement, some looking around, some talking, some on phones, natural random spacing and overlapping, NO duplicated faces or identical repeated people, NO robotic synchronized motion, NO malformed hands or blank hollow expressions. Treat every extra as a real background performer. Color grade: bright saturated summer daylight, warm golden sand, cheerful commercial look.\n\n<Retention Analysis>\nPictures: partially_preserved (style, mood, lighting).\n\n<Detailed Description>\nMedium-wide shot, camera tracking sideways along a crowded summer beach. Sunbathers on towels, kids splashing at the waterline, a volleyball game in the middle, families under striped umbrellas, a vendor carrying a cooler between blankets, seagulls circling, people walking dogs and playing frisbee, bright swimsuits scattered across the golden sand.\nThe crowd must look natural and alive: people of varied ages, heights, outfits and skin tones, each with different poses and directions of movement, some looking around, some talking, some on phones, natural random spacing and overlapping, NO duplicated faces or identical repeated people, NO robotic synchronized motion, NO malformed hands or blank hollow expressions. Treat every extra as a real background performer.\nColor grade: bright saturated summer daylight, warm golden sand, cheerful commercial look.\nNo narration, no other language.\n\n<Overall Soundscape>\ncrashing waves, children laughing, distant music from a speaker, seagull cries\n\n<Non-Diegetic Music>\nlight upbeat pop, summery\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "crowd_crowd_06_schoolyard",
+      "title": "06 小学课间操场",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": null,
+          "character": null,
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\nNo specific subject definitions, scenes only.\n\n<Summary>\nMedium shot, camera slowly arcing around a crowded primary school playground during recess. Dozens of kids in identical blue-and-white tracksuits run, jump rope, chase each other and play catch, a few huddle around a marble game on the ground, two girls swing on the swingset, a whistle blows in the distance, autumn trees and a red teaching building at the edge. The crowd must look natural and alive: people of varied ages, heights, outfits and skin tones, each with different poses and directions of movement, some looking around, some talking, some on phones, natural random spacing and overlapping, NO duplicated faces or identical repeated people, NO robotic synchronized motion, NO malformed hands or blank hollow expressions. Treat every extra as a real background performer. Color grade: warm afternoon sunlight, soft nostalgic grade, lively school atmosphere.\n\n<Retention Analysis>\nPictures: partially_preserved (style, mood, lighting).\n\n<Detailed Description>\nMedium shot, camera slowly arcing around a crowded primary school playground during recess. Dozens of kids in identical blue-and-white tracksuits run, jump rope, chase each other and play catch, a few huddle around a marble game on the ground, two girls swing on the swingset, a whistle blows in the distance, autumn trees and a red teaching building at the edge.\nThe crowd must look natural and alive: people of varied ages, heights, outfits and skin tones, each with different poses and directions of movement, some looking around, some talking, some on phones, natural random spacing and overlapping, NO duplicated faces or identical repeated people, NO robotic synchronized motion, NO malformed hands or blank hollow expressions. Treat every extra as a real background performer.\nColor grade: warm afternoon sunlight, soft nostalgic grade, lively school atmosphere.\nNo narration, no other language.\n\n<Overall Soundscape>\nchildren shouting and laughing, jumprope slapping concrete, distant whistle, birds\n\n<Non-Diegetic Music>\nlight cheerful folk, playful\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "crowd_crowd_07_stadium",
+      "title": "07 足球场观众席",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": null,
+          "character": null,
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\nNo specific subject definitions, scenes only.\n\n<Summary>\nWide shot of a packed football stadium during a heated match, camera slowly pulling back from a roaring section. Tens of thousands of fans in team colors stand and cheer, a Mexican wave ripples through the stands, scarves and flags wave wildly, a few fans in face paint hug and jump, the bright green pitch tiny far below, floodlights blazing. The crowd must look natural and alive: people of varied ages, heights, outfits and skin tones, each with different poses and directions of movement, some looking around, some talking, some on phones, natural random spacing and overlapping, NO duplicated faces or identical repeated people, NO robotic synchronized motion, NO malformed hands or blank hollow expressions. Treat every extra as a real background performer. Color grade: high-contrast floodlit night, team colors saturated, epic live-sports grade.\n\n<Retention Analysis>\nPictures: partially_preserved (style, mood, lighting).\n\n<Detailed Description>\nWide shot of a packed football stadium during a heated match, camera slowly pulling back from a roaring section. Tens of thousands of fans in team colors stand and cheer, a Mexican wave ripples through the stands, scarves and flags wave wildly, a few fans in face paint hug and jump, the bright green pitch tiny far below, floodlights blazing.\nThe crowd must look natural and alive: people of varied ages, heights, outfits and skin tones, each with different poses and directions of movement, some looking around, some talking, some on phones, natural random spacing and overlapping, NO duplicated faces or identical repeated people, NO robotic synchronized motion, NO malformed hands or blank hollow expressions. Treat every extra as a real background performer.\nColor grade: high-contrast floodlit night, team colors saturated, epic live-sports grade.\nNo narration, no other language.\n\n<Overall Soundscape>\ntens of thousands roaring, drums and horns, chanting, vuvuzela buzz\n\n<Non-Diegetic Music>\nepic orchestral swell under the crowd\n\n</Prompt>"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "comfy_url": "http://100.67.139.74:8188",
+  "workflow": "workflows/h3_r2v_motion_context_api.json",
+  "base_dir": "shots",
+  "sets": [
+    {
+      "id": "jialing_scene_00_rain_ally",
+      "title": "00 雨夜街角·嘉玲 中景+横摇",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: the same 17-year-old girl in a close-up portrait, wavy auburn-red hair, Asian oval face, single eyelids, red and yellow striped scarf, [Picture 2]\n\n<Summary>\nMedium shot, camera slowly panning right across a rain-slicked old town street at night, neon signs reflected in wet asphalt, sparse pedestrians hurrying past with umbrellas. Jialing matching Picture 1 stands alone at the street corner waiting for a bus, the cool rain dampening her hair, she pulls her scarf tighter and looks down the empty road. Scene and weather: Heavy night rain, wet glistening streets, blurred neon reflections in magenta and cyan, city lights bokeh in the background. Color grade: cold blue night with neon accents, cinematic rain film look.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\n\n<Detailed Description>\nMedium shot, camera slowly panning right across a rain-slicked old town street at night, neon signs reflected in wet asphalt, sparse pedestrians hurrying past with umbrellas. Jialing matching Picture 1 stands alone at the street corner waiting for a bus, the cool rain dampening her hair, she pulls her scarf tighter and looks down the empty road.\nScene and weather: Heavy night rain, wet glistening streets, blurred neon reflections in magenta and cyan, city lights bokeh in the background.\nColor grade: cold blue night with neon accents, cinematic rain film look.\nDialogue: (S1) <d>[Chinese] ……车怎么还不来。</d>\nNo narration, no other language.\n\n<Overall Soundscape>\nsteady rain, distant traffic, wet footsteps\n\n<Non-Diegetic Music>\nslow sparse piano under rain noise\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_scene_01_snow_ally",
+      "title": "01 雪原车站·嘉玲 远景+缓推",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: the same 17-year-old girl in a close-up portrait, wavy auburn-red hair, Asian oval face, single eyelids, red and yellow striped scarf, [Picture 2]\n\n<Summary>\nExtreme wide shot of a snowbound country train station, thick snow blanketing the platform and tracks, steam hissing from the locomotive, snowflakes drifting in the still air. Jialing matching Picture 1 stands at the far end of the platform holding a small suitcase, a tiny dark figure in the white expanse, camera slowly pushing in on her as she exhales a breath of white fog. Scene and weather: Heavy snowfall, thick white drifts, cold pale winter light, steam mixing with falling snow, muted frosty palette. Color grade: cold white-blue cinematic grade, lonely winter atmosphere.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\n\n<Detailed Description>\nExtreme wide shot of a snowbound country train station, thick snow blanketing the platform and tracks, steam hissing from the locomotive, snowflakes drifting in the still air. Jialing matching Picture 1 stands at the far end of the platform holding a small suitcase, a tiny dark figure in the white expanse, camera slowly pushing in on her as she exhales a breath of white fog.\nScene and weather: Heavy snowfall, thick white drifts, cold pale winter light, steam mixing with falling snow, muted frosty palette.\nColor grade: cold white-blue cinematic grade, lonely winter atmosphere.\nDialogue: (S1) <d>[Chinese] 到了。</d>\nNo narration, no other language.\n\n<Overall Soundscape>\nmuffled snow silence, distant train steam, soft wind\n\n<Non-Diegetic Music>\nminimal ambient strings, icy and quiet\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_scene_02_sunset_ling",
+      "title": "02 海边日落·小乐 中近景+环绕",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/xiaole_daily/reference.jpg",
+          "character": "../characters/xiaole_daily/reference.jpg",
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 7-year-old Chinese schoolboy with short black hair, round glasses, lively curious face, wearing a red printed cardigan over a shirt, dark jeans, sneakers, [Picture 1]\n<Subject 2>: the same 7-year-old boy in a close-up portrait, short black hair, round glasses, red printed cardigan, [Picture 2]\n\n<Summary>\nMedium close-up, camera slowly arcing around Xiao Le matching Picture 3 as he crouches on a golden beach at low tide, waves retreating in the background, warm sunset light catching his round glasses. He picks up a shiny seashell and looks up, mouth opening in delight, sparkling sand stuck to his knees. Scene and weather: Golden hour sunset over the sea, warm orange and pink sky, gentle waves, glittering wet sand, long soft shadows. Color grade: warm golden-hour film grade, nostalgic seaside vibe.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical boy, keep glasses/cardigan\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\n\n<Detailed Description>\nMedium close-up, camera slowly arcing around Xiao Le matching Picture 3 as he crouches on a golden beach at low tide, waves retreating in the background, warm sunset light catching his round glasses. He picks up a shiny seashell and looks up, mouth opening in delight, sparkling sand stuck to his knees.\nScene and weather: Golden hour sunset over the sea, warm orange and pink sky, gentle waves, glittering wet sand, long soft shadows.\nColor grade: warm golden-hour film grade, nostalgic seaside vibe.\nDialogue: (S1) <d>[Chinese] 哇！这个贝壳会发光！</d>\nNo narration, no other language.\n\n<Overall Soundscape>\ngentle waves, sea breeze, distant seagulls\n\n<Non-Diegetic Music>\nbright ukulele, warm and playful\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_scene_03_fog_ally",
+      "title": "03 雾中山路·嘉玲 近景+拉远",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: the same 17-year-old girl in a close-up portrait, wavy auburn-red hair, Asian oval face, single eyelids, red and yellow striped scarf, [Picture 2]\n\n<Summary>\nClose-up on Jialing matching Picture 1, her face half-veiled in morning mist, a bicycle leaning beside her, then camera slowly pulling back to reveal a winding mountain road swallowed by thick fog, road signs fading into the whiteness. She wipes moisture from her eyelashes and looks up the invisible road. Scene and weather: Thick cold morning fog on a mountain road, volumetric light through mist, dew on everything, edges dissolving into white. Color grade: muted pale grey-teal grade, hazy dreamlike mountain atmosphere.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\n\n<Detailed Description>\nClose-up on Jialing matching Picture 1, her face half-veiled in morning mist, a bicycle leaning beside her, then camera slowly pulling back to reveal a winding mountain road swallowed by thick fog, road signs fading into the whiteness. She wipes moisture from her eyelashes and looks up the invisible road.\nScene and weather: Thick cold morning fog on a mountain road, volumetric light through mist, dew on everything, edges dissolving into white.\nColor grade: muted pale grey-teal grade, hazy dreamlike mountain atmosphere.\nDialogue: (S1) <d>[Chinese] 起雾了……今天怕是到不了了。</d>\nNo narration, no other language.\n\n<Overall Soundscape>\ndamp mountain silence, distant dripping, soft wind through pines\n\n<Non-Diegetic Music>\nslow ambient pads, quiet and suspended\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_scene_04_neon_ling",
+      "title": "04 霓虹夜市·小乐 中景+跟拍",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/xiaole_daily/reference.jpg",
+          "character": "../characters/xiaole_daily/reference.jpg",
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 7-year-old Chinese schoolboy with short black hair, round glasses, lively curious face, wearing a red printed cardigan over a shirt, dark jeans, sneakers, [Picture 1]\n<Subject 2>: the same 7-year-old boy in a close-up portrait, short black hair, round glasses, red printed cardigan, [Picture 2]\n\n<Summary>\nMedium shot, camera tracking forward following Xiao Le matching Picture 3 as he weaves through a neon night market alley, colorful glowing signboards and smoking skewer stalls on both sides, steam rising into colored light. He stops at a candied hawthorn stall, pointing excitedly at the biggest red one, bouncing on his toes. Scene and weather: Vivid neon signs in magenta, cyan and amber, smoke and steam catching the colored light, busy crowded night market. Color grade: high-saturation neon night-market grade, lively cyberpunk-tinged.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical boy, keep glasses/cardigan\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\n\n<Detailed Description>\nMedium shot, camera tracking forward following Xiao Le matching Picture 3 as he weaves through a neon night market alley, colorful glowing signboards and smoking skewer stalls on both sides, steam rising into colored light. He stops at a candied hawthorn stall, pointing excitedly at the biggest red one, bouncing on his toes.\nScene and weather: Vivid neon signs in magenta, cyan and amber, smoke and steam catching the colored light, busy crowded night market.\nColor grade: high-saturation neon night-market grade, lively cyberpunk-tinged.\nDialogue: (S1) <d>[Chinese] 糖葫芦！我要那串最红的！</d>\nNo narration, no other language.\n\n<Overall Soundscape>\nsizzling skewers, chatter, faint electronic music from a stall\n\n<Non-Diegetic Music>\nbouncy synth-pop, energetic and playful\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_scene_05_candle_ally",
+      "title": "05 烛光书房·嘉玲 特写+缓推",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: the same 17-year-old girl in a close-up portrait, wavy auburn-red hair, Asian oval face, single eyelids, red and yellow striped scarf, [Picture 2]\n\n<Summary>\nExtreme close-up on Jialing matching Picture 1 lit by fireplace glow in an old study, dust motes floating in the warm light, walls of old books blurred behind her. Camera slowly creeping in on her eyes as she turns a yellowed page, her expression calm and softly nostalgic. Scene and weather: Deep warm candle and fireplace light, flickering amber shadows, intimate old library atmosphere, dust in the beams of light. Color grade: warm amber-red candlelight grade, cozy classic film look.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\n\n<Detailed Description>\nExtreme close-up on Jialing matching Picture 1 lit by fireplace glow in an old study, dust motes floating in the warm light, walls of old books blurred behind her. Camera slowly creeping in on her eyes as she turns a yellowed page, her expression calm and softly nostalgic.\nScene and weather: Deep warm candle and fireplace light, flickering amber shadows, intimate old library atmosphere, dust in the beams of light.\nColor grade: warm amber-red candlelight grade, cozy classic film look.\nDialogue: (S1) <d>[Chinese] 好久没看这么厚的书了。</d>\nNo narration, no other language.\n\n<Overall Soundscape>\ncrackling fireplace, faint page turns, settling wood\n\n<Non-Diegetic Music>\nsoft acoustic fingerpicking, warm and intimate\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_scene_06_bright_ally",
+      "title": "06 极昼天台·嘉玲 中远景+上摇",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: the same 17-year-old girl in a close-up portrait, wavy auburn-red hair, Asian oval face, single eyelids, red and yellow striped scarf, [Picture 2]\n\n<Summary>\nMedium-wide shot on a blindingly bright rooftop terrace, camera slowly tilting up from her shoes to her face against the overexposed white sky, city skyline hazy below. Wind whips her hair and scarf around her, she squints and holds her scarf closed, small and graceful against the huge white sky. Scene and weather: Blinding high-key white daylight, slightly overexposed sky, clean airy light, strong wind, everything soft and washed out. Color grade: high-key white overexposed grade, ethereal and airy.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\n\n<Detailed Description>\nMedium-wide shot on a blindingly bright rooftop terrace, camera slowly tilting up from her shoes to her face against the overexposed white sky, city skyline hazy below. Wind whips her hair and scarf around her, she squints and holds her scarf closed, small and graceful against the huge white sky.\nScene and weather: Blinding high-key white daylight, slightly overexposed sky, clean airy light, strong wind, everything soft and washed out.\nColor grade: high-key white overexposed grade, ethereal and airy.\nDialogue: (S1) <d>[Chinese] 风真大。……都吹乱了。</d>\nNo narration, no other language.\n\n<Overall Soundscape>\nstrong wind, flapping fabric, faint city hum far below\n\n<Non-Diegetic Music>\nminimal airy pad, bright and light\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_scene_07_sun_ling",
+      "title": "07 金色麦田·小乐 远景+推进",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/xiaole_daily/reference.jpg",
+          "character": "../characters/xiaole_daily/reference.jpg",
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 7-year-old Chinese schoolboy with short black hair, round glasses, lively curious face, wearing a red printed cardigan over a shirt, dark jeans, sneakers, [Picture 1]\n<Subject 2>: the same 7-year-old boy in a close-up portrait, short black hair, round glasses, red printed cardigan, [Picture 2]\n\n<Summary>\nWide shot of golden wheat fields under a bright blue summer sky, camera pushing in as Xiao Le matching Picture 3 runs along a dirt path holding a red kite, the kite lifting off behind him, wheat brushing his legs, his laugh caught in the wind, tiny figure in the vast golden field. Scene and weather: Bright summer day, deep blue sky with white clouds, golden wheat swaying, warm direct sunlight, clear visibility. Color grade: bright warm summer grade, saturated golden field, optimistic.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical boy, keep glasses/cardigan\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\n\n<Detailed Description>\nWide shot of golden wheat fields under a bright blue summer sky, camera pushing in as Xiao Le matching Picture 3 runs along a dirt path holding a red kite, the kite lifting off behind him, wheat brushing his legs, his laugh caught in the wind, tiny figure in the vast golden field.\nScene and weather: Bright summer day, deep blue sky with white clouds, golden wheat swaying, warm direct sunlight, clear visibility.\nColor grade: bright warm summer grade, saturated golden field, optimistic.\nDialogue: (S1) <d>[Chinese] 飞起来啦——我的风筝飞起来啦！</d>\nNo narration, no other language.\n\n<Overall Soundscape>\nwind in the wheat, running footsteps, kite flutter\n\n<Non-Diegetic Music>\ncheerful acoustic folk, bright and free\n\n</Prompt>"
+        }
+      ]
+    }
+  ]
+}

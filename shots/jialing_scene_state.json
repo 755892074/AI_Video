@@ -1,0 +1,42 @@
+{
+  "jialing_scene_00_rain_ally_01": {
+    "prompt_id": "ba0445f7-66b5-4c6c-9ae2-9b0c9b780c63",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_scene_00_rain_ally\\output\\shot01.mp4"
+  },
+  "jialing_scene_01_snow_ally_01": {
+    "prompt_id": "1752ca96-4264-47b3-8220-90b0d6859bf3",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_scene_01_snow_ally\\output\\shot01.mp4"
+  },
+  "jialing_scene_02_sunset_ling_01": {
+    "prompt_id": "fc56d343-a85c-454c-a330-6a168f457b4f",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_scene_02_sunset_ling\\output\\shot01.mp4"
+  },
+  "jialing_scene_03_fog_ally_01": {
+    "prompt_id": "87c14d8d-5ba4-4eb1-ba7d-44c93332a592",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_scene_03_fog_ally\\output\\shot01.mp4"
+  },
+  "jialing_scene_04_neon_ling_01": {
+    "prompt_id": "7b6bfc29-0d8d-4b8f-b007-3a319c3b8b7d",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_scene_04_neon_ling\\output\\shot01.mp4"
+  },
+  "jialing_scene_05_candle_ally_01": {
+    "prompt_id": "491e6229-df0e-4d1e-86d0-3be482d8a62b",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_scene_05_candle_ally\\output\\shot01.mp4"
+  },
+  "jialing_scene_06_bright_ally_01": {
+    "prompt_id": "fd2bec16-db94-48c3-b0b5-9cee4d1d41fa",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_scene_06_bright_ally\\output\\shot01.mp4"
+  },
+  "jialing_scene_07_sun_ling_01": {
+    "prompt_id": "1167daf3-c072-4585-a315-c7f6729d051d",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_scene_07_sun_ling\\output\\shot01.mp4"
+  }
+}

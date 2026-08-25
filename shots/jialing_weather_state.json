@@ -1,0 +1,52 @@
+{
+  "jialing_weather_00_sunny_01": {
+    "prompt_id": "f9f789ff-484a-4e51-8792-a3e42ef8e0f8",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_weather_00_sunny\\output\\shot01.mp4"
+  },
+  "jialing_weather_01_rainy_01": {
+    "prompt_id": "baa7fa14-24cb-4dea-bbf8-ab2c54abfee7",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_weather_01_rainy\\output\\shot01.mp4"
+  },
+  "jialing_weather_02_snowy_01": {
+    "prompt_id": "301070f5-650e-48cc-9549-aa02dc3b8aae",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_weather_02_snowy\\output\\shot01.mp4"
+  },
+  "jialing_weather_03_night_01": {
+    "prompt_id": "8bccd46c-2ca7-493d-acbf-6890e609d248",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_weather_03_night\\output\\shot01.mp4"
+  },
+  "jialing_weather_04_foggy_01": {
+    "prompt_id": "6d859b84-ae65-4d21-9706-990ada6f7071",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_weather_04_foggy\\output\\shot01.mp4"
+  },
+  "jialing_weather_05_neon_01": {
+    "prompt_id": "9d021679-ef11-4818-976b-6dcf5ef58a12",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_weather_05_neon\\output\\shot01.mp4"
+  },
+  "jialing_weather_06_bw_01": {
+    "prompt_id": "02ef5e5f-ff1a-4ae9-b8ce-f8ad2c84e58e",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_weather_06_bw\\output\\shot01.mp4"
+  },
+  "jialing_weather_07_teal_01": {
+    "prompt_id": "b0e2d7da-d6e5-4f36-9bc2-cfbcf73988c3",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_weather_07_teal\\output\\shot01.mp4"
+  },
+  "jialing_weather_08_candle_01": {
+    "prompt_id": "05bbb666-601c-4743-b646-ca5e51c84903",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_weather_08_candle\\output\\shot01.mp4"
+  },
+  "jialing_weather_09_bright_01": {
+    "prompt_id": "5ee99b8e-7bf8-4cfb-a7bc-8fc40fedf575",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_weather_09_bright\\output\\shot01.mp4"
+  }
+}

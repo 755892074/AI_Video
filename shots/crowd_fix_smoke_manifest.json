@@ -1,0 +1,23 @@
+{
+  "comfy_url": "http://100.67.139.74:8188",
+  "workflow": "workflows/h3_r2v_motion_context_api.json",
+  "base_dir": "shots",
+  "sets": [
+    {
+      "id": "crowd_fix_00_cafe",
+      "title": "00 街角咖啡馆·近景群演",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": null,
+          "character": null,
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\nNo specific subject definitions, scenes only.\n\n<Summary>\nStatic medium-close shot at a sidewalk cafe in late afternoon. In the foreground three people sit at small tables: a woman sipping coffee and looking down the street, a man reading a newspaper, a girl scrolling her phone and smiling. Behind them, about ten people stroll past VERY slowly along the sidewalk or sit in the background, softly out of focus. Warm golden light, gentle breeze, leaves drifting. Crowd control: NO giant distant crowds, keep the crowd count between 8 and 20 people total and keep most of them in the middle ground, NOT far away in the background. Background people mostly stand still or drift VERY slowly, acting as living environment. Only 2 to 4 foreground people move, and each of them has a DIFFERENT small action. All movement is SLOW and gentle: people stroll at a leisurely pace, never walk briskly or run. No one crosses the frame in a blur. Faces stay clear and sharp, keep eye contact or readable facial expressions on nearby people. No duplicated faces, no identical poses, no synchronized motion. Color grade: warm golden-hour cafe look, shallow depth of field, foreground sharp.\n\n<Retention Analysis>\nPictures: partially_preserved (style, mood, lighting).\n\n<Detailed Description>\nStatic medium-close shot at a sidewalk cafe in late afternoon. In the foreground three people sit at small tables: a woman sipping coffee and looking down the street, a man reading a newspaper, a girl scrolling her phone and smiling. Behind them, about ten people stroll past VERY slowly along the sidewalk or sit in the background, softly out of focus. Warm golden light, gentle breeze, leaves drifting.\nCrowd control: NO giant distant crowds, keep the crowd count between 8 and 20 people total and keep most of them in the middle ground, NOT far away in the background. Background people mostly stand still or drift VERY slowly, acting as living environment. Only 2 to 4 foreground people move, and each of them has a DIFFERENT small action. All movement is SLOW and gentle: people stroll at a leisurely pace, never walk briskly or run. No one crosses the frame in a blur. Faces stay clear and sharp, keep eye contact or readable facial expressions on nearby people. No duplicated faces, no identical poses, no synchronized motion.\nColor grade: warm golden-hour cafe look, shallow depth of field, foreground sharp.\nNo narration, no other language.\n\n<Overall Soundscape>\nclinking cups, soft chatter, distant street ambience\n\n<Non-Diegetic Music>\nsoft acoustic jazz, unhurried\n\n</Prompt>"
+        }
+      ]
+    }
+  ]
+}

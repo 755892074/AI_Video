@@ -1,0 +1,103 @@
+{
+  "comfy_url": "http://100.67.139.74:8188",
+  "workflow": "workflows/h3_r2v_motion_context_api.json",
+  "base_dir": "shots",
+  "sets": [
+    {
+      "id": "crowd_fix_00_cafe",
+      "title": "00 街角咖啡馆·近景群演",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": null,
+          "character": null,
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\nNo specific subject definitions, scenes only.\n\n<Summary>\nStatic medium-close shot at a sidewalk cafe in late afternoon. In the foreground three people sit at small tables: a woman sipping coffee and looking down the street, a man reading a newspaper, a girl scrolling her phone and smiling. Behind them, about ten people stroll past VERY slowly along the sidewalk or sit in the background, softly out of focus. Warm golden light, gentle breeze, leaves drifting. Crowd control: NO giant distant crowds, keep the crowd count between 8 and 20 people total and keep most of them in the middle ground, NOT far away in the background. Background people mostly stand still or drift VERY slowly, acting as living environment. Only 2 to 4 foreground people move, and each of them has a DIFFERENT small action. All movement is SLOW and gentle: people stroll at a leisurely pace, never walk briskly or run. No one crosses the frame in a blur. Faces stay clear and sharp, keep eye contact or readable facial expressions on nearby people. No duplicated faces, no identical poses, no synchronized motion. Color grade: warm golden-hour cafe look, shallow depth of field, foreground sharp.\n\n<Retention Analysis>\nPictures: partially_preserved (style, mood, lighting).\n\n<Detailed Description>\nStatic medium-close shot at a sidewalk cafe in late afternoon. In the foreground three people sit at small tables: a woman sipping coffee and looking down the street, a man reading a newspaper, a girl scrolling her phone and smiling. Behind them, about ten people stroll past VERY slowly along the sidewalk or sit in the background, softly out of focus. Warm golden light, gentle breeze, leaves drifting.\nCrowd control: NO giant distant crowds, keep the crowd count between 8 and 20 people total and keep most of them in the middle ground, NOT far away in the background. Background people mostly stand still or drift VERY slowly, acting as living environment. Only 2 to 4 foreground people move, and each of them has a DIFFERENT small action. All movement is SLOW and gentle: people stroll at a leisurely pace, never walk briskly or run. No one crosses the frame in a blur. Faces stay clear and sharp, keep eye contact or readable facial expressions on nearby people. No duplicated faces, no identical poses, no synchronized motion.\nColor grade: warm golden-hour cafe look, shallow depth of field, foreground sharp.\nNo narration, no other language.\n\n<Overall Soundscape>\nclinking cups, soft chatter, distant street ambience\n\n<Non-Diegetic Music>\nsoft acoustic jazz, unhurried\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "crowd_fix_01_market",
+      "title": "01 集市摊位·中景差异化",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": null,
+          "character": null,
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\nNo specific subject definitions, scenes only.\n\n<Summary>\nMedium shot of a corner of an open-air market with about fifteen people, camera very slowly pushing in. Foreground: a stall owner arranging fruit, a customer haggling and holding up an apple, a kid tugging his mother's sleeve. In the middle ground people stroll leisurely or stop to look at stalls, a few sit on stools chatting. Everyone moves slowly and naturally, no one hurries. Crowd control: NO giant distant crowds, keep the crowd count between 8 and 20 people total and keep most of them in the middle ground, NOT far away in the background. Background people mostly stand still or drift VERY slowly, acting as living environment. Only 2 to 4 foreground people move, and each of them has a DIFFERENT small action. All movement is SLOW and gentle: people stroll at a leisurely pace, never walk briskly or run. No one crosses the frame in a blur. Faces stay clear and sharp, keep eye contact or readable facial expressions on nearby people. No duplicated faces, no identical poses, no synchronized motion. Color grade: natural daylight market grade, warm and lively but unhurried.\n\n<Retention Analysis>\nPictures: partially_preserved (style, mood, lighting).\n\n<Detailed Description>\nMedium shot of a corner of an open-air market with about fifteen people, camera very slowly pushing in. Foreground: a stall owner arranging fruit, a customer haggling and holding up an apple, a kid tugging his mother's sleeve. In the middle ground people stroll leisurely or stop to look at stalls, a few sit on stools chatting. Everyone moves slowly and naturally, no one hurries.\nCrowd control: NO giant distant crowds, keep the crowd count between 8 and 20 people total and keep most of them in the middle ground, NOT far away in the background. Background people mostly stand still or drift VERY slowly, acting as living environment. Only 2 to 4 foreground people move, and each of them has a DIFFERENT small action. All movement is SLOW and gentle: people stroll at a leisurely pace, never walk briskly or run. No one crosses the frame in a blur. Faces stay clear and sharp, keep eye contact or readable facial expressions on nearby people. No duplicated faces, no identical poses, no synchronized motion.\nColor grade: natural daylight market grade, warm and lively but unhurried.\nNo narration, no other language.\n\n<Overall Soundscape>\nmarket chatter, fruit crate sounds, distant bargaining\n\n<Non-Diegetic Music>\nnone\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "crowd_fix_02_station",
+      "title": "02 车站候车·静态人群+镜头横移",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": null,
+          "character": null,
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\nNo specific subject definitions, scenes only.\n\n<Summary>\nMedium shot of a small train station waiting area, camera panning slowly to the left. About a dozen waiting passengers are mostly still: a man reading on a bench, an old couple sitting side by side, a woman checking her ticket, a student leaning against a pillar with headphones on, a sleeping child in a stroller. Only one person slowly walks into frame from the right carrying a small bag. Calm, almost still atmosphere. Crowd control: NO giant distant crowds, keep the crowd count between 8 and 20 people total and keep most of them in the middle ground, NOT far away in the background. Background people mostly stand still or drift VERY slowly, acting as living environment. Only 2 to 4 foreground people move, and each of them has a DIFFERENT small action. All movement is SLOW and gentle: people stroll at a leisurely pace, never walk briskly or run. No one crosses the frame in a blur. Faces stay clear and sharp, keep eye contact or readable facial expressions on nearby people. No duplicated faces, no identical poses, no synchronized motion. Color grade: soft window-lit interior, muted warm tones, quiet documentary feel.\n\n<Retention Analysis>\nPictures: partially_preserved (style, mood, lighting).\n\n<Detailed Description>\nMedium shot of a small train station waiting area, camera panning slowly to the left. About a dozen waiting passengers are mostly still: a man reading on a bench, an old couple sitting side by side, a woman checking her ticket, a student leaning against a pillar with headphones on, a sleeping child in a stroller. Only one person slowly walks into frame from the right carrying a small bag. Calm, almost still atmosphere.\nCrowd control: NO giant distant crowds, keep the crowd count between 8 and 20 people total and keep most of them in the middle ground, NOT far away in the background. Background people mostly stand still or drift VERY slowly, acting as living environment. Only 2 to 4 foreground people move, and each of them has a DIFFERENT small action. All movement is SLOW and gentle: people stroll at a leisurely pace, never walk briskly or run. No one crosses the frame in a blur. Faces stay clear and sharp, keep eye contact or readable facial expressions on nearby people. No duplicated faces, no identical poses, no synchronized motion.\nColor grade: soft window-lit interior, muted warm tones, quiet documentary feel.\nNo narration, no other language.\n\n<Overall Soundscape>\nfaint platform announcement, soft footsteps, distant train rumble\n\n<Non-Diegetic Music>\ngentle ambient piano, quiet\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "crowd_fix_03_crossing",
+      "title": "03 人行道·慢速人流",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": null,
+          "character": null,
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\nNo specific subject definitions, scenes only.\n\n<Summary>\nMedium-close shot of a tree-lined sidewalk, camera static. About eight people stroll across the frame at an easy, unhurried pace: an old man with a cane, a woman pushing a stroller, two friends chatting and laughing, a delivery rider waiting on his scooter at the edge. In the foreground a girl stops to tie her shoelace, then rises slowly. Everyone moves gently, feet planted naturally, faces visible and clear. Crowd control: NO giant distant crowds, keep the crowd count between 8 and 20 people total and keep most of them in the middle ground, NOT far away in the background. Background people mostly stand still or drift VERY slowly, acting as living environment. Only 2 to 4 foreground people move, and each of them has a DIFFERENT small action. All movement is SLOW and gentle: people stroll at a leisurely pace, never walk briskly or run. No one crosses the frame in a blur. Faces stay clear and sharp, keep eye contact or readable facial expressions on nearby people. No duplicated faces, no identical poses, no synchronized motion. Color grade: soft daylight, gentle contrast, relaxed urban scene.\n\n<Retention Analysis>\nPictures: partially_preserved (style, mood, lighting).\n\n<Detailed Description>\nMedium-close shot of a tree-lined sidewalk, camera static. About eight people stroll across the frame at an easy, unhurried pace: an old man with a cane, a woman pushing a stroller, two friends chatting and laughing, a delivery rider waiting on his scooter at the edge. In the foreground a girl stops to tie her shoelace, then rises slowly. Everyone moves gently, feet planted naturally, faces visible and clear.\nCrowd control: NO giant distant crowds, keep the crowd count between 8 and 20 people total and keep most of them in the middle ground, NOT far away in the background. Background people mostly stand still or drift VERY slowly, acting as living environment. Only 2 to 4 foreground people move, and each of them has a DIFFERENT small action. All movement is SLOW and gentle: people stroll at a leisurely pace, never walk briskly or run. No one crosses the frame in a blur. Faces stay clear and sharp, keep eye contact or readable facial expressions on nearby people. No duplicated faces, no identical poses, no synchronized motion.\nColor grade: soft daylight, gentle contrast, relaxed urban scene.\nNo narration, no other language.\n\n<Overall Soundscape>\nrustling leaves, soft footsteps, distant birds, light traffic\n\n<Non-Diegetic Music>\nlight folk guitar, easygoing\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "crowd_fix_04_schoolgate",
+      "title": "04 学校门口·放学静态",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": null,
+          "character": null,
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\nNo specific subject definitions, scenes only.\n\n<Summary>\nMedium shot in front of a primary school gate after dismissal, camera nearly still with a tiny slow drift. About twelve people: parents standing and waiting quietly, a few kids walking out slowly carrying backpacks, a teacher at the gate nodding to parents, a vendor with a candy cart standing still. The scene is calm and warm, people hardly move, a child waves goodbye slowly. Everything feels like a gentle pause. Crowd control: NO giant distant crowds, keep the crowd count between 8 and 20 people total and keep most of them in the middle ground, NOT far away in the background. Background people mostly stand still or drift VERY slowly, acting as living environment. Only 2 to 4 foreground people move, and each of them has a DIFFERENT small action. All movement is SLOW and gentle: people stroll at a leisurely pace, never walk briskly or run. No one crosses the frame in a blur. Faces stay clear and sharp, keep eye contact or readable facial expressions on nearby people. No duplicated faces, no identical poses, no synchronized motion. Color grade: soft late-afternoon light, warm nostalgic schoolyard tone.\n\n<Retention Analysis>\nPictures: partially_preserved (style, mood, lighting).\n\n<Detailed Description>\nMedium shot in front of a primary school gate after dismissal, camera nearly still with a tiny slow drift. About twelve people: parents standing and waiting quietly, a few kids walking out slowly carrying backpacks, a teacher at the gate nodding to parents, a vendor with a candy cart standing still. The scene is calm and warm, people hardly move, a child waves goodbye slowly. Everything feels like a gentle pause.\nCrowd control: NO giant distant crowds, keep the crowd count between 8 and 20 people total and keep most of them in the middle ground, NOT far away in the background. Background people mostly stand still or drift VERY slowly, acting as living environment. Only 2 to 4 foreground people move, and each of them has a DIFFERENT small action. All movement is SLOW and gentle: people stroll at a leisurely pace, never walk briskly or run. No one crosses the frame in a blur. Faces stay clear and sharp, keep eye contact or readable facial expressions on nearby people. No duplicated faces, no identical poses, no synchronized motion.\nColor grade: soft late-afternoon light, warm nostalgic schoolyard tone.\nNo narration, no other language.\n\n<Overall Soundscape>\nchildren's voices, gentle chatter, distant school bell\n\n<Non-Diegetic Music>\nsoft music-box melody, nostalgic\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "crowd_fix_05_park",
+      "title": "05 公园长椅·前景清晰背景虚化",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": null,
+          "character": null,
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\nNo specific subject definitions, scenes only.\n\n<Summary>\nMedium-close shot on a park bench by a pond, camera slowly pushing in very gently. Foreground sharp: two people sit on the bench, one feeding ducks, the other sketching on a pad. Behind them, about ten people stroll along the path in soft bokeh, blurred and slow, their faces not required to be in focus. Ducks glide on the pond, leaves drift down, warm afternoon sun through the trees. Crowd control: NO giant distant crowds, keep the crowd count between 8 and 20 people total and keep most of them in the middle ground, NOT far away in the background. Background people mostly stand still or drift VERY slowly, acting as living environment. Only 2 to 4 foreground people move, and each of them has a DIFFERENT small action. All movement is SLOW and gentle: people stroll at a leisurely pace, never walk briskly or run. No one crosses the frame in a blur. Faces stay clear and sharp, keep eye contact or readable facial expressions on nearby people. No duplicated faces, no identical poses, no synchronized motion. Color grade: warm backlit park grade, creamy bokeh background, foreground crisp.\n\n<Retention Analysis>\nPictures: partially_preserved (style, mood, lighting).\n\n<Detailed Description>\nMedium-close shot on a park bench by a pond, camera slowly pushing in very gently. Foreground sharp: two people sit on the bench, one feeding ducks, the other sketching on a pad. Behind them, about ten people stroll along the path in soft bokeh, blurred and slow, their faces not required to be in focus. Ducks glide on the pond, leaves drift down, warm afternoon sun through the trees.\nCrowd control: NO giant distant crowds, keep the crowd count between 8 and 20 people total and keep most of them in the middle ground, NOT far away in the background. Background people mostly stand still or drift VERY slowly, acting as living environment. Only 2 to 4 foreground people move, and each of them has a DIFFERENT small action. All movement is SLOW and gentle: people stroll at a leisurely pace, never walk briskly or run. No one crosses the frame in a blur. Faces stay clear and sharp, keep eye contact or readable facial expressions on nearby people. No duplicated faces, no identical poses, no synchronized motion.\nColor grade: warm backlit park grade, creamy bokeh background, foreground crisp.\nNo narration, no other language.\n\n<Overall Soundscape>\nducks quacking, gentle water, distant children laughing\n\n<Non-Diegetic Music>\nsoft acoustic plucking, serene\n\n</Prompt>"
+        }
+      ]
+    }
+  ]
+}

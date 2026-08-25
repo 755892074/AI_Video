@@ -1,0 +1,150 @@
+{
+  "comfy_url": "http://100.67.139.74:8188",
+  "workflow": "workflows/h3_r2v_motion_context_api.json",
+  "base_dir": "shots",
+  "sets": [
+    {
+      "id": "jialing_microexp_00_baseline",
+      "title": "00 基准脸(中性)",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": "../scenes/hogwarts_old_hall.png",
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: the same 17-year-old girl in an extreme close-up portrait, face filling the frame, wavy auburn-red hair, Asian oval face, single eyelids, warm torchlight on her skin, red and yellow striped scarf, [Picture 2]\n<Subject 3>: an old Hogwarts style magic school hall: ancient stone walls, tall arched windows with amber stained glass, floating candles, long wooden tables, warm torchlight, softly blurred behind the girl, NOT a plain white background, [Picture 3]\n\n<Summary>\nExtreme close-up of the girl's face, her face filling the frame, warm torchlight and softly blurred amber hall behind her. Neutral expression: eyes calm and composed, eyelids at rest, lips gently closed, brows relaxed, breathing slow and even. She gazes straight into the camera with a cool, detached, unreadable look, no smile, no frown, perfectly still. This is the emotional zero point.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl in all shots, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\nSubject 3: fully_preserved - soft blurred background\nPicture 3: fully_preserved\n\n<Detailed Description>\nExtreme close-up of the girl's face, her face filling the frame, warm torchlight and softly blurred amber hall behind her. Neutral expression: eyes calm and composed, eyelids at rest, lips gently closed, brows relaxed, breathing slow and even. She gazes straight into the camera with a cool, detached, unreadable look, no smile, no frown, perfectly still. This is the emotional zero point.\nNo narration, no other language.\n\n<Overall Soundscape>\nfaint crackling of floating candles in the warm hall, soft air\n\n<Non-Diegetic Music>\nnone, pure silence baseline\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_microexp_01_surprise",
+      "title": "01 惊讶(意外)",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": "../scenes/hogwarts_old_hall.png",
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: the same 17-year-old girl in an extreme close-up portrait, face filling the frame, wavy auburn-red hair, Asian oval face, single eyelids, warm torchlight on her skin, red and yellow striped scarf, [Picture 2]\n<Subject 3>: an old Hogwarts style magic school hall: ancient stone walls, tall arched windows with amber stained glass, floating candles, long wooden tables, warm torchlight, softly blurred behind the girl, NOT a plain white background, [Picture 3]\n\n<Summary>\nExtreme close-up of the girl's face, warm torchlight, softly blurred amber hall behind. She is neutral for a split second, then surprise flashes: eyelids snap upward, eyes widen, pupils dilate slightly, eyebrows lift high, lips part in a quick gasp. The surprise peaks for one beat, then she catches herself, the expression tightening back into cool composure with a small guarded blink. She says with faint disbelief.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl in all shots, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\nSubject 3: fully_preserved - soft blurred background\nPicture 3: fully_preserved\n\n<Detailed Description>\nExtreme close-up of the girl's face, warm torchlight, softly blurred amber hall behind. She is neutral for a split second, then surprise flashes: eyelids snap upward, eyes widen, pupils dilate slightly, eyebrows lift high, lips part in a quick gasp. The surprise peaks for one beat, then she catches herself, the expression tightening back into cool composure with a small guarded blink. She says with faint disbelief.\nDialogue: (S1) <d>[Chinese] 你来干什么？不是说好了不来吗。</d>\nNo narration, no other language.\n\n<Overall Soundscape>\na sudden soft pop like a tiny firework in the hall, then quiet\n\n<Non-Diegetic Music>\nlight suspenseful string plucks\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_microexp_02_happy",
+      "title": "02 惊喜(压不住的开心)",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": "../scenes/hogwarts_old_hall.png",
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: the same 17-year-old girl in an extreme close-up portrait, face filling the frame, wavy auburn-red hair, Asian oval face, single eyelids, warm torchlight on her skin, red and yellow striped scarf, [Picture 2]\n<Subject 3>: an old Hogwarts style magic school hall: ancient stone walls, tall arched windows with amber stained glass, floating candles, long wooden tables, warm torchlight, softly blurred behind the girl, NOT a plain white background, [Picture 3]\n\n<Summary>\nExtreme close-up of the girl's face, warm torchlight, blurred amber hall behind. She first presses her lips into a stern line to hold back a smile, but the corners of her mouth curl up anyway, eyes crinkling and brightening with a genuine warm sparkle, cheeks flushing faint pink. She tilts her head away slightly to hide the smile, then turns back toward camera with a soft, barely-contained joyful smile. She says teasingly.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl in all shots, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\nSubject 3: fully_preserved - soft blurred background\nPicture 3: fully_preserved\n\n<Detailed Description>\nExtreme close-up of the girl's face, warm torchlight, blurred amber hall behind. She first presses her lips into a stern line to hold back a smile, but the corners of her mouth curl up anyway, eyes crinkling and brightening with a genuine warm sparkle, cheeks flushing faint pink. She tilts her head away slightly to hide the smile, then turns back toward camera with a soft, barely-contained joyful smile. She says teasingly.\nDialogue: (S1) <d>[Chinese] 哼，居然还记得我生日。……行吧，谢了。</d>\nNo narration, no other language.\n\n<Overall Soundscape>\na soft suppressed giggle, gentle hall ambience\n\n<Non-Diegetic Music>\nwarm cheerful light piano\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_microexp_03_sad",
+      "title": "03 悲伤·强忍",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": "../scenes/hogwarts_old_hall.png",
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: the same 17-year-old girl in an extreme close-up portrait, face filling the frame, wavy auburn-red hair, Asian oval face, single eyelids, warm torchlight on her skin, red and yellow striped scarf, [Picture 2]\n<Subject 3>: an old Hogwarts style magic school hall: ancient stone walls, tall arched windows with amber stained glass, floating candles, long wooden tables, warm torchlight, softly blurred behind the girl, NOT a plain white background, [Picture 3]\n\n<Summary>\nExtreme close-up of the girl's face, warm torchlight, blurred amber hall behind. Her eyes slowly grow red and watery, lower lip trembling slightly, jaw tight as she swallows hard to hold back tears. She forces a small brave smile that does not reach her eyes, blinking rapidly to keep the tears in. Her voice is steady but strained as she says. At the end one tear glistens but does not fall.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl in all shots, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\nSubject 3: fully_preserved - soft blurred background\nPicture 3: fully_preserved\n\n<Detailed Description>\nExtreme close-up of the girl's face, warm torchlight, blurred amber hall behind. Her eyes slowly grow red and watery, lower lip trembling slightly, jaw tight as she swallows hard to hold back tears. She forces a small brave smile that does not reach her eyes, blinking rapidly to keep the tears in. Her voice is steady but strained as she says. At the end one tear glistens but does not fall.\nDialogue: (S1) <d>[Chinese] 没事，我挺好的。……真的，你放心吧。</d>\nNo narration, no other language.\n\n<Overall Soundscape>\nslow quiet breaths, faint hall echo\n\n<Non-Diegetic Music>\nmelancholic low piano, sparse\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_microexp_04_smile_tears",
+      "title": "04 含泪微笑(释然)",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": "../scenes/hogwarts_old_hall.png",
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: the same 17-year-old girl in an extreme close-up portrait, face filling the frame, wavy auburn-red hair, Asian oval face, single eyelids, warm torchlight on her skin, red and yellow striped scarf, [Picture 2]\n<Subject 3>: an old Hogwarts style magic school hall: ancient stone walls, tall arched windows with amber stained glass, floating candles, long wooden tables, warm torchlight, softly blurred behind the girl, NOT a plain white background, [Picture 3]\n\n<Summary>\nExtreme close-up of the girl's face, warm torchlight, blurred amber hall behind. A single tear slides down her cheek, but her mouth curves into a genuine soft smile, eyes warm and peaceful, brow relaxed. She exhales slowly, as if letting something go, looking gently past the camera with quiet acceptance. She says softly and sincerely.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl in all shots, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\nSubject 3: fully_preserved - soft blurred background\nPicture 3: fully_preserved\n\n<Detailed Description>\nExtreme close-up of the girl's face, warm torchlight, blurred amber hall behind. A single tear slides down her cheek, but her mouth curves into a genuine soft smile, eyes warm and peaceful, brow relaxed. She exhales slowly, as if letting something go, looking gently past the camera with quiet acceptance. She says softly and sincerely.\nDialogue: (S1) <d>[Chinese] 替我照顾好它。……也不用想我。</d>\nNo narration, no other language.\n\n<Overall Soundscape>\none deep breath, quiet hall, soft candle crackle\n\n<Non-Diegetic Music>\nsoft resolved piano, gentle and warm\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_microexp_05_anger",
+      "title": "05 愤怒·压抑",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": "../scenes/hogwarts_old_hall.png",
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: the same 17-year-old girl in an extreme close-up portrait, face filling the frame, wavy auburn-red hair, Asian oval face, single eyelids, warm torchlight on her skin, red and yellow striped scarf, [Picture 2]\n<Subject 3>: an old Hogwarts style magic school hall: ancient stone walls, tall arched windows with amber stained glass, floating candles, long wooden tables, warm torchlight, softly blurred behind the girl, NOT a plain white background, [Picture 3]\n\n<Summary>\nExtreme close-up of the girl's face, warm torchlight, blurred amber hall behind. Her brow lowers sharply, eyes turning cold and sharp like knives, jaw muscle visibly clenching, jawline tight, nostrils flaring slightly. She keeps her voice low, controlled and dangerous, breathing heavier through her nose. She says with cold finality.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl in all shots, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\nSubject 3: fully_preserved - soft blurred background\nPicture 3: fully_preserved\n\n<Detailed Description>\nExtreme close-up of the girl's face, warm torchlight, blurred amber hall behind. Her brow lowers sharply, eyes turning cold and sharp like knives, jaw muscle visibly clenching, jawline tight, nostrils flaring slightly. She keeps her voice low, controlled and dangerous, breathing heavier through her nose. She says with cold finality.\nDialogue: (S1) <d>[Chinese] 我再说一遍——别跟着我了。</d>\nNo narration, no other language.\n\n<Overall Soundscape>\ntense silence, a faint distant rumble\n\n<Non-Diegetic Music>\nlow ominous drone\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_microexp_06_fear",
+      "title": "06 恐惧/惊慌",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": "../scenes/hogwarts_old_hall.png",
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: the same 17-year-old girl in an extreme close-up portrait, face filling the frame, wavy auburn-red hair, Asian oval face, single eyelids, warm torchlight on her skin, red and yellow striped scarf, [Picture 2]\n<Subject 3>: an old Hogwarts style magic school hall: ancient stone walls, tall arched windows with amber stained glass, floating candles, long wooden tables, warm torchlight, softly blurred behind the girl, NOT a plain white background, [Picture 3]\n\n<Summary>\nExtreme close-up of the girl's face, warm torchlight, blurred amber hall behind. Her pupils suddenly contract, more white of the eye showing, lips pale and slightly parted, brows raised and drawn together, body leaning back a little as if stepping away, breath caught in her chest. Her voice comes out trembling, breaking mid-sentence.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl in all shots, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\nSubject 3: fully_preserved - soft blurred background\nPicture 3: fully_preserved\n\n<Detailed Description>\nExtreme close-up of the girl's face, warm torchlight, blurred amber hall behind. Her pupils suddenly contract, more white of the eye showing, lips pale and slightly parted, brows raised and drawn together, body leaning back a little as if stepping away, breath caught in her chest. Her voice comes out trembling, breaking mid-sentence.\nDialogue: (S1) <d>[Chinese] 别、别过来。你别过来！</d>\nNo narration, no other language.\n\n<Overall Soundscape>\nquick shallow breaths, heartbeat-like thumping\n\n<Non-Diegetic Music>\ndissonant high string tremolo\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_microexp_07_disgust",
+      "title": "07 厌恶/嫌弃",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": "../scenes/hogwarts_old_hall.png",
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: the same 17-year-old girl in an extreme close-up portrait, face filling the frame, wavy auburn-red hair, Asian oval face, single eyelids, warm torchlight on her skin, red and yellow striped scarf, [Picture 2]\n<Subject 3>: an old Hogwarts style magic school hall: ancient stone walls, tall arched windows with amber stained glass, floating candles, long wooden tables, warm torchlight, softly blurred behind the girl, NOT a plain white background, [Picture 3]\n\n<Summary>\nExtreme close-up of the girl's face, warm torchlight, blurred amber hall behind. Her nose wrinkles slightly, corners of her mouth pull down, brows knit in displeasure, head tilting back a fraction as if distancing herself from something unpleasant, gaze flat and dismissive. She says with cool disdain, each word deliberate.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl in all shots, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\nSubject 3: fully_preserved - soft blurred background\nPicture 3: fully_preserved\n\n<Detailed Description>\nExtreme close-up of the girl's face, warm torchlight, blurred amber hall behind. Her nose wrinkles slightly, corners of her mouth pull down, brows knit in displeasure, head tilting back a fraction as if distancing herself from something unpleasant, gaze flat and dismissive. She says with cool disdain, each word deliberate.\nDialogue: (S1) <d>[Chinese] 拿开。你那一套，留着糊弄别人去。</d>\nNo narration, no other language.\n\n<Overall Soundscape>\na soft dismissive exhale, quiet hall\n\n<Non-Diegetic Music>\nnone, cold silence\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_microexp_08_contempt",
+      "title": "08 轻蔑/不屑",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": "../scenes/hogwarts_old_hall.png",
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: the same 17-year-old girl in an extreme close-up portrait, face filling the frame, wavy auburn-red hair, Asian oval face, single eyelids, warm torchlight on her skin, red and yellow striped scarf, [Picture 2]\n<Subject 3>: an old Hogwarts style magic school hall: ancient stone walls, tall arched windows with amber stained glass, floating candles, long wooden tables, warm torchlight, softly blurred behind the girl, NOT a plain white background, [Picture 3]\n\n<Summary>\nExtreme close-up of the girl's face, warm torchlight, blurred amber hall behind. A single corner of her mouth lifts into a slow cold smirk, eyelids drooping slightly, looking down at the camera from a half-lidded gaze, chin up, unhurried and perfectly composed. She drawls with mock appreciation.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl in all shots, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\nSubject 3: fully_preserved - soft blurred background\nPicture 3: fully_preserved\n\n<Detailed Description>\nExtreme close-up of the girl's face, warm torchlight, blurred amber hall behind. A single corner of her mouth lifts into a slow cold smirk, eyelids drooping slightly, looking down at the camera from a half-lidded gaze, chin up, unhurried and perfectly composed. She drawls with mock appreciation.\nDialogue: (S1) <d>[Chinese] 就这？我还以为你有多大本事。</d>\nNo narration, no other language.\n\n<Overall Soundscape>\nfaint hall ambience, slow candle crackle\n\n<Non-Diegetic Music>\nlight nonchalant jazz plucks\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_microexp_09_embarrass",
+      "title": "09 羞耻/尴尬",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": "../scenes/hogwarts_old_hall.png",
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: the same 17-year-old girl in an extreme close-up portrait, face filling the frame, wavy auburn-red hair, Asian oval face, single eyelids, warm torchlight on her skin, red and yellow striped scarf, [Picture 2]\n<Subject 3>: an old Hogwarts style magic school hall: ancient stone walls, tall arched windows with amber stained glass, floating candles, long wooden tables, warm torchlight, softly blurred behind the girl, NOT a plain white background, [Picture 3]\n\n<Summary>\nExtreme close-up of the girl's face, warm torchlight, blurred amber hall behind. She glances away first, eyes darting sideways then down, cheeks flushing visibly red with heat, biting her lower lip, mouth opening as if to speak then closing again. Finally she speaks in a small mumbling voice, barely audible, avoiding the camera.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl in all shots, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\nSubject 3: fully_preserved - soft blurred background\nPicture 3: fully_preserved\n\n<Detailed Description>\nExtreme close-up of the girl's face, warm torchlight, blurred amber hall behind. She glances away first, eyes darting sideways then down, cheeks flushing visibly red with heat, biting her lower lip, mouth opening as if to speak then closing again. Finally she speaks in a small mumbling voice, barely audible, avoiding the camera.\nDialogue: (S1) <d>[Chinese] ……刚才那句话，你当我没说。</d>\nNo narration, no other language.\n\n<Overall Soundscape>\na nervous swallow, quiet hall\n\n<Non-Diegetic Music>\nshy gentle plucked strings\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_microexp_10_longing",
+      "title": "10 思念(温柔底色)",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": "../scenes/hogwarts_old_hall.png",
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: the same 17-year-old girl in an extreme close-up portrait, face filling the frame, wavy auburn-red hair, Asian oval face, single eyelids, warm torchlight on her skin, red and yellow striped scarf, [Picture 2]\n<Subject 3>: an old Hogwarts style magic school hall: ancient stone walls, tall arched windows with amber stained glass, floating candles, long wooden tables, warm torchlight, softly blurred behind the girl, NOT a plain white background, [Picture 3]\n\n<Summary>\nExtreme close-up of the girl's face, warm torchlight, blurred amber hall behind. Her gaze drifts past the camera to a distant point, eyes softening and going dreamy, a faint warm smile settling on her lips, fingers unconsciously stroking the end of her red and yellow striped scarf. She speaks in a low, gentle, yearning voice, as if talking to a memory.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl in all shots, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\nSubject 3: fully_preserved - soft blurred background\nPicture 3: fully_preserved\n\n<Detailed Description>\nExtreme close-up of the girl's face, warm torchlight, blurred amber hall behind. Her gaze drifts past the camera to a distant point, eyes softening and going dreamy, a faint warm smile settling on her lips, fingers unconsciously stroking the end of her red and yellow striped scarf. She speaks in a low, gentle, yearning voice, as if talking to a memory.\nDialogue: (S1) <d>[Chinese] 要是你还在，肯定会笑我今天的傻样吧。</d>\nNo narration, no other language.\n\n<Overall Soundscape>\nsoft hall breeze, distant candle flames\n\n<Non-Diegetic Music>\ntender nostalgic piano, warm and slow\n\n</Prompt>"
+        }
+      ]
+    }
+  ]
+}

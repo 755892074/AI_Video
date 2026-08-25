@@ -1,0 +1,42 @@
+{
+  "crowd_crowd_00_metro_01": {
+    "prompt_id": "450dc17c-1f86-40f6-90c8-7e40a435833d",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\crowd_crowd_00_metro\\output\\shot01.mp4"
+  },
+  "crowd_crowd_01_concert_01": {
+    "prompt_id": "bc14d32e-5b58-4383-8a14-d2766e19984b",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\crowd_crowd_01_concert\\output\\shot01.mp4"
+  },
+  "crowd_crowd_02_nightmarket_01": {
+    "prompt_id": "21c4c6e2-444e-4b3d-8635-880d0592ce72",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\crowd_crowd_02_nightmarket\\output\\shot01.mp4"
+  },
+  "crowd_crowd_03_springfestival_01": {
+    "prompt_id": "ef0788c9-50bf-478c-8ed7-c82f0aa4577d",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\crowd_crowd_03_springfestival\\output\\shot01.mp4"
+  },
+  "crowd_crowd_04_crosswalk_01": {
+    "prompt_id": "b70bfd13-85fa-4e4c-8840-4a63b0b5f51e",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\crowd_crowd_04_crosswalk\\output\\shot01.mp4"
+  },
+  "crowd_crowd_05_beach_01": {
+    "prompt_id": "6114b982-8463-4add-a222-9c06e0b54874",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\crowd_crowd_05_beach\\output\\shot01.mp4"
+  },
+  "crowd_crowd_06_schoolyard_01": {
+    "prompt_id": "5e607779-69b0-4b35-bcf9-9bd35919bdf2",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\crowd_crowd_06_schoolyard\\output\\shot01.mp4"
+  },
+  "crowd_crowd_07_stadium_01": {
+    "prompt_id": "9386cc2c-e1c7-43d0-aa21-80a431150d76",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\crowd_crowd_07_stadium\\output\\shot01.mp4"
+  }
+}

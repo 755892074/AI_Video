@@ -1,0 +1,99 @@
+{
+  "comfy_url": "http://100.67.139.74:8188",
+  "workflow": "workflows/h3_r2v_motion_context_api.json",
+  "base_dir": "shots",
+  "sets": [
+    {
+      "id": "jialing_cast_00_rain_xiaole",
+      "title": "00 雨天·躲雨(嘉玲+小乐)",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/xiaole_daily/reference.jpg",
+          "scene": "../scenes/hogwarts_old_hall.png",
+          "extra_images": [],
+          "seconds": 6.0,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: a 7-year-old Chinese schoolboy with short black hair, round glasses, lively curious face, wearing a red printed cardigan over a shirt, dark jeans, sneakers, [Picture 2]\n<Subject 3>: an old Hogwarts style magic school hall: ancient stone walls, tall arched windows with amber stained glass, floating candles, long wooden tables, softly blurred behind the characters, NOT a plain white background, [Picture 3]\n\n<Summary>\nMedium shot. Xiao Le, the small boy with glasses in a red cardigan matching Picture 2, bursts in from the rain-soaked doorway, shaking water from his hair, breathless. Jialing stands by the door, arms crossed, cool detached face matching Picture 1, watching him, then pulls out a handkerchief and offers it. Her face stays cold but her eyes soften just a little. Weather and lighting: Heavy rain patters against the tall arched windows, rain streaks running down the glass, grey overcast daylight dimming the hall, cool damp atmosphere, puddles of grey light on the stone floor. Color grade: overcast desaturated grey-blue color grade, melancholic rainy mood.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - identical boy, keep glasses/cardigan\nPicture 2: fully_preserved\nSubject 3: partially_preserved - blurred background, lighting changes with weather\nPicture 3: partially_preserved\n\n<Detailed Description>\nMedium shot. Xiao Le, the small boy with glasses in a red cardigan matching Picture 2, bursts in from the rain-soaked doorway, shaking water from his hair, breathless. Jialing stands by the door, arms crossed, cool detached face matching Picture 1, watching him, then pulls out a handkerchief and offers it. Her face stays cold but her eyes soften just a little.\nWeather and lighting: Heavy rain patters against the tall arched windows, rain streaks running down the glass, grey overcast daylight dimming the hall, cool damp atmosphere, puddles of grey light on the stone floor.\nColor grade: overcast desaturated grey-blue color grade, melancholic rainy mood.\nDialogue: (S1, S2) <d>[Chinese] 小乐：嘉玲姐！淋湿了淋湿了！\n嘉玲：……毛毛躁躁的。拿着擦擦。</d>\nNo narration, no other language.\n\n<Overall Soundscape>\nsteady rain pattering on the roof and windows, distant low thunder\n\n<Non-Diegetic Music>\nslow sparse piano, rain-soaked but warm at the edges\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_cast_01_sunny_solo",
+      "title": "01 晴天·窗边独白(嘉玲单人)",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": "../scenes/hogwarts_old_hall.png",
+          "extra_images": [],
+          "seconds": 6.0,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: the same 17-year-old girl in a close-up portrait, wavy auburn-red hair, Asian oval face, single eyelids, red and yellow striped scarf, [Picture 2]\n<Subject 3>: an old Hogwarts style magic school hall: ancient stone walls, tall arched windows with amber stained glass, floating candles, long wooden tables, softly blurred behind the characters, NOT a plain white background, [Picture 3]\n\n<Summary>\nClose-up. Jialing leans beside the sunlit window, golden light washing over her face matching Picture 1, her cool eyes drifting to the far distance, a rare hint of softness and missing someone crossing her face as she murmurs quietly to herself, lips moving slightly. Weather and lighting: Bright warm morning sunlight streams through the tall arched windows, golden sunbeams and dust motes floating in the air, the hall glowing warm amber-gold. Color grade: warm golden color grade, sunny and optimistic.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\nSubject 3: partially_preserved - blurred background, lighting changes with weather\nPicture 3: partially_preserved\n\n<Detailed Description>\nClose-up. Jialing leans beside the sunlit window, golden light washing over her face matching Picture 1, her cool eyes drifting to the far distance, a rare hint of softness and missing someone crossing her face as she murmurs quietly to herself, lips moving slightly.\nWeather and lighting: Bright warm morning sunlight streams through the tall arched windows, golden sunbeams and dust motes floating in the air, the hall glowing warm amber-gold.\nColor grade: warm golden color grade, sunny and optimistic.\nDialogue: (S1, S2) <d>[Chinese] 嘉玲：天气这么好……你要是还在，该多好。</d>\nNo narration, no other language.\n\n<Overall Soundscape>\nfaint birdsong outside, soft warm breeze, gentle hall ambience\n\n<Non-Diegetic Music>\nbright warm acoustic guitar, gentle and nostalgic\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_cast_02_snow_xiaole",
+      "title": "02 雪天·雪球偷袭(嘉玲+小乐)",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/xiaole_daily/reference.jpg",
+          "scene": "../scenes/hogwarts_old_hall.png",
+          "extra_images": [],
+          "seconds": 6.0,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: a 7-year-old Chinese schoolboy with short black hair, round glasses, lively curious face, wearing a red printed cardigan over a shirt, dark jeans, sneakers, [Picture 2]\n<Subject 3>: an old Hogwarts style magic school hall: ancient stone walls, tall arched windows with amber stained glass, floating candles, long wooden tables, softly blurred behind the characters, NOT a plain white background, [Picture 3]\n\n<Summary>\nMedium shot. Xiao Le matching Picture 2 sneaks up behind a window holding a fluffy snowball, grinning mischievously, arm raised ready to throw. Jialing matching Picture 1 slowly turns her head, one eyebrow raised, cold gaze pinning him in place. Xiao Le freezes mid-throw with an awkward sheepish smile, snowball dripping in his hand. Weather and lighting: Soft snowflakes drift past the windows and float inside near the glass, the hall lit by cold pale winter daylight, frost-white and quiet, a hush of snowy stillness in the air. Color grade: cool white-blue color grade, winter cold and playful.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - identical boy, keep glasses/cardigan\nPicture 2: fully_preserved\nSubject 3: partially_preserved - blurred background, lighting changes with weather\nPicture 3: partially_preserved\n\n<Detailed Description>\nMedium shot. Xiao Le matching Picture 2 sneaks up behind a window holding a fluffy snowball, grinning mischievously, arm raised ready to throw. Jialing matching Picture 1 slowly turns her head, one eyebrow raised, cold gaze pinning him in place. Xiao Le freezes mid-throw with an awkward sheepish smile, snowball dripping in his hand.\nWeather and lighting: Soft snowflakes drift past the windows and float inside near the glass, the hall lit by cold pale winter daylight, frost-white and quiet, a hush of snowy stillness in the air.\nColor grade: cool white-blue color grade, winter cold and playful.\nDialogue: (S1, S2) <d>[Chinese] 小乐：嘿……嘉玲姐，你先别动啊——\n嘉玲：……你敢。</d>\nNo narration, no other language.\n\n<Overall Soundscape>\nsoft wind, muffled snowy quiet, faint flakes brushing the glass\n\n<Non-Diegetic Music>\nlight crystalline chimes, icy and mischievous\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_cast_03_candle_rooster",
+      "title": "03 烛光·纸鹤变身(嘉玲+公鸡)",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": "../scenes/hogwarts_old_hall.png",
+          "extra_images": [
+            "../characters/rooster/reference.png"
+          ],
+          "seconds": 6.0,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: the same 17-year-old girl in a close-up portrait, wavy auburn-red hair, Asian oval face, single eyelids, red and yellow striped scarf, [Picture 2]\n<Subject 3>: an old Hogwarts style magic school hall: ancient stone walls, tall arched windows with amber stained glass, floating candles, long wooden tables, softly blurred behind the characters, NOT a plain white background, [Picture 3]\n<Subject 4>: a realistic large red rooster, big jagged bright red comb, orange-red chest and neck feathers, deep green metallic tail feathers, sturdy legs with spurs, [Picture 4]\n\n<Summary>\nClose-up. On a candlelit wooden table, a paper crane suddenly transforms into a big realistic red rooster matching Picture 4, which crows loudly and flaps onto the tabletop, feathers ruffled. Jialing matching Picture 1 watches with one eyebrow raised, half amused half exasperated, cool and unfazed. Weather and lighting: Close warm candlelight flickers across the room, deep amber-red glow, firelight dancing, soft shadows flickering on the stone walls, intimate warm darkness. Color grade: warm amber-red candlelight color grade, intimate and cozy.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\nSubject 3: partially_preserved - blurred background, lighting changes with weather\nPicture 3: partially_preserved\nSubject 4: fully_preserved - realistic rooster matching Picture 4\nPicture 4: fully_preserved\n\n<Detailed Description>\nClose-up. On a candlelit wooden table, a paper crane suddenly transforms into a big realistic red rooster matching Picture 4, which crows loudly and flaps onto the tabletop, feathers ruffled. Jialing matching Picture 1 watches with one eyebrow raised, half amused half exasperated, cool and unfazed.\nWeather and lighting: Close warm candlelight flickers across the room, deep amber-red glow, firelight dancing, soft shadows flickering on the stone walls, intimate warm darkness.\nColor grade: warm amber-red candlelight color grade, intimate and cozy.\nDialogue: (S1, S2) <d>[Chinese] 公鸡：喔喔喔——\n嘉玲：……又是你。变回去。</d>\nNo narration, no other language.\n\n<Overall Soundscape>\ncrackling fire, soft air, a loud rooster crow\n\n<Non-Diegetic Music>\ngentle vintage jazz, playful and intimate\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_cast_04_neon_solo",
+      "title": "04 霓虹雨夜·独白(嘉玲单人)",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": "../scenes/hogwarts_old_hall.png",
+          "extra_images": [],
+          "seconds": 6.0,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: the same 17-year-old girl in a close-up portrait, wavy auburn-red hair, Asian oval face, single eyelids, red and yellow striped scarf, [Picture 2]\n<Subject 3>: an old Hogwarts style magic school hall: ancient stone walls, tall arched windows with amber stained glass, floating candles, long wooden tables, softly blurred behind the characters, NOT a plain white background, [Picture 3]\n\n<Summary>\nClose-up. Jialing matching Picture 1 looks out a rain-streaked window, magenta and cyan neon reflections sliding across her cool face, eyes slightly unfocused, voice low and quiet as she speaks one line to herself. Weather and lighting: Electric neon light leaks through rain-streaked windows in magenta and cyan bars, colored reflections sweeping across the dark hall, synthetic cyberpunk glow mixing with the candlelight, rain sliding down the glass. Color grade: high-contrast magenta-cyan neon color grade.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\nSubject 3: partially_preserved - blurred background, lighting changes with weather\nPicture 3: partially_preserved\n\n<Detailed Description>\nClose-up. Jialing matching Picture 1 looks out a rain-streaked window, magenta and cyan neon reflections sliding across her cool face, eyes slightly unfocused, voice low and quiet as she speaks one line to herself.\nWeather and lighting: Electric neon light leaks through rain-streaked windows in magenta and cyan bars, colored reflections sweeping across the dark hall, synthetic cyberpunk glow mixing with the candlelight, rain sliding down the glass.\nColor grade: high-contrast magenta-cyan neon color grade.\nDialogue: (S1, S2) <d>[Chinese] 嘉玲：这城市真吵。……可也比一个人待着强。</d>\nNo narration, no other language.\n\n<Overall Soundscape>\nsteady rain on glass, distant electronic hum, city buzz\n\n<Non-Diegetic Music>\nsynthesizer pads, neon-lit melancholic vibe\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_cast_05_fog_xiaole",
+      "title": "05 雾天·雾中呼唤(嘉玲+小乐)",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/xiaole_daily/reference.jpg",
+          "scene": "../scenes/hogwarts_old_hall.png",
+          "extra_images": [],
+          "seconds": 6.0,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: a 7-year-old Chinese schoolboy with short black hair, round glasses, lively curious face, wearing a red printed cardigan over a shirt, dark jeans, sneakers, [Picture 2]\n<Subject 3>: an old Hogwarts style magic school hall: ancient stone walls, tall arched windows with amber stained glass, floating candles, long wooden tables, softly blurred behind the characters, NOT a plain white background, [Picture 3]\n\n<Summary>\nMedium shot. Thick fog swirls through the hall, Xiao Le matching Picture 2 runs ahead, his small silhouette already fading into the mist, laughing. Jialing matching Picture 1 stands behind, calling after him, cool tone with a hint of worry beneath. Weather and lighting: Thick grey fog drifts through the hall, hazy and veiled, volumetric light piercing the mist in pale shafts, edges of the room dissolving into fog. Color grade: muted teal-grey color grade, dreamy and hazy.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - identical boy, keep glasses/cardigan\nPicture 2: fully_preserved\nSubject 3: partially_preserved - blurred background, lighting changes with weather\nPicture 3: partially_preserved\n\n<Detailed Description>\nMedium shot. Thick fog swirls through the hall, Xiao Le matching Picture 2 runs ahead, his small silhouette already fading into the mist, laughing. Jialing matching Picture 1 stands behind, calling after him, cool tone with a hint of worry beneath.\nWeather and lighting: Thick grey fog drifts through the hall, hazy and veiled, volumetric light piercing the mist in pale shafts, edges of the room dissolving into fog.\nColor grade: muted teal-grey color grade, dreamy and hazy.\nDialogue: (S1, S2) <d>[Chinese] 嘉玲：小乐，别跑远了。雾这么大。\n小乐：知道啦——马上回来！</d>\nNo narration, no other language.\n\n<Overall Soundscape>\nmuffled distant sounds, soft damp air, echo in the fog\n\n<Non-Diegetic Music>\nambient drones, slow and dreamlike\n\n</Prompt>"
+        }
+      ]
+    }
+  ]
+}

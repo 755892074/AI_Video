@@ -1,0 +1,57 @@
+{
+  "jialing_microexp_00_baseline_01": {
+    "prompt_id": "1824b4a1-1983-4a35-b2aa-0efa8c3af1ee",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_microexp_00_baseline\\output\\shot01.mp4"
+  },
+  "jialing_microexp_01_surprise_01": {
+    "prompt_id": "b6b1fc53-0a6a-4189-9c4c-72f12559da42",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_microexp_01_surprise\\output\\shot01.mp4"
+  },
+  "jialing_microexp_02_happy_01": {
+    "prompt_id": "084dfac8-9b30-462a-8fd4-34dd16028ca8",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_microexp_02_happy\\output\\shot01.mp4"
+  },
+  "jialing_microexp_03_sad_01": {
+    "prompt_id": "df835e11-4f32-41fc-8591-f29bff536f08",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_microexp_03_sad\\output\\shot01.mp4"
+  },
+  "jialing_microexp_04_smile_tears_01": {
+    "prompt_id": "5fe42898-e3cc-42a5-8fe7-625bf7c49235",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_microexp_04_smile_tears\\output\\shot01.mp4"
+  },
+  "jialing_microexp_05_anger_01": {
+    "prompt_id": "d84f4847-0d44-4662-a987-051e3c0923c1",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_microexp_05_anger\\output\\shot01.mp4"
+  },
+  "jialing_microexp_06_fear_01": {
+    "prompt_id": "c57ad8d3-5a72-4c64-a95a-8d03e3ecf2bc",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_microexp_06_fear\\output\\shot01.mp4"
+  },
+  "jialing_microexp_07_disgust_01": {
+    "prompt_id": "ddec2685-17a9-41a6-b628-b8d6b455ad8f",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_microexp_07_disgust\\output\\shot01.mp4"
+  },
+  "jialing_microexp_08_contempt_01": {
+    "prompt_id": "9fa04574-b842-45e0-8826-2314e01e478d",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_microexp_08_contempt\\output\\shot01.mp4"
+  },
+  "jialing_microexp_09_embarrass_01": {
+    "prompt_id": "e32bc650-d7e6-4898-8bb2-68cb4c11ba4c",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_microexp_09_embarrass\\output\\shot01.mp4"
+  },
+  "jialing_microexp_10_longing_01": {
+    "prompt_id": "d5c8f94a-8469-4d79-9146-0fc3639d1383",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_microexp_10_longing\\output\\shot01.mp4"
+  }
+}
