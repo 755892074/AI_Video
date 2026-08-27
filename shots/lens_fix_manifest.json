@@ -1,0 +1,39 @@
+{
+  "comfy_url": "http://100.67.139.74:8188",
+  "workflow": "workflows/h3_r2v_motion_context_api.json",
+  "base_dir": "shots",
+  "sets": [
+    {
+      "id": "jialing_lens_fix_04_bonfire",
+      "title": "04fix 篝火夜林·嘉玲 特写+30°短弧",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: the same 17-year-old girl in a close-up portrait, wavy auburn-red hair, Asian oval face, single eyelids, red and yellow striped scarf, [Picture 2]\n\n<Summary>\nClose-up on Jialing matching Picture 1 kneeling beside a single campfire in a dark forest clearing. Only the camera moves: it makes one short slow arc of about 30 degrees, starting from her right side and gliding to slightly in front of her, then gently holds still. The world does not rotate at all: Jialing stays kneeling and facing the campfire the whole time without turning her body, and one large dark pine tree remains firmly fixed at the right edge of the frame throughout the entire shot. Warm firelight flickers steadily across her face, sparks drifting up from that same single fire. Scene and weather: Clear starry night, dark pine forest, one steady campfire, drifting sparks, cool air, faint smoke curling upward. Color grade: warm firelight against dark teal, high contrast cinematic.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\n\n<Detailed Description>\nClose-up on Jialing matching Picture 1 kneeling beside a single campfire in a dark forest clearing. Only the camera moves: it makes one short slow arc of about 30 degrees, starting from her right side and gliding to slightly in front of her, then gently holds still. The world does not rotate at all: Jialing stays kneeling and facing the campfire the whole time without turning her body, and one large dark pine tree remains firmly fixed at the right edge of the frame throughout the entire shot. Warm firelight flickers steadily across her face, sparks drifting up from that same single fire.\nScene and weather: Clear starry night, dark pine forest, one steady campfire, drifting sparks, cool air, faint smoke curling upward.\nColor grade: warm firelight against dark teal, high contrast cinematic.\nDialogue: (S1) <d>[Chinese] 火的声音，真好听。</d>\nNo narration, no other language.\n\n<Overall Soundscape>\ncrackling fire, night insects, distant owl call\n\n<Non-Diegetic Music>\nwarm fingerpicked acoustic, calm and meditative\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_lens_fix_07_lake",
+      "title": "07fix 晨湖静谧·嘉玲 远景+低幅缓升",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: the same 17-year-old girl in a close-up portrait, wavy auburn-red hair, Asian oval face, single eyelids, red and yellow striped scarf, [Picture 2]\n\n<Summary>\nWide shot on the shore of a calm mountain lake at sunrise. Jialing matching Picture 1 stands at the water's edge on the left side of the frame, seen from her side profile. Only the camera moves: it rises very slowly and by only a small amount, staying at a modest height so Jialing remains clearly visible in the lower left of the frame at all times. The lake surface stays perfectly calm and still, reflecting the sky, distant forested hills behind her. A large grey boulder stays fixed at the bottom-right corner of the frame throughout the entire shot. Nothing in the world rotates or moves except the gentle mist drifting over the water. Scene and weather: Sunrise, soft golden-pink light over a still mirror-like lake, thin mist on the water surface, quiet forested hills, calm and peaceful. Color grade: soft dawn pastel grade, serene and airy.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\n\n<Detailed Description>\nWide shot on the shore of a calm mountain lake at sunrise. Jialing matching Picture 1 stands at the water's edge on the left side of the frame, seen from her side profile. Only the camera moves: it rises very slowly and by only a small amount, staying at a modest height so Jialing remains clearly visible in the lower left of the frame at all times. The lake surface stays perfectly calm and still, reflecting the sky, distant forested hills behind her. A large grey boulder stays fixed at the bottom-right corner of the frame throughout the entire shot. Nothing in the world rotates or moves except the gentle mist drifting over the water.\nScene and weather: Sunrise, soft golden-pink light over a still mirror-like lake, thin mist on the water surface, quiet forested hills, calm and peaceful.\nColor grade: soft dawn pastel grade, serene and airy.\nDialogue: (S1) <d>[Chinese] 好安静啊。</d>\nNo narration, no other language.\n\n<Overall Soundscape>\nstill water, faint birdsong, soft morning breeze\n\n<Non-Diegetic Music>\nminimal ambient piano, quiet and vast\n\n</Prompt>"
+        }
+      ]
+    }
+  ]
+}

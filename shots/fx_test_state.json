@@ -1,0 +1,42 @@
+{
+  "jialing_fx_00_cloth_01": {
+    "prompt_id": "7ff3034f-993f-4e2e-a04c-c01941dcdec5",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_fx_00_cloth\\output\\shot01.mp4"
+  },
+  "jialing_fx_01_drop_01": {
+    "prompt_id": "7f66bbe0-2eca-4a64-8524-31526e50994d",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_fx_01_drop\\output\\shot01.mp4"
+  },
+  "jialing_fx_02_water_01": {
+    "prompt_id": "57511814-dcd1-43f9-b70b-50cf53f31ee7",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_fx_02_water\\output\\shot01.mp4"
+  },
+  "jialing_fx_03_proj_01": {
+    "prompt_id": "69a47f09-988a-4e26-8621-b47f04b327e7",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_fx_03_proj\\output\\shot01.mp4"
+  },
+  "jialing_fx_04_fireball_01": {
+    "prompt_id": "a850ad8c-771c-4d70-b989-bbd93a23f728",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_fx_04_fireball\\output\\shot01.mp4"
+  },
+  "jialing_fx_05_lightning_01": {
+    "prompt_id": "1a8abd64-871d-4882-ba55-e67dd899eb12",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_fx_05_lightning\\output\\shot01.mp4"
+  },
+  "jialing_fx_06_stardust_01": {
+    "prompt_id": "54765f7c-b3d7-4954-b352-9c532327e0ff",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_fx_06_stardust\\output\\shot01.mp4"
+  },
+  "jialing_fx_07_transform_01": {
+    "prompt_id": "e3d08cf8-5b80-49fd-ad13-d608b1492cad",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_fx_07_transform\\output\\shot01.mp4"
+  }
+}

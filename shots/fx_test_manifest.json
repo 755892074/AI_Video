@@ -1,0 +1,135 @@
+{
+  "comfy_url": "http://100.67.139.74:8188",
+  "workflow": "workflows/h3_r2v_motion_context_api.json",
+  "base_dir": "shots",
+  "sets": [
+    {
+      "id": "jialing_fx_00_cloth",
+      "title": "00 物理·布料风 嘉玲/礼堂",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": "../scenes/hogwarts_old_hall.png",
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: the same 17-year-old girl in a close-up portrait, wavy auburn-red hair, Asian oval face, single eyelids, red and yellow striped scarf, [Picture 2]\n<Subject 3>: the old candle-lit Hogwarts-style hall shown in Picture 3, dark stone walls, long wooden tables, floating candles, warm amber lighting, [Picture 3]\n\n<Summary>\nMedium shot inside an old candle-lit Hogwarts hall matching Picture 3. A sudden gust of magical wind sweeps through the hall: Jialing matching Picture 1 stands still while her dark robe hem, her red and yellow scarf and her wavy auburn hair all billow and stream sideways in the wind, fabric rippling and fluttering naturally, candle flames along the walls leaning and flickering, then the wind dies down and everything settles back. The cloth movement is smooth and continuous, driven by the same single gust. Scene and weather: Dim candle-lit stone hall, dust motes in the air, one strong gust of wind passing through, warm amber glow. Color grade: warm candlelit amber grade, old-magic atmosphere.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\nSubject 3: partially_preserved - blurred background, lighting changes with the magic\nPicture 3: partially_preserved\n\n<Detailed Description>\nMedium shot inside an old candle-lit Hogwarts hall matching Picture 3. A sudden gust of magical wind sweeps through the hall: Jialing matching Picture 1 stands still while her dark robe hem, her red and yellow scarf and her wavy auburn hair all billow and stream sideways in the wind, fabric rippling and fluttering naturally, candle flames along the walls leaning and flickering, then the wind dies down and everything settles back. The cloth movement is smooth and continuous, driven by the same single gust.\nScene and weather: Dim candle-lit stone hall, dust motes in the air, one strong gust of wind passing through, warm amber glow.\nColor grade: warm candlelit amber grade, old-magic atmosphere.\nDialogue: (S1) <d>[Chinese] ……风好大。</d>\nNo narration, no other language.\n\n<Overall Soundscape>\nwind whoosh through stone corridors, fabric flapping, candles sputtering\n\n<Non-Diegetic Music>\nlow ambient drone with airy flute, mysterious\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_fx_01_drop",
+      "title": "01 物理·重力掉落 嘉玲/无场景",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: the same 17-year-old girl in a close-up portrait, wavy auburn-red hair, Asian oval face, single eyelids, red and yellow striped scarf, [Picture 2]\n\n<Summary>\nClose-up on Jialing matching Picture 1 standing in a plain grey stone courtyard, she lifts a small brass key ring with two keys on a metal ring and lets it go. The keys fall straight down under gravity, turning slightly and glinting as they tumble, then hit the stone ground with a small clatter and bounce once before lying still. The camera follows the keys down, the fall is smooth and continuous with natural acceleration, Jialing's hand stays in frame at the top. Scene and weather: Overcast soft daylight, plain grey courtyard, no wind, muted tones. Color grade: neutral realistic grade, clean and simple.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\n\n<Detailed Description>\nClose-up on Jialing matching Picture 1 standing in a plain grey stone courtyard, she lifts a small brass key ring with two keys on a metal ring and lets it go. The keys fall straight down under gravity, turning slightly and glinting as they tumble, then hit the stone ground with a small clatter and bounce once before lying still. The camera follows the keys down, the fall is smooth and continuous with natural acceleration, Jialing's hand stays in frame at the top.\nScene and weather: Overcast soft daylight, plain grey courtyard, no wind, muted tones.\nColor grade: neutral realistic grade, clean and simple.\nDialogue: (S1) <d>[Chinese] ……掉了。</d>\nNo narration, no other language.\n\n<Overall Soundscape>\nsmall metal jingle as it falls, a clear clatter on stone, one bounce\n\n<Non-Diegetic Music>\nminimal empty air, quiet ticking\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_fx_02_water",
+      "title": "02 物理·水花溅起 小乐/无场景",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/xiaole_daily/reference.jpg",
+          "character": "../characters/xiaole_daily/reference.jpg",
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 7-year-old Chinese schoolboy with short black hair, round glasses, lively curious face, wearing a red printed cardigan over a shirt, dark jeans, sneakers, [Picture 1]\n<Subject 2>: the same 7-year-old boy in a close-up portrait, short black hair, round glasses, red printed cardigan, [Picture 2]\n\n<Summary>\nMedium shot of a bright kitchen counter. Xiaole matching Picture 1 sits at the table holding a clear glass of water, he pokes the surface with one finger and a small crown of water leaps up around his fingertip, droplets flying in a clean arc and splashing back into the glass and onto the table, the liquid moves with natural surface tension, ripples expanding across the glass then calming. Xiaole giggles, pulling his finger back. The water physics is the whole focus: small, sharp, crisp. Scene and weather: Bright clean kitchen, warm daylight from a window, no wind, calm room. Color grade: clean bright natural grade, close and crisp.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical boy, keep glasses/cardigan\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\n\n<Detailed Description>\nMedium shot of a bright kitchen counter. Xiaole matching Picture 1 sits at the table holding a clear glass of water, he pokes the surface with one finger and a small crown of water leaps up around his fingertip, droplets flying in a clean arc and splashing back into the glass and onto the table, the liquid moves with natural surface tension, ripples expanding across the glass then calming. Xiaole giggles, pulling his finger back. The water physics is the whole focus: small, sharp, crisp.\nScene and weather: Bright clean kitchen, warm daylight from a window, no wind, calm room.\nColor grade: clean bright natural grade, close and crisp.\nDialogue: (S1) <d>[Chinese] 哇——！</d>\nNo narration, no other language.\n\n<Overall Soundscape>\nbright water plinks, small splashes, boy giggling\n\n<Non-Diegetic Music>\nplayful plucked strings, light and bouncy\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_fx_03_proj",
+      "title": "03 物理·抛体弧线 小乐/无场景",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/xiaole_daily/reference.jpg",
+          "character": "../characters/xiaole_daily/reference.jpg",
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 7-year-old Chinese schoolboy with short black hair, round glasses, lively curious face, wearing a red printed cardigan over a shirt, dark jeans, sneakers, [Picture 1]\n<Subject 2>: the same 7-year-old boy in a close-up portrait, short black hair, round glasses, red printed cardigan, [Picture 2]\n\n<Summary>\nMedium shot on a grassy schoolyard. Xiaole matching Picture 1 winds up and throws a paper airplane forward, the plane launches off his fingers and glides in a long smooth arc across the frame, dipping and gliding with real momentum, then lands softly on the grass ahead, he grins and runs after it. The flight path is one continuous smooth parabola, never jerky, the camera stays still and follows the plane through the air. Scene and weather: Sunny afternoon, soft green grass, light warm breeze, clear blue sky. Color grade: bright airy daylight grade, playful.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical boy, keep glasses/cardigan\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\n\n<Detailed Description>\nMedium shot on a grassy schoolyard. Xiaole matching Picture 1 winds up and throws a paper airplane forward, the plane launches off his fingers and glides in a long smooth arc across the frame, dipping and gliding with real momentum, then lands softly on the grass ahead, he grins and runs after it. The flight path is one continuous smooth parabola, never jerky, the camera stays still and follows the plane through the air.\nScene and weather: Sunny afternoon, soft green grass, light warm breeze, clear blue sky.\nColor grade: bright airy daylight grade, playful.\nDialogue: (S1) <d>[Chinese] 飞吧！</d>\nNo narration, no other language.\n\n<Overall Soundscape>\npaper plane whoosh, grass swish, boy's footsteps, happy laugh\n\n<Non-Diegetic Music>\nbright ukulele strums, cheerful\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_fx_04_fireball",
+      "title": "04 特效·火球凝聚 嘉玲/礼堂",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": "../scenes/hogwarts_old_hall.png",
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: the same 17-year-old girl in a close-up portrait, wavy auburn-red hair, Asian oval face, single eyelids, red and yellow striped scarf, [Picture 2]\n<Subject 3>: the old candle-lit Hogwarts-style hall shown in Picture 3, dark stone walls, long wooden tables, floating candles, warm amber lighting, [Picture 3]\n\n<Summary>\nMedium shot inside the candle-lit hall matching Picture 3. Jialing matching Picture 1 holds out her open palm and a fireball ignites above it: first a small spark, then orange-gold flames swirling and growing into a glowing orb of fire the size of a fist, tongues of flame licking and rotating, heat shimmer distorting the air around it, warm light flickering across her face and the stone walls. The fireball hovers steadily above her palm, flames constantly in motion but the orb stable, then she closes her fist and it snuffs out in a puff of smoke. Scene and weather: Dim candle-lit stone hall, warm amber glow, one blazing fireball casting moving orange light on the walls. Color grade: high-contrast warm firelight against shadow, magical.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\nSubject 3: partially_preserved - blurred background, lighting changes with the magic\nPicture 3: partially_preserved\n\n<Detailed Description>\nMedium shot inside the candle-lit hall matching Picture 3. Jialing matching Picture 1 holds out her open palm and a fireball ignites above it: first a small spark, then orange-gold flames swirling and growing into a glowing orb of fire the size of a fist, tongues of flame licking and rotating, heat shimmer distorting the air around it, warm light flickering across her face and the stone walls. The fireball hovers steadily above her palm, flames constantly in motion but the orb stable, then she closes her fist and it snuffs out in a puff of smoke.\nScene and weather: Dim candle-lit stone hall, warm amber glow, one blazing fireball casting moving orange light on the walls.\nColor grade: high-contrast warm firelight against shadow, magical.\nDialogue: (S1) <d>[Chinese] ……烧起来了。</d>\nNo narration, no other language.\n\n<Overall Soundscape>\nsoft crackling fire hum, rising whoosh, a puff as it goes out\n\n<Non-Diegetic Music>\nswelling strings with low brass, dramatic and warm\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_fx_05_lightning",
+      "title": "05 特效·闪电迸发 小乐/老街夜",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/xiaole_daily/reference.jpg",
+          "character": "../characters/xiaole_daily/reference.jpg",
+          "scene": "../scenes/hk_old_street_night.png",
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 7-year-old Chinese schoolboy with short black hair, round glasses, lively curious face, wearing a red printed cardigan over a shirt, dark jeans, sneakers, [Picture 1]\n<Subject 2>: the same 7-year-old boy in a close-up portrait, short black hair, round glasses, red printed cardigan, [Picture 2]\n<Subject 3>: the night city street shown in Picture 3, wet asphalt reflecting neon, narrow old street with signboards, thin mist, [Picture 3]\n\n<Summary>\nMedium shot on a wet night street matching Picture 3. Xiaole matching Picture 1 points a short toy wand at a metal signpost and a jagged bolt of blue-white lightning leaps from the wand tip to the signpost, branching electric arcs crackling and flickering, sparks spraying onto the wet pavement, the signpost flashes bright for a moment then the lightning dies with a last few sparks. The electricity is sharp, branching and fast, ending cleanly. Scene and weather: Rainy night, wet asphalt reflecting neon, thin mist, one dazzling blue-white lightning bolt, flickering signpost glow. Color grade: cyan-blue neon grade, electric and punchy.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical boy, keep glasses/cardigan\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\nSubject 3: partially_preserved - background street, lighting reacts to the lightning\nPicture 3: partially_preserved\n\n<Detailed Description>\nMedium shot on a wet night street matching Picture 3. Xiaole matching Picture 1 points a short toy wand at a metal signpost and a jagged bolt of blue-white lightning leaps from the wand tip to the signpost, branching electric arcs crackling and flickering, sparks spraying onto the wet pavement, the signpost flashes bright for a moment then the lightning dies with a last few sparks. The electricity is sharp, branching and fast, ending cleanly.\nScene and weather: Rainy night, wet asphalt reflecting neon, thin mist, one dazzling blue-white lightning bolt, flickering signpost glow.\nColor grade: cyan-blue neon grade, electric and punchy.\nDialogue: (S1) <d>[Chinese] 电！</d>\nNo narration, no other language.\n\n<Overall Soundscape>\nsharp electric crackle, buzz, sizzling on wet ground\n\n<Non-Diegetic Music>\nelectric guitar stab, then tense synth pulse\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_fx_06_stardust",
+      "title": "06 特效·星尘环绕 嘉玲/无场景",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: the same 17-year-old girl in a close-up portrait, wavy auburn-red hair, Asian oval face, single eyelids, red and yellow striped scarf, [Picture 2]\n\n<Summary>\nMedium shot of Jialing matching Picture 1 standing on a plain dark stage, she raises both arms and golden star-dust particles pour out of her palms, spiraling up around her body in a smooth helix, thousands of tiny glowing specks swirling faster and higher until they fill the air above her head like a glittering nebula, then slowly fading like spent sparks. The particles stream continuously along a spiral path, never erratic, her robe and hair barely moving. Scene and weather: Dark empty stage, one soft spotlight on her, golden particles glowing against pure black, gentle haze. Color grade: black and gold grade, magical and dreamy.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\n\n<Detailed Description>\nMedium shot of Jialing matching Picture 1 standing on a plain dark stage, she raises both arms and golden star-dust particles pour out of her palms, spiraling up around her body in a smooth helix, thousands of tiny glowing specks swirling faster and higher until they fill the air above her head like a glittering nebula, then slowly fading like spent sparks. The particles stream continuously along a spiral path, never erratic, her robe and hair barely moving.\nScene and weather: Dark empty stage, one soft spotlight on her, golden particles glowing against pure black, gentle haze.\nColor grade: black and gold grade, magical and dreamy.\nDialogue: (S1) <d>[Chinese] 真漂亮……</d>\nNo narration, no other language.\n\n<Overall Soundscape>\nsoft crystalline shimmer, airy chime, gentle hum\n\n<Non-Diegetic Music>\ncelestial harp arpeggios, ethereal\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_fx_07_transform",
+      "title": "07 特效·南瓜变形 小乐/无场景",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/xiaole_daily/reference.jpg",
+          "character": "../characters/xiaole_daily/reference.jpg",
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 7-year-old Chinese schoolboy with short black hair, round glasses, lively curious face, wearing a red printed cardigan over a shirt, dark jeans, sneakers, [Picture 1]\n<Subject 2>: the same 7-year-old boy in a close-up portrait, short black hair, round glasses, red printed cardigan, [Picture 2]\n\n<Summary>\nClose-up on a small orange pumpkin sitting on a wooden table. Xiaole matching Picture 1 leans in and waves his hand over it; the pumpkin begins to glow and morph, its skin rippling, then it transforms into a small glassy blue orb that hovers an inch above the table, pulsing with soft light, then settles back down onto the wood and dims to a faint glow. The transformation is continuous and smooth, one object shifting into another without a jump cut, Xiaole's face lit blue in the light. Scene and weather: Cozy dim room, warm wooden table, one glowing blue orb casting cool light on Xiaole's face and hands. Color grade: warm wood tones against cool blue magic light, cozy and wondrous.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical boy, keep glasses/cardigan\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\n\n<Detailed Description>\nClose-up on a small orange pumpkin sitting on a wooden table. Xiaole matching Picture 1 leans in and waves his hand over it; the pumpkin begins to glow and morph, its skin rippling, then it transforms into a small glassy blue orb that hovers an inch above the table, pulsing with soft light, then settles back down onto the wood and dims to a faint glow. The transformation is continuous and smooth, one object shifting into another without a jump cut, Xiaole's face lit blue in the light.\nScene and weather: Cozy dim room, warm wooden table, one glowing blue orb casting cool light on Xiaole's face and hands.\nColor grade: warm wood tones against cool blue magic light, cozy and wondrous.\nDialogue: (S1) <d>[Chinese] 变！</d>\nNo narration, no other language.\n\n<Overall Soundscape>\nsoft magical hum rising, a gentle shimmering chime, quiet thud as it lands\n\n<Non-Diegetic Music>\nmagical celesta melody, wondrous\n\n</Prompt>"
+        }
+      ]
+    }
+  ]
+}

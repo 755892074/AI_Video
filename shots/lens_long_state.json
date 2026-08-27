@@ -1,0 +1,22 @@
+{
+  "jialing_lens_long_04_bonfire_01": {
+    "prompt_id": "8696e328-5d4e-4286-9c40-073427d89a6e",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_lens_long_04_bonfire\\output\\shot01.mp4"
+  },
+  "jialing_lens_long_04_bonfire_02": {
+    "prompt_id": "c38ed012-6c7a-404a-b01c-55644b8d3ae3",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_lens_long_04_bonfire\\output\\shot02.mp4"
+  },
+  "jialing_lens_long_07_lake_01": {
+    "prompt_id": "1c04251c-71df-4ba2-b242-5dc87396f798",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_lens_long_07_lake\\output\\shot01.mp4"
+  },
+  "jialing_lens_long_07_lake_02": {
+    "prompt_id": "5c2038fe-b8b6-4f62-bed3-468b43920009",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_lens_long_07_lake\\output\\shot02.mp4"
+  }
+}

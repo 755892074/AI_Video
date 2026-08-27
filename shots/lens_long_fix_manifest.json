@@ -1,0 +1,33 @@
+{
+  "comfy_url": "http://100.67.139.74:8188",
+  "workflow": "workflows/h3_r2v_motion_context_api.json",
+  "base_dir": "shots",
+  "sets": [
+    {
+      "id": "jialing_lens_long_fix_07_lake",
+      "title": "07长fix 晨湖静谧·嘉玲 远景+低幅缓升 14s(接驳修复)",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": null,
+          "extra_images": [],
+          "seconds": 7.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: the same 17-year-old girl in a close-up portrait, wavy auburn-red hair, Asian oval face, single eyelids, red and yellow striped scarf, [Picture 2]\n\n<Summary>\nWide shot on the shore of a calm mountain lake at sunrise. Jialing matching Picture 1 stands at the water's edge on the left side of the frame, seen from her side profile. Only the camera moves: it starts to rise very slowly and by only a small amount, staying at a modest height so Jialing remains clearly visible in the lower left of the frame at all times. The lake surface stays perfectly calm and still, reflecting the sky, distant forested hills behind her. A large grey boulder stays fixed at the bottom-right corner of the frame throughout the entire shot. Nothing in the world rotates or moves except the gentle mist drifting over the water. In the final stretch of this segment the camera settles into a calm held frame: the rise is complete and the camera holds perfectly still, keeping Jialing, the boulder, the lake and the hills exactly in place for the last two seconds. Scene and weather: Sunrise, soft golden-pink light over a still mirror-like lake, thin mist on the water surface, quiet forested hills, calm and peaceful. Color grade: soft dawn pastel grade, serene and airy.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\n\n<Detailed Description>\nWide shot on the shore of a calm mountain lake at sunrise. Jialing matching Picture 1 stands at the water's edge on the left side of the frame, seen from her side profile. Only the camera moves: it starts to rise very slowly and by only a small amount, staying at a modest height so Jialing remains clearly visible in the lower left of the frame at all times. The lake surface stays perfectly calm and still, reflecting the sky, distant forested hills behind her. A large grey boulder stays fixed at the bottom-right corner of the frame throughout the entire shot. Nothing in the world rotates or moves except the gentle mist drifting over the water. In the final stretch of this segment the camera settles into a calm held frame: the rise is complete and the camera holds perfectly still, keeping Jialing, the boulder, the lake and the hills exactly in place for the last two seconds.\nScene and weather: Sunrise, soft golden-pink light over a still mirror-like lake, thin mist on the water surface, quiet forested hills, calm and peaceful.\nColor grade: soft dawn pastel grade, serene and airy.\nDialogue: (S1) <d>[Chinese] 好安静啊。</d>\nNo narration, no other language.\n\n<Overall Soundscape>\nstill water, faint birdsong, soft morning breeze\n\n<Non-Diegetic Music>\nminimal ambient piano, quiet and vast\n\n</Prompt>"
+        },
+        {
+          "shot": 2,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": null,
+          "extra_images": [],
+          "seconds": 7.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: the same 17-year-old girl in a close-up portrait, wavy auburn-red hair, Asian oval face, single eyelids, red and yellow striped scarf, [Picture 2]\n\n<Summary>\nCONTINUATION of the same shot, second half. From this calm held static position the camera resumes a very slow rise, moving upward by only a small additional amount, then holds steady again at a modest height so Jialing stays clearly visible in the lower left of the frame the whole time. The calm mountain lake stays perfectly still, reflecting the sunrise sky, distant forested hills behind her. The same large grey boulder remains fixed at the bottom-right corner of the frame. Nothing in the world rotates or moves except the gentle mist drifting over the water. The shot ends on a serene, open hold of the quiet lake and Jialing by the water. Scene and weather: Sunrise, soft golden-pink light over a still mirror-like lake, thin mist on the water surface, quiet forested hills, calm and peaceful. Color grade: soft dawn pastel grade, serene and airy.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\n\n<Detailed Description>\nCONTINUATION of the same shot, second half. From this calm held static position the camera resumes a very slow rise, moving upward by only a small additional amount, then holds steady again at a modest height so Jialing stays clearly visible in the lower left of the frame the whole time. The calm mountain lake stays perfectly still, reflecting the sunrise sky, distant forested hills behind her. The same large grey boulder remains fixed at the bottom-right corner of the frame. Nothing in the world rotates or moves except the gentle mist drifting over the water. The shot ends on a serene, open hold of the quiet lake and Jialing by the water.\nScene and weather: Sunrise, soft golden-pink light over a still mirror-like lake, thin mist on the water surface, quiet forested hills, calm and peaceful.\nColor grade: soft dawn pastel grade, serene and airy.\nDialogue: (S1) <d>[Chinese] 好安静啊。</d>\nNo narration, no other language.\n\n<Overall Soundscape>\nstill water, faint birdsong, soft morning breeze\n\n<Non-Diegetic Music>\nminimal ambient piano, quiet and vast\n\n</Prompt>"
+        }
+      ]
+    }
+  ]
+}

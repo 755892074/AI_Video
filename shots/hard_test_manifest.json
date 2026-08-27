@@ -1,0 +1,203 @@
+{
+  "comfy_url": "http://100.67.139.74:8188",
+  "workflow": "workflows/h3_r2v_motion_context_api.json",
+  "base_dir": "shots",
+  "sets": [
+    {
+      "id": "jialing_hard_01_chopsticks",
+      "title": "01 手部·筷子夹菜 嘉玲",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: the same 17-year-old girl in a close-up portrait, wavy auburn-red hair, Asian oval face, single eyelids, red and yellow striped scarf, [Picture 2]\n\n<Summary>\nBig close-up of Jialing matching Picture 1's hand holding a pair of wooden chopsticks over a small porcelain bowl of noodles. She grips the chopsticks, pinches a few noodle strands between the tips, lifts them, and brings them to her mouth, taking a small bite. The camera stays on her hand the whole time: every finger visible, the two chopsticks crossing cleanly without passing through each other, the noodles staying gripped without sliding. Sharp focus on the hand, each finger distinct with correct count and natural joints. Scene and weather: Warm indoor daylight from a window, plain wooden table, soft shallow depth of field, muted cozy tones. Color grade: clean realistic macro grade, sharp on the hand, blurred background.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\n\n<Detailed Description>\nBig close-up of Jialing matching Picture 1's hand holding a pair of wooden chopsticks over a small porcelain bowl of noodles. She grips the chopsticks, pinches a few noodle strands between the tips, lifts them, and brings them to her mouth, taking a small bite. The camera stays on her hand the whole time: every finger visible, the two chopsticks crossing cleanly without passing through each other, the noodles staying gripped without sliding. Sharp focus on the hand, each finger distinct with correct count and natural joints.\nScene and weather: Warm indoor daylight from a window, plain wooden table, soft shallow depth of field, muted cozy tones.\nColor grade: clean realistic macro grade, sharp on the hand, blurred background.\nNo narration, no other language.\n\n<Overall Soundscape>\nsoft chopsticks clinking on the bowl, quiet slurp, gentle room ambience\n\n<Non-Diegetic Music>\nquiet acoustic guitar, minimal\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_hard_02_walk",
+      "title": "02 肢体·行走跑步 嘉玲",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: the same 17-year-old girl in a close-up portrait, wavy auburn-red hair, Asian oval face, single eyelids, red and yellow striped scarf, [Picture 2]\n\n<Summary>\nMedium shot, side view. Jialing matching Picture 1 walks steadily toward the left of frame along a plain stone path, then breaks into a gentle jog. Her legs cycle through natural walking then running strides: each leg swings forward and back smoothly, feet lift off and plant cleanly with no sliding on the ground, arms swing opposite to the legs, her robe hem swishes with each step. The gait is fluid and continuous, no float, no moonwalk, her body stays upright and stable. Scene and weather: Soft overcast daylight, plain grey stone path, muted neutral tones. Color grade: neutral realistic grade, steady side-on tracking.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\n\n<Detailed Description>\nMedium shot, side view. Jialing matching Picture 1 walks steadily toward the left of frame along a plain stone path, then breaks into a gentle jog. Her legs cycle through natural walking then running strides: each leg swings forward and back smoothly, feet lift off and plant cleanly with no sliding on the ground, arms swing opposite to the legs, her robe hem swishes with each step. The gait is fluid and continuous, no float, no moonwalk, her body stays upright and stable.\nScene and weather: Soft overcast daylight, plain grey stone path, muted neutral tones.\nColor grade: neutral realistic grade, steady side-on tracking.\nNo narration, no other language.\n\n<Overall Soundscape>\nsoft footsteps on stone, robe swish, gentle breathing\n\n<Non-Diegetic Music>\nsteady walking tempo percussion, calm\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_hard_03_handshake",
+      "title": "03 双人·握手 嘉玲+小乐",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": null,
+          "extra_images": [
+            "../characters/xiaole_daily/reference.jpg"
+          ],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: the same 17-year-old girl in a close-up portrait, wavy auburn-red hair, Asian oval face, single eyelids, red and yellow striped scarf, [Picture 2]\n<Subject 3>: a 7-year-old Chinese schoolboy with short black hair, round glasses, lively curious face, wearing a red printed cardigan over a shirt, dark jeans, sneakers, [Picture 3]\n\n<Summary>\nMedium shot. Jialing matching Picture 1 and Xiao Le matching Picture 3 face each other and shake hands: two hands meet palm-to-palm, fingers wrap around each other and clasp, pumping twice, then release. Their hands interlock naturally, the fingers weave correctly without passing through each other, neither arm bends unnaturally, both bodies stay firmly on their own side with no merging or overlapping of shoulders. A clean, crisp, physically correct handshake between the two. Scene and weather: Bright school hallway, soft daylight, neutral clean background. Color grade: clean neutral grade, both faces and hands in sharp focus.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\nSubject 3: fully_preserved - identical boy, keep glasses/cardigan\nPicture 3: fully_preserved\n\n<Detailed Description>\nMedium shot. Jialing matching Picture 1 and Xiao Le matching Picture 3 face each other and shake hands: two hands meet palm-to-palm, fingers wrap around each other and clasp, pumping twice, then release. Their hands interlock naturally, the fingers weave correctly without passing through each other, neither arm bends unnaturally, both bodies stay firmly on their own side with no merging or overlapping of shoulders. A clean, crisp, physically correct handshake between the two.\nScene and weather: Bright school hallway, soft daylight, neutral clean background.\nColor grade: clean neutral grade, both faces and hands in sharp focus.\nDialogue: (S1) <d>[Chinese] ……那就说定了。</d>\nNo narration, no other language.\n\n<Overall Soundscape>\ntwo palms meeting with a soft clap, low voices, hallway reverb\n\n<Non-Diegetic Music>\nlight warm piano, friendly\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_hard_04_door",
+      "title": "04 交互·推门入室 嘉玲",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: the same 17-year-old girl in a close-up portrait, wavy auburn-red hair, Asian oval face, single eyelids, red and yellow striped scarf, [Picture 2]\n\n<Summary>\nMedium shot from inside the room, facing an old wooden door. Jialing matching Picture 1's hand reaches in and grips the round brass doorknob, turns it, and pushes the door open toward the camera. The door swings open fully, she steps through the doorway and walks past the camera into the room, the door frame passing beside her. Her hand stays correctly attached to the knob then lets go, the door never passes through her body, the knob never detaches from the door. Scene and weather: Soft daylight flooding in from the doorway, dim room interior, wooden floor, neutral tones. Color grade: realistic interior grade, warm wood tones.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\n\n<Detailed Description>\nMedium shot from inside the room, facing an old wooden door. Jialing matching Picture 1's hand reaches in and grips the round brass doorknob, turns it, and pushes the door open toward the camera. The door swings open fully, she steps through the doorway and walks past the camera into the room, the door frame passing beside her. Her hand stays correctly attached to the knob then lets go, the door never passes through her body, the knob never detaches from the door.\nScene and weather: Soft daylight flooding in from the doorway, dim room interior, wooden floor, neutral tones.\nColor grade: realistic interior grade, warm wood tones.\nDialogue: (S1) <d>[Chinese] ……回来了。</d>\nNo narration, no other language.\n\n<Overall Soundscape>\ndoor latch clicking, hinges creaking, footsteps on wood\n\n<Non-Diegetic Music>\nquiet ambient, subtle tension\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_hard_06_drink",
+      "title": "06 交互·喝水 小乐",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/xiaole_daily/reference.jpg",
+          "character": "../characters/xiaole_daily/reference.jpg",
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 7-year-old Chinese schoolboy with short black hair, round glasses, lively curious face, wearing a red printed cardigan over a shirt, dark jeans, sneakers, [Picture 1]\n<Subject 2>: the same 7-year-old boy in a close-up portrait, short black hair, round glasses, red printed cardigan, [Picture 2]\n\n<Summary>\nClose-up on Xiao Le matching Picture 1 at a kitchen table. He lifts a clear glass of water with both hands, tilts it to his lips and drinks: the glass rim presses against his lower lip, water pours into his mouth without spilling down his chin, his throat visibly swallows, then he lowers the glass, a small drip running down the side of his chin which he wipes with the back of his hand. The water surface tilts realistically, the glass stays intact, the liquid enters his mouth cleanly with no leaking through his face. Scene and weather: Bright clean kitchen, warm daylight, calm room. Color grade: bright natural grade, sharp on the glass and face.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical boy, keep glasses/cardigan\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\n\n<Detailed Description>\nClose-up on Xiao Le matching Picture 1 at a kitchen table. He lifts a clear glass of water with both hands, tilts it to his lips and drinks: the glass rim presses against his lower lip, water pours into his mouth without spilling down his chin, his throat visibly swallows, then he lowers the glass, a small drip running down the side of his chin which he wipes with the back of his hand. The water surface tilts realistically, the glass stays intact, the liquid enters his mouth cleanly with no leaking through his face.\nScene and weather: Bright clean kitchen, warm daylight, calm room.\nColor grade: bright natural grade, sharp on the glass and face.\nDialogue: (S1) <d>[Chinese] 咕咚……</d>\nNo narration, no other language.\n\n<Overall Soundscape>\nwater pouring, gulping swallow, glass clinking on table\n\n<Non-Diegetic Music>\nlight playful plucks, casual\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_hard_07_bike",
+      "title": "07 交互·骑自行车 小乐",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/xiaole_daily/reference.jpg",
+          "character": "../characters/xiaole_daily/reference.jpg",
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 7-year-old Chinese schoolboy with short black hair, round glasses, lively curious face, wearing a red printed cardigan over a shirt, dark jeans, sneakers, [Picture 1]\n<Subject 2>: the same 7-year-old boy in a close-up portrait, short black hair, round glasses, red printed cardigan, [Picture 2]\n\n<Summary>\nMedium side shot. Xiao Le matching Picture 1 rides a bicycle along a quiet lane, pedaling steadily: both feet push the pedals in smooth rotating circles, knees rise and fall in rhythm, the chain ring turns, the front wheel steers gently. His body stays balanced over the frame, he grips the handlebars with both hands, his legs never kick through the wheels, the bike stays under him the whole time, no floating, no merging of body and bicycle. Scene and weather: Sunny afternoon, tree-lined lane, warm light, soft shadows. Color grade: bright airy grade, cheerful motion.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical boy, keep glasses/cardigan\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\n\n<Detailed Description>\nMedium side shot. Xiao Le matching Picture 1 rides a bicycle along a quiet lane, pedaling steadily: both feet push the pedals in smooth rotating circles, knees rise and fall in rhythm, the chain ring turns, the front wheel steers gently. His body stays balanced over the frame, he grips the handlebars with both hands, his legs never kick through the wheels, the bike stays under him the whole time, no floating, no merging of body and bicycle.\nScene and weather: Sunny afternoon, tree-lined lane, warm light, soft shadows.\nColor grade: bright airy grade, cheerful motion.\nDialogue: (S1) <d>[Chinese] 哈——！</d>\nNo narration, no other language.\n\n<Overall Soundscape>\nbicycle chain ticking, wheels on asphalt, boy's happy shout\n\n<Non-Diegetic Music>\nbright bouncy acoustic, playful\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_hard_08_reenter",
+      "title": "08 空间·出画再入画 嘉玲",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: the same 17-year-old girl in a close-up portrait, wavy auburn-red hair, Asian oval face, single eyelids, red and yellow striped scarf, [Picture 2]\n\n<Summary>\nStatic medium-wide shot of a quiet courtyard, camera locked off. Jialing matching Picture 1 enters from screen right, walks across the frame to the left, and exits completely out of frame. A moment later she walks back into frame from the left, retracing her path to screen right and exiting again. When she returns she is the exact same girl: same robe, same red and yellow striped scarf, same wavy auburn-red hair, same face. Her clothing and hairstyle stay perfectly consistent between the two passes, the camera never moves. Scene and weather: Soft overcast daylight, plain stone courtyard, muted tones. Color grade: neutral realistic grade, locked-off static frame.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\n\n<Detailed Description>\nStatic medium-wide shot of a quiet courtyard, camera locked off. Jialing matching Picture 1 enters from screen right, walks across the frame to the left, and exits completely out of frame. A moment later she walks back into frame from the left, retracing her path to screen right and exiting again. When she returns she is the exact same girl: same robe, same red and yellow striped scarf, same wavy auburn-red hair, same face. Her clothing and hairstyle stay perfectly consistent between the two passes, the camera never moves.\nScene and weather: Soft overcast daylight, plain stone courtyard, muted tones.\nColor grade: neutral realistic grade, locked-off static frame.\nNo narration, no other language.\n\n<Overall Soundscape>\nsteady footsteps across stone, soft ambient, a bird call\n\n<Non-Diegetic Music>\nminimal airy pad, calm\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_hard_13_glass",
+      "title": "13 特效·玻璃破碎 嘉玲",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: the same 17-year-old girl in a close-up portrait, wavy auburn-red hair, Asian oval face, single eyelids, red and yellow striped scarf, [Picture 2]\n\n<Summary>\nMedium shot. Jialing matching Picture 1 stands by a large window, turned halfway toward it. A rock flies in and strikes the glass: the pane shatters into a starburst of jagged shards, glass pieces spraying outward in every direction, catching the light as they tumble. Jialing flinches and shields her face with her arm a beat after the impact, eyes widening, then lowers her arm and stares at the broken frame. The glass breaks outward into pieces, the shards follow ballistic paths and fall, she is never cut, the window frame stays intact. Scene and weather: Grey daylight outside the window, shards glinting as they scatter, dust motes in the light. Color grade: high-contrast daylight, sharp shards catching light.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\n\n<Detailed Description>\nMedium shot. Jialing matching Picture 1 stands by a large window, turned halfway toward it. A rock flies in and strikes the glass: the pane shatters into a starburst of jagged shards, glass pieces spraying outward in every direction, catching the light as they tumble. Jialing flinches and shields her face with her arm a beat after the impact, eyes widening, then lowers her arm and stares at the broken frame. The glass breaks outward into pieces, the shards follow ballistic paths and fall, she is never cut, the window frame stays intact.\nScene and weather: Grey daylight outside the window, shards glinting as they scatter, dust motes in the light.\nColor grade: high-contrast daylight, sharp shards catching light.\nDialogue: (S1) <d>[Chinese] 啊——！</d>\nNo narration, no other language.\n\n<Overall Soundscape>\nsharp crack of glass, shards tinkling as they scatter and settle\n\n<Non-Diegetic Music>\ntense sting, then hollow quiet\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_hard_14_umbrella",
+      "title": "14 特效·雨中撑伞 嘉玲",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: the same 17-year-old girl in a close-up portrait, wavy auburn-red hair, Asian oval face, single eyelids, red and yellow striped scarf, [Picture 2]\n\n<Summary>\nMedium shot. Jialing matching Picture 1 walks through steady rain holding a black umbrella high above her head. Rain falls in angled streaks around her, drops ping off the taut umbrella surface and roll down its edges in little streams, her shoulders stay dry, droplets splash off the wet pavement around her feet with each step. The umbrella stays stable in her grip, the rain direction stays consistent, her face stays dry beneath the canopy, her robe hem darkens where it catches spray. Scene and weather: Heavy grey rain, wet reflective pavement, misty distance, overcast. Color grade: cool rainy grade, droplets catching light.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\n\n<Detailed Description>\nMedium shot. Jialing matching Picture 1 walks through steady rain holding a black umbrella high above her head. Rain falls in angled streaks around her, drops ping off the taut umbrella surface and roll down its edges in little streams, her shoulders stay dry, droplets splash off the wet pavement around her feet with each step. The umbrella stays stable in her grip, the rain direction stays consistent, her face stays dry beneath the canopy, her robe hem darkens where it catches spray.\nScene and weather: Heavy grey rain, wet reflective pavement, misty distance, overcast.\nColor grade: cool rainy grade, droplets catching light.\nDialogue: (S1) <d>[Chinese] ……雨好大。</d>\nNo narration, no other language.\n\n<Overall Soundscape>\nsteady rain hiss, drops drumming on umbrella fabric, footsteps splashing\n\n<Non-Diegetic Music>\nsoft piano under rain, melancholic\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_hard_15_explosion",
+      "title": "15 特效·冲击波 嘉玲",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: the same 17-year-old girl in a close-up portrait, wavy auburn-red hair, Asian oval face, single eyelids, red and yellow striped scarf, [Picture 2]\n\n<Summary>\nMedium shot. Jialing matching Picture 1 stands in a wide empty plaza when a fireball erupts in the distance beyond her. A visible shockwave ring blasts outward across the plaza: a gust of wind hits her a beat later, her robe and scarf and hair whip backward violently, she braces and leans into the blast, one hand holding her scarf, dust and debris streaming past her. The wave passes and everything settles, she lowers her hand and looks toward the smoke. The force travels smoothly from far to near, she reacts at the right moment, nothing launches her unnaturally into the air. Scene and weather: Overcast daylight, wide empty plaza, dust and smoke plume far away, wind gust across the ground. Color grade: gritty realistic grade, high-contrast blast light.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\n\n<Detailed Description>\nMedium shot. Jialing matching Picture 1 stands in a wide empty plaza when a fireball erupts in the distance beyond her. A visible shockwave ring blasts outward across the plaza: a gust of wind hits her a beat later, her robe and scarf and hair whip backward violently, she braces and leans into the blast, one hand holding her scarf, dust and debris streaming past her. The wave passes and everything settles, she lowers her hand and looks toward the smoke. The force travels smoothly from far to near, she reacts at the right moment, nothing launches her unnaturally into the air.\nScene and weather: Overcast daylight, wide empty plaza, dust and smoke plume far away, wind gust across the ground.\nColor grade: gritty realistic grade, high-contrast blast light.\nDialogue: (S1) <d>[Chinese] ……！</d>\nNo narration, no other language.\n\n<Overall Soundscape>\ndeep distant boom, wind whoosh rushing past, debris clattering, settle\n\n<Non-Diegetic Music>\nsub-bass hit, then low drone\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_hard_16_shrink",
+      "title": "16 特效·变大变小 小乐",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/xiaole_daily/reference.jpg",
+          "character": "../characters/xiaole_daily/reference.jpg",
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 7-year-old Chinese schoolboy with short black hair, round glasses, lively curious face, wearing a red printed cardigan over a shirt, dark jeans, sneakers, [Picture 1]\n<Subject 2>: the same 7-year-old boy in a close-up portrait, short black hair, round glasses, red printed cardigan, [Picture 2]\n\n<Summary>\nWide shot inside a normal living room. Xiao Le matching Picture 1 stands beside a floor lamp and a bookshelf, then smoothly shrinks until he is tiny, no taller than the lamp's shade, then smoothly grows back up to his normal size beside the furniture. His proportions stay correct at every size, the lamp and bookshelf stay their normal size and never distort, he scales smoothly with no morphing, no stretching, his clothes scale with his body, the scale change is one continuous motion in place. Scene and weather: Warm cozy living room, soft indoor light, neutral furniture. Color grade: clean realistic grade, clear size contrast.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical boy, keep glasses/cardigan\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\n\n<Detailed Description>\nWide shot inside a normal living room. Xiao Le matching Picture 1 stands beside a floor lamp and a bookshelf, then smoothly shrinks until he is tiny, no taller than the lamp's shade, then smoothly grows back up to his normal size beside the furniture. His proportions stay correct at every size, the lamp and bookshelf stay their normal size and never distort, he scales smoothly with no morphing, no stretching, his clothes scale with his body, the scale change is one continuous motion in place.\nScene and weather: Warm cozy living room, soft indoor light, neutral furniture.\nColor grade: clean realistic grade, clear size contrast.\nDialogue: (S1) <d>[Chinese] ——变！</d>\nNo narration, no other language.\n\n<Overall Soundscape>\nsoft magical hum rising and falling, gentle whoosh, quiet room\n\n<Non-Diegetic Music>\nplayful glissando harp, wondrous\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_hard_18_dialog",
+      "title": "18 长镜·对话 8s 嘉玲+小乐",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": null,
+          "extra_images": [
+            "../characters/xiaole_daily/reference.jpg"
+          ],
+          "seconds": 8.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: the same 17-year-old girl in a close-up portrait, wavy auburn-red hair, Asian oval face, single eyelids, red and yellow striped scarf, [Picture 2]\n<Subject 3>: a 7-year-old Chinese schoolboy with short black hair, round glasses, lively curious face, wearing a red printed cardigan over a shirt, dark jeans, sneakers, [Picture 3]\n\n<Summary>\nMedium two-shot, over-shoulder, held steady. Jialing matching Picture 1 and Xiao Le matching Picture 3 sit facing each other at a small table and talk for the whole shot. Jialing speaks first, then Xiao Le answers, then she replies. Each one's lips move in natural speech, matching the tone of what they say, mouth shapes forming and closing smoothly with no drifting, no extra teeth, no warping over the full eight seconds. They take turns: when one speaks the other listens, gazing naturally, heads slightly tilted, neither floats or shifts position, the camera holds completely still. Scene and weather: Warm indoor evening light, cozy room, soft shallow depth of field. Color grade: warm intimate grade, both faces softly lit.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\nSubject 3: fully_preserved - identical boy, keep glasses/cardigan\nPicture 3: fully_preserved\n\n<Detailed Description>\nMedium two-shot, over-shoulder, held steady. Jialing matching Picture 1 and Xiao Le matching Picture 3 sit facing each other at a small table and talk for the whole shot. Jialing speaks first, then Xiao Le answers, then she replies. Each one's lips move in natural speech, matching the tone of what they say, mouth shapes forming and closing smoothly with no drifting, no extra teeth, no warping over the full eight seconds. They take turns: when one speaks the other listens, gazing naturally, heads slightly tilted, neither floats or shifts position, the camera holds completely still.\nScene and weather: Warm indoor evening light, cozy room, soft shallow depth of field.\nColor grade: warm intimate grade, both faces softly lit.\nDialogue: (S1) <d>[Chinese] 你要走了吗？／嗯，明天一早就出发。／那……我给你写信。</d>\nNo narration, no other language.\n\n<Overall Soundscape>\ngentle room tone, two warm voices taking turns, subtle chair creak\n\n<Non-Diegetic Music>\nquiet emotional piano, understated\n\n</Prompt>"
+        }
+      ]
+    }
+  ]
+}

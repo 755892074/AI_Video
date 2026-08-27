@@ -1,0 +1,22 @@
+{
+  "jialing_phone_00_wechat_01": {
+    "prompt_id": "67afede7-d3c8-400b-9e64-7abb0790bff0",
+    "done": false,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_phone_00_wechat\\output\\shot01.mp4"
+  },
+  "jialing_phone_01_wechat_cu_01": {
+    "prompt_id": "2a5ab146-cb5b-4122-bcbc-2b8092e89231",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_phone_01_wechat_cu\\output\\shot01.mp4"
+  },
+  "jialing_phone_02_videocall_01": {
+    "prompt_id": "a41427b2-5421-45e2-b54d-88841d98b1fb",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_phone_02_videocall\\output\\shot01.mp4"
+  },
+  "jialing_phone_03_videocall_cu_01": {
+    "prompt_id": "da83ed48-35d0-40cf-99b7-abd5f687f9a9",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_phone_03_videocall_cu\\output\\shot01.mp4"
+  }
+}

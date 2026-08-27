@@ -1,0 +1,71 @@
+{
+  "comfy_url": "http://100.67.139.74:8188",
+  "workflow": "workflows/h3_r2v_motion_context_api.json",
+  "base_dir": "shots",
+  "sets": [
+    {
+      "id": "jialing_phone_00_wechat",
+      "title": "00 微信消息·嘉玲 中近景",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing a plain light-grey hoodie over a white t-shirt, hair loosely tied back, holding a smartphone, [Picture 1]\n<Subject 2>: the same 17-year-old girl in a close-up portrait, wavy auburn-red hair, Asian oval face, single eyelids, red and yellow striped scarf, [Picture 2]\n\n<Summary>\nMedium close-up shot of Jialing matching Picture 1 sitting cross-legged on a bed at night, holding her smartphone in both hands with the screen tilted toward the camera, her face lit by the pale blue glow of the phone. The screen clearly shows a WeChat chat interface: a contact name in Chinese characters at the top, a row of small chat bubbles below with short Chinese text, one green bubble and two white bubbles, a small clock and battery icons in the status bar. Camera slowly pushing in, her thumb scrolling the chat, a faint smile on her face, her room softly blurred behind her. Scene and weather: Dim cozy bedroom at night, warm bedside lamp glow mixing with cool blue phone screen light, soft blankets, blurred bookshelf background. Color grade: warm lamp glow against cool screen light, intimate night mood.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep face/hair\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\n\n<Detailed Description>\nReference: [Picture 1], [Picture 2]\nMedium close-up shot of Jialing matching Picture 1 sitting cross-legged on a bed at night, holding her smartphone in both hands with the screen tilted toward the camera, her face lit by the pale blue glow of the phone. The screen clearly shows a WeChat chat interface: a contact name in Chinese characters at the top, a row of small chat bubbles below with short Chinese text, one green bubble and two white bubbles, a small clock and battery icons in the status bar. Camera slowly pushing in, her thumb scrolling the chat, a faint smile on her face, her room softly blurred behind her.\nScene and weather: Dim cozy bedroom at night, warm bedside lamp glow mixing with cool blue phone screen light, soft blankets, blurred bookshelf background.\nColor grade: warm lamp glow against cool screen light, intimate night mood.\nDialogue: (S1) <d>[Chinese] 妈，我马上到家了。</d>\nNo narration, no other language.\n\n<Overall Soundscape>\nquiet bedroom, faint phone notification chime, distant city hum\n\n<Non-Diegetic Music>\nsoft lo-fi beat, calm and sleepy\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_phone_01_wechat_cu",
+      "title": "01 微信消息气泡·屏幕特写",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing a plain light-grey hoodie over a white t-shirt, hair loosely tied back, holding a smartphone, [Picture 1]\n<Subject 2>: the same 17-year-old girl in a close-up portrait, wavy auburn-red hair, Asian oval face, single eyelids, red and yellow striped scarf, [Picture 2]\n\n<Summary>\nExtreme close-up of a smartphone held in Jialing's hands matching Picture 1, the phone screen filling almost the entire frame. The WeChat chat screen is fully legible: a light grey chat background, a dark blue header with a Chinese contact name in large characters, several message bubbles stacked below with clear bold Chinese text characters in them, one green bubble on the right and two white bubbles on the left, a text input bar with a plus icon at the bottom, status bar with time and battery on top. Her thumb taps the input bar, the screen typing cursor blinks. Scene and weather: Phone screen only in frame, bright clean chat UI colors, soft reflections on the glass, blurred dark room edges barely visible. Color grade: clean bright UI screen look, crisp and readable.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep face/hair\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\n\n<Detailed Description>\nReference: [Picture 1], [Picture 2]\nExtreme close-up of a smartphone held in Jialing's hands matching Picture 1, the phone screen filling almost the entire frame. The WeChat chat screen is fully legible: a light grey chat background, a dark blue header with a Chinese contact name in large characters, several message bubbles stacked below with clear bold Chinese text characters in them, one green bubble on the right and two white bubbles on the left, a text input bar with a plus icon at the bottom, status bar with time and battery on top. Her thumb taps the input bar, the screen typing cursor blinks.\nScene and weather: Phone screen only in frame, bright clean chat UI colors, soft reflections on the glass, blurred dark room edges barely visible.\nColor grade: clean bright UI screen look, crisp and readable.\nNo narration, no other language.\n\n<Overall Soundscape>\nsoft tapping, faint typing clicks, quiet room\n\n<Non-Diegetic Music>\nnone\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_phone_02_videocall",
+      "title": "02 视频通话·嘉玲 中近景",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/xiaole_daily/reference.jpg",
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing a plain light-grey hoodie over a white t-shirt, hair loosely tied back, holding a smartphone, [Picture 1]\n<Subject 2>: a 7-year-old Chinese schoolboy with short black hair, round glasses, lively curious face, wearing a red printed cardigan over a shirt, dark jeans, sneakers, [Picture 2]\n\n<Summary>\nMedium close-up shot of Jialing matching Picture 1 holding her smartphone up in a video call, the phone screen facing the camera. On the phone screen a clear video call window shows the face of a 7-year-old boy with round glasses and a red cardigan matching Picture 2, smiling and waving, with a small self-view thumbnail of Jialing in the corner of the screen, call duration and mute icons visible. She looks at the screen and laughs softly, her face warm and relaxed, the phone screen glow lighting her cheek. Scene and weather: Warm evening bedroom light, phone screen glow on her face, soft cozy background, gentle shadow play. Color grade: warm skin tones with screen cool accent, natural handheld look.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl holding the phone\nPicture 1: fully_preserved\nSubject 2: fully_preserved - boy on the phone screen, keep glasses/cardigan\nPicture 2: fully_preserved\n\n<Detailed Description>\nReference: [Picture 1], [Picture 2]\nMedium close-up shot of Jialing matching Picture 1 holding her smartphone up in a video call, the phone screen facing the camera. On the phone screen a clear video call window shows the face of a 7-year-old boy with round glasses and a red cardigan matching Picture 2, smiling and waving, with a small self-view thumbnail of Jialing in the corner of the screen, call duration and mute icons visible. She looks at the screen and laughs softly, her face warm and relaxed, the phone screen glow lighting her cheek.\nScene and weather: Warm evening bedroom light, phone screen glow on her face, soft cozy background, gentle shadow play.\nColor grade: warm skin tones with screen cool accent, natural handheld look.\nDialogue: (S1) <d>[Chinese] 小乐！你看到我了吗？</d>\nNo narration, no other language.\n\n<Overall Soundscape>\ngarbled warm voice from phone speaker, soft room ambience\n\n<Non-Diegetic Music>\nnone\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_phone_03_videocall_cu",
+      "title": "03 视频通话屏幕·人脸特写",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/xiaole_daily/reference.jpg",
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing a plain light-grey hoodie over a white t-shirt, hair loosely tied back, holding a smartphone, [Picture 1]\n<Subject 2>: a 7-year-old Chinese schoolboy with short black hair, round glasses, lively curious face, wearing a red printed cardigan over a shirt, dark jeans, sneakers, [Picture 2]\n\n<Summary>\nExtreme close-up of a smartphone screen during a video call, the phone screen filling the entire frame. The video call window shows the face of a 7-year-old Chinese schoolboy with round glasses and a red printed cardigan matching Picture 2, his face clearly recognizable, waving his hand and smiling brightly, his small room visible behind him, a tiny self-view thumbnail in the top corner showing a girl with auburn hair matching Picture 1. The call UI shows elapsed time and connection icons at the top, a red end-call button at the bottom. His face is sharp and well lit, talking to the camera. Scene and weather: Phone screen only in frame, bright clear video call picture, his small room with warm daylight behind him, crisp screen colors. Color grade: bright clean video-call screen look, sharp face focus.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl holding the phone\nPicture 1: fully_preserved\nSubject 2: fully_preserved - boy on the phone screen, keep glasses/cardigan\nPicture 2: fully_preserved\n\n<Detailed Description>\nReference: [Picture 1], [Picture 2]\nExtreme close-up of a smartphone screen during a video call, the phone screen filling the entire frame. The video call window shows the face of a 7-year-old Chinese schoolboy with round glasses and a red printed cardigan matching Picture 2, his face clearly recognizable, waving his hand and smiling brightly, his small room visible behind him, a tiny self-view thumbnail in the top corner showing a girl with auburn hair matching Picture 1. The call UI shows elapsed time and connection icons at the top, a red end-call button at the bottom. His face is sharp and well lit, talking to the camera.\nScene and weather: Phone screen only in frame, bright clear video call picture, his small room with warm daylight behind him, crisp screen colors.\nColor grade: bright clean video-call screen look, sharp face focus.\nNo narration, no other language.\n\n<Overall Soundscape>\nwarm boy voice from phone speaker, slight speaker distortion\n\n<Non-Diegetic Music>\nnone\n\n</Prompt>"
+        }
+      ]
+    }
+  ]
+}

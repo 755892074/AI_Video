@@ -1,0 +1,135 @@
+{
+  "comfy_url": "http://100.67.139.74:8188",
+  "workflow": "workflows/h3_r2v_motion_context_api.json",
+  "base_dir": "shots",
+  "sets": [
+    {
+      "id": "jialing_lens_00_plaza",
+      "title": "00 河畔广场·嘉玲 大远景+垂直下降",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: the same 17-year-old girl in a close-up portrait, wavy auburn-red hair, Asian oval face, single eyelids, red and yellow striped scarf, [Picture 2]\n\n<Summary>\nExtreme wide aerial shot of a vast riverside city plaza at blue hour, camera slowly descending from a high crane view down toward street level, buildings and river sprawling below. Jialing matching Picture 1 stands tiny in the center of the plaza scattering birdseed to a flock of pigeons, her dark robe a small silhouette on the pale stone, the camera keeps sinking until she grows to fill the middle of the frame, pigeons lifting around her. Scene and weather: Blue hour dusk, city lights flickering on, soft purple-blue gradient sky, gentle river breeze, pigeons wheeling over the plaza. Color grade: blue-hour cinematic grade, vast and calm.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\n\n<Detailed Description>\nExtreme wide aerial shot of a vast riverside city plaza at blue hour, camera slowly descending from a high crane view down toward street level, buildings and river sprawling below. Jialing matching Picture 1 stands tiny in the center of the plaza scattering birdseed to a flock of pigeons, her dark robe a small silhouette on the pale stone, the camera keeps sinking until she grows to fill the middle of the frame, pigeons lifting around her.\nScene and weather: Blue hour dusk, city lights flickering on, soft purple-blue gradient sky, gentle river breeze, pigeons wheeling over the plaza.\nColor grade: blue-hour cinematic grade, vast and calm.\nDialogue: (S1) <d>[Chinese] 都飞走了……</d>\nNo narration, no other language.\n\n<Overall Soundscape>\npigeon wings, distant city hum, river lapping\n\n<Non-Diegetic Music>\nsoft orchestral swell, expansive and serene\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_lens_01_canal",
+      "title": "01 湖畔枫径·嘉玲 全景+横移",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: the same 17-year-old girl in a close-up portrait, wavy auburn-red hair, Asian oval face, single eyelids, red and yellow striped scarf, [Picture 2]\n\n<Summary>\nFull body shot, camera smoothly trucking sideways right beside Jialing matching Picture 1 as she walks along a canal path lined with autumn maples, red leaves drifting across the water, her grey skirt swaying with each step, her whole figure kept in frame as the camera glides laterally with her, falling leaves passing through the foreground. Scene and weather: Clear autumn afternoon, golden sunlight filtering through red maple leaves, gentle breeze, rippling canal water, fallen leaves on the stone path. Color grade: warm autumn golden grade, soft and nostalgic.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\n\n<Detailed Description>\nFull body shot, camera smoothly trucking sideways right beside Jialing matching Picture 1 as she walks along a canal path lined with autumn maples, red leaves drifting across the water, her grey skirt swaying with each step, her whole figure kept in frame as the camera glides laterally with her, falling leaves passing through the foreground.\nScene and weather: Clear autumn afternoon, golden sunlight filtering through red maple leaves, gentle breeze, rippling canal water, fallen leaves on the stone path.\nColor grade: warm autumn golden grade, soft and nostalgic.\nDialogue: (S1) <d>[Chinese] 秋天到了啊。</d>\nNo narration, no other language.\n\n<Overall Soundscape>\nfootsteps on stone, water lapping, leaves rustling\n\n<Non-Diegetic Music>\nlight acoustic waltz, gentle and flowing\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_lens_02_whippan",
+      "title": "02 路灯夜巷·嘉玲 中近景+甩镜",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: the same 17-year-old girl in a close-up portrait, wavy auburn-red hair, Asian oval face, single eyelids, red and yellow striped scarf, [Picture 2]\n\n<Summary>\nMedium close-up on Jialing matching Picture 1 standing under an old street lamp in a rainy alley, someone calls her name from off-screen and she sharply turns her head to the right, the camera whipping around with her gaze, neon and streetlights streaking into motion blur, the whip settling to lock on her surprised face, rain still falling around her. Scene and weather: Rainy night, wet asphalt, neon glow in magenta and cyan reflecting off puddles, thin mist, one warm street lamp lighting her from above. Color grade: cyan-magenta neon grade, punchy and dynamic.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\n\n<Detailed Description>\nMedium close-up on Jialing matching Picture 1 standing under an old street lamp in a rainy alley, someone calls her name from off-screen and she sharply turns her head to the right, the camera whipping around with her gaze, neon and streetlights streaking into motion blur, the whip settling to lock on her surprised face, rain still falling around her.\nScene and weather: Rainy night, wet asphalt, neon glow in magenta and cyan reflecting off puddles, thin mist, one warm street lamp lighting her from above.\nColor grade: cyan-magenta neon grade, punchy and dynamic.\nDialogue: (S1) <d>[Chinese] 谁？</d>\nNo narration, no other language.\n\n<Overall Soundscape>\nsteady rain, sudden footsteps, faint neon hum\n\n<Non-Diegetic Music>\ntense string hit, then quiet heartbeat pulse\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_lens_03_hutong",
+      "title": "03 胡同灯笼·嘉玲 近景+手持",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: the same 17-year-old girl in a close-up portrait, wavy auburn-red hair, Asian oval face, single eyelids, red and yellow striped scarf, [Picture 2]\n\n<Summary>\nClose-up on Jialing matching Picture 1 holding a warm paper lantern in a narrow old hutong, a subtle handheld camera sway adding a gentle restless energy, her face lit from below by the amber lantern light, warm paper glow flickering across the grey brick walls behind her, thin mist curling past the eaves. Scene and weather: Clear cool night, warm lantern glow against grey stone, light mist, a thin sliver of moon over the roofline. Color grade: warm amber against cool blue, intimate documentary feel.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\n\n<Detailed Description>\nClose-up on Jialing matching Picture 1 holding a warm paper lantern in a narrow old hutong, a subtle handheld camera sway adding a gentle restless energy, her face lit from below by the amber lantern light, warm paper glow flickering across the grey brick walls behind her, thin mist curling past the eaves.\nScene and weather: Clear cool night, warm lantern glow against grey stone, light mist, a thin sliver of moon over the roofline.\nColor grade: warm amber against cool blue, intimate documentary feel.\nDialogue: (S1) <d>[Chinese] 爷爷说，提着灯笼走夜路，魂就不会丢。</d>\nNo narration, no other language.\n\n<Overall Soundscape>\ndistant dog bark, soft wind through the hutong, fabric rustle\n\n<Non-Diegetic Music>\nsingle cello notes, slow and intimate\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_lens_04_bonfire",
+      "title": "04 篝火夜林·嘉玲 特写+环绕",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: the same 17-year-old girl in a close-up portrait, wavy auburn-red hair, Asian oval face, single eyelids, red and yellow striped scarf, [Picture 2]\n\n<Summary>\nClose-up on Jialing matching Picture 1 kneeling beside a small campfire, camera slowly arcing around her profile as sparks drift up into the dark, warm firelight flickering across her face, her eyes fixed on the flames, the slow arc revealing dark forest silhouettes closing in behind her between the orange glow. Scene and weather: Clear starry night, dark pine forest, dancing campfire light, drifting sparks, cool air, faint smoke curling up. Color grade: warm firelight against dark teal, high contrast cinematic.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\n\n<Detailed Description>\nClose-up on Jialing matching Picture 1 kneeling beside a small campfire, camera slowly arcing around her profile as sparks drift up into the dark, warm firelight flickering across her face, her eyes fixed on the flames, the slow arc revealing dark forest silhouettes closing in behind her between the orange glow.\nScene and weather: Clear starry night, dark pine forest, dancing campfire light, drifting sparks, cool air, faint smoke curling up.\nColor grade: warm firelight against dark teal, high contrast cinematic.\nDialogue: (S1) <d>[Chinese] 火的声音，真好听。</d>\nNo narration, no other language.\n\n<Overall Soundscape>\ncrackling fire, night insects, distant owl call\n\n<Non-Diegetic Music>\nwarm fingerpicked acoustic, calm and meditative\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_lens_05_eyes",
+      "title": "05 窗前静默·嘉玲 大特写+缓推",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: the same 17-year-old girl in a close-up portrait, wavy auburn-red hair, Asian oval face, single eyelids, red and yellow striped scarf, [Picture 2]\n\n<Summary>\nExtreme close-up on Jialing matching Picture 1, the frame filled by her eyes and brow, camera slowly pushing in until only her right eye remains, a single tear catching the light at the corner of her lashes, her gaze still and deep, soft window light reflected moving across the iris, everything around her falling out of focus. Scene and weather: Soft indoor window light, gentle shadows on her cheek, dust motes in a warm beam, quiet afternoon. Color grade: shallow focus creamy warm grade, intimate and still.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\n\n<Detailed Description>\nExtreme close-up on Jialing matching Picture 1, the frame filled by her eyes and brow, camera slowly pushing in until only her right eye remains, a single tear catching the light at the corner of her lashes, her gaze still and deep, soft window light reflected moving across the iris, everything around her falling out of focus.\nScene and weather: Soft indoor window light, gentle shadows on her cheek, dust motes in a warm beam, quiet afternoon.\nColor grade: shallow focus creamy warm grade, intimate and still.\nDialogue: (S1) <d>[Chinese] ……</d>\nNo narration, no other language.\n\n<Overall Soundscape>\nquiet breathing, distant clock tick\n\n<Non-Diegetic Music>\nminimal piano, sparse and suspended\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_lens_06_fireworks",
+      "title": "06 楼顶烟火·嘉玲 中景+下摇",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: the same 17-year-old girl in a close-up portrait, wavy auburn-red hair, Asian oval face, single eyelids, red and yellow striped scarf, [Picture 2]\n\n<Summary>\nMedium shot on a rooftop on New Year's Eve, camera starts on Jialing matching Picture 1's upturned face lit by fireworks, then slowly tilting down along her red and yellow scarf to her hands clasping a small sparkler, white-gold sparks sizzling between her fingers, distant fireworks blooming and fading in the dark sky above her. Scene and weather: Cold clear winter night, fireworks bursting in the deep sky, warm breath in the cold air, city lights glittering far below. Color grade: deep blue night with firework color pops, celebratory.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\n\n<Detailed Description>\nMedium shot on a rooftop on New Year's Eve, camera starts on Jialing matching Picture 1's upturned face lit by fireworks, then slowly tilting down along her red and yellow scarf to her hands clasping a small sparkler, white-gold sparks sizzling between her fingers, distant fireworks blooming and fading in the dark sky above her.\nScene and weather: Cold clear winter night, fireworks bursting in the deep sky, warm breath in the cold air, city lights glittering far below.\nColor grade: deep blue night with firework color pops, celebratory.\nDialogue: (S1) <d>[Chinese] 新年快乐。</d>\nNo narration, no other language.\n\n<Overall Soundscape>\ndistant firework booms, sparkler sizzle, cold wind\n\n<Non-Diegetic Music>\nwarm bells and soft strings, hopeful\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_lens_07_valley",
+      "title": "07 瀑布山谷·嘉玲 远景+上升",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: the same 17-year-old girl in a close-up portrait, wavy auburn-red hair, Asian oval face, single eyelids, red and yellow striped scarf, [Picture 2]\n\n<Summary>\nWide shot in a misty mountain valley, camera starting at ground level beside Jialing matching Picture 1 then smoothly rising straight up like a crane lift, the waterfall and forest spreading out below, her small figure shrinking beneath the camera as it ascends above the treetops into thin morning light. Scene and weather: Early morning, soft sunlight piercing thin mist, lush green valley, waterfall mist drifting, birdsong echoing. Color grade: fresh green-teal cinematic grade, awe-inspiring.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\n\n<Detailed Description>\nWide shot in a misty mountain valley, camera starting at ground level beside Jialing matching Picture 1 then smoothly rising straight up like a crane lift, the waterfall and forest spreading out below, her small figure shrinking beneath the camera as it ascends above the treetops into thin morning light.\nScene and weather: Early morning, soft sunlight piercing thin mist, lush green valley, waterfall mist drifting, birdsong echoing.\nColor grade: fresh green-teal cinematic grade, awe-inspiring.\nDialogue: (S1) <d>[Chinese] 好高。……好像能看见整个村子。</d>\nNo narration, no other language.\n\n<Overall Soundscape>\nwaterfall roar fading below, wind, distant birds\n\n<Non-Diegetic Music>\nrising orchestral strings, uplifting\n\n</Prompt>"
+        }
+      ]
+    }
+  ]
+}

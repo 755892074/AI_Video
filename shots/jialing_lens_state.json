@@ -1,0 +1,42 @@
+{
+  "jialing_lens_00_plaza_01": {
+    "prompt_id": "339f5b78-8204-4b8c-a860-8937c583e310",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_lens_00_plaza\\output\\shot01.mp4"
+  },
+  "jialing_lens_01_canal_01": {
+    "prompt_id": "342e9867-1d4a-4b70-8dae-6e65420b698d",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_lens_01_canal\\output\\shot01.mp4"
+  },
+  "jialing_lens_02_whippan_01": {
+    "prompt_id": "f487a378-f4aa-4473-9c5b-63ba53c91caa",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_lens_02_whippan\\output\\shot01.mp4"
+  },
+  "jialing_lens_03_hutong_01": {
+    "prompt_id": "b2c69cfc-e3f9-4fe2-a963-9e99a7bc521e",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_lens_03_hutong\\output\\shot01.mp4"
+  },
+  "jialing_lens_04_bonfire_01": {
+    "prompt_id": "353e117b-fb62-4619-8817-d1f4fca73a2f",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_lens_04_bonfire\\output\\shot01.mp4"
+  },
+  "jialing_lens_05_eyes_01": {
+    "prompt_id": "3390218d-3b81-4c7a-ab91-8cc7442d6030",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_lens_05_eyes\\output\\shot01.mp4"
+  },
+  "jialing_lens_06_fireworks_01": {
+    "prompt_id": "fe9d065d-303b-4222-808b-c5e613c10721",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_lens_06_fireworks\\output\\shot01.mp4"
+  },
+  "jialing_lens_07_valley_01": {
+    "prompt_id": "04227845-4bdd-49a1-98ed-b243986948bf",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_lens_07_valley\\output\\shot01.mp4"
+  }
+}
