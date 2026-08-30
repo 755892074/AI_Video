@@ -1,0 +1,42 @@
+{
+  "mon_01_cthulhu_rises_01": {
+    "prompt_id": "b7f03c2b-93ea-4db3-b94b-8ea0bba3c053",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\mon_01_cthulhu_rises\\output\\shot01.mp4"
+  },
+  "mon_02_deep_one_01": {
+    "prompt_id": "2b505968-8213-403f-91a9-bcbd963ec7fb",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\mon_02_deep_one\\output\\shot01.mp4"
+  },
+  "mon_03_slender_hall_01": {
+    "prompt_id": "53057314-e9d1-4009-90b0-5b1a49ec1294",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\mon_03_slender_hall\\output\\shot01.mp4"
+  },
+  "mon_04_undead_street_01": {
+    "prompt_id": "90204b42-bd41-4c6a-acb4-97f6212e5b40",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\mon_04_undead_street\\output\\shot01.mp4"
+  },
+  "mon_05_xenomorph_01": {
+    "prompt_id": "b6a8c7d5-a1ad-4953-b303-c2d7ac4e39cd",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\mon_05_xenomorph\\output\\shot01.mp4"
+  },
+  "mon_06_centipede_wall_01": {
+    "prompt_id": "1882f8b6-1976-4d63-a0b5-fd3db0948b17",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\mon_06_centipede_wall\\output\\shot01.mp4"
+  },
+  "mon_07_werewolf_01": {
+    "prompt_id": "c21aac27-5447-47c0-a232-14db48069809",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\mon_07_werewolf\\output\\shot01.mp4"
+  },
+  "mon_08_great_spider_01": {
+    "prompt_id": "c31c2fe9-1870-4563-a853-5f9250b5c10c",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\mon_08_great_spider\\output\\shot01.mp4"
+  }
+}

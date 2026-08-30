@@ -1,0 +1,17 @@
+{
+  "jialing_lantern2_a_fix_01": {
+    "prompt_id": "8c471908-1e25-49d2-97f6-73b41a70aeb8",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_lantern2_a_fix\\output\\shot01.mp4"
+  },
+  "jialing_lantern2_a_fix_02": {
+    "prompt_id": "f3456e1f-7372-4c45-9d49-da85694545cb",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_lantern2_a_fix\\output\\shot02.mp4"
+  },
+  "jialing_lantern2_a_fix_03": {
+    "prompt_id": "19315fce-0089-47ce-a5c9-a5217c809ca3",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_lantern2_a_fix\\output\\shot03.mp4"
+  }
+}

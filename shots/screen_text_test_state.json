@@ -1,0 +1,32 @@
+{
+  "scr_01_tv_crt_news_01": {
+    "prompt_id": "edb2456a-bd27-434f-b9d5-39c9d337f512",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\scr_01_tv_crt_news\\output\\shot01.mp4"
+  },
+  "scr_02_tv_static_chinese_01": {
+    "prompt_id": "2e374013-aa90-47be-9060-6e673ed96850",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\scr_02_tv_static_chinese\\output\\shot01.mp4"
+  },
+  "scr_03_book_rune_01": {
+    "prompt_id": "ed619f38-4d17-4f0e-939d-00d514b7eeae",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\scr_03_book_rune\\output\\shot01.mp4"
+  },
+  "scr_04_book_print_01": {
+    "prompt_id": "40b04a36-ef7b-47ba-ac08-712630996eef",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\scr_04_book_print\\output\\shot01.mp4"
+  },
+  "scr_05_painting_portrait_01": {
+    "prompt_id": "42bb11b2-7374-4579-972c-17939595673b",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\scr_05_painting_portrait\\output\\shot01.mp4"
+  },
+  "scr_06_painting_plaque_01": {
+    "prompt_id": "4d795440-4719-475f-9755-3549b2dee475",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\scr_06_painting_plaque\\output\\shot01.mp4"
+  }
+}

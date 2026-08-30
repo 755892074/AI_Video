@@ -1,0 +1,12 @@
+{
+  "fight_01_faceoff_clash_01": {
+    "prompt_id": "fe21def2-8973-4209-9068-152baf0ef85b",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\fight_01_faceoff_clash\\output\\shot01.mp4"
+  },
+  "fight_02_lock_breakaway_01": {
+    "prompt_id": "03c3f9c7-3b38-4d38-8f1c-34257b15c3e9",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\fight_02_lock_breakaway\\output\\shot01.mp4"
+  }
+}

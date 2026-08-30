@@ -1,0 +1,24 @@
+{
+  "comfy_url": "http://100.67.139.74:8188",
+  "workflow": "workflows/h3_r2v_motion_context_api.json",
+  "base_dir": "shots",
+  "sets": [
+    {
+      "id": "spider_01_xiaole_sos",
+      "title": "蜘蛛怪·小乐被吊起求救（音频参考测试）",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/xiaole_daily/reference.jpg",
+          "scene": "../scenes/lantern_hall_v2.png",
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "audio": "audio/scene_spider_xiaole.mp3",
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, solemn fierce expression, wearing a black floor-length hooded robe, standing on the stone floor below, looking up with shock and anger, [Picture 1]\n<Subject 2>: a 7-year-old Chinese boy in an elementary school uniform of a red patterned cardigan over a dark top, blue jeans, sneakers, clear-frame round glasses, short black hair, small body, being suspended in mid-air by thick white silk threads wrapped around his neck, desperately gripping the threads with both hands, legs kicking weakly, face twisted in pain and fear, [Picture 2]\n<Subject 3>: the vast ruined gothic castle great hall shown in Picture 1: carved stone altar in center foreground, deep perspective with two rows of stone columns vanishing into distant background, towering vaulted ceiling with broken dome and heavy wooden roof beams, gothic arched windows on left wall, broken stone pillar on right with candelabras, thick cobwebs hanging from the beams, [Picture 3]\n<Subject 4>: a huge dark spider monster, size of a small car, glossy black chitin body, eight long spiky legs gripping the roof beam, mandibles dripping silk, red glowing eyes, lurking on the beam above, no picture reference, described by text\n\n<Summary>\nInside the vast ruined gothic hall matching Picture 3. A huge black spider monster matching Subject 4 crawls along the high roof beam, thick white silk dropping from above. Xiaole matching Picture 2 is suspended in mid-air by the silk wrapped around his neck, both hands desperately pulling the thread, legs kicking weakly, face pale and struggling. Jialing matching Picture 1 stands below, head raised, eyes wide with fury. Xiaole chokes out weakly, gasping between words, saying in Chinese: \"嘉玲姐……快救我\". Camera holds a medium-wide shot from the floor, slight low angle looking up at Xiaole and the spider on the beam. The action is clear, the boy's small red body against the dark hall, readable motion. Weather and lighting: dark gothic hall, candlelight pools, dust swirling in beams of light, long shadows. Color grade: warm candle amber, deep blacks, high contrast, fine grain.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep face/hair/black robe\nPicture 1: fully_preserved\nSubject 2: fully_preserved - identical boy, keep glasses/red cardigan/small body\nPicture 2: fully_preserved\nSubject 3: partially_preserved - scene geometry anchor, keep the vast hall with roof beams and cobwebs\nPicture 3: partially_preserved\nSubject 4: from text - huge black spider on the beam\n\n<Detailed Description>\nMedium-wide shot inside the vast ruined gothic hall matching Picture 3. A huge black spider monster matching Subject 4 crawls along the high roof beam, thick white silk dropping from above. Xiaole matching Picture 2 is suspended in mid-air by the silk wrapped around his neck, both hands desperately pulling the thread, legs kicking weakly, face pale and struggling. Jialing matching Picture 1 stands below, head raised, eyes wide with fury. Xiaole chokes out weakly, gasping between words, saying in Chinese: \"嘉玲姐……快救我\". His mouth moves as he speaks the Chinese dialogue, voice coming from the reference audio, lip-synced.\nWeather and lighting: dark gothic hall, candlelight pools, dust swirling in beams of light, long shadows.\nColor grade: warm candle amber, deep blacks, high contrast, fine grain.\nAll dialogue in Chinese, no other language, no narration.\n\n<Overall Soundscape>\ncreaking silk threads, the boy's labored breathing and weak choking cries, faint dripping water, echoes in the vast gothic hall\n\n<Non-Diegetic Music>\nlow droning tension, creeping strings, muffled heartbeat\n\n</Prompt>"
+        }
+      ]
+    }
+  ]
+}

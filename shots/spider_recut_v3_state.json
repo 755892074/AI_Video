@@ -1,0 +1,17 @@
+{
+  "spider_02_recut_v3_01": {
+    "prompt_id": "43823412-364c-4af7-8644-8c3d9c14841b",
+    "done": false,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\spider_02_recut_v3\\output\\shot01.mp4"
+  },
+  "spider_03_recut_v3_01": {
+    "prompt_id": "dd5d01eb-e58d-4982-a55d-98ce4edb50c2",
+    "done": false,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\spider_03_recut_v3\\output\\shot01.mp4"
+  },
+  "spider_04_recut_v3_01": {
+    "prompt_id": "ffb37546-a112-4c4c-97e8-bfb1b4696406",
+    "done": false,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\spider_04_recut_v3\\output\\shot01.mp4"
+  }
+}

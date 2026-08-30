@@ -1,62 +1,62 @@
 {
   "jialing_hard_01_chopsticks_01": {
     "prompt_id": "ad71b2e3-8efb-44a9-a067-416eebe8413c",
-    "done": false,
+    "done": true,
     "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_hard_01_chopsticks\\output\\shot01.mp4"
   },
   "jialing_hard_02_walk_01": {
     "prompt_id": "a988d1ad-f91f-4483-a14e-ca0260e3df38",
-    "done": false,
+    "done": true,
     "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_hard_02_walk\\output\\shot01.mp4"
   },
   "jialing_hard_03_handshake_01": {
     "prompt_id": "8f46405a-5ddf-45c5-b7c5-878a82a003a8",
-    "done": false,
+    "done": true,
     "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_hard_03_handshake\\output\\shot01.mp4"
   },
   "jialing_hard_04_door_01": {
     "prompt_id": "cc937675-b86c-4139-a6e6-2cd463cb2fce",
-    "done": false,
+    "done": true,
     "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_hard_04_door\\output\\shot01.mp4"
   },
   "jialing_hard_06_drink_01": {
     "prompt_id": "5142482a-7bbe-4302-a7f9-6da9a4cf0271",
-    "done": false,
+    "done": true,
     "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_hard_06_drink\\output\\shot01.mp4"
   },
   "jialing_hard_07_bike_01": {
     "prompt_id": "8c73016d-fd6d-42c2-bee0-4d5577453f10",
-    "done": false,
+    "done": true,
     "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_hard_07_bike\\output\\shot01.mp4"
   },
   "jialing_hard_08_reenter_01": {
     "prompt_id": "b797ecea-08e2-4ce0-adb3-d3ca3fbe8eb0",
-    "done": false,
+    "done": true,
     "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_hard_08_reenter\\output\\shot01.mp4"
   },
   "jialing_hard_13_glass_01": {
     "prompt_id": "6b11553f-ad9d-4160-aea4-c6d7d19751ce",
-    "done": false,
+    "done": true,
     "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_hard_13_glass\\output\\shot01.mp4"
   },
   "jialing_hard_14_umbrella_01": {
     "prompt_id": "188a1748-38fe-4a31-961b-9d20b89606b0",
-    "done": false,
+    "done": true,
     "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_hard_14_umbrella\\output\\shot01.mp4"
   },
   "jialing_hard_15_explosion_01": {
     "prompt_id": "b5ec7261-d5b6-4ea5-a0b0-0f069666d5b5",
-    "done": false,
+    "done": true,
     "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_hard_15_explosion\\output\\shot01.mp4"
   },
   "jialing_hard_16_shrink_01": {
     "prompt_id": "8c20fa23-426f-400b-8d3c-1fbb23b240c8",
-    "done": false,
+    "done": true,
     "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_hard_16_shrink\\output\\shot01.mp4"
   },
   "jialing_hard_18_dialog_01": {
     "prompt_id": "e4ac0b4d-0d1d-4e70-9a3c-d635f0e8aa17",
-    "done": false,
+    "done": true,
     "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_hard_18_dialog\\output\\shot01.mp4"
   }
 }

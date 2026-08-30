@@ -1,0 +1,135 @@
+{
+  "comfy_url": "http://100.67.139.74:8188",
+  "workflow": "workflows/h3_r2v_motion_context_api.json",
+  "base_dir": "shots",
+  "sets": [
+    {
+      "id": "jialing_dark_01_castle",
+      "title": "01 哥特·古堡满月 嘉玲剪影",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: the same 17-year-old girl in a close-up portrait, wavy auburn-red hair, Asian oval face, single eyelids, red and yellow striped scarf, [Picture 2]\n\n<Summary>\nExtreme wide shot of a ruined gothic castle on a hill under a full moon, dead trees on the hillside, thick ground fog rolling low. Jialing matching Picture 1 is a small dark silhouette on the stone path far below, a tiny warm lantern glowing in her hand, walking toward the castle gates. The moon is huge and pale behind the broken towers, her silhouette stays small and distant, the fog creeps across the path in slow waves. Shot like the opening frame of a gothic horror film. Scene and weather: Night, enormous pale full moon, rolling ground fog, dead bare trees, cold blue-black palette, one tiny warm lantern light far below. Color grade: high-contrast desaturated blue-black grade, heavy film grain, gothic horror atmosphere.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\n\n<Detailed Description>\nExtreme wide shot of a ruined gothic castle on a hill under a full moon, dead trees on the hillside, thick ground fog rolling low. Jialing matching Picture 1 is a small dark silhouette on the stone path far below, a tiny warm lantern glowing in her hand, walking toward the castle gates. The moon is huge and pale behind the broken towers, her silhouette stays small and distant, the fog creeps across the path in slow waves. Shot like the opening frame of a gothic horror film.\nScene and weather: Night, enormous pale full moon, rolling ground fog, dead bare trees, cold blue-black palette, one tiny warm lantern light far below.\nColor grade: high-contrast desaturated blue-black grade, heavy film grain, gothic horror atmosphere.\nNo narration, no other language.\n\n<Overall Soundscape>\nlow wind over the moor, distant owl, faint crunch of footsteps\n\n<Non-Diegetic Music>\nslow cello drone, dark and ominous\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_dark_02_ritual",
+      "title": "02 仪式·烛光暗室 嘉玲",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": "../scenes/hogwarts_old_hall.png",
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: the same 17-year-old girl in a close-up portrait, wavy auburn-red hair, Asian oval face, single eyelids, red and yellow striped scarf, [Picture 2]\n<Subject 3>: the old candle-lit Hogwarts-style hall shown in Picture 3, dark stone walls, long wooden tables, floating candles, warm amber lighting, [Picture 3]\n\n<Summary>\nMedium shot inside the dark hall matching Picture 3, now nearly black except for a ring of candles on a stone table. Jialing matching Picture 1 stands behind the table, both hands raised over an old leather-bound book that floats an inch above the wood, its pages turning by themselves. A sickly green-black light seeps from the book and glows up across her face and hands, the candle flames lean toward her, shadows on the stone walls writhe behind her. She whispers and the book snaps shut, the glow dying, candle flames straighten. Dark magic ritual, dramatic and controlled. Scene and weather: Nearly black stone hall, ring of candlelight, one floating book glowing sickly green-black, deep shadows, dust motes in the beam. Color grade: extreme low-key chiaroscuro, green-black glow against warm candlelight, heavy grain.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\nSubject 3: partially_preserved - the dark hall, lighting reacts to the ritual glow\nPicture 3: partially_preserved\n\n<Detailed Description>\nMedium shot inside the dark hall matching Picture 3, now nearly black except for a ring of candles on a stone table. Jialing matching Picture 1 stands behind the table, both hands raised over an old leather-bound book that floats an inch above the wood, its pages turning by themselves. A sickly green-black light seeps from the book and glows up across her face and hands, the candle flames lean toward her, shadows on the stone walls writhe behind her. She whispers and the book snaps shut, the glow dying, candle flames straighten. Dark magic ritual, dramatic and controlled.\nScene and weather: Nearly black stone hall, ring of candlelight, one floating book glowing sickly green-black, deep shadows, dust motes in the beam.\nColor grade: extreme low-key chiaroscuro, green-black glow against warm candlelight, heavy grain.\nDialogue: (S1) <d>[Chinese] ……禁。</d>\nNo narration, no other language.\n\n<Overall Soundscape>\ncandles hissing, pages rustling, low arcane hum, a hard snap\n\n<Non-Diegetic Music>\nlow drone with dissonant strings, ritualistic\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_dark_03_fog",
+      "title": "03 惊悚·迷雾提灯 嘉玲",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: the same 17-year-old girl in a close-up portrait, wavy auburn-red hair, Asian oval face, single eyelids, red and yellow striped scarf, [Picture 2]\n\n<Summary>\nMedium close-up tracking with Jialing matching Picture 1 as she walks alone through dense fog in a dark forest at night, holding a brass lantern up at chest height. The warm lantern light carves her face out of the darkness, her eyes scanning nervously ahead. Behind her, deep in the fog, a tall dark human-shaped shadow briefly appears between the trees and is gone before she turns. The camera drifts forward with her, the fog swirls around the lantern glow, her footsteps echo on wet ground. Tense, dread-building. Scene and weather: Black forest at night, thick rolling fog, one warm lantern glow illuminating her face, a faint dark figure far behind in the mist. Color grade: deep blacks with warm lantern falloff on the face, cold blue background, grain.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\n\n<Detailed Description>\nMedium close-up tracking with Jialing matching Picture 1 as she walks alone through dense fog in a dark forest at night, holding a brass lantern up at chest height. The warm lantern light carves her face out of the darkness, her eyes scanning nervously ahead. Behind her, deep in the fog, a tall dark human-shaped shadow briefly appears between the trees and is gone before she turns. The camera drifts forward with her, the fog swirls around the lantern glow, her footsteps echo on wet ground. Tense, dread-building.\nScene and weather: Black forest at night, thick rolling fog, one warm lantern glow illuminating her face, a faint dark figure far behind in the mist.\nColor grade: deep blacks with warm lantern falloff on the face, cold blue background, grain.\nDialogue: (S1) <d>[Chinese] ……有人在看我。</d>\nNo narration, no other language.\n\n<Overall Soundscape>\nwet footsteps, fog-damp silence, a soft distant branch snap\n\n<Non-Diegetic Music>\ntense low strings, sparse piano notes\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_dark_04_mirror",
+      "title": "04 幻象·魔镜 嘉玲",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: the same 17-year-old girl in a close-up portrait, wavy auburn-red hair, Asian oval face, single eyelids, red and yellow striped scarf, [Picture 2]\n\n<Summary>\nClose-up on an antique oval mirror standing in a dim room. Jialing matching Picture 1 approaches it and looks into the glass. Her own reflection gazes back, then the reflection slowly changes: her face starts to twist into something wrong, the eyes turning hollow and black, the mouth widening too far, the reflection smiling when she is not. She flinches and steps back, raising a hand to the glass, and in that instant the mirror shows only her normal face again. The reflection change is gradual and uncanny, not a jump cut. Scene and weather: Dark dusty room, one cold beam of moonlight on the mirror, the room behind her in shadow, the reflection glowing faintly. Color grade: moonlit silver-blue grade, high contrast on the mirror glass, subtle grain.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\n\n<Detailed Description>\nClose-up on an antique oval mirror standing in a dim room. Jialing matching Picture 1 approaches it and looks into the glass. Her own reflection gazes back, then the reflection slowly changes: her face starts to twist into something wrong, the eyes turning hollow and black, the mouth widening too far, the reflection smiling when she is not. She flinches and steps back, raising a hand to the glass, and in that instant the mirror shows only her normal face again. The reflection change is gradual and uncanny, not a jump cut.\nScene and weather: Dark dusty room, one cold beam of moonlight on the mirror, the room behind her in shadow, the reflection glowing faintly.\nColor grade: moonlit silver-blue grade, high contrast on the mirror glass, subtle grain.\nDialogue: (S1) <d>[Chinese] ……你是谁？</d>\nNo narration, no other language.\n\n<Overall Soundscape>\nslow creaking floorboards, a low thrum as the reflection shifts\n\n<Non-Diegetic Music>\nhigh eerie strings, glissando harp\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_dark_05_street",
+      "title": "05 夜街·雨夜黑影 小乐",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/xiaole_wizard/reference.jpg",
+          "character": "../characters/xiaole_wizard/reference.jpg",
+          "scene": "../scenes/hk_old_street_night.png",
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 7-year-old Chinese schoolboy with short black hair, round glasses, lively curious face, wearing a dark wizard robe and round glasses, [Picture 1]\n<Subject 2>: the same 7-year-old boy in a close-up portrait, short black hair, round glasses, dark wizard robe, [Picture 2]\n<Subject 3>: the night city street shown in Picture 3, wet asphalt reflecting neon, narrow old street with signboards, thin mist, [Picture 3]\n\n<Summary>\nMedium-wide shot on the rain-soaked night street matching Picture 3. Xiao Le matching Picture 1 stands alone under a streetlight, rain slanting through the neon glow, wet asphalt reflecting red and blue signs. He turns his head slowly, searching the empty street. Far at the end of the road a dark figure passes under a flickering sign, too fast, gone into the mist. Xiao Le grips his wand, frozen. Neo-noir horror atmosphere, neon reflecting on the wet ground. Scene and weather: Rainy night, wet neon-reflecting asphalt, one streetlight pool of light, thin mist, a distant flickering sign. Color grade: cyan-red neon noir grade, wet reflections, deep shadows, grain.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical boy, keep glasses/robe\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\nSubject 3: partially_preserved - the night street, neon reacts to the rain\nPicture 3: partially_preserved\n\n<Detailed Description>\nMedium-wide shot on the rain-soaked night street matching Picture 3. Xiao Le matching Picture 1 stands alone under a streetlight, rain slanting through the neon glow, wet asphalt reflecting red and blue signs. He turns his head slowly, searching the empty street. Far at the end of the road a dark figure passes under a flickering sign, too fast, gone into the mist. Xiao Le grips his wand, frozen. Neo-noir horror atmosphere, neon reflecting on the wet ground.\nScene and weather: Rainy night, wet neon-reflecting asphalt, one streetlight pool of light, thin mist, a distant flickering sign.\nColor grade: cyan-red neon noir grade, wet reflections, deep shadows, grain.\nDialogue: (S1) <d>[Chinese] ……谁在那儿？</d>\nNo narration, no other language.\n\n<Overall Soundscape>\nsteady rain, neon buzz, wet footsteps, a distant rumble\n\n<Non-Diegetic Music>\nsynth bass pulse, suspenseful\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_dark_06_shadow",
+      "title": "06 特效·影子异变 嘉玲",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: the same 17-year-old girl in a close-up portrait, wavy auburn-red hair, Asian oval face, single eyelids, red and yellow striped scarf, [Picture 2]\n\n<Summary>\nMedium shot, wide angle from the side. Jialing matching Picture 1 stands before a bare stone wall lit by a single overhead candle. Her shadow stretches across the wall, then begins to grow on its own: the shadow rises taller and taller, arms spreading wide until it becomes the looming silhouette of a horned giant creature, far bigger than she is. She notices and turns to look at the wall; the shadow is still the shape of a horned monster. She steps toward the wall and the shadow steps with her, back to normal. The shadow transforms smoothly on the wall surface. Scene and weather: Dark bare stone wall, single warm candle flame, the wall otherwise in black shadow, high contrast. Color grade: extreme chiaroscuro, warm light against pure black, heavy grain.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\n\n<Detailed Description>\nMedium shot, wide angle from the side. Jialing matching Picture 1 stands before a bare stone wall lit by a single overhead candle. Her shadow stretches across the wall, then begins to grow on its own: the shadow rises taller and taller, arms spreading wide until it becomes the looming silhouette of a horned giant creature, far bigger than she is. She notices and turns to look at the wall; the shadow is still the shape of a horned monster. She steps toward the wall and the shadow steps with her, back to normal. The shadow transforms smoothly on the wall surface.\nScene and weather: Dark bare stone wall, single warm candle flame, the wall otherwise in black shadow, high contrast.\nColor grade: extreme chiaroscuro, warm light against pure black, heavy grain.\nDialogue: (S1) <d>[Chinese] ……不是我。</d>\nNo narration, no other language.\n\n<Overall Soundscape>\ncandle crackle, a low bass swell as the shadow grows, silence\n\n<Non-Diegetic Music>\nlow organ drone, dread-building\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_dark_07_giant",
+      "title": "07 压迫·巨影降临 嘉玲",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: the same 17-year-old girl in a close-up portrait, wavy auburn-red hair, Asian oval face, single eyelids, red and yellow striped scarf, [Picture 2]\n\n<Summary>\nLow-angle wide shot. Jialing matching Picture 1 stands in an open moor under a dark sky, tiny at the bottom of frame. Above her a gigantic shadowy humanoid form looms out of the cloud layer, blocking the moon, its head and shoulders towering into the sky, no face, just pure darkness with ragged edges, thin tendrils of darkness reaching down toward the ground. It descends slowly, overwhelming the frame, and she looks up at it, cloak whipping. The scale is the horror: the giant shadow dwarfs the landscape. Scene and weather: Overcast night moor, dark sky, one enormous black humanoid form descending through the clouds, wind, thin fog. Color grade: huge scale contrast, deep blacks, cold desaturated grade, grain.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\n\n<Detailed Description>\nLow-angle wide shot. Jialing matching Picture 1 stands in an open moor under a dark sky, tiny at the bottom of frame. Above her a gigantic shadowy humanoid form looms out of the cloud layer, blocking the moon, its head and shoulders towering into the sky, no face, just pure darkness with ragged edges, thin tendrils of darkness reaching down toward the ground. It descends slowly, overwhelming the frame, and she looks up at it, cloak whipping. The scale is the horror: the giant shadow dwarfs the landscape.\nScene and weather: Overcast night moor, dark sky, one enormous black humanoid form descending through the clouds, wind, thin fog.\nColor grade: huge scale contrast, deep blacks, cold desaturated grade, grain.\nDialogue: (S1) <d>[Chinese] ……</d>\nNo narration, no other language.\n\n<Overall Soundscape>\nlow rumbling, wind howling across the moor, a rising sub-bass\n\n<Non-Diegetic Music>\nmassive low brass and choir, apocalyptic\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "jialing_dark_08_gaze",
+      "title": "08 特写·黑暗凝视 嘉玲",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, cool detached big-sister aura, wearing Hogwarts style dark robe, red and yellow striped scarf, grey pleated skirt, [Picture 1]\n<Subject 2>: the same 17-year-old girl in a close-up portrait, wavy auburn-red hair, Asian oval face, single eyelids, red and yellow striped scarf, [Picture 2]\n\n<Summary>\nExtreme close-up on Jialing matching Picture 1's eye in darkness. Her eye is lit by a faint cold green glow from below, the iris shifts, a reflection of a candle flame flickering inside her pupil. The camera holds perfectly still, her eyelid slowly closes then opens again, and in the brief blink the green light in her eye turns black. Her expression behind the eye is calm and unreadable. A slow, oppressive final image, like the closing shot of a gothic thriller. Scene and weather: Total darkness around, one faint cold green light raking across her eye and cheekbones, a candle reflection in her pupil. Color grade: single cold key light on the eye, rest in black, fine grain.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep face/hair/scarf\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\n\n<Detailed Description>\nExtreme close-up on Jialing matching Picture 1's eye in darkness. Her eye is lit by a faint cold green glow from below, the iris shifts, a reflection of a candle flame flickering inside her pupil. The camera holds perfectly still, her eyelid slowly closes then opens again, and in the brief blink the green light in her eye turns black. Her expression behind the eye is calm and unreadable. A slow, oppressive final image, like the closing shot of a gothic thriller.\nScene and weather: Total darkness around, one faint cold green light raking across her eye and cheekbones, a candle reflection in her pupil.\nColor grade: single cold key light on the eye, rest in black, fine grain.\nNo narration, no other language.\n\n<Overall Soundscape>\nsilence, a single slow heartbeat, faint wind\n\n<Non-Diegetic Music>\nminimal piano note, held, fading\n\n</Prompt>"
+        }
+      ]
+    }
+  ]
+}

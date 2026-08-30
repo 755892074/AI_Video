@@ -1,0 +1,32 @@
+{
+  "jialing_lantern2_b_fix_01": {
+    "prompt_id": "a1a2eec9-23c3-4990-b52a-efafe7f4eb3a",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_lantern2_b_fix\\output\\shot01.mp4"
+  },
+  "jialing_lantern2_b_fix_02": {
+    "prompt_id": "8aacd028-a543-4ce8-af7f-91dfb504ee9f",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_lantern2_b_fix\\output\\shot02.mp4"
+  },
+  "jialing_lantern2_b_fix_03": {
+    "prompt_id": "e9cba739-2b14-4350-9ae4-a6426382e225",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_lantern2_b_fix\\output\\shot03.mp4"
+  },
+  "jialing_lantern2_c_fix_01": {
+    "prompt_id": "2be59b55-dbd2-4f8d-a649-39844e2003c4",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_lantern2_c_fix\\output\\shot01.mp4"
+  },
+  "jialing_lantern2_c_fix_02": {
+    "prompt_id": "a4c51bb7-5579-4e6c-97a0-cb19115ebbab",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_lantern2_c_fix\\output\\shot02.mp4"
+  },
+  "jialing_lantern2_c_fix_03": {
+    "prompt_id": "8210ef19-a228-4978-a274-4bfd46f822cd",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_lantern2_c_fix\\output\\shot03.mp4"
+  }
+}

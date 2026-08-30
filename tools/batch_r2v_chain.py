@@ -89,6 +89,29 @@ def upload_image(rel_path, unique_name):
         log("UPLOAD FAIL", unique_name, e.code, e.read().decode()[:200])
         raise
 
+def upload_audio(rel_path, unique_name):
+    """上传音频/对白文件到 ComfyUI input 目录（供 LoadAudio 使用）"""
+    abs_path = os.path.join(ROOT, "shots", rel_path)
+    with open(abs_path, "rb") as f:
+        data = f.read()
+    ext = os.path.splitext(abs_path)[1].lower() or ".mp3"
+    unique_name = os.path.splitext(unique_name)[0] + ext
+    boundary = "----workbuddyboundary"
+    body = b""
+    body += f"--{boundary}\r\n".encode()
+    body += f'Content-Disposition: form-data; name="image"; filename="{unique_name}"\r\n'.encode()
+    body += b"Content-Type: audio/mpeg\r\n\r\n"
+    body += data
+    body += b"\r\n"
+    body += f"--{boundary}--\r\n".encode()
+    hdr = {"Content-Type": f"multipart/form-data; boundary={boundary}"}
+    try:
+        resp = http_post(f"{COMFY}/upload/image", body, hdr)
+        return json.loads(resp)["name"]
+    except urllib.error.HTTPError as e:
+        log("UPLOAD FAIL", unique_name, e.code, e.read().decode()[:200])
+        raise
+
 def extract_video_frame(video_rel_path, output_rel_path):
     """用 ffmpeg 提取视频第一帧作为参考图"""
     abs_video = os.path.join(ROOT, "shots", video_rel_path)
@@ -146,10 +169,11 @@ def assemble_ref2va_prompt(ref2va, has_ref_video=False):
     return "\n\n".join(parts)
 
 def build_prompt(wf, sb_name, ch_name, sc_name, prompt_text, ref2va=None, ref_video_name=None,
-                 extra_images=None, megapixels=None, seconds=None):
+                 extra_images=None, megapixels=None, seconds=None, audio_name=None):
     """extra_images: list of 已上传文件名，依次接到 ref_images.ref_image_3..N
     megapixels: float，修改 ResolutionSelector 的 megapixels 值（如 0.6）
     seconds: float，覆盖镜头时长（H3 节点 length 由 132 PrimitiveFloat 秒数经 131 表达式换算帧数）
+    audio_name: 已上传的对白音频文件名，新建 LoadAudio 接到 H3 的 ref_audios.ref_audio_0（语音克隆/对白参考）
     """
     # 若提供结构化 ref2va（官方六段），优先用它组装提示词
     if ref2va:
@@ -202,6 +226,13 @@ def build_prompt(wf, sb_name, ch_name, sc_name, prompt_text, ref2va=None, ref_vi
             nid = str(901 + i)
             p[nid] = {"class_type": "LoadImage", "inputs": {"image": img_name}}
             p[H3]["inputs"][f"ref_images.ref_image_{3 + i}"] = [nid, 0]
+    # 对白/语音参考：创建 LoadAudio(142) 接到 H3 的 ref_audios.ref_audio_0
+    if audio_name:
+        p["142"] = {"class_type": "LoadAudio", "inputs": {"audio": audio_name}}
+        p[H3]["inputs"]["ref_audios.ref_audio_0"] = ["142", 0]
+    else:
+        p.pop("142", None)
+        p[H3]["inputs"].pop("ref_audios.ref_audio_0", None)
     return p
 
 
@@ -317,7 +348,7 @@ def main():
     wf = load_json(os.path.join(ROOT, wf_path))["prompt"]
 
     # 收集所有待跑镜头
-    plan = []  # (sid, shot, rel_sb, rel_ch, rel_sc, prompt, ref2va, ref_video, extra_images, megapixels, seconds, out_path)
+    plan = []  # (sid, shot, rel_sb, rel_ch, rel_sc, prompt, ref2va, ref_video, extra_images, megapixels, seconds, audio, out_path)
     for s in man["sets"]:
         sid = s["id"]
         out_dir = os.path.join(ROOT, "shots", sid, "output")
@@ -326,7 +357,7 @@ def main():
             out_path = os.path.join(out_dir, f"shot{sh['shot']:02d}.mp4")
             plan.append((sid, sh["shot"], sh["storyboard"], sh["character"],
                          sh["scene"], sh.get("prompt", ""), sh.get("ref2va"), sh.get("ref_video"),
-                         sh.get("extra_images", []), sh.get("megapixels"), sh.get("seconds"), out_path, i_in_set))
+                         sh.get("extra_images", []), sh.get("megapixels"), sh.get("seconds"), sh.get("audio"), out_path, i_in_set))
 
     log(f"计划镜头数={len(plan)}，开始处理")
 
@@ -353,7 +384,7 @@ def main():
 
     # 1) 提交阶段（跳过已存在 & 已提交且未完成）
     pending = {}  # key -> prompt_id
-    for sid, shot, rel_sb, rel_ch, rel_sc, prompt, ref2va, ref_video, extra_images, megapixels, seconds, out_path, i_in_set in plan:
+    for sid, shot, rel_sb, rel_ch, rel_sc, prompt, ref2va, ref_video, extra_images, megapixels, seconds, audio, out_path, i_in_set in plan:
         key = shot_key(sid, shot)
         if os.path.exists(out_path) and os.path.getsize(out_path) > 5000:
             log(f"[skip] {key} 已有输出")
@@ -374,7 +405,11 @@ def main():
         u_video = None
         if ref_video:
             u_video = upload_video(ref_video, f"batch_{sid}_{shot:02d}_ref.mp4")
-        pg = build_prompt(wf, u_sb, u_ch, u_sc, prompt, ref2va, u_video, u_extra or None, megapixels, seconds)
+        # 如果有对白/语音参考，上传并接入 ref_audios（LoadAudio 读取）
+        u_audio = None
+        if audio:
+            u_audio = upload_audio(audio, f"batch_{sid}_{shot:02d}_aud")
+        pg = build_prompt(wf, u_sb, u_ch, u_sc, prompt, ref2va, u_video, u_extra or None, megapixels, seconds, u_audio)
         if CHAIN:
             chained = apply_chain(pg, sid, i_in_set)
             if chained:

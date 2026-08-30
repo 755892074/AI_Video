@@ -39,3 +39,16 @@ shots/**/output/**/*.png
 
 # --- 字体等可重新获取的二进制资源 ---
 *.ttf
+
+# --- RVC 整合包（34GB 外部工具，不入库）---
+tools/rvc/
+
+# --- Python 安装包 ---
+tools/python-3.12.*
+
+# --- 临时帧/临时文件 ---
+tmp_frames/
+shots/tmp_frames/
+shots/_contact_tmp/
+shots/nv_frames/
+tmp_*.wav

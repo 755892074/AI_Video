@@ -1,0 +1,42 @@
+{
+  "jialing_dark_01_castle_01": {
+    "prompt_id": "952dbcaa-15d9-46b3-b4dd-0904c258322b",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_dark_01_castle\\output\\shot01.mp4"
+  },
+  "jialing_dark_02_ritual_01": {
+    "prompt_id": "0237ef83-1fea-4d77-b5b6-8fe600b2ec62",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_dark_02_ritual\\output\\shot01.mp4"
+  },
+  "jialing_dark_03_fog_01": {
+    "prompt_id": "ba4a5d79-8331-45a9-98fc-6e4817be1009",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_dark_03_fog\\output\\shot01.mp4"
+  },
+  "jialing_dark_04_mirror_01": {
+    "prompt_id": "3b3c6c99-636d-4226-8f7b-f72e6b8a0e72",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_dark_04_mirror\\output\\shot01.mp4"
+  },
+  "jialing_dark_05_street_01": {
+    "prompt_id": "0a7ae29a-ec40-4b67-add7-d5e4a3e92b49",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_dark_05_street\\output\\shot01.mp4"
+  },
+  "jialing_dark_06_shadow_01": {
+    "prompt_id": "116459d8-00d8-4ddf-a206-8ec5bee0a763",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_dark_06_shadow\\output\\shot01.mp4"
+  },
+  "jialing_dark_07_giant_01": {
+    "prompt_id": "07205b07-f15c-4495-88a9-cd1debac60bf",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_dark_07_giant\\output\\shot01.mp4"
+  },
+  "jialing_dark_08_gaze_01": {
+    "prompt_id": "8ccbfbc3-1e1e-43a3-8705-b1453bc265d1",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\jialing_dark_08_gaze\\output\\shot01.mp4"
+  }
+}

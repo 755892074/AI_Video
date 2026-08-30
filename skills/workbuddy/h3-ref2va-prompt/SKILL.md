@@ -90,3 +90,21 @@ python scripts/builder.py --out ./prompts --shots shots.json
 | 角色漂移 | Picture 编号与 refs 顺序错位 | 跑 builder 的校验，重排 refs |
 | 声音杂乱 | 缺 soundscape/music 段 | 六段齐全，音景写具体 |
 | 输出文件混旧前缀 | 提交脚本深拷贝 history 模板，SaveVideo 的 filename_prefix 被继承 | 每镜显式改 `filename_prefix` 为 `video/<proj>_<shotNN>` |
+
+## 已验证能力：物体表面文字 / 内容（2026-08-29 实测）
+
+> ⚠️ 旧经验认为"H3 文字类内容容易糊、应规避"——**已过时**。6 镜专项测试全部成功，物体表面文字生成可用。
+
+**测试镜头（`tools/gen_screen_text_test.py` → `shots/screen_text_test_manifest.json`）**：
+- 电视屏幕新闻画面 + 底部英文大写字幕 "THE ALTAR" → 完全可读
+- 电视雪花屏中央深红中文大字「祭坛」→ 完全可读（走 `<d>[Chinese] 祭坛</d>` 通道）
+- 翻开的魔法书，悬浮发光的金色符文 → 电影级效果
+- 旧书印刷体英文段落 → 大部分单词清晰可读
+- 墙挂油画人像（黑发贵妇）→ 画中内容细节出色
+- 木牌深刻字 "THE ALTAR" → 古典衬线字体清晰
+
+**写法要点**：
+1. 文字要求**短**（单词/短词），明确指定位置（"bottom of the screen" / "center of the page"）、颜色、材质（"carved grooves" / "glowing runes" / "crisp white caption bar"）。
+2. **中文画面文字**：放 `<d>[Chinese] 原文</d>` 里即可（与对白同通道，但只影响画面字幕，不影响对白）；不要直接写进英文正文。
+3. 物体本身也要作为 Subject 定义（"an old CRT television..."），把"表面内容"作为该镜的视觉焦点写进 Detailed Description。
+4. 场景图锚定（哥特厅 lantern_hall_v2）保持空间一致，角色参考图照常给。

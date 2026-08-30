@@ -1,0 +1,135 @@
+{
+  "comfy_url": "http://100.67.139.74:8188",
+  "workflow": "workflows/h3_r2v_motion_context_api.json",
+  "base_dir": "shots",
+  "sets": [
+    {
+      "id": "mon_01_cthulhu_rises",
+      "title": "克苏鲁·苏醒 巨章面出海 (角色参照)",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, solemn reserved expression, wearing a black floor-length hooded robe, carrying a small old brass lantern, [Picture 1]\n<Subject 2>: the same 17-year-old girl in a close-up portrait, wavy auburn-red hair, Asian oval face, single eyelids, solemn determined eyes, black hooded robe, [Picture 2]\n<Subject 3>: a colossal eldritch octopus-headed creature rising from the sea: a giant swollen head with a writhing mass of wet tentacles like a huge octopus, dimly glowing eyes, bat-like folded wings, glistening dark wet skin\n\n<Summary>\nExtreme wide shot, stormy sea at night. Jialing matching Picture 1 is a tiny silhouette standing on a rocky cliff at the bottom edge of frame. Far out in the mist-covered sea a colossal mass rises slowly from the water: a huge swollen head with a mass of writhing tentacles like a giant octopus, wet glistening skin, two dimly glowing eyes, wings folded like a dark bat in the background. The sea churns, waves roll toward the cliff, the monster looms enormous over the horizon. The scale of the creature against the tiny cliff silhouette is the horror. Slow rising motion, then it stops, towering. Scene and weather: stormy sea at night, thick sea mist, huge moon, churning waves. Color grade: deep cold blue-black, monster lit by pale moonlight and lightning, heavy grain.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep face/hair/robe/lantern\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\nSubject 3: fully_preserved - the monster itself, keep its form/traits consistent\n\n<Detailed Description>\nExtreme wide shot, stormy sea at night. Jialing matching Picture 1 is a tiny silhouette standing on a rocky cliff at the bottom edge of frame. Far out in the mist-covered sea a colossal mass rises slowly from the water: a huge swollen head with a mass of writhing tentacles like a giant octopus, wet glistening skin, two dimly glowing eyes, wings folded like a dark bat in the background. The sea churns, waves roll toward the cliff, the monster looms enormous over the horizon. The scale of the creature against the tiny cliff silhouette is the horror. Slow rising motion, then it stops, towering.\nScene and weather: stormy sea at night, thick sea mist, huge moon, churning waves.\nColor grade: deep cold blue-black, monster lit by pale moonlight and lightning, heavy grain.\nNo narration, no other language.\n\n<Overall Soundscape>\nroaring waves, distant thunder, a low wet rumbling from the sea\n\n<Non-Diegetic Music>\nmassive low brass and deep choir, apocalyptic dread\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "mon_02_deep_one",
+      "title": "深潜者·鱼人 自水中站起 (人形怪)",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, solemn reserved expression, wearing a black floor-length hooded robe, carrying a small old brass lantern, [Picture 1]\n<Subject 2>: the same 17-year-old girl in a close-up portrait, wavy auburn-red hair, Asian oval face, single eyelids, solemn determined eyes, black hooded robe, [Picture 2]\n<Subject 3>: a deep-one fish-man humanoid: tall pale grey-green figure with shiny scales, a wide frog-like head with huge bulging unblinking eyes, gill slits on the neck, webbed hands, swaying as it stands\n\n<Summary>\nMedium shot at a dark foggy beach at night. Jialing matching Picture 1 stands far back by a rocky wall, small in frame, lantern dim. From the shallow surf a tall humanoid figure rises upright out of the water: a deep-one fish-man, pale grey-green skin with shiny scales, a wide frog-like head with huge bulging unblinking eyes, gill slits on its neck, webbed hands, swaying slightly as it stands. It stares directly at the camera area, then slowly takes one step onto the wet sand. Water drips from its scales. The camera holds still, uneasy stillness, then the creature tilts its head. Scene and weather: dark foggy beach, low tide surf, thin moon behind clouds, cold light. Color grade: desaturated cold grade, pale moonlight, wet reflections on sand, grain.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep face/hair/robe/lantern\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\nSubject 3: fully_preserved - the monster itself, keep its form/traits consistent\n\n<Detailed Description>\nMedium shot at a dark foggy beach at night. Jialing matching Picture 1 stands far back by a rocky wall, small in frame, lantern dim. From the shallow surf a tall humanoid figure rises upright out of the water: a deep-one fish-man, pale grey-green skin with shiny scales, a wide frog-like head with huge bulging unblinking eyes, gill slits on its neck, webbed hands, swaying slightly as it stands. It stares directly at the camera area, then slowly takes one step onto the wet sand. Water drips from its scales. The camera holds still, uneasy stillness, then the creature tilts its head.\nScene and weather: dark foggy beach, low tide surf, thin moon behind clouds, cold light.\nColor grade: desaturated cold grade, pale moonlight, wet reflections on sand, grain.\nNo narration, no other language.\n\n<Overall Soundscape>\ngentle surf, water dripping, a wet sucking sound, distant fog\n\n<Non-Diegetic Music>\nlow uneasy strings, a single damp tone\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "mon_03_slender_hall",
+      "title": "瘦长人·黑影 静立柱后 (人形怪)",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": "../scenes/lantern_hall_v2.png",
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, solemn reserved expression, wearing a black floor-length hooded robe, carrying a small old brass lantern, [Picture 1]\n<Subject 2>: the same 17-year-old girl in a close-up portrait, wavy auburn-red hair, Asian oval face, single eyelids, solemn determined eyes, black hooded robe, [Picture 2]\n<Subject 3>: the vast ruined gothic castle great hall shown in Picture 1: carved stone altar in center foreground, deep perspective with two rows of stone columns vanishing into distant background, towering vaulted ceiling with broken dome, gothic arched windows on left wall, broken stone pillar on right with candelabras, [Picture 3]\n<Subject 4>: an impossibly tall and thin humanoid figure: pitch black, no face, elongated arms hanging down to the knees, suit-like silhouette, utterly motionless\n\n<Summary>\nMedium-wide shot inside the vast ruined gothic hall matching Picture 1. Jialing matching Picture 2 walks slowly between the stone columns, holding her brass lantern low. Between two columns far behind her, an impossibly tall and thin humanoid figure stands perfectly still: pitch black, no face, elongated arms hanging down to its knees, suit-like silhouette, utterly motionless. The camera dollies slowly forward past a column; when it clears, the figure is gone. Then the camera turns slightly and the figure is standing much closer, still motionless, right between two columns near Jialing. She has not noticed yet. Cold dread. Scene and weather: dim gothic hall, candlelight pools, long shadows, thin dust, black figure in the distance. Color grade: deep black shadows, warm candle pools, extreme contrast, heavy grain.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep face/hair/robe/lantern\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\nSubject 3: partially_preserved - scene geometry anchor, keep the vast hall\nPicture 3: partially_preserved\nSubject 4: fully_preserved - the monster itself, keep its form/traits consistent\n\n<Detailed Description>\nMedium-wide shot inside the vast ruined gothic hall matching Picture 1. Jialing matching Picture 2 walks slowly between the stone columns, holding her brass lantern low. Between two columns far behind her, an impossibly tall and thin humanoid figure stands perfectly still: pitch black, no face, elongated arms hanging down to its knees, suit-like silhouette, utterly motionless. The camera dollies slowly forward past a column; when it clears, the figure is gone. Then the camera turns slightly and the figure is standing much closer, still motionless, right between two columns near Jialing. She has not noticed yet. Cold dread.\nScene and weather: dim gothic hall, candlelight pools, long shadows, thin dust, black figure in the distance.\nColor grade: deep black shadows, warm candle pools, extreme contrast, heavy grain.\nNo narration, no other language.\n\n<Overall Soundscape>\nhollow footsteps, candle crackle, a low sub-bass thrum when the figure is near\n\n<Non-Diegetic Music>\nminimal piano with long silences, creeping dread\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "mon_04_undead_street",
+      "title": "丧尸·腐尸 雾中来 (人形怪)",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": "../scenes/hk_old_street_night.png",
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, solemn reserved expression, wearing a black floor-length hooded robe, carrying a small old brass lantern, [Picture 1]\n<Subject 2>: the same 17-year-old girl in a close-up portrait, wavy auburn-red hair, Asian oval face, single eyelids, solemn determined eyes, black hooded robe, [Picture 2]\n<Subject 3>: the night city street shown in Picture 1, wet asphalt reflecting neon, narrow old street with signboards, thin mist, [Picture 3]\n<Subject 4>: a humanoid corpse zombie: grey rotting skin, hollow dark eye sockets, torn clothes, arms outstretched, jaw hanging, shambling with a broken stagger\n\n<Summary>\nMedium-wide shot on the rain-soaked night street matching Picture 1. Jialing matching Picture 2 stands under a flickering neon sign, back to the camera, facing down the street. At the far end of the road, out of the mist, a humanoid corpse figure shambles into the light: grey rotting skin, hollow dark eye sockets, torn clothes, arms outstretched, jaw hanging, walking with a broken stagger. It gets closer, head twitching. The camera stays wide, the shambling figure grows larger in frame. Jialing slowly turns her head. The corpse stops mid-stride, staring. Scene and weather: rainy night, wet neon-reflecting asphalt, flickering sign, rolling mist. Color grade: cyan-red neon noir grade, wet reflections, deep shadows, grain.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep face/hair/robe/lantern\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\nSubject 3: partially_preserved - scene geometry anchor, keep the night street\nPicture 3: partially_preserved\nSubject 4: fully_preserved - the monster itself, keep its form/traits consistent\n\n<Detailed Description>\nMedium-wide shot on the rain-soaked night street matching Picture 1. Jialing matching Picture 2 stands under a flickering neon sign, back to the camera, facing down the street. At the far end of the road, out of the mist, a humanoid corpse figure shambles into the light: grey rotting skin, hollow dark eye sockets, torn clothes, arms outstretched, jaw hanging, walking with a broken stagger. It gets closer, head twitching. The camera stays wide, the shambling figure grows larger in frame. Jialing slowly turns her head. The corpse stops mid-stride, staring.\nScene and weather: rainy night, wet neon-reflecting asphalt, flickering sign, rolling mist.\nColor grade: cyan-red neon noir grade, wet reflections, deep shadows, grain.\nNo narration, no other language.\n\n<Overall Soundscape>\nsteady rain, neon buzz, wet dragging footsteps, a wet groan\n\n<Non-Diegetic Music>\nsynth bass pulse, slow and ominous\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "mon_05_xenomorph",
+      "title": "异形·猎手 倒挂阴影 (异形怪)",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": null,
+          "character": null,
+          "scene": "../scenes/lantern_hall_v2.png",
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: the vast ruined gothic castle great hall shown in Picture 1: carved stone altar in center foreground, deep perspective with two rows of stone columns vanishing into distant background, towering vaulted ceiling with broken dome, gothic arched windows on left wall, broken stone pillar on right with candelabras, [Picture 1]\n<Subject 2>: a sleek jet-black xenomorph-like creature: smooth carapace, long domed head, thin trailing tail, claws, fluid inhuman movements, elongated jaws\n\n<Summary>\nWide shot inside the dark ruined gothic hall matching Picture 1. No people. High on the broken vaulted ceiling, barely visible in shadow, a sleek jet-black xenomorph-like creature crawls upside down with eerie precision: smooth carapace, long domed head, thin tail trailing, claws gripping the stone. It stops, head rotating slowly, then drops a short distance and clings to a pillar, its long head tilted, jaws slightly parting. A thin thread of drool catches the candlelight. It moves with fluid inhuman silence. The camera holds wide then drifts forward slightly. Scene and weather: dark gothic hall, only candlelight pools, black creature hidden in ceiling shadow. Color grade: high contrast, deep blacks, cold candle-amber, heavy grain.\n\n<Retention Analysis>\nSubject 1: partially_preserved - scene geometry anchor, keep the vast hall\nPicture 1: partially_preserved\nSubject 2: fully_preserved - the monster itself, keep its form/traits consistent\n\n<Detailed Description>\nWide shot inside the dark ruined gothic hall matching Picture 1. No people. High on the broken vaulted ceiling, barely visible in shadow, a sleek jet-black xenomorph-like creature crawls upside down with eerie precision: smooth carapace, long domed head, thin tail trailing, claws gripping the stone. It stops, head rotating slowly, then drops a short distance and clings to a pillar, its long head tilted, jaws slightly parting. A thin thread of drool catches the candlelight. It moves with fluid inhuman silence. The camera holds wide then drifts forward slightly.\nScene and weather: dark gothic hall, only candlelight pools, black creature hidden in ceiling shadow.\nColor grade: high contrast, deep blacks, cold candle-amber, heavy grain.\nNo narration, no other language.\n\n<Overall Soundscape>\ndistant candle crackle, a faint click of claws on stone, silence\n\n<Non-Diegetic Music>\nlow drone, a sharp percussive strike when it drops\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "mon_06_centipede_wall",
+      "title": "节肢·虫怪 爬行石墙 (异形/动物)",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": null,
+          "character": null,
+          "scene": "../scenes/lantern_hall_v2.png",
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: the vast ruined gothic castle great hall shown in Picture 1: carved stone altar in center foreground, deep perspective with two rows of stone columns vanishing into distant background, towering vaulted ceiling with broken dome, gothic arched windows on left wall, broken stone pillar on right with candelabras, [Picture 1]\n<Subject 2>: a monstrous segmented centipede-like creature: many thick jointed legs rippling, glossy dark chitin, long sweeping antennae, a head with small eyes and sharp mandibles, body following the curve of the wall\n\n<Summary>\nClose-medium shot of a stone wall in the ruined gothic hall matching Picture 1. No people. A monstrous segmented centipede-like creature undulates across the wall surface: many thick jointed legs rippling, glossy dark chitin, long antennae sweeping, a head with multiple small eyes and sharp mandibles. It stops and raises its head, mandibles opening slowly, then resumes crawling toward the top of the frame. The leg motion is precise and many-legged, the body follows the curve of the wall. Camera holds a medium-close framing on the legs and head. Scene and weather: dim stone wall, one warm candlelight pool, shadows above. Color grade: dark chiaroscuro, glossy chitin highlights, cold grade, grain.\n\n<Retention Analysis>\nSubject 1: partially_preserved - scene geometry anchor, keep the vast hall\nPicture 1: partially_preserved\nSubject 2: fully_preserved - the monster itself, keep its form/traits consistent\n\n<Detailed Description>\nClose-medium shot of a stone wall in the ruined gothic hall matching Picture 1. No people. A monstrous segmented centipede-like creature undulates across the wall surface: many thick jointed legs rippling, glossy dark chitin, long antennae sweeping, a head with multiple small eyes and sharp mandibles. It stops and raises its head, mandibles opening slowly, then resumes crawling toward the top of the frame. The leg motion is precise and many-legged, the body follows the curve of the wall. Camera holds a medium-close framing on the legs and head.\nScene and weather: dim stone wall, one warm candlelight pool, shadows above.\nColor grade: dark chiaroscuro, glossy chitin highlights, cold grade, grain.\nNo narration, no other language.\n\n<Overall Soundscape>\ntiny clicking of legs, faint scratching on stone, a wet mandible click\n\n<Non-Diegetic Music>\nnervous percussion, high staccato strings\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "mon_07_werewolf",
+      "title": "狼人·变形 月光下起身 (动物形态)",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "../characters/jialing_wizard/reference.png",
+          "character": "../characters/jialing_wizard/reference.png",
+          "scene": null,
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, Asian oval face, single eyelids, solemn reserved expression, wearing a black floor-length hooded robe, carrying a small old brass lantern, [Picture 1]\n<Subject 2>: the same 17-year-old girl in a close-up portrait, wavy auburn-red hair, Asian oval face, single eyelids, solemn determined eyes, black hooded robe, [Picture 2]\n<Subject 3>: a tall lupine werewolf: dark fur bristling, long muzzle, pointed ears, claws on its hind-leg hands, yellow glowing eyes, breath steaming\n\n<Summary>\nMedium-wide shot on a moonlit moor at night. Jialing matching Picture 1 stands far behind, small silhouette holding her lantern. In the foreground center a human figure is crouched on all fours under the full moon, back arching, spine cracking as dark fur erupts along the arms and back, the jaw stretching into a muzzle, ears growing pointed, hands becoming claws. The transformation is smooth and gradual, not a cut. The creature lifts its head, eyes flashing yellow, and rises onto its hind legs as a tall lupine werewolf, fur bristling, breath steaming in the moonlight. It howls, head thrown back, then looks toward Jialing's distant silhouette. Scene and weather: bright full moon, open moor, thin grass, cold silver light, breath steam. Color grade: cold silver-blue moonlight, high contrast fur, fine grain.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep face/hair/robe/lantern\nPicture 1: fully_preserved\nSubject 2: fully_preserved - close-up quality reference\nPicture 2: fully_preserved\nSubject 3: fully_preserved - the monster itself, keep its form/traits consistent\n\n<Detailed Description>\nMedium-wide shot on a moonlit moor at night. Jialing matching Picture 1 stands far behind, small silhouette holding her lantern. In the foreground center a human figure is crouched on all fours under the full moon, back arching, spine cracking as dark fur erupts along the arms and back, the jaw stretching into a muzzle, ears growing pointed, hands becoming claws. The transformation is smooth and gradual, not a cut. The creature lifts its head, eyes flashing yellow, and rises onto its hind legs as a tall lupine werewolf, fur bristling, breath steaming in the moonlight. It howls, head thrown back, then looks toward Jialing's distant silhouette.\nScene and weather: bright full moon, open moor, thin grass, cold silver light, breath steam.\nColor grade: cold silver-blue moonlight, high contrast fur, fine grain.\nNo narration, no other language.\n\n<Overall Soundscape>\nnight wind, cracking bones, tearing cloth, a long wolf howl\n\n<Non-Diegetic Music>\nlow drums building, a rising choir, then sudden silence\n\n</Prompt>"
+        }
+      ]
+    },
+    {
+      "id": "mon_08_great_spider",
+      "title": "巨蛛·悬垂 自拱顶降下 (动物形态)",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": null,
+          "character": null,
+          "scene": "../scenes/lantern_hall_v2.png",
+          "extra_images": [],
+          "seconds": 6.0,
+          "megapixels": 0.7,
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: the vast ruined gothic castle great hall shown in Picture 1: carved stone altar in center foreground, deep perspective with two rows of stone columns vanishing into distant background, towering vaulted ceiling with broken dome, gothic arched windows on left wall, broken stone pillar on right with candelabras, [Picture 1]\n<Subject 2>: a massive black spider the size of a horse: eight long hairy legs, glossy abdomen, small clustered eyes catching light, visible fangs, lowering itself on a thick strand of silk\n\n<Summary>\nWide low-angle shot inside the ruined gothic hall matching Picture 1. No people. From the broken vaulted ceiling above, a massive black spider the size of a horse lowers itself slowly on a thick strand of silk: eight long hairy legs unfolding and testing the air, a glossy abdomen, small clustered eyes catching the candlelight, fangs visible. It descends into the light, then stops and hangs motionless, legs slowly flexing. The camera tilts up slightly to keep it centered as it drops, then holds. Scene and weather: dark gothic hall, candlelight pools, huge spider hanging from the dark ceiling. Color grade: deep blacks, candle-amber on glossy body, high contrast, grain.\n\n<Retention Analysis>\nSubject 1: partially_preserved - scene geometry anchor, keep the vast hall\nPicture 1: partially_preserved\nSubject 2: fully_preserved - the monster itself, keep its form/traits consistent\n\n<Detailed Description>\nWide low-angle shot inside the ruined gothic hall matching Picture 1. No people. From the broken vaulted ceiling above, a massive black spider the size of a horse lowers itself slowly on a thick strand of silk: eight long hairy legs unfolding and testing the air, a glossy abdomen, small clustered eyes catching the candlelight, fangs visible. It descends into the light, then stops and hangs motionless, legs slowly flexing. The camera tilts up slightly to keep it centered as it drops, then holds.\nScene and weather: dark gothic hall, candlelight pools, huge spider hanging from the dark ceiling.\nColor grade: deep blacks, candle-amber on glossy body, high contrast, grain.\nNo narration, no other language.\n\n<Overall Soundscape>\ncandle crackle, faint silk creak, a soft chittering, silence\n\n<Non-Diegetic Music>\nlow cello drone, a tense ticking pattern\n\n</Prompt>"
+        }
+      ]
+    }
+  ]
+}
