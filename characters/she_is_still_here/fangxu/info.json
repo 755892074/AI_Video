@@ -1,0 +1,21 @@
+{
+  "name": "方旭",
+  "role": "EP01 死者 / 机房夜班技术员",
+  "age": 45,
+  "ethnicity": "Chinese",
+  "description": "EP01 开场死者，雨夜机房夜班独坐时被灭口。干瘪中年男人，眼袋深重、薄唇紧抿、头发稀疏后梳，普通技术员打扮（深蓝工作夹克+灰色卫衣），熬夜脸。一次性角色，仅 EP01 出现",
+  "skin": "蜡黄、熬夜色",
+  "hair": "黑色稀疏短发后梳，偶有白发",
+  "outfit": "深蓝技术夹克 + 灰色卫衣 + 工装裤",
+  "expression": "疲惫、空洞、近乎认命",
+  "assets": {
+    "bean_lock": "bean_fangxu.png（2026-09-05 qwen-image 本地定妆）",
+    "reference": "reference.png（同上）",
+    "turnaround": "无（一次性角色，无标准四视图需求，跨镜不出不同角度）"
+  },
+  "h3_main_anchor": "bean_fangxu.png",
+  "style_lock": "写实CG电影感冷调，UE5渲染质感",
+  "scope": "EP01 shot01/02/04 仅此 3 镜",
+  "version": "v1-2026-09-05",
+  "status_note": "本地 qwen-image 定稿，0 积分"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "江彻",
+  "role": "男主 / 刑警",
+  "age": 31,
+  "ethnicity": "Chinese",
+  "description": "市刑侦大队警官，5年前曾与林眠有过节（待设定），5年来每周探望陪护昏迷的她",
+  "skin": "略粗糙、户外色",
+  "hair": "短寸黑发、轻微胡茬",
+  "outfit": "深炭灰夹克 + 灰色内搭（便衣刑警）",
+  "expression": "疲惫、锐利、内疚压住",
+  "assets": {
+    "turnaround": "turnaround.png（2026-09-04 qwen-image 2x2网格，本地定稿归档）",
+    "reference": "reference.png（2026-09-04 qwen-image 首版，已被豆包版替换）",
+    "bean_lock": "bean_jiangche.png（2026-09-04 豆包定妆参考）"
+  },
+  "h3_main_anchor": "bean_jiangche.png（豆包定妆图，含疲惫特征，H3 主身份锚图）",
+  "style_lock": "写实CG电影感冷调，UE5渲染质感",
+  "version": "v2-2026-09-05（加 turnaround + 多资产路径）",
+  "status_note": "stills=2026-09-04 写实CG电影感冷调；turnaround v1 本地定稿，备用豆包重出"
+}

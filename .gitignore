@@ -52,3 +52,9 @@ shots/tmp_frames/
 shots/_contact_tmp/
 shots/nv_frames/
 tmp_*.wav
+
+# --- 微信 token 缓存（含 context_token，敏感，绝不可入库）---
+tools/.token_cache.json
+
+# --- qwen_gui 运行时上传临时目录 ---
+tools/qwen_gui/uploads/

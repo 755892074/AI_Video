@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>本地 AI 生成工具 · Qwen-Image 文生图 / MiniMax H3 视频</title>
+<style>
+  :root {
+    --bg: #0f1115; --panel: #1a1d24; --panel2: #21252e; --border: #2e3340;
+    --text: #e6e9ef; --muted: #8b93a3; --accent: #6ea8fe; --accent2: #4d7ef7;
+    --ok: #4ade80; --warn: #fbbf24; --err: #f87171; --chip: #2b3140;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg); color: var(--text); min-height: 100vh; padding: 20px; }
+  .wrap { width: 100%; max-width: 1180px; margin: 0 auto; }
+  header { display: flex; align-items: center; gap: 14px; margin-bottom: 16px; flex-wrap: wrap; }
+  header h1 { font-size: 20px; font-weight: 600; }
+  header h1 span { color: var(--accent); }
+  .status { display: flex; gap: 14px; margin-left: auto; font-size: 13px; color: var(--muted); flex-wrap: wrap; }
+  .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; }
+  .dot.on { background: var(--ok); box-shadow: 0 0 6px var(--ok); }
+  .dot.off { background: var(--err); }
+  /* tabs */
+  .tabs { display: flex; gap: 6px; margin-bottom: 16px; border-bottom: 1px solid var(--border); }
+  .tab { padding: 9px 22px; border-radius: 10px 10px 0 0; cursor: pointer; font-size: 14px;
+    color: var(--muted); border: 1px solid transparent; border-bottom: none; transition: all .15s; }
+  .tab:hover { color: var(--text); background: var(--panel); }
+  .tab.active { color: var(--accent); background: var(--panel); border-color: var(--border);
+    font-weight: 600; }
+  .grid { display: grid; grid-template-columns: 5fr 5fr; gap: 16px; align-items: start; }
+  @media (max-width: 980px) { .grid { grid-template-columns: 1fr; } }
+  .card { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 16px; }
+  .card h2 { font-size: 14px; font-weight: 600; color: var(--muted); margin-bottom: 12px;
+    display: flex; align-items: center; gap: 8px; }
+  .card h2::before { content: ''; width: 3px; height: 14px; background: var(--accent); border-radius: 2px; }
+  label { display: block; font-size: 12px; color: var(--muted); margin: 10px 0 5px; }
+  input[type=text], textarea, select, input[type=number] {
+    width: 100%; background: var(--panel2); border: 1px solid var(--border); color: var(--text);
+    border-radius: 8px; padding: 9px 11px; font-size: 14px; outline: none; transition: border .15s; }
+  input:focus, textarea:focus, select:focus { border-color: var(--accent); }
+  textarea { resize: vertical; min-height: 80px; font-family: inherit; line-height: 1.55; }
+  .row { display: flex; gap: 10px; }
+  .row > div { flex: 1; }
+  .row2 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+  .row3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .sizes { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+  .chip { background: var(--chip); border: 1px solid var(--border); color: var(--text);
+    padding: 5px 10px; border-radius: 999px; font-size: 12px; cursor: pointer; transition: all .15s; }
+  .chip:hover { border-color: var(--accent); }
+  .chip.active { background: var(--accent2); border-color: var(--accent2); color: #fff; }
+  .btn { width: 100%; margin-top: 14px; padding: 12px; border: none; border-radius: 10px;
+    background: linear-gradient(135deg, var(--accent2), #6a5cf5); color: #fff;
+    font-size: 15px; font-weight: 600; cursor: pointer; transition: opacity .15s, transform .05s; }
+  .btn:hover { opacity: .9; }
+  .btn:active { transform: scale(.99); }
+  .btn:disabled { opacity: .5; cursor: not-allowed; }
+  .btn.working { background: var(--chip); color: var(--muted); }
+  .btn.mini { width: auto; padding: 6px 14px; font-size: 12px; border-radius: 8px; margin-top: 0;
+    background: var(--panel2); color: var(--muted); border: 1px solid var(--border); }
+  .btn.mini:hover { border-color: var(--accent); color: var(--text); }
+  /* mode select */
+  .modes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 4px; }
+  .mode { background: var(--panel2); border: 1px solid var(--border); border-radius: 10px;
+    padding: 10px 12px; cursor: pointer; transition: all .15s; }
+  .mode:hover { border-color: var(--accent); }
+  .mode.active { border-color: var(--accent2); background: rgba(77,126,247,.12); }
+  .mode b { display: block; font-size: 14px; margin-bottom: 3px; }
+  .mode small { color: var(--muted); font-size: 11px; line-height: 1.4; display: block; }
+  .mode .tag { display: inline-block; font-size: 10px; color: var(--accent); margin-top: 5px; }
+  /* upload */
+  .uploads { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+  .upitem { position: relative; width: 92px; height: 92px; border: 1px dashed var(--border);
+    border-radius: 10px; display: flex; align-items: center; justify-content: center;
+    overflow: hidden; cursor: pointer; background: var(--panel2); }
+  .upitem img { width: 100%; height: 100%; object-fit: cover; }
+  .upitem video, .upitem.audio { width: 100%; height: 100%; object-fit: cover; }
+  .upitem .rm { position: absolute; top: 2px; right: 2px; width: 18px; height: 18px; border-radius: 50%;
+    background: rgba(0,0,0,.65); color: #fff; font-size: 11px; line-height: 18px; text-align: center;
+    cursor: pointer; }
+  .upitem .pl { font-size: 11px; color: var(--muted); }
+  .upitem.audio { border-color: var(--warn); }
+  .upitem.audio .pl { color: var(--warn); }
+  input[type=file] { display: none; }
+  .dur { display: inline-block; margin-right: 14px; cursor: pointer; font-size: 13px; }
+  .dur.on { color: var(--accent); font-weight: 600; }
+  /* results */
+  #results, #vresults { margin-top: 16px; }
+  #results .card, #vresults .card { padding: 14px; }
+  .job { display: flex; gap: 14px; align-items: flex-start; padding: 10px 0;
+    border-bottom: 1px solid var(--border); }
+  .job:last-child { border-bottom: none; }
+  .job img, .job video { width: 120px; height: 120px; object-fit: cover; border-radius: 8px;
+    cursor: zoom-in; border: 1px solid var(--border); background: #000; }
+  .job video { cursor: pointer; }
+  .job .meta { flex: 1; font-size: 12px; color: var(--muted); min-width: 0; }
+  .job .meta .tag { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 11px; margin-bottom: 6px; }
+  .tag.done { background: rgba(74,222,128,.15); color: var(--ok); }
+  .tag.running, .tag.submitting, .tag.queued { background: rgba(251,191,36,.15); color: var(--warn); }
+  .tag.error { background: rgba(248,113,113,.15); color: var(--err); }
+  .job .meta p { overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; }
+  .job .meta .err { color: var(--err); white-space: pre-wrap; word-break: break-all; }
+  .job .params { margin-top: 4px; font-size: 11px; color: #5c6474; }
+  .empty { color: var(--muted); font-size: 13px; text-align: center; padding: 30px 0; }
+  .actions { display: flex; gap: 8px; margin-top: 8px; }
+  .lb { position: fixed; inset: 0; background: rgba(0,0,0,.85); display: none;
+    align-items: center; justify-content: center; z-index: 99; cursor: zoom-out; }
+  .lb img, .lb video { max-width: 92vw; max-height: 92vh; border-radius: 6px; }
+  .hint { font-size: 11px; color: #5c6474; margin-top: 6px; line-height: 1.5; }
+  .hint b { color: var(--warn); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>本地 AI <span>生成工具</span></h1>
+    <div class="status">
+      <span><i class="dot" id="dot"></i><span id="gpuText">连接中…</span></span>
+      <span id="queueText">队列 -</span>
+      <button class="btn mini" onclick="openFolder('video')">📁 视频输出夹</button>
+      <button class="btn mini" onclick="openFolder('img')">📁 图片输出夹</button>
+    </div>
+  </header>
+
+  <div class="tabs">
+    <div class="tab active" data-tab="imgTab" onclick="switchTab('imgTab')">🖼️ 文生图</div>
+    <div class="tab" data-tab="vidTab" onclick="switchTab('vidTab')">🎬 H3 生视频</div>
+  </div>
+
+  <!-- ================= 文生图 ================= -->
+  <div id="imgTab">
+    <div class="grid">
+      <div class="card">
+        <h2>画面描述 Prompt</h2>
+        <textarea id="prompt" placeholder="描述你想要的画面…&#10;如：少女站在雨夜霓虹街头，湿漉地面反射彩灯"></textarea>
+        <label>负面提示（默认通用项）</label>
+        <textarea id="negative" style="min-height:44px">text, watermark, logo, signature, lowres, blurry, jpeg artifacts, deformed, extra fingers, bad anatomy</textarea>
+        <label>尺寸预设</label>
+        <div class="sizes" id="sizes"></div>
+        <div class="row2" style="margin-top:10px">
+          <div><label>宽</label><input type="number" id="width" value="832" step="32"></div>
+          <div><label>高</label><input type="number" id="height" value="1216" step="32"></div>
+          <div><label>Steps</label><input type="number" id="steps" value="20" min="1"></div>
+          <div><label>CFG</label><input type="number" id="cfg" value="4.0" step="0.5"></div>
+        </div>
+        <div class="row3" style="margin-top:10px">
+          <div><label>采样器</label>
+            <select id="sampler"><option>euler</option><option>euler_ancestral</option>
+              <option>dpmpp_2m</option><option>dpmpp_2m_sde</option><option>uni_pc</option></select></div>
+          <div><label>Scheduler</label>
+            <select id="scheduler"><option>simple</option><option>beta</option>
+              <option>karras</option><option>normal</option></select></div>
+          <div><label>张数</label>
+            <select id="batch"><option>1</option><option>2</option><option>3</option><option>4</option></select></div>
+        </div>
+        <div class="row" style="margin-top:10px">
+          <div><label>随机种子（留空随机）</label><input type="text" id="seed" placeholder="留空随机"></div>
+          <div><label>文件名前缀</label><input type="text" id="prefix" placeholder="scene_x"></div>
+        </div>
+        <button class="btn" id="goBtn">生成图片</button>
+      </div>
+      <div class="card" style="align-self:start">
+        <h2>最近出图</h2>
+        <div id="results"><div class="empty">还没有任务。</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= H3 生视频 ================= -->
+  <div id="vidTab" style="display:none">
+    <div class="grid">
+      <div class="card">
+        <h2>模式选择</h2>
+        <div class="modes">
+          <div class="mode active" data-mode="t2v" onclick="pickMode('t2v')">
+            <b>文生视频 T2V</b>
+            <small>纯文字描述画面与镜头，无参考图，自由发挥度高</small>
+            <span class="tag">无图 · 模型 FL2VA</span>
+          </div>
+          <div class="mode" data-mode="i2v" onclick="pickMode('i2v')">
+            <b>首帧图生视频 I2V</b>
+            <small>上传 1 张画面做第一帧锚点，从该画面动起来</small>
+            <span class="tag">1 首帧图 · FL2VA</span>
+          </div>
+          <div class="mode" data-mode="r2v" onclick="pickMode('r2v')">
+            <b>参考图生视频 R2V</b>
+            <small>传角色/场景/分镜多张参考，身份一致性最强</small>
+            <span class="tag">多图+语音 · REF2VA</span>
+          </div>
+        </div>
+
+        <div id="i2v_upload_box" style="display:none">
+          <label>首帧图（该图就是视频第 1 帧）</label>
+          <div class="uploads" id="i2v_upload"><div class="upitem" onclick="pickFile('i2v')" title="点击选择首帧图">
+            <span class="pl">+ 选首帧图</span></div></div>
+        </div>
+
+        <div id="r2v_upload_box" style="display:none">
+          <label>参考图（角色 / 场景 / 分镜，可多张；prompt 里用 &lt;Picture 1&gt; &lt;Picture 2&gt;… 指代）</label>
+          <div class="uploads" id="r2v_upload"><div class="upitem" onclick="pickFile('r2v')" title="添加参考图">
+            <span class="pl">+ 添加参考图</span></div></div>
+          <label>语音参考（可选 · 克隆音色，prompt 里用 &lt;Audio 1&gt; 指代）</label>
+          <div class="uploads" id="r2v_audio_up"><div class="upitem audio" onclick="pickFile('audio')" title="添加对白/音色参考(wav/mp3)">
+            <span class="pl">+ 语音参考</span></div></div>
+          <div class="hint">⭐ R2V 提示词示例：<b>&lt;Picture 1&gt;</b> 是少女角色，<b>&lt;Picture 2&gt;</b> 是场景。写
+            "The girl from &lt;Picture 1&gt; stands in the room from &lt;Picture 2&gt;, then turns to camera and speaks, her voice matches &lt;Audio 1&gt;"</div>
+        </div>
+
+        <label>画面描述 / 镜头 Prompt</label>
+        <textarea id="vprompt" style="min-height:110px" placeholder="T2V: 描述镜头画面与运动&#10;I2V: 从首帧画面开始，描述后续动作与镜头&#10;R2V: 用 <Picture N> 指代参考图，描述剧情动作"></textarea>
+
+        <label>视频时长</label>
+        <div class="sizes" id="durs">
+          <span class="chip" data-s="3">3 秒</span>
+          <span class="chip active" data-s="5">5 秒</span>
+          <span class="chip" data-s="7">7 秒</span>
+          <span class="chip" data-s="10">10 秒</span>
+          <span class="chip" data-s="15">15 秒</span>
+        </div>
+
+        <label>分辨率</label>
+        <div class="sizes" id="vsizes">
+          <span class="chip" data-w="768" data-h="1344">竖屏 768×1344</span>
+          <span class="chip active" data-w="544" data-h="960">竖屏 544×960(快)</span>
+          <span class="chip" data-w="1344" data-h="768">横屏 1344×768</span>
+          <span class="chip" data-w="1024" data-h="1024">方形 1024</span>
+          <span class="chip" data-w="960" data-h="544">横屏 960×544(快)</span>
+        </div>
+
+        <div class="row3" style="margin-top:10px">
+          <div><label>采样步数</label><input type="number" id="vsteps" value="20" min="4" max="40"></div>
+          <div><label>采样器</label>
+            <select id="vsampler"><option>res_multistep</option><option>euler</option>
+              <option>dpmpp_2m</option><option>uni_pc</option></select></div>
+          <div><label>Scheduler</label>
+            <select id="vscheduler"><option>simple</option><option>karras</option><option>beta</option></select></div>
+        </div>
+        <div class="row" style="margin-top:10px">
+          <div><label>随机种子（留空随机）</label><input type="text" id="vseed" placeholder="留空随机"></div>
+          <div><label>文件名前缀</label><input type="text" id="vprefix" placeholder="scene_x"></div>
+        </div>
+        <button class="btn" id="vgoBtn">生成视频</button>
+        <div class="hint">⏱ 16GB 显存参考耗时：544×960 约 6~10 min / 镜；768×1344 约 12~20 min / 镜（纯基模，无 Turbo LoRA）</div>
+      </div>
+      <div class="card" style="align-self:start">
+        <h2>最近任务</h2>
+        <div id="vresults"><div class="empty">还没有任务。</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="lb" id="lb"><img id="lbImg" alt="" style="display:none"><video id="lbVid" controls style="display:none"></video></div>
+
+<input type="file" id="filePicker" accept="image/*,.png,.jpg,.jpeg,.webp" style="display:none">
+<input type="file" id="audioPicker" accept="audio/*,.wav,.mp3,.m4a,.flac" style="display:none">
+
+<script>
+const $ = id => document.getElementById(id);
+const SIZES = [
+  ["竖屏 832×1216", 832, 1216], ["竖屏 768×1344", 768, 1344],
+  ["竖屏 576×1024", 576, 1024], ["横屏 1216×832", 1216, 832],
+  ["横屏 1344×768", 1344, 768], ["方图 1024×1024", 1024, 1024],
+  ["方图 1328×1328", 1328, 1328], ["海报 1088×1920", 1088, 1920],
+];
+let curSize = null;
+SIZES.forEach(([name, w, h]) => {
+  const b = document.createElement('div');
+  b.className = 'chip'; b.textContent = name;
+  b.onclick = () => {
+    document.querySelectorAll('#sizes .chip').forEach(x => x.classList.remove('active'));
+    b.classList.add('active'); $('width').value = w; $('height').value = h;
+  };
+  $('sizes').appendChild(b);
+});
+
+// ===== Tab 切换 =====
+function switchTab(t) {
+  document.querySelectorAll('.tab').forEach(x => x.classList.toggle('active', x.dataset.tab === t));
+  $('imgTab').style.display = t === 'imgTab' ? '' : 'none';
+  $('vidTab').style.display = t === 'vidTab' ? '' : 'none';
+  refreshJobs();
+}
+
+// ===== 上传文件状态 =====
+const state = { mode: 't2v', seconds: 5, vw: 544, vh: 960,
+  refs: [],        // r2v 参考图 [{remote, kind:'image'}]
+  audio: null,     // r2v 语音参考 {remote}
+  i2v: null };     // i2v 首帧 {remote}
+let uploadTimer = null;
+
+function pickMode(m) {
+  state.mode = m;
+  document.querySelectorAll('.mode').forEach(x => x.classList.toggle('active', x.dataset.mode === m));
+  $('i2v_upload_box').style.display = m === 'i2v' ? '' : 'none';
+  $('r2v_upload_box').style.display = m === 'r2v' ? '' : 'none';
+}
+
+// 上传文件 → /api/upload → {remote}
+function uploadFile(file, kind, cb) {
+  const fd = new FormData();
+  fd.append('file', file);
+  fetch('/api/upload', { method: 'POST', body: fd })
+    .then(r => r.json())
+    .then(d => { if (d.error) throw new Error(d.error); cb(d.remote, d); })
+    .catch(e => alert('上传失败: ' + e.message));
+}
+
+let pickTarget = null;
+function pickFile(kind) {
+  pickTarget = kind;
+  if (kind === 'audio') $('audioPicker').click(); else $('filePicker').click();
+}
+$('filePicker').addEventListener('change', e => {
+  const f = e.target.files[0]; e.target.value = '';
+  if (!f) return;
+  if (pickTarget === 'i2v') {
+    uploadFile(f, 'image', (remote) => {
+      state.i2v = { remote };
+      $('i2v_upload').innerHTML = renderUp('i2v', remote, 'i2v_del');
+    });
+  } else if (pickTarget === 'r2v') {
+    uploadFile(f, 'image', (remote) => {
+      state.refs.push({ remote, kind: 'image' });
+      refreshRefs();
+    });
+  }
+});
+$('audioPicker').addEventListener('change', e => {
+  const f = e.target.files[0]; e.target.value = '';
+  if (!f) return;
+  uploadFile(f, 'audio', (remote) => {
+    state.audio = { remote };
+    $('r2v_audio_up').innerHTML = `<div class="upitem audio" onclick="pickFile('audio')">
+      <span class="rm" onclick="event.stopPropagation();clearAudio()">×</span>
+      <span class="pl">🔊 ${f.name.slice(0, 12)}</span></div>
+      <div class="upitem audio" onclick="pickFile('audio')"><span class="pl">+ 换语音</span></div>`;
+  });
+});
+
+function renderUp(kind, remote, delFn) {
+  return `<div class="upitem"><span class="rm" onclick="event.stopPropagation();${delFn}()">×</span>
+    <span class="pl">✅ 已上传</span></div>
+    <div class="upitem" onclick="pickFile('${kind}')"><span class="pl">+ 换一张</span></div>`;
+}
+function clearI2V() { state.i2v = null; $('i2v_upload').innerHTML =
+  `<div class="upitem" onclick="pickFile('i2v')"><span class="pl">+ 选首帧图</span></div>`; }
+function clearAudio() { state.audio = null; $('r2v_audio_up').innerHTML =
+  `<div class="upitem audio" onclick="pickFile('audio')"><span class="pl">+ 语音参考</span></div>`; }
+function refreshRefs() {
+  let h = '';
+  state.refs.forEach((r, i) => {
+    h += `<div class="upitem"><span class="rm" onclick="delRef(${i})">×</span>
+      <span class="pl">🖼 图${i + 1}</span></div>`;
+  });
+  h += `<div class="upitem" onclick="pickFile('r2v')"><span class="pl">+ 图${state.refs.length + 1}</span></div>`;
+  $('r2v_upload').innerHTML = h;
+}
+function delRef(i) { state.refs.splice(i, 1); refreshRefs(); }
+
+// 时长/分辨率 chips
+$('durs').addEventListener('click', e => {
+  const c = e.target.closest('.chip'); if (!c) return;
+  document.querySelectorAll('#durs .chip').forEach(x => x.classList.remove('active'));
+  c.classList.add('active'); state.seconds = parseFloat(c.dataset.s);
+});
+$('vsizes').addEventListener('click', e => {
+  const c = e.target.closest('.chip'); if (!c) return;
+  document.querySelectorAll('#vsizes .chip').forEach(x => x.classList.remove('active'));
+  c.classList.add('active'); state.vw = parseInt(c.dataset.w); state.vh = parseInt(c.dataset.h);
+});
+
+// ===== 状态轮询 =====
+async function refreshStats() {
+  try {
+    const r = await fetch('/api/stats'); const s = await r.json();
+    $('dot').className = 'dot ' + (s.online ? 'on' : 'off');
+    $('gpuText').textContent = s.online
+      ? (s.gpu_name || 'GPU') + '  ' + s.vram_free_gb + '/' + s.vram_total_gb + 'GB'
+      : 'ComfyUI 未连接';
+    $('queueText').textContent = s.online ? `运行中 ${s.queue_running} · 排队 ${s.queue_pending}` : '';
+  } catch (e) {}
+}
+setInterval(refreshStats, 5000); refreshStats();
+
+// ===== 任务列表 =====
+let lastJobs = [];
+async function refreshJobs() {
+  try {
+    const r = await fetch('/api/jobs'); const d = await r.json();
+    const jobs = d.jobs || [];
+    renderJobList(jobs);
+    lastJobs = jobs;
+  } catch (e) {}
+}
+
+function isVideoJob(j) {
+  const p = j.params || {};
+  return p.kind === 'video' || (j.images || []).some(x => x.endsWith('.mp4') || x.endsWith('.webm'));
+}
+
+function renderJobList(jobs) {
+  const vidTabOn = $('vidTab').style.display !== 'none';
+  const imgJobs = jobs.filter(j => !isVideoJob(j));
+  const vidJobs = jobs.filter(isVideoJob);
+  const anyRunning = jobs.some(j => ['queued','submitting','running'].includes(j.status));
+  // 按钮状态
+  $('goBtn').disabled = anyRunning;
+  $('vgoBtn').disabled = anyRunning;
+  if (anyRunning) {
+    if (!$('goBtn').classList.contains('working')) { $('goBtn').classList.add('working'); $('goBtn').textContent = '⏳ GPU 忙碌…'; }
+    if (!$('vgoBtn').classList.contains('working')) { $('vgoBtn').classList.add('working'); $('vgoBtn').textContent = '⏳ GPU 忙碌…'; }
+  } else {
+    $('goBtn').classList.remove('working'); $('goBtn').textContent = '生成图片';
+    $('vgoBtn').classList.remove('working'); $('vgoBtn').textContent = '生成视频';
+  }
+
+  // 图片区只显示图片 job；视频区显示 video job + 图片 job 摘要（便于看 GPU 在忙啥）
+  const box = $('results');
+  box.innerHTML = imgJobs.length
+    ? imgJobs.map(j => jobHTML(j, 'img')).join('')
+    : '<div class="empty">还没有文生图任务。</div>';
+  const vbox = $('vresults');
+  vbox.innerHTML = vidJobs.length
+    ? vidJobs.map(j => jobHTML(j, 'vid')).join('') + (imgJobs.length ? imgJobs.map(j => jobHTML(j, 'img', true)).join('') : '')
+    : '<div class="empty">还没有视频任务。</div>';
+}
+
+function jobHTML(j, kind, mini) {
+  const p = j.params || {};
+  const t = j.created ? new Date(j.created * 1000).toLocaleTimeString('zh-CN', {hour12:false}) : '';
+  const tagCls = j.status === 'done' ? 'done' : (j.status === 'error' ? 'error' : 'running');
+  const statusText = {done:'✅ 完成', queued:'排队中', submitting:'提交中', running:'⏳ 生成中…', error:'❌ 失败'}[j.status] || j.status;
+  let media = '';
+  const first = (j.images && j.images[0]) || '';
+  if (first) {
+    if (first.endsWith('.mp4') || first.endsWith('.webm')) {
+      media = `<video src="/vfile/${encodeURIComponent(first)}" muted loop playsinline
+        onclick="lb('v','${encodeURIComponent(first)}')" title="点击播放"></video>`;
+    } else {
+      media = `<img src="/img/${encodeURIComponent(first)}" onclick="lb('i','${encodeURIComponent(first)}')">`;
+    }
+  } else {
+    media = '<div class="empty" style="padding:0;width:120px;height:120px;display:flex;align-items:center;justify-content:center;font-size:11px">等待出片</div>';
+  }
+  const err = j.error ? `<div class="err">${j.error}</div>` : '';
+  let params = `${p.width || ''}×${p.height || ''} · steps=${p.steps ?? '-'} · seed=${p.seed ?? '-'}`;
+  if (p.mode) params = `[${p.mode.toUpperCase()}] ${p.seconds || ''}s · ${p.width}×${p.height} · steps=${p.steps} · seed=${p.seed}`;
+  if (p.n_refs) params += ` · 参考图×${p.n_refs}`;
+  const dl = (first && j.status === 'done')
+    ? `<a class="btn mini" style="display:inline-block" href="/${first.endsWith('.mp4')||first.endsWith('.webm')?'vfile':'img'}/${encodeURIComponent(first)}" download>⬇ 下载</a>` : '';
+  return `<div class="job">
+    <div>${media}</div>
+    <div class="meta">
+      <span class="tag ${tagCls}">${statusText}</span> <span>${j.elapsed ? j.elapsed + 's' : ''}</span> <span style="float:right">${t}</span>
+      <p>${(p.prompt || '').replace(/</g,'&lt;')}</p>
+      <div class="params">${params}</div>
+      ${err}
+      <div class="actions">${dl}
+        <button class="btn mini" onclick="openFolder('${kind === 'vid' ? 'video' : 'img'}')">📁 打开输出夹</button></div>
+    </div>
+  </div>`;
+}
+
+function openFolder(kind) {
+  fetch('/api/open_folder', { method: 'POST', headers: {'Content-Type':'application/json'},
+    body: JSON.stringify({dir: kind === 'video' ? '__video__' : '__img__'}) })
+    .then(r => r.json()).then(d => { if (d.error) alert(d.error); });
+}
+function lb(type, name) {
+  $('lb').style.display = 'flex';
+  if (type === 'v') { $('lbVid').style.display = ''; $('lbImg').style.display = 'none';
+    $('lbVid').src = '/vfile/' + name; }
+  else { $('lbImg').style.display = ''; $('lbVid').style.display = 'none';
+    $('lbImg').src = '/img/' + name; }
+}
+$('lb').onclick = () => { $('lb').style.display = 'none'; $('lbVid').pause(); };
+
+// ===== 提交 =====
+$('goBtn').onclick = () => {
+  const prompt = $('prompt').value.trim();
+  if (!prompt) return alert('请先填写画面描述 Prompt');
+  fetch('/api/generate', { method: 'POST', headers: {'Content-Type':'application/json'},
+    body: JSON.stringify({
+      prompt, negative: $('negative').value.trim(),
+      width: parseInt($('width').value), height: parseInt($('height').value),
+      steps: parseInt($('steps').value), cfg: parseFloat($('cfg').value),
+      sampler: $('sampler').value, scheduler: $('scheduler').value,
+      batch: parseInt($('batch').value), seed: $('seed').value.trim(),
+      prefix: $('prefix').value.trim() }) })
+    .then(r => r.json()).then(d => {
+      if (!d.job_id) throw new Error(d.error);
+      $('results').scrollIntoView({behavior:'smooth'});
+      setTimeout(refreshJobs, 1000);
+    }).catch(e => { alert('提交失败: ' + e.message); $('goBtn').disabled = false; });
+};
+
+$('vgoBtn').onclick = () => {
+  const prompt = $('vprompt').value.trim();
+  if (!prompt) return alert('请填写画面描述 Prompt');
+  const m = state.mode;
+  if (m === 'i2v' && !state.i2v) return alert('I2V 模式需要上传首帧图');
+  const refs = m === 'r2v' ? state.refs.map(r => r.remote)
+              : (m === 'i2v' && state.i2v ? [state.i2v.remote] : []);
+  fetch('/api/video', { method: 'POST', headers: {'Content-Type':'application/json'},
+    body: JSON.stringify({
+      mode: m, prompt,
+      width: state.vw, height: state.vh, seconds: state.seconds,
+      steps: parseInt($('vsteps').value), sampler: $('vsampler').value,
+      scheduler: $('vscheduler').value,
+      seed: $('vseed').value.trim(), prefix: $('vprefix').value.trim(),
+      refs, audio: (m === 'r2v' && state.audio) ? state.audio.remote : null }) })
+    .then(r => r.json()).then(d => {
+      if (!d.job_id) throw new Error(d.error);
+      $('vresults').scrollIntoView({behavior:'smooth'});
+      setTimeout(refreshJobs, 1000);
+    }).catch(e => { alert('提交失败: ' + e.message); $('vgoBtn').disabled = false; });
+};
+
+setInterval(refreshJobs, 4000);
+</script>
+</body>
+</html>

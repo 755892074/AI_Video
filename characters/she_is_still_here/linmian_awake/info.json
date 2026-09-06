@@ -1,0 +1,20 @@
+{
+  "name": "林眠·清醒态",
+  "role": "女主（5年前定妆）",
+  "age": 22,
+  "ethnicity": "Chinese",
+  "description": "昏迷前的女大学生形象，用于闪回与意识投影",
+  "skin": "苍白干净",
+  "hair": "及腰自然垂落黑色长发、中分、发尾微卷",
+  "outfit": "白色简洁上衣（5年前学生日常）",
+  "mood": "温柔、聪明、有一点执拗",
+  "assets": {
+    "turnaround": "turnaround.png（2026-09-04 qwen-image 2x2网格，本地定稿归档）",
+    "reference": "reference.png（2026-09-04 qwen-image 首版，已被豆包版替换）",
+    "bean_lock": "bean_linmian_awake.png（2026-09-04 豆包定妆参考）"
+  },
+  "h3_main_anchor": "bean_linmian_awake.png（豆包定妆图，H3 主身份锚图）",
+  "style_lock": "写实CG电影感冷调，UE5渲染质感",
+  "version": "v2-2026-09-05（加 turnaround + 多资产路径）",
+  "status_note": "turnaround v1 本地定稿，备用豆包重出；闪回/意识体用此态"
+}

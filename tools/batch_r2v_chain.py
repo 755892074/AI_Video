@@ -16,8 +16,20 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MANIFEST = os.path.join(ROOT, "shots", "batch_manifest.json")
 STATE = os.path.join(ROOT, "shots", "batch_state.json")
 LOG = os.path.join(ROOT, "shots", "batch_r2v.log")
-TARGET_W, TARGET_H = 768, 512
+TARGET_W, TARGET_H = 768, 512  # 兜底：manifest 未配 target 且探测失败时用
 FFMPEG = imageio_ffmpeg.get_ffmpeg_exe()
+
+def detect_size(path):
+    """探测视频原生分辨率 (w,h)。失败返回 (None, None)。"""
+    try:
+        r = subprocess.run([FFMPEG, "-i", path], capture_output=True, text=True, timeout=30)
+        import re
+        m = re.search(r"Video:.*?(\d{3,5})x(\d{3,5})", r.stderr)
+        if m:
+            return int(m.group(1)), int(m.group(2))
+    except Exception:
+        pass
+    return None, None
 
 # 节点 ID（来自 r2v_api.json）
 H3, SB, CH, PROMPT = "136", "137", "139", "138"
@@ -169,11 +181,12 @@ def assemble_ref2va_prompt(ref2va, has_ref_video=False):
     return "\n\n".join(parts)
 
 def build_prompt(wf, sb_name, ch_name, sc_name, prompt_text, ref2va=None, ref_video_name=None,
-                 extra_images=None, megapixels=None, seconds=None, audio_name=None):
+                 extra_images=None, megapixels=None, seconds=None, audio_name=None, aspect_ratio=None):
     """extra_images: list of 已上传文件名，依次接到 ref_images.ref_image_3..N
     megapixels: float，修改 ResolutionSelector 的 megapixels 值（如 0.6）
     seconds: float，覆盖镜头时长（H3 节点 length 由 132 PrimitiveFloat 秒数经 131 表达式换算帧数）
     audio_name: 已上传的对白音频文件名，新建 LoadAudio 接到 H3 的 ref_audios.ref_audio_0（语音克隆/对白参考）
+    aspect_ratio: str，修改 ResolutionSelector 的 aspect_ratio（如 "9:16 (Portrait Widescreen)" 竖屏）
     """
     # 若提供结构化 ref2va（官方六段），优先用它组装提示词
     if ref2va:
@@ -202,11 +215,14 @@ def build_prompt(wf, sb_name, ch_name, sc_name, prompt_text, ref2va=None, ref_vi
         p[H3]["inputs"].pop("ref_images.ref_image_2", None)
     p[PROMPT]["inputs"]["value"] = prompt_text
     
-    # 修改分辨率（如果指定了 megapixels）
-    if megapixels is not None:
+    # 修改分辨率（如果指定了 megapixels 或 aspect_ratio）
+    if megapixels is not None or aspect_ratio is not None:
         for nid, node in p.items():
             if isinstance(node, dict) and node.get("class_type") == "ResolutionSelector":
-                node["inputs"]["megapixels"] = megapixels
+                if megapixels is not None:
+                    node["inputs"]["megapixels"] = megapixels
+                if aspect_ratio is not None:
+                    node["inputs"]["aspect_ratio"] = aspect_ratio
                 break
     
     # 如果有参考视频，上传并接到 LoadVideo 节点(140)，经 GetVideoComponents 拆帧后
@@ -290,6 +306,20 @@ def apply_chain(pg, sid, i_in_set, ctx_prefix="h3_chain"):
             pg["130"]["inputs"]["audio"] = [trimb, 1]
     return True
 
+def apply_nochain(pg):
+    """--no-chain: 恢复原始 H3 链路，断开 MotionContext。
+    模板默认接线是 chain 版（126 guider 吃 200 MotionContext，130 吃 210 Trim，
+    201/211 残留 __SID__ 占位符），不处理直接提交必失败。此函数把每镜都改成
+    首段接线：126 conditioning -> 136，130 images/audio -> 122/121，
+    并断开 mc 的 context_latent/context_frames（201/210/211 随之不被执行）。"""
+    mc = find_node(pg, "MiniMaxH3MotionContext")
+    if mc is not None:
+        pg[mc]["inputs"].pop("context_latent", None)
+        pg[mc]["inputs"].pop("context_frames", None)
+    pg["126"]["inputs"]["conditioning"] = ["136", 0]
+    pg["130"]["inputs"]["images"] = ["122", 0]
+    pg["130"]["inputs"]["audio"] = ["121", 0]
+
 def submit(prompt_graph):
     """提交任务 + 队列验证。返回 prompt_id；失败抛异常（快速失败，立即退出）。"""
     return cm.submit_with_verify(prompt_graph, CLIENT, comfy=COMFY)
@@ -335,6 +365,7 @@ def main():
     ap.add_argument("--state", default=STATE)
     ap.add_argument("--log", default=LOG)
     ap.add_argument("--no-chain", action="store_true", help="关闭链式接力(退化成普通ref2va)")
+    ap.add_argument("--notify-wechat", action="store_true", help="全部渲染+拼接完成后推送到微信(文本摘要+成片)")
     ap.add_argument("--workflow", default=None, help="覆盖 manifest 里的 workflow 路径")
     args = ap.parse_args()
     MANIFEST = args.manifest
@@ -348,7 +379,7 @@ def main():
     wf = load_json(os.path.join(ROOT, wf_path))["prompt"]
 
     # 收集所有待跑镜头
-    plan = []  # (sid, shot, rel_sb, rel_ch, rel_sc, prompt, ref2va, ref_video, extra_images, megapixels, seconds, audio, out_path)
+    plan = []  # (sid, shot, rel_sb, rel_ch, rel_sc, prompt, ref2va, ref_video, extra_images, megapixels, seconds, audio, aspect, out_path)
     for s in man["sets"]:
         sid = s["id"]
         out_dir = os.path.join(ROOT, "shots", sid, "output")
@@ -357,7 +388,7 @@ def main():
             out_path = os.path.join(out_dir, f"shot{sh['shot']:02d}.mp4")
             plan.append((sid, sh["shot"], sh["storyboard"], sh["character"],
                          sh["scene"], sh.get("prompt", ""), sh.get("ref2va"), sh.get("ref_video"),
-                         sh.get("extra_images", []), sh.get("megapixels"), sh.get("seconds"), sh.get("audio"), out_path, i_in_set))
+                         sh.get("extra_images", []), sh.get("megapixels"), sh.get("seconds"), sh.get("audio"), sh.get("aspect_ratio"), out_path, i_in_set))
 
     log(f"计划镜头数={len(plan)}，开始处理")
 
@@ -384,7 +415,7 @@ def main():
 
     # 1) 提交阶段（跳过已存在 & 已提交且未完成）
     pending = {}  # key -> prompt_id
-    for sid, shot, rel_sb, rel_ch, rel_sc, prompt, ref2va, ref_video, extra_images, megapixels, seconds, audio, out_path, i_in_set in plan:
+    for sid, shot, rel_sb, rel_ch, rel_sc, prompt, ref2va, ref_video, extra_images, megapixels, seconds, audio, aspect, out_path, i_in_set in plan:
         key = shot_key(sid, shot)
         if os.path.exists(out_path) and os.path.getsize(out_path) > 5000:
             log(f"[skip] {key} 已有输出")
@@ -409,11 +440,14 @@ def main():
         u_audio = None
         if audio:
             u_audio = upload_audio(audio, f"batch_{sid}_{shot:02d}_aud")
-        pg = build_prompt(wf, u_sb, u_ch, u_sc, prompt, ref2va, u_video, u_extra or None, megapixels, seconds, u_audio)
+        pg = build_prompt(wf, u_sb, u_ch, u_sc, prompt, ref2va, u_video, u_extra or None, megapixels, seconds, u_audio, aspect)
         if CHAIN:
             chained = apply_chain(pg, sid, i_in_set)
             if chained:
                 log(f"[chain] {key} 段#{i_in_set+1} context={"无(首段)" if i_in_set==0 else "续上一段"}")
+        else:
+            apply_nochain(pg)
+            log(f"[nochain] {key} 独立镜头（断开 MotionContext）")
         try:
             pid = submit(pg)
         except Exception:
@@ -462,8 +496,19 @@ def main():
         save_state(state)
 
     # 3) 每套拼接
+    finals = []
     for s in man["sets"]:
         sid = s["id"]
+        # 拼接目标分辨率：优先 set 级 target_w/target_h；未配置则自动探测单镜原生分辨率
+        # （防呆：H3 竖屏原生 768x1376 若用旧默认 768x512 会被压成横屏黑边小片）
+        TW, TH = s.get("target_w"), s.get("target_h")
+        if not TW or not TH:
+            TW, TH = detect_size(os.path.join(ROOT, "shots", sid, "output", f"shot{s['shots'][0]['shot']:02d}.mp4"))
+            if TW and TH:
+                log(f"[concat] {sid} 未配置 target，自动探测单镜原生 {TW}x{TH}")
+            else:
+                TW, TH = TARGET_W, TARGET_H
+                log(f"[concat] {sid} 探测失败，回落默认 {TW}x{TH}")
         clips = []
         for sh in s["shots"]:
             p = os.path.join(ROOT, "shots", sid, "output", f"shot{sh['shot']:02d}.mp4")
@@ -479,7 +524,7 @@ def main():
         for i, c in enumerate(clips):
             t = os.path.join(tmp_dir, f"n{i}.mp4")
             cmd = [FFMPEG, "-y", "-i", c, "-vf",
-                   f"scale={TARGET_W}:{TARGET_H}:force_original_aspect_ratio=decrease,pad={TARGET_W}:{TARGET_H}:(ow-iw)/2:(oh-ih)/2",
+                   f"scale={TW}:{TH}:force_original_aspect_ratio=decrease,pad={TW}:{TH}:(ow-iw)/2:(oh-ih)/2",
                    "-r", "24", "-pix_fmt", "yuv420p", "-c:a", "aac", "-ar", "44100", "-b:a", "128k", t]
             subprocess.run(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
             normed.append(t)
@@ -494,8 +539,33 @@ def main():
         r = subprocess.run(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         if r.returncode == 0 and os.path.getsize(final) > 5000:
             log(f"[FINAL] {sid} 成片 -> {final} ({os.path.getsize(final)}B)")
+            finals.append((sid, final))
         else:
             log(f"[concat FAIL] {sid}")
+
+    # 4) 微信推送（可选）
+    if args.notify_wechat and finals:
+        try:
+            sys.path.insert(0, os.path.join(ROOT, "tools"))
+            import send_wechat as sw
+            cfg = sw.load_cfg()
+            if not cfg:
+                log("[notify] 无法读取 ClawBot 配置，跳过微信推送")
+            else:
+                lines = ["🎬 渲染完成！"]
+                for sid, fp in finals:
+                    lines.append(f"· {sid}: {os.path.getsize(fp)//1024}KB")
+                if sw.send_msg(cfg, "\n".join(lines)):
+                    log("[notify] 微信文本推送 OK")
+                else:
+                    log("[notify] 微信文本推送失败")
+                for sid, fp in finals:
+                    if sw.send_file(cfg, fp):
+                        log(f"[notify] 微信文件推送 OK: {os.path.basename(fp)}")
+                    else:
+                        log(f"[notify] 微信文件推送失败: {os.path.basename(fp)}")
+        except Exception as e:
+            log(f"[notify] 微信推送异常: {e}")
 
     log("全部完成。")
 
