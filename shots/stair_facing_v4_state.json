@@ -1,0 +1,12 @@
+{
+  "stair_faceA_rev_01": {
+    "prompt_id": "4eee8380-6845-4fb6-a092-0a47afa5c40a",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\stair_faceA_rev\\output\\shot01.mp4"
+  },
+  "stair_faceB_direct_01": {
+    "prompt_id": "aba995a1-1b70-4e5d-8140-188428281da0",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\stair_faceB_direct\\output\\shot01.mp4"
+  }
+}

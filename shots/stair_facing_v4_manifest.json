@@ -1,0 +1,39 @@
+{
+ "comfy_url": "http://100.67.139.74:8188",
+ "workflow": "workflows/h3_r2v_motion_context_api.json",
+ "base_dir": "shots",
+ "sets": [
+  {
+   "id": "stair_faceA_rev",
+   "title": "楼梯A·面向镜头上楼(倒放出下楼)",
+   "shots": [
+    {
+     "shot": 1,
+     "storyboard": "../characters/jialing_wizard/reference.png",
+     "character": "",
+     "scene": "../scenes/gothic_hall_right_close.png",
+     "extra_images": [],
+     "seconds": 5.0,
+     "megapixels": 1.0,
+     "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, solemn expression, wearing a black floor-length hooded robe, holding a wooden wand, [Picture 1]\n<Subject 2>: the vast ruined gothic castle great hall: carved stone altar in the center with a single glowing lantern on top, two rows of tall carved stone columns, tall stained-glass arched windows, a grand spiral stone staircase on the right wall, a broken stone dome, thick cobwebs, scattered candles, thin mist, cold dark teal-grey palette with warm candle-glow accents, high contrast, fine grain, close view beside the spiral stone staircase matching Picture 2, [Picture 2]\n\n<Summary>\nCLOSE TRACKING SHOT beside the spiral staircase. The girl matching Picture 1 steps up the spiral staircase from the hall floor toward the upper landing. Throughout the climb she keeps her body and face turned toward the camera, facing down along the staircase toward the hall floor, carefully watching the hall below as she steps up, like climbing while looking back down the stairs. The camera tracks alongside her, gliding up parallel to the staircase curve, keeping her face and upper body in frame. FACING RULE: her body and face stay turned toward the camera and toward the lower hall floor for the entire shot, her facial features clearly visible; she never turns her back to the camera Weather and lighting: dark gothic hall, warm candle sconces on the stair wall, thin mist below. Color grade: cold dark teal-grey with warm candle accents, high contrast, fine grain.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep hair and black robe exactly as Picture 1, do not alter or reshape the face\nPicture 1: fully_preserved\nSubject 2: partially_preserved - scene geometry anchor, keep the spiral staircase structure, curve direction, railing and candle sconces exactly consistent with Picture 2; the staircase ascends from the lower hall floor up toward the upper landing exactly as shown in Picture 2\nPicture 2: partially_preserved\n\n<Detailed Description>\nClose tracking shot along the spiral staircase. The girl matching Picture 1 steps up tread after tread toward the upper landing, her chest and face oriented toward the camera and the downslope direction, eyes glancing down toward the hall floor between steps, her free hand gliding along the stone railing, wand in the other hand, robes flowing with the turning motion. The camera moves with her at the same climbing rhythm, lateral tracking, her face and the curving railing prominent in frame. Candle sconces pass softly in the foreground blur. Her face remains clearly visible in every second of the shot.\nWeather and lighting: dark gothic hall, warm candle sconces along the stair wall, thin mist drifting near the stair base.\nColor grade: cold dark teal-grey with warm candle-glow accents, high contrast, fine grain.\nAll dialogue in Chinese, no other language, no narration.\n\n<Overall Soundscape>\nboots striking stone steps in careful rhythm, robes swishing, hand brushing the stone railing, candle flames, deep hall ambience\n\n<Non-Diegetic Music>\nmysterious low strings, a rising feminine choral line, restrained\n\n</Prompt>"
+    }
+   ]
+  },
+  {
+   "id": "stair_faceB_direct",
+   "title": "楼梯B·直接面向镜头下楼",
+   "shots": [
+    {
+     "shot": 1,
+     "storyboard": "../characters/jialing_wizard/reference.png",
+     "character": "",
+     "scene": "../scenes/gothic_hall_right_close.png",
+     "extra_images": [],
+     "seconds": 5.0,
+     "megapixels": 1.0,
+     "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, solemn expression, wearing a black floor-length hooded robe, holding a wooden wand, [Picture 1]\n<Subject 2>: the vast ruined gothic castle great hall: carved stone altar in the center with a single glowing lantern on top, two rows of tall carved stone columns, tall stained-glass arched windows, a grand spiral stone staircase on the right wall, a broken stone dome, thick cobwebs, scattered candles, thin mist, cold dark teal-grey palette with warm candle-glow accents, high contrast, fine grain, close view beside the spiral stone staircase matching Picture 2, [Picture 2]\n\n<Summary>\nCLOSE TRACKING SHOT beside the spiral staircase. The girl matching Picture 1 descends the spiral staircase from the upper landing toward the hall floor, stepping down forward while facing the camera: her body and face are oriented down the staircase toward the hall floor and the viewer, eyes checking the steps ahead, face clearly visible. The camera tracks alongside her, gliding down parallel to the staircase curve, keeping her face and upper body in frame. She descends the entire shot. FACING RULE: her body and face stay turned toward the camera and toward the lower hall floor for the entire shot, her facial features clearly visible; she never turns her back to the camera Weather and lighting: dark gothic hall, warm candle sconces on the stair wall, thin mist below. Color grade: cold dark teal-grey with warm candle accents, high contrast, fine grain.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep hair and black robe exactly as Picture 1, do not alter or reshape the face\nPicture 1: fully_preserved\nSubject 2: partially_preserved - scene geometry anchor, keep the spiral staircase structure, curve direction, railing and candle sconces exactly consistent with Picture 2; the staircase ascends from the lower hall floor up toward the upper landing exactly as shown in Picture 2\nPicture 2: partially_preserved\n\n<Detailed Description>\nClose tracking shot along the spiral staircase. The girl matching Picture 1 steps down tread after tread toward the lower hall floor, moving forward toward the downslope, her chest and face turned toward the camera, eyes glancing at the steps then up toward the viewer, her free hand gliding along the stone railing, robes flowing with each turn. The camera moves with her at the same descending rhythm, lateral tracking, her face and the curving railing prominent in frame. Candle sconces pass softly in the foreground blur. She descends the entire shot, direction never reverses, and her face stays visible throughout.\nWeather and lighting: dark gothic hall, warm candle sconces along the stair wall, thin mist drifting near the stair base.\nColor grade: cold dark teal-grey with warm candle-glow accents, high contrast, fine grain.\nAll dialogue in Chinese, no other language, no narration.\n\n<Overall Soundscape>\nboots striking stone steps in quick rhythm, robes swishing, hand brushing the stone railing, candle flames, deep hall ambience\n\n<Non-Diegetic Music>\nmysterious low strings, a rising feminine choral line, restrained\n\n</Prompt>"
+    }
+   ]
+  }
+ ]
+}

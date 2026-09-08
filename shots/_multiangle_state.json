@@ -1,0 +1,27 @@
+{
+  "gothic_hall_jialing_multiangle_01": {
+    "prompt_id": "864284cf-742b-429a-9a2e-2d2ee6fb7083",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\gothic_hall_jialing_multiangle\\output\\shot01.mp4"
+  },
+  "gothic_hall_jialing_multiangle_02": {
+    "prompt_id": "e516430e-9fae-43d2-bb12-fe3551be6dc0",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\gothic_hall_jialing_multiangle\\output\\shot02.mp4"
+  },
+  "gothic_hall_jialing_multiangle_03": {
+    "prompt_id": "2720b0c3-b76e-4e13-8e9c-7e6fe751384f",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\gothic_hall_jialing_multiangle\\output\\shot03.mp4"
+  },
+  "gothic_hall_jialing_multiangle_04": {
+    "prompt_id": "8ad13318-3dbc-4de8-9da8-6f8017c79508",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\gothic_hall_jialing_multiangle\\output\\shot04.mp4"
+  },
+  "gothic_hall_jialing_multiangle_05": {
+    "prompt_id": "6c10a4ae-526d-4cb2-ad16-d7878ce1004e",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\gothic_hall_jialing_multiangle\\output\\shot05.mp4"
+  }
+}

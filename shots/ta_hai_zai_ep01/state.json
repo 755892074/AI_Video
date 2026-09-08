@@ -1,0 +1,32 @@
+{
+  "ta_hai_zai_ep01_01": {
+    "prompt_id": "775ea12e-a1fb-4b9a-8a7a-f5faccf3522a",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\ta_hai_zai_ep01\\output\\shot01.mp4"
+  },
+  "ta_hai_zai_ep01_02": {
+    "prompt_id": "fafd5141-5949-46f5-a7eb-0e0d1912c089",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\ta_hai_zai_ep01\\output\\shot02.mp4"
+  },
+  "ta_hai_zai_ep01_03": {
+    "prompt_id": "b110d531-2a46-4ca7-b849-1e2fcd47efae",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\ta_hai_zai_ep01\\output\\shot03.mp4"
+  },
+  "ta_hai_zai_ep01_04": {
+    "prompt_id": "ead7b27b-8830-4e10-a39c-537a63abd0bf",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\ta_hai_zai_ep01\\output\\shot04.mp4"
+  },
+  "ta_hai_zai_ep01_05": {
+    "prompt_id": "5e680719-fd0b-423e-9d41-9da808389cf8",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\ta_hai_zai_ep01\\output\\shot05.mp4"
+  },
+  "ta_hai_zai_ep01_06": {
+    "prompt_id": "a146bff2-85b7-4b22-a56e-bd4bcdfca2e0",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\ta_hai_zai_ep01\\output\\shot06.mp4"
+  }
+}

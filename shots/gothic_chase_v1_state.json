@@ -1,0 +1,17 @@
+{
+  "gothic_chase_v1_01_01": {
+    "prompt_id": "d52caa92-e37e-455e-9cee-6a5f4c065178",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\gothic_chase_v1_01\\output\\shot01.mp4"
+  },
+  "gothic_chase_v1_02_01": {
+    "prompt_id": "94e79a41-a914-4eba-8280-0c37cad48812",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\gothic_chase_v1_02\\output\\shot01.mp4"
+  },
+  "gothic_chase_v1_03_01": {
+    "prompt_id": "20858b61-6135-4447-96eb-45773227e244",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\gothic_chase_v1_03\\output\\shot01.mp4"
+  }
+}

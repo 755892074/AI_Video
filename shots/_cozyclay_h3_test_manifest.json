@@ -1,0 +1,25 @@
+{
+  "comfy_url": "http://100.67.139.74:8188",
+  "workflow": "shots/ep01/workflows/r2v_api.json",
+  "base_dir": "shots",
+  "sets": [
+    {
+      "id": "cozyclay_to_h3_test",
+      "title": "CozyClay导演台灰模→H3写实真人域迁移测试（1镜5s）",
+      "shots": [
+        {
+          "shot": 1,
+          "storyboard": "_cozyclay_h3_test/assets/storyboards/sb_002.png",
+          "character": "_cozyclay_h3_test/assets/characters/char_cozyclay.png",
+          "scene": "_cozyclay_h3_test/assets/scenes/scene.png",
+          "ref_videos": [
+            "_cozyclay_h3_test/assets/ref_videos/cozyclay_walkscene.mp4"
+          ],
+          "seconds": 5,
+          "aspect_ratio": "16:9 (Widescreen)",
+          "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a young woman in her early 20s with shoulder-length natural dark brown hair wearing a tan trench coat and simple sneakers, slim build, calm contemplative expression, walking alone at a relaxed steady pace, [Picture 1]\n<Subject 2>: a cinematic wet city street at dusk in autumn: parked cars along the curb, vintage street lamps casting warm amber light, a low brick wall running along the right side, mature plane trees with golden leaves scattered along the road, gentle puddles reflecting the lamps, [Picture 2]\n\n<Summary>\n[Shot 1] The young woman in the tan trench coat walks steadily along the wet city street at dusk. The camera follows her in a smooth continuous tracking shot from a right-rear three-quarter angle, keeping her in the center of the frame as she moves past vintage street lamps, parked cars, and a low brick wall on her right side. Autumn leaves drift through the warm amber light. The street is empty except for a single male pedestrian far ahead looking at his phone. The overall mood is contemplative and cinematic, 35mm film look.\n\n<Retention Analysis>\nSubject 1: fully_preserved - the young woman (same face, hair, tan trench coat across frames)\nPicture 1: fully_preserved - identity, hair, tan coat, walking posture\nSubject 2: fully_preserved - the wet city street with lamps, cars, wall, trees\nPicture 2: fully_preserved - street scene composition and lighting\nThe 3D blocking reference video provides the camera trajectory and subject motion: tracking dolly from right-rear three-quarter angle as the subject walks forward past the lamps and the brick wall.\n\n<Detailed Description>\nReference: [Picture 1], [Picture 2], reference video for camera and motion\n[Shot 1] The young woman in the tan trench coat walks at a steady, relaxed pace along the right side of the wet city street at dusk. The camera dollies smoothly beside and slightly behind her at a right-rear three-quarter angle, keeping her upper body and head centered in the frame. As she walks, a vintage street lamp with warm amber light passes behind her on the right, then a parked sedan, then a section of low brick wall. The street is wet from recent rain, and gentle reflections of the street lamps shimmer on the asphalt surface. A few golden autumn leaves blow lightly across the frame. In the far background, a single male pedestrian stands on the sidewalk looking down at his phone, providing a sense of scale and depth. The depth of field is shallow with the background gently out of focus, while the subject stays sharp. Lighting is naturalistic dusk with the warm amber street lamps as the dominant key light on the subject's face and coat. Clothing and hair move naturally with the walking motion.\nDialogue: none\nNo narration, no other language.\n\n<Overall Soundscape>\nfaint footsteps on wet asphalt, distant city ambience, a light autumn breeze, the soft rustle of leaves\n\n<Non-Diegetic Music>\nvery subtle contemplative piano, slow tempo, mostly silence\n\n</Prompt>"
+        }
+      ]
+    }
+  ]
+}

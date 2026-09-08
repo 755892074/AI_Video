@@ -1,0 +1,73 @@
+{
+  "comfy_url": "http://127.0.0.1:8188",
+  "workflow": "shots/ep01/workflows/r2v_api.json",
+  "base_dir": "shots",
+  "sets": [
+    {
+      "id": "ta_hai_zai_ep01",
+      "title": "她还在 ep01 写实漫剧 (豆包角色图+分镜图, 6镜~30s, H3 R2V)",
+      "shots": [
+        {
+          "shot": 1,
+          "seconds": 5,
+          "aspect_ratio": "16:9 (Widescreen)",
+          "storyboard": "_ta_hai_zai_ep01/assets/storyboards/sb01.jpg",
+          "character": "_ta_hai_zai_ep01/assets/characters/police.jpg",
+          "scene": "_ta_hai_zai_ep01/assets/storyboards/sb01.jpg",
+          "ref_videos": ["cozyclay_step2_real3_2/output/shot01.mp4"],
+          "prompt": "A cinematic handheld close-up push-in shot inside a dimly-lit abandoned hospital ward at night. A middle-aged police detective in his 40s, short black hair, wearing a dark navy jacket over a blue collared shirt and dark pants with an ID badge clipped to his belt, stands next to a hospital bed reading an experimental logbook, furrowing his brow with a serious expression. Beside him, a young female assistant in her 20s with long black hair, wearing gray medical scrubs, projects two floating holographic screens in mid-air showing brain-wave charts and chip serial numbers. The detective flips through paper pages slowly. Cold fluorescent lights buzz overhead, paper rustles, screens emit soft notification beeps. A rolling cart holds a medical monitor. The ward has stained walls, drawn curtains, and a quiet eerie atmosphere. The assistant speaks in Mandarin Chinese: '实验记录被修改过，死亡时间、脑波曲线、芯片日志，三处对不上.' Cinematic 35mm film look, anamorphic widescreen, cool teal color grade, shallow depth of field, dim ward lighting."
+        },
+        {
+          "shot": 2,
+          "seconds": 5,
+          "aspect_ratio": "16:9 (Widescreen)",
+          "storyboard": "_ta_hai_zai_ep01/assets/storyboards/sb02.jpg",
+          "character": "_ta_hai_zai_ep01/assets/characters/police.jpg",
+          "scene": "_ta_hai_zai_ep01/assets/storyboards/sb02.jpg",
+          "ref_videos": ["cozyclay_step2_real3_2/output/shot01.mp4"],
+          "prompt": "A cinematic close-up shot pushing in toward an old CRT medical monitor in an abandoned hospital ward at night. The screen suddenly fills with flashing red warning messages scrolling fast line by line, replacing the original 'vegetative state' status text with rows of anomalous data, as if someone is rewriting the records live. The detective in a dark navy jacket leans forward, eyes narrowed, staring at the screen with a tense jaw. He speaks softly in Mandarin Chinese: '她不是死了，是被系统藏起来了.' A low-pitched alert tone swells under the scene, the data hum intensifies. Slight handheld wobble. Cool teal lighting, dim hospital ward in the background, red monitor glow casting dramatic key light on his face. Cinematic 35mm film look, anamorphic widescreen, shallow depth of field."
+        },
+        {
+          "shot": 3,
+          "seconds": 5,
+          "aspect_ratio": "16:9 (Widescreen)",
+          "storyboard": "_ta_hai_zai_ep01/assets/storyboards/sb03.jpg",
+          "character": "_ta_hai_zai_ep01/assets/characters/female_patient.jpg",
+          "scene": "_ta_hai_zai_ep01/assets/storyboards/sb03.jpg",
+          "ref_videos": ["cozyclay_step2_real3_2/output/shot01.mp4"],
+          "prompt": "A cinematic slow orbiting mid-shot inside a hospital ward at night. The ward lights flicker once with a sharp electrical buzz. A young woman, the patient, lies unconscious on the hospital bed with eyes closed, wearing gray medical scrubs, electrodes attached to her temples, her long black hair spread over the pillow. The brain-wave monitor beside her bed suddenly spikes into a strong glowing blue waveform. A recorded voiceover of an older male professor plays calmly in Mandarin Chinese: '如果模型脱离限制，她的意识可能不是被上传，而是被它吃掉.' The heart-monitor beep accelerates. Behind the bed, heavy rain streaks down a tall window, blue and red emergency lights flicker outside in the night. Cinematic 35mm film look, cool teal color grade, moody chiaroscuro lighting, shallow depth of field."
+        },
+        {
+          "shot": 4,
+          "seconds": 5,
+          "aspect_ratio": "16:9 (Widescreen)",
+          "storyboard": "_ta_hai_zai_ep01/assets/storyboards/sb04.jpg",
+          "character": "_ta_hai_zai_ep01/assets/characters/police.jpg",
+          "scene": "_ta_hai_zai_ep01/assets/storyboards/sb04.jpg",
+          "ref_videos": ["cozyclay_step2_real3_2/output/shot01.mp4"],
+          "prompt": "A cinematic first-person rapid-cut sequence. A close-up of a smartphone in the detective's hand suddenly lights up with a glowing holographic call interface, dialing automatically. The phone screen shows an incoming call labeled 'HER'. The call connects and a young woman's voice speaks calmly in Mandarin Chinese: '我没有逃走。他们把我关在这里，又想把我删掉.' The monitor screen pans sharply to an empty hospital bed, then suddenly cuts to a still photograph of an older male professor's face staring back from the wall. Phone-line static hum, surveillance camera servo whirring, distant siren wail in the rain. Cold fluorescent flicker, teal color grade, cinematic 35mm film look, dramatic close-up with shallow depth of field."
+        },
+        {
+          "shot": 5,
+          "seconds": 5,
+          "aspect_ratio": "16:9 (Widescreen)",
+          "storyboard": "_ta_hai_zai_ep01/assets/storyboards/sb05.jpg",
+          "character": "_ta_hai_zai_ep01/assets/characters/police.jpg",
+          "scene": "_ta_hai_zai_ep01/assets/storyboards/sb05.jpg",
+          "ref_videos": ["cozyclay_step2_real3_2/output/shot01.mp4"],
+          "prompt": "A cinematic static close-up shot. The detective in a dark navy jacket stands motionless at the bedside, staring at the young female patient who lies with eyes closed. The patient's fingers twitch slightly under the sheets. On the medical monitor beside the bed, a semi-transparent glowing blue holographic silhouette of a young woman in gray scrubs slowly rises from the data readout, as if stepping out of the screen into the ward. The patient's ethereal voice, doubled, speaks in Mandarin Chinese: '你不是一直想知道他们对我做了什么吗？我给你看.' A low mournful string music swells, the data hum morphs into a slow heartbeat rhythm. Cool teal lighting, blue holographic glow reflecting on the detective's face, cinematic 35mm film look, anamorphic widescreen, shallow depth of field."
+        },
+        {
+          "shot": 6,
+          "seconds": 5,
+          "aspect_ratio": "16:9 (Widescreen)",
+          "storyboard": "_ta_hai_zai_ep01/assets/storyboards/sb06.jpg",
+          "character": "_ta_hai_zai_ep01/assets/characters/police.jpg",
+          "scene": "_ta_hai_zai_ep01/assets/storyboards/sb06.jpg",
+          "ref_videos": ["cozyclay_step2_real3_2/output/shot01.mp4"],
+          "prompt": "A cinematic slow pull-out wide shot revealing the exterior of an abandoned hospital ward at night in heavy rain. Blue and red emergency lights from a police car reflect on the wet glass windows, scattering colored light across the room. Inside the ward, captured in a single surveillance-camera frame: the white-sheeted hospital bed, the detective in a dark navy jacket standing motionless with a confused lost expression, the holographic blue silhouette of the patient standing beside the bed, and a still photograph of a male professor pinned to the back wall. The detective's voiceover, low and resolute, speaks in Mandarin Chinese: '她不是受害者了。她是系统.' A heartbeat stops for one silent second, then a heavy single thump ends the shot. Rain streaks, wet asphalt reflections, moody teal and red lighting, cinematic 35mm film look, anamorphic widescreen, wide composition."
+        }
+      ]
+    }
+  ]
+}

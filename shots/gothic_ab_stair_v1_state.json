@@ -1,0 +1,12 @@
+{
+  "chase_ab_a_01_01": {
+    "prompt_id": "1fc031bb-eef9-48d6-bac4-23979a593cde",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\chase_ab_a_01\\output\\shot01.mp4"
+  },
+  "stair_jialing_v1_01": {
+    "prompt_id": "5791cc99-3eb2-4eda-bdbe-294fedac363d",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\stair_jialing_v1\\output\\shot01.mp4"
+  }
+}

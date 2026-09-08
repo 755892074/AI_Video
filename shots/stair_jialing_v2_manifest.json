@@ -1,0 +1,33 @@
+{
+ "comfy_url": "http://100.67.139.74:8188",
+ "workflow": "workflows/h3_r2v_motion_context_api.json",
+ "base_dir": "shots",
+ "sets": [
+  {
+   "id": "stair_jialing_v2",
+   "title": "嘉玲楼梯下行v2·链式两镜",
+   "shots": [
+    {
+     "shot": 1,
+     "storyboard": "../characters/jialing_wizard/reference.png",
+     "character": "",
+     "scene": "../scenes/gothic_hall_right_wide.png",
+     "extra_images": [],
+     "seconds": 5.0,
+     "megapixels": 1.0,
+     "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, solemn expression, wearing a black floor-length hooded robe, holding a wooden wand, [Picture 1]\n<Subject 2>: the vast ruined gothic castle great hall: carved stone altar in the center with a single glowing lantern on top, two rows of tall carved stone columns, tall stained-glass arched windows on the left wall, a grand spiral stone staircase on the right wall, a broken stone dome with a large hole revealing the dark night sky, thick cobwebs, scattered candles on the floor, thin mist, cold dark teal-grey palette with warm candle-glow accents, high contrast, fine grain, focused on the grand spiral stone staircase on the right wall, [Picture 2]\n\n<Summary>\nWIDE SHOT of the gothic hall matching Picture 2, staircase on the right. The girl matching Picture 1 appears at the upper landing of the spiral staircase and begins descending, one hand on the stone railing. At the end of the shot the camera pushes in toward the staircase, moving closer to her. SHE IS DESCENDING: every step goes DOWN toward the lower hall floor, she never turns back up, never ascends, her back never faces uphill while walking Weather and lighting: dark gothic hall, candle sconces on the stair wall, thin mist. Color grade: cold dark teal-grey with warm candle accents, high contrast, fine grain.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep hair and black robe exactly as Picture 1, do not alter or reshape the face\nPicture 1: fully_preserved\nSubject 2: partially_preserved - scene geometry anchor, keep the spiral staircase structure, curve direction, railing and candle sconces exactly consistent with Picture 2; the staircase ascends from the lower hall floor up toward the upper landing exactly as shown in Picture 2\nPicture 2: partially_preserved\n\n<Detailed Description>\nWide shot. The girl matching Picture 1 steps into view at the upper landing of the spiral staircase and descends several steps, brisk controlled pace, her free hand gliding on the railing. The camera slowly pushes in toward the staircase, framing her tighter by the final second, ending on a medium view of her mid-descent. She continues downward the whole time.\nWeather and lighting: dark gothic hall, warm candle sconces along the stair wall, thin mist near the stair base.\nColor grade: cold dark teal-grey with warm candle-glow accents, high contrast, fine grain.\nAll dialogue in Chinese, no other language, no narration.\n\n<Overall Soundscape>\nboots on stone steps, robes swishing, hand brushing the railing, candle flames, deep hall ambience\n\n<Non-Diegetic Music>\nmysterious low strings, restrained\n\n</Prompt>"
+    },
+    {
+     "shot": 2,
+     "storyboard": "../characters/jialing_wizard/reference.png",
+     "character": "",
+     "scene": "../scenes/gothic_hall_right_close.png",
+     "extra_images": [],
+     "seconds": 5.0,
+     "megapixels": 1.0,
+     "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, solemn expression, wearing a black floor-length hooded robe, holding a wooden wand, [Picture 1]\n<Subject 2>: the vast ruined gothic castle great hall: carved stone altar in the center with a single glowing lantern on top, two rows of tall carved stone columns, tall stained-glass arched windows on the left wall, a grand spiral stone staircase on the right wall, a broken stone dome with a large hole revealing the dark night sky, thick cobwebs, scattered candles on the floor, thin mist, cold dark teal-grey palette with warm candle-glow accents, high contrast, fine grain, close view beside the spiral stone staircase, same staircase structure and curve direction as the previous shot, [Picture 2]\n\n<Summary>\nCLOSE TRACKING SHOT beside the spiral staircase, continuing directly from the previous shot. The girl matching Picture 1 continues descending the spiral staircase toward the hall floor, quick controlled steps, one hand skimming the railing, wand in the other. The camera tracks alongside her, gliding down parallel to the staircase curve, keeping her upper body in frame. SHE IS DESCENDING: every step goes DOWN toward the lower hall floor, she never turns back up, never ascends, her back never faces uphill while walking Weather and lighting: dark gothic hall, warm candle sconces on the stair wall, thin mist below. Color grade: cold dark teal-grey with warm candle accents, high contrast, fine grain.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep hair and black robe exactly as Picture 1, do not alter or reshape the face\nPicture 1: fully_preserved\nSubject 2: partially_preserved - scene geometry anchor, keep the spiral staircase structure, curve direction, railing and candle sconces exactly consistent with Picture 2; the staircase ascends from the lower hall floor up toward the upper landing exactly as shown in Picture 2\nPicture 2: partially_preserved\n\n<Detailed Description>\nClose tracking shot along the spiral staircase, continuing her descent without interruption. The girl matching Picture 1 steps down tread after tread toward the lower floor, landing lightly, robes flowing with the turning motion, her free hand gliding along the railing. The camera moves with her at the same descending rhythm, lateral tracking, her torso and the curving railing prominent in frame. Candle sconces pass softly in the foreground. She descends the entire shot, direction never reverses.\nWeather and lighting: dark gothic hall, warm candle sconces along the stair wall, thin mist drifting near the stair base.\nColor grade: cold dark teal-grey with warm candle-glow accents, high contrast, fine grain.\nAll dialogue in Chinese, no other language, no narration.\n\n<Overall Soundscape>\nboots striking stone steps in quick rhythm, robes swishing, hand brushing the railing, candle flames, hall ambience rising from below\n\n<Non-Diegetic Music>\nmysterious low strings, a rising feminine choral line, restrained\n\n</Prompt>"
+    }
+   ]
+  }
+ ]
+}

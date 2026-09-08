@@ -180,14 +180,25 @@ def assemble_ref2va_prompt(ref2va, has_ref_video=False):
             parts.append(f"{name}:\n{b}")
     return "\n\n".join(parts)
 
-def build_prompt(wf, sb_name, ch_name, sc_name, prompt_text, ref2va=None, ref_video_name=None,
+VIDEO_NODE = "140"
+# H3 节点最多支持 3 路参考视频：节点 ID 配对 (LoadVideo, GetVideoComponents)
+VIDEO_SLOTS = [("140", "141"), ("143", "144"), ("146", "147")]
+
+
+def build_prompt(wf, sb_name, ch_name, sc_name, prompt_text, ref2va=None, ref_videos_names=None,
+                 ref_video_name=None,  # 兼容旧签名
                  extra_images=None, megapixels=None, seconds=None, audio_name=None, aspect_ratio=None):
-    """extra_images: list of 已上传文件名，依次接到 ref_images.ref_image_3..N
-    megapixels: float，修改 ResolutionSelector 的 megapixels 值（如 0.6）
-    seconds: float，覆盖镜头时长（H3 节点 length 由 132 PrimitiveFloat 秒数经 131 表达式换算帧数）
-    audio_name: 已上传的对白音频文件名，新建 LoadAudio 接到 H3 的 ref_audios.ref_audio_0（语音克隆/对白参考）
-    aspect_ratio: str，修改 ResolutionSelector 的 aspect_ratio（如 "9:16 (Portrait Widescreen)" 竖屏）
+    """ref_videos_names: list，已上传到 ComfyUI 的视频文件名（最多 3 路）。
+       第 1 路接 LoadVideo 140/GetVideoComponents 141；第 2/3 路动态创建 143+144 / 146+147。
+       H3 的 ref_videos.ref_video_0/1/2 接 GetVideoComponents 输出 0（frames），
+       ref_video_audios.ref_video_audio_0/1/2 接输出 1（audio）。
+       extra_images: list of 已上传文件名，依次接到 ref_images.ref_image_3..N
+       ... 其他参数同注释
     """
+    # 兼容旧 ref_video_name 单值
+    if ref_videos_names is None and ref_video_name:
+        ref_videos_names = [ref_video_name]
+    ref_videos_names = list(ref_videos_names or [])[:3]
     # 若提供结构化 ref2va（官方六段），优先用它组装提示词
     if ref2va:
         prompt_text = assemble_ref2va_prompt(ref2va, has_ref_video=bool(ref_video_name))
@@ -225,17 +236,29 @@ def build_prompt(wf, sb_name, ch_name, sc_name, prompt_text, ref2va=None, ref_vi
                     node["inputs"]["aspect_ratio"] = aspect_ratio
                 break
     
-    # 如果有参考视频，上传并接到 LoadVideo 节点(140)，经 GetVideoComponents 拆帧后
-    # 由 H3 的 ref_videos.ref_video_0 作为动作参考（帧序列），音轨接 ref_video_audio_0
-    if ref_video_name:
-        p[VIDEO_NODE]["inputs"]["file"] = ref_video_name
+    # 参考视频：第 k 路用 VIDEO_SLOTS[k] 节点对；H3 ref_video_k 接 GetVideoComponents 输出 0，
+    # ref_video_audio_k 接输出 1（audio）。无视频时全部 pop 防默认文件加载失败。
+    if ref_videos_names:
+        for k, vname in enumerate(ref_videos_names):
+            load_id, gc_id = VIDEO_SLOTS[k]
+            p[load_id] = {"class_type": "LoadVideo", "inputs": {"file": vname}}
+            p[gc_id] = {"class_type": "GetVideoComponents", "inputs": {"video": [load_id, 0]}}
+            p[H3]["inputs"][f"ref_videos.ref_video_{k}"] = [gc_id, 0]
+            p[H3]["inputs"][f"ref_video_audios.ref_video_audio_{k}"] = [gc_id, 1]
+        # 清理未使用的视频槽（防止旧 default 文件导致提交失败）
+        for k in range(len(ref_videos_names), 3):
+            load_id, gc_id = VIDEO_SLOTS[k]
+            p.pop(load_id, None)
+            p.pop(gc_id, None)
+            p[H3]["inputs"].pop(f"ref_videos.ref_video_{k}", None)
+            p[H3]["inputs"].pop(f"ref_video_audios.ref_video_audio_{k}", None)
     else:
-        # 无视频参考时：移除 LoadVideo(140)/GetVideoComponents(141) 及 H3 的视频连接，
-        # 否则 LoadVideo 会尝试加载不存在的默认文件导致提交失败
-        p.pop("140", None)
-        p.pop("141", None)
-        p[H3]["inputs"].pop("ref_videos.ref_video_0", None)
-        p[H3]["inputs"].pop("ref_video_audios.ref_video_audio_0", None)
+        for load_id, gc_id in VIDEO_SLOTS:
+            p.pop(load_id, None)
+            p.pop(gc_id, None)
+        for k in range(3):
+            p[H3]["inputs"].pop(f"ref_videos.ref_video_{k}", None)
+            p[H3]["inputs"].pop(f"ref_video_audios.ref_video_audio_{k}", None)
     # 多图参考：动态创建 LoadImage 节点（901 起），接到 ref_images.ref_image_3..N
     if extra_images:
         for i, img_name in enumerate(extra_images):
@@ -379,15 +402,17 @@ def main():
     wf = load_json(os.path.join(ROOT, wf_path))["prompt"]
 
     # 收集所有待跑镜头
-    plan = []  # (sid, shot, rel_sb, rel_ch, rel_sc, prompt, ref2va, ref_video, extra_images, megapixels, seconds, audio, aspect, out_path)
+    plan = []  # (sid, shot, rel_sb, rel_ch, rel_sc, prompt, ref2va, ref_videos, extra_images, megapixels, seconds, audio, aspect, out_path)
     for s in man["sets"]:
         sid = s["id"]
         out_dir = os.path.join(ROOT, "shots", sid, "output")
         os.makedirs(out_dir, exist_ok=True)
         for i_in_set, sh in enumerate(s["shots"]):
             out_path = os.path.join(out_dir, f"shot{sh['shot']:02d}.mp4")
+            # 兼容旧 manifest：ref_video 单值；新：ref_videos 列表（推荐）
+            ref_videos = sh.get("ref_videos") or ([sh["ref_video"]] if sh.get("ref_video") else [])
             plan.append((sid, sh["shot"], sh["storyboard"], sh["character"],
-                         sh["scene"], sh.get("prompt", ""), sh.get("ref2va"), sh.get("ref_video"),
+                         sh["scene"], sh.get("prompt", ""), sh.get("ref2va"), ref_videos,
                          sh.get("extra_images", []), sh.get("megapixels"), sh.get("seconds"), sh.get("audio"), sh.get("aspect_ratio"), out_path, i_in_set))
 
     log(f"计划镜头数={len(plan)}，开始处理")
@@ -415,7 +440,7 @@ def main():
 
     # 1) 提交阶段（跳过已存在 & 已提交且未完成）
     pending = {}  # key -> prompt_id
-    for sid, shot, rel_sb, rel_ch, rel_sc, prompt, ref2va, ref_video, extra_images, megapixels, seconds, audio, aspect, out_path, i_in_set in plan:
+    for sid, shot, rel_sb, rel_ch, rel_sc, prompt, ref2va, ref_videos, extra_images, megapixels, seconds, audio, aspect, out_path, i_in_set in plan:
         key = shot_key(sid, shot)
         if os.path.exists(out_path) and os.path.getsize(out_path) > 5000:
             log(f"[skip] {key} 已有输出")
@@ -432,15 +457,22 @@ def main():
         u_extra = []
         for i, rel_extra in enumerate(extra_images or []):
             u_extra.append(upload_image(rel_extra, f"batch_{sid}_{shot:02d}_x{i}.png"))
-        # 如果有视频参考，上传到台式机并接入 ref_videos（帧序列动作参考）
-        u_video = None
-        if ref_video:
-            u_video = upload_video(ref_video, f"batch_{sid}_{shot:02d}_ref.mp4")
+        # 视频参考：上传 ref_videos[0..2]（H3 节点最多 3 路），当前取 [0] 走原链路
+        # TODO: 多路支持（ref_videos.ref_video_1/2 + LoadVideo 143/146 + GetVideoComponents 144/147）
+        u_videos = []
+        for i, rel_video in enumerate((ref_videos or [])[:3]):
+            if not rel_video: continue
+            u_videos.append(upload_video(rel_video, f"batch_{sid}_{shot:02d}_ref{i}.mp4"))
+        u_video = u_videos[0] if u_videos else None
         # 如果有对白/语音参考，上传并接入 ref_audios（LoadAudio 读取）
         u_audio = None
         if audio:
             u_audio = upload_audio(audio, f"batch_{sid}_{shot:02d}_aud")
-        pg = build_prompt(wf, u_sb, u_ch, u_sc, prompt, ref2va, u_video, u_extra or None, megapixels, seconds, u_audio, aspect)
+        pg = build_prompt(wf, u_sb, u_ch, u_sc, prompt, ref2va,
+                          ref_videos_names=u_videos,
+                          extra_images=u_extra or None,
+                          megapixels=megapixels, seconds=seconds,
+                          audio_name=u_audio, aspect_ratio=aspect)
         if CHAIN:
             chained = apply_chain(pg, sid, i_in_set)
             if chained:
@@ -450,8 +482,10 @@ def main():
             log(f"[nochain] {key} 独立镜头（断开 MotionContext）")
         try:
             pid = submit(pg)
-        except Exception:
-            log(f"[FATAL] {key} 提交失败，立即退出")
+        except Exception as e:
+            import traceback
+            log(f"[FATAL] {key} 提交失败: {e}")
+            traceback.print_exc()
             sys.exit(1)
         if not pid:
             log(f"[FATAL] {key} 未拿到 prompt_id，立即退出")

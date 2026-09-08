@@ -1,0 +1,12 @@
+{
+  "stair_jialing_v2_01": {
+    "prompt_id": "17e70569-93c2-4d71-9fef-6b92d91ea5ea",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\stair_jialing_v2\\output\\shot01.mp4"
+  },
+  "stair_jialing_v2_02": {
+    "prompt_id": "dfa43cf1-787b-4c94-85af-1d64bc6c8388",
+    "done": true,
+    "out": "D:\\WorkBuddy\\AI_Video\\shots\\stair_jialing_v2\\output\\shot02.mp4"
+  }
+}

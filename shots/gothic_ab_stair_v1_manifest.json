@@ -1,0 +1,39 @@
+{
+ "comfy_url": "http://100.67.139.74:8188",
+ "workflow": "workflows/h3_r2v_motion_context_api.json",
+ "base_dir": "shots",
+ "sets": [
+  {
+   "id": "chase_ab_a_01",
+   "title": "对照实验A·降速中景1.0MP",
+   "shots": [
+    {
+     "shot": 1,
+     "storyboard": "../characters/xiaole_wizard/reference_new.png",
+     "character": "../characters/jialing_wizard/reference.png",
+     "scene": "../scenes/gothic_hall_left_wide.png",
+     "extra_images": [],
+     "seconds": 5.0,
+     "megapixels": 1.0,
+     "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 7-year-old Chinese boy in a small wizard robe of dark blue cloth, short black hair, clear-frame round glasses, small body, frightened expression, [Picture 1]\n<Subject 2>: a 17-year-old Chinese high school girl with wavy auburn-red hair, solemn fierce expression, wearing a black floor-length hooded robe, holding a wooden wand, [Picture 2]\n<Subject 3>: the vast ruined gothic castle great hall: carved stone altar in the center with a single glowing lantern on top, two rows of tall carved stone columns, tall stained-glass arched windows on the left wall, a grand spiral stone staircase on the right wall, a broken stone dome with a large hole revealing the dark night sky, thick cobwebs, scattered candles on the floor, thin mist, cold dark teal-grey palette with warm candle-glow accents, high contrast, fine grain, shown from a medium-wide ground-level view between the columns, [Picture 3]\n<Subject 4>: a huge dark spider monster, size of a small car, glossy black chitin body, eight long spiky legs, red glowing eyes, lurking on the roof beam in the far background, no picture reference, described by text. it only crawls slowly along the beam, never lunges\n\n<Summary>\nMEDIUM-WIDE SHOT from ground level between the columns, characters occupy at least one third of the frame height. Inside the vast ruined gothic hall matching Picture 3. The boy matching Picture 1 sprints a few steps then skids to a halt on the stone floor, turning to look back. The girl matching Picture 2 strides toward him at a brisk but natural walking pace, wand lowered, robes swaying gently. The spider matching Subject 4 only shifts slowly on the roof beam above in the far background. All movement is moderate and natural in speed, limbs clearly defined, no motion blur streaks. Weather and lighting: dark gothic hall, candle-glow pools, mist, moonlight shaft through the broken dome. Color grade: cold dark teal-grey with warm candle accents, high contrast, fine grain.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical boy, keep glasses, robe and facial features exactly as Picture 1, do not alter or reshape the face\nPicture 1: fully_preserved\nSubject 2: fully_preserved - identical girl, keep hair and black robe exactly as Picture 2, do not alter or reshape the face\nPicture 2: fully_preserved\nSubject 3: partially_preserved - scene geometry anchor, keep the altar with lantern, twin columns, stained-glass windows and broken dome exactly consistent; the camera viewpoint MUST exactly match Picture 3: same angle, same height, same lens feel, same framing logic\nPicture 3: partially_preserved\nSubject 4: from text - huge black spider crawling slowly on the beam, background only\n\n<Detailed Description>\nMedium-wide shot. The boy matching Picture 1 takes three quick steps then plants his feet, skidding slightly on the dusty stone, and turns his head back over his shoulder. The girl matching Picture 2 walks briskly toward him, four to five measured strides, her robes and hair moving naturally with each step. Mist drifts slowly across the floor. Candle flames flicker gently. Natural human locomotion, moderate speed, stable limbs, readable silhouettes.\nWeather and lighting: dark gothic hall, candle-glow pools, mist, moonlight shaft through the broken dome hole.\nColor grade: cold dark teal-grey with warm candle-glow accents, high contrast, fine grain.\nAll dialogue in Chinese, no other language, no narration.\n\n<Overall Soundscape>\nfootsteps skidding on stone, slow booted strides, robes swaying, candle flames flickering, distant skittering on the beam, low hall reverb\n\n<Non-Diegetic Music>\nlow tense ambient strings, sparse and restrained\n"
+    }
+   ]
+  },
+  {
+   "id": "stair_jialing_v1",
+   "title": "嘉玲楼梯下行近景跟拍",
+   "shots": [
+    {
+     "shot": 1,
+     "storyboard": "../characters/jialing_wizard/reference.png",
+     "character": "",
+     "scene": "../scenes/gothic_hall_right_close.png",
+     "extra_images": [],
+     "seconds": 5.0,
+     "megapixels": 1.0,
+     "prompt": "<Prompt>\n\n<Subject Definitions>\n<Subject 1>: a 17-year-old Chinese high school girl with wavy auburn-red hair, solemn fierce expression, wearing a black floor-length hooded robe, holding a wooden wand, [Picture 1]\n<Subject 2>: the vast ruined gothic castle great hall: carved stone altar in the center with a single glowing lantern on top, two rows of tall carved stone columns, tall stained-glass arched windows on the left wall, a grand spiral stone staircase on the right wall, a broken stone dome with a large hole revealing the dark night sky, thick cobwebs, scattered candles on the floor, thin mist, cold dark teal-grey palette with warm candle-glow accents, high contrast, fine grain, focused on the grand spiral stone staircase on the right wall, shown from a close three-quarter view beside the staircase looking along its curve, [Picture 2]\n\n<Summary>\nCLOSE TRACKING SHOT beside the grand spiral stone staircase. Inside the vast ruined gothic hall matching Picture 2. The girl matching Picture 1 descends the spiral staircase from the upper landing toward the hall floor, stepping down quickly but with control, one hand skimming the stone railing, wand ready in the other, her eyes fixed on something below out of frame. The camera tracks alongside her at her own pace, gliding down parallel to the staircase curve, keeping her upper body in frame. Her descent speed is brisk and natural, not exaggerated. Weather and lighting: dark gothic hall, warm candle sconces on the stair wall, thin mist below. Color grade: cold dark teal-grey with warm candle accents, high contrast, fine grain.\n\n<Retention Analysis>\nSubject 1: fully_preserved - identical girl, keep hair and black robe exactly as Picture 1, do not alter or reshape the face\nPicture 1: fully_preserved\nSubject 2: partially_preserved - scene geometry anchor, keep the spiral staircase, columns, stained-glass windows and candles exactly consistent; the camera viewpoint MUST exactly match Picture 2: same angle, same height, same lens feel, same framing logic\nPicture 2: partially_preserved\n\n<Detailed Description>\nClose tracking shot along the spiral staircase. The girl matching Picture 1 comes down from the upper landing, quick controlled steps landing lightly on each stone tread, her free hand gliding along the railing, robes flowing behind her with the turning motion. The camera moves with her, smooth lateral tracking descending at the same rhythm, her torso and the curving railing prominent in frame. Candle sconces pass by softly in the foreground blur. Natural brisk human descent, stable limbs, no exaggerated speed.\nWeather and lighting: dark gothic hall, warm candle sconces along the stair wall, thin mist drifting near the stair base.\nColor grade: cold dark teal-grey with warm candle-glow accents, high contrast, fine grain.\nAll dialogue in Chinese, no other language, no narration.\n\n<Overall Soundscape>\nboots striking stone steps in quick rhythm, robes swishing, hand brushing the stone railing, candle flames, deep hall ambience below\n\n<Non-Diegetic Music>\nmysterious low strings, a rising feminine choral line, restrained\n"
+    }
+   ]
+  }
+ ]
+}
