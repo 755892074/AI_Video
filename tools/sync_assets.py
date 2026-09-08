@@ -13,8 +13,8 @@
   python tools/sync_assets.py --restore   # 台式机用：pull -> 从仓库恢复技能到 ~/.workbuddy/skills/ + 报告到 Claw 工作区
 
 注意：
-  - 本机历史遗留的 git 全局代理(socks5://127.0.0.1:4781)已于 2026-08-19 清除；
-    若某台机器 push 失败提示连不上，检查 `git config --global -l | grep proxy`。
+  - 若 pull/push 失败提示连接类错误（Connection reset / unable to access 等）：
+    【先开代理/VPN 再重试】（2026-09-08 规则：本机网络会间歇屏蔽 github.com）。
   - snapshot 是单向的（用户目录 -> 仓库）；新机器用 --restore 反向恢复技能。
 """
 import argparse
@@ -35,10 +35,18 @@ REPORTS = [  # (源路径, 仓库内相对路径)
 
 
 def run(cmd, check=True):
-    """跑 git 命令，失败时打印输出。"""
+    """跑 git 命令，失败时打印输出；网络类失败提示开代理。"""
     r = subprocess.run(cmd, cwd=REPO, capture_output=True, text=True, encoding="utf-8", errors="replace")
     if r.returncode != 0 and check:
         print(f"[FAIL] {' '.join(cmd)}\n{r.stdout}\n{r.stderr}")
+        # 网络/连接类失败 → 提示开代理（2026-09-08 规则：本机网络会间歇屏蔽 github.com）
+        net_hints = ("Connection was reset", "unable to access", "Could not resolve host",
+                     "Recv failure", "Connection timed out", "Failed to connect")
+        if any(h in (r.stderr or "") for h in net_hints):
+            print("\n" + "=" * 60)
+            print("⚠️  GitHub 网络连接失败 —— 请先【开启代理/VPN】再重试！")
+            print("    （本机网络环境会间歇屏蔽 github.com，开代理后即可恢复）")
+            print("=" * 60 + "\n")
         sys.exit(1)
     return r
 
